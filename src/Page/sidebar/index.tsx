@@ -7,6 +7,7 @@ import HomeIconSelected from '/assets/HomeIconSelected.svg';
 import AboutMeIconSelected from '/assets/aboutmeIconSelected.svg';
 import PortfolioIconSelected from '/assets/portfolioIconSelected.svg';
 import ContactMeIconSelected from '/assets/contactmeIconSelected.svg';
+import Doll from './component/doll'
 import NavItems from './component/navItems'
 
 const index =() => {
@@ -42,12 +43,7 @@ const index =() => {
   justify-between 
   items-center
   customShadow">
-      <img className='
-      sLaptop:w-[2.5rem] 
-      mLaptop:w-[3.125rem] 
-      desktop:w-[3.75rem] 
-      largeDesktop:w-[4.688rem]' 
-      src={Character1} alt="Character 1 svg" />
+      <Doll character={Character1} />
       <div className='
       flex flex-col 
       items-center w-full

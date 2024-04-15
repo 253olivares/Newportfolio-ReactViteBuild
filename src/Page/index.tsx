@@ -7,17 +7,17 @@ const index = memo(() => {
 
   const appContext = useContext(AppContext);
   if (!appContext) return null;
-  const {pageRef, currentSection, setCurrentSection, scrollState, setScrollState} = appContext;
+  const {pageRef, setCurrentSection, scrollState, setScrollState} = appContext;
 
   useEffect(()=> {
     const scrollCheck = () => {
-      if(window.scrollY >= pageRef.current[3].offsetTop) {
+      if(window.scrollY + (window.innerHeight*.35) >= pageRef.current[3].offsetTop) {
         setCurrentSection(pageRef.current[3].id);
         setScrollState('');
-      } else if (window.scrollY >= pageRef.current[2].offsetTop) {
+      } else if (window.scrollY+ (window.innerHeight*.35) >= pageRef.current[2].offsetTop) {
         setCurrentSection(pageRef.current[2].id);
         setScrollState('');
-      } else if (window.scrollY >= pageRef.current[1].offsetTop) {
+      } else if (window.scrollY + (window.innerHeight*.35) >= pageRef.current[1].offsetTop) {
         setCurrentSection(pageRef.current[1].id);
         setScrollState('');
       } else if (window.scrollY >= pageRef.current[0].offsetTop) {
@@ -80,6 +80,11 @@ const index = memo(() => {
       }} id="ContactMe" className={` bg-purple-400 ${css}`}>
         <h1 className={textcss} >CONTACT ME</h1>
       </div>
+      <footer ref={el => {
+        if(el) pageRef.current[4] = el
+      }} id="Footer" className=" bg-blue-700 w-full min-h-56 flex justify-center items-center">
+        <p className={textcss}>FOOTER</p>
+      </footer>
     </>
   )
 })

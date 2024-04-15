@@ -18,7 +18,7 @@ const index = memo((
 
   const appContext = useContext(AppContext);
   if (!appContext) return null;
-  const {currentSection, setCurrentSection,scrollState, setScrollState} = appContext;
+  const {currentSection, setCurrentSection, setScrollState} = appContext;
 
   let section:string =''
   let imgcss:string = ''
