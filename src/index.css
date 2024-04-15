@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +10,23 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+@layer base {
+    :root {
+        --rPrimaryWhite: #F5F5F5;
+        --rSidebarGray: #333533;
+        --rYellow: #F5CB5C;
+    }
+    html,body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        @apply bg-PrimaryWhite font-Akshar
+    }
+}
+
+@layer utilities {
+    .customShadow {
+        box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
+    }
 }
