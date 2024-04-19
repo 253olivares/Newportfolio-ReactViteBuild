@@ -1,8 +1,12 @@
 import { useContext, useEffect, memo } from "react"
-import { AppContext } from "./contextAPI"
+import { AppContext } from "./contextAPI";
+import Section1 from './sections/0_Introduction';
+import Section2 from './sections/1_AboutMe';
+import Section3 from './sections/2_Portfolio';
+import Section4 from './sections/3_ContactMe';
 
 const index = memo(() => {
-  const css = `w-full sLaptop:h-[576px] mLaptop:h-[720px] desktop:h-[864px] largeDesktop:h-[1080px] flex justify-center items-center`
+  const css = `w-full sLaptop:min-h-[576px] mLaptop:min-h-[720px] desktop:min-h-[864px] largeDesktop:min-h-[1080px] flex justify-center items-center`
   const textcss = 'text-PrimaryWhite text-8xl font-bold'
 
   const appContext = useContext(AppContext);
@@ -60,31 +64,10 @@ const index = memo(() => {
 
   return (
     <>
-      <div ref={el =>{
-        if(el) pageRef.current[0] = el
-      }} id="Home" className={`bg-red-500 ${css}`}>
-        <h1 className={textcss} >HOME</h1>
-      </div>
-      <div  ref={el => {
-        if(el) pageRef.current[1] = el
-      }} id="AboutMe" className={`bg-orange-300 ${css}`}>
-        <h1 className={textcss} >ABOUT ME</h1>
-      </div>
-      <div ref={el => {
-        if(el) pageRef.current[2] = el
-      }} id="Portfolio" className={`bg-green-500 ${css}`}>
-        <h1 className={textcss} >PORTFOLIO</h1>
-      </div>
-      <div ref={el => {
-        if(el) pageRef.current[3] = el
-      }} id="ContactMe" className={` bg-purple-400 ${css}`}>
-        <h1 className={textcss} >CONTACT ME</h1>
-      </div>
-      <footer ref={el => {
-        if(el) pageRef.current[4] = el
-      }} id="Footer" className=" bg-blue-700 w-full min-h-56 flex justify-center items-center">
-        <p className={textcss}>FOOTER</p>
-      </footer>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
     </>
   )
 })

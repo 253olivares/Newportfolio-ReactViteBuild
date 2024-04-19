@@ -4,15 +4,23 @@ import Sidebar from '../sidebar';
 const index = () => {
   return (
     <>
-    <main className='relative flex justify-center items-center h-screen text-center sLaptop:hidden'>
-      <p>Please open this page on a desktop view!</p>
-    </main>
-    <main className='relative w-full min-h-[100vh] hidden sLaptop:block'>
-      <Sidebar  />
-      <div>
-        <Outlet />
-      </div>
-    </main>
+      <main className='relative flex justify-center items-center h-screen text-center sLaptop:hidden'>
+        <p className=' text-5xl'>Please open this page on a desktop view! <br/> <br />
+          Mobile view is under development.
+        </p>
+      </main>
+      <main className='
+      hidden sLaptop:block 
+      relative w-full 
+      min-h-[100vh]
+      overflow-x-hidden
+      overflow-y-hidden
+      '>
+        <Sidebar  />
+        <div>
+          <Outlet />
+        </div>
+      </main>
     </>
   )
 }

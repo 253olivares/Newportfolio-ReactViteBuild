@@ -17,6 +17,9 @@
         --rPrimaryWhite: #F5F5F5;
         --rSidebarGray: #333533;
         --rYellow: #F5CB5C;
+        --rBgGreen: #0FAC82;
+        --rGlassWindow: rgba(44, 47, 72,.5);
+        --rGrayBack: #C5C5C5;
     }
     html,body {
         -ms-overflow-style: none;  /* IE and Edge */
@@ -25,8 +28,198 @@
     }
 }
 
+@layer components{
+    .sectionCSS {
+        @apply text-SiteYellow
+        font-bold
+        leading-none
+        sLaptop:text-[3.333rem]
+        mLaptop:text-[4.167rem]
+        desktop:text-[5rem]
+        largeDesktop:text-[6.25rem]
+        sLaptop:sectionTextSmall
+        mLaptop:sectionTextMedium
+        desktop:sectionTextDesktop
+        largeDesktop:sectionTextLarge
+    }
+    .circle1 {
+        @apply sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
+        mLaptop:w-[4.833rem] mLaptop:h-[4.833rem]
+        desktop:w-[5.8rem] desktop:h-[5.8rem]
+        largeDesktop:w-[7.25rem] largeDesktop:h-[7.25rem]
+        sLaptop:top-[-1.367rem] sLaptop:left-[0.533rem]
+        mLaptop:top-[-1.708rem] mLaptop:left-[0.667rem]
+        desktop:top-[-2.05rem] desktop:left-[0.8rem]
+        largeDesktop:top-[-2.563rem] largeDesktop:left-[1rem]
+        absolute
+        z-[4]
+        bg-PrimaryWhite opacity-50
+        rounded-full
+    }
+    .circle2{
+        @apply sLaptop:w-[3.533rem] sLaptop:h-[3.533rem]
+        mLaptop:w-[4.417rem] mLaptop:h-[4.417rem]
+        desktop:w-[5.3rem] desktop:h-[5.3rem]
+        largeDesktop:w-[6.625rem] largeDesktop:h-[6.625rem]
+        sLaptop:left-[12%]
+        sLaptop:top-[30.688rem]
+        mLaptop:top-[38.375rem]
+        desktop:top-[46.063rem]
+        largeDesktop:top-[62rem]
+        absolute
+        z-[4]
+        bg-PrimaryWhite opacity-50
+        rounded-full
+    }
+    .circle3{
+        @apply sLaptop:w-[5.5rem] sLaptop:h-[5.5rem]
+        mLaptop:w-[6.875rem] mLaptop:h-[6.875rem]
+        desktop:w-[8.25rem] desktop:h-[8.25rem]
+        largeDesktop:w-[10.313rem] largeDesktop:h-[10.313rem]
+        sLaptop:left-[37%]
+        sLaptop:top-[-2.104rem]
+        mLaptop:top-[-2.708rem] 
+        desktop:top-[-3.25rem] 
+        largeDesktop:top-[-4.063rem] 
+        absolute
+        z-[4]
+        bg-PrimaryWhite opacity-50
+        rounded-full
+    }
+    .circle4{
+        @apply sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
+        mLaptop:w-[4.833rem] mLaptop:h-[4.833rem]
+        desktop:w-[5.8rem] desktop:h-[5.8rem]
+        largeDesktop:w-[7.25rem] largeDesktop:h-[7.25rem]
+        sLaptop:left-[64%]
+        sLaptop:top-[30.375rem] 
+        mLaptop:top-[38rem] 
+        desktop:top-[45.563rem] 
+        largeDesktop:top-[57rem] 
+        absolute
+        z-[4]
+        bg-PrimaryWhite opacity-50
+        rounded-full
+    }
+    .imgCSS{
+        @apply sLaptop:w-[calc(100%-3.333rem)] 
+        mLaptop:w-[calc(100%-4.167rem)] 
+        desktop:w-[calc(100%-5rem)] 
+        largeDesktop:w-[calc(100%-6.25rem)] 
+        absolute 
+        bottom-0 right-0
+    }
+    .partOneCSS{
+        @apply relative w-full 
+        min-h-[40rem]
+        sLaptop:pl-[3.333rem]
+        mLaptop:pl-[4.167rem]
+        desktop:pl-[5rem]
+        largeDesktop:pl-[6.25rem]
+        sLaptop:pt-[3.9rem]
+        mLaptop:pt-[4.875rem]
+        desktop:pt-[5.85rem]
+        largeDesktop:pt-[7.313rem]
+    }
+    .partTwoCSS{
+        @apply bg-SiteGreen
+        relative w-full
+        min-h-[35rem]
+        sLaptop:pl-[3.333rem]
+        mLaptop:pl-[4.167rem]
+        desktop:pl-[5rem]
+        largeDesktop:pl-[6.25rem]
+        sLaptop:pt-[4.25rem]
+        mLaptop:pt-[5.333rem]
+        desktop:pt-[6.4rem]
+        largeDesktop:pt-[8rem]
+    }
+    .mockBrowser{
+        @apply relative z-[10] 
+        backdrop-blur-[.75rem] 
+        w-full min-h-[43.75rem] 
+        bg-GlassBackground
+        overflow-hidden
+        
+        sLaptop:rounded-[0.667rem]
+        mLaptop:rounded-[0.833rem]
+        desktop:rounded-[1rem]
+        largeDesktop:rounded-[1.25rem]
+        
+        sLaptop:mockBrowserSmallLaptop
+        mLaptop:mockBrowserMediumLaptop
+        desktop:mockBrowserDesktop
+        largeDesktop:mockBrowserlargeDekstop
+    }
+}
+
 @layer utilities {
     .customShadow {
         box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
+    }
+    /* shadow for the about me divs */
+    .divSmallShadow{
+        box-shadow: -0.333rem 0.5rem 0 0 rgba(0,0,0,.5);
+    }
+    .divMediumShadow{
+        box-shadow: -0.417rem 0.625rem 0 0 rgba(0,0,0,.5);
+    }
+    .divDesktopShadow{
+        box-shadow: -0.5rem 0.75rem 0 0 rgba(0,0,0,.5) ;
+    }
+    .divLargeDesktopShadow{
+        box-shadow: -0.625rem 0.938rem 0 0 rgba(0,0,0,.5) ;
+    }
+    /* Home Sections TExt */
+    .heroTextSmall{
+        text-shadow: -0.333rem .333rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextMedium{
+        text-shadow: -0.417rem .417rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextDesktop{
+        text-shadow: -0.5 .5rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextLarge{
+        text-shadow: -0.625rem 0.625rem 0 rgba(0,0,0,.5);
+    }
+    /* Section header text */
+    .sectionTextSmall{
+        text-shadow: -0.167rem 0.333rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextMedium{
+        text-shadow: -0.208rem 0.417rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextDesktop{
+        text-shadow: -0.25rem 0.5rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextLarge{
+        text-shadow: -0.313rem 0.625rem 0 rgba(0,0,0,.5);
+    }
+    /* smaller text shadow */
+    .textShadowSmall{
+        text-shadow: -0.167rem 0.167rem 0 rgba(0,0,0,.5);
+    }
+    .textShadowMedium{
+        text-shadow: -0.208rem .208rem 0 rgba(0,0,0,.5);
+    }
+    .textShadowDesktop{
+        text-shadow: -0.25rem .25rem 0 rgba(0,0,0,.5);
+    }
+    .textShadowLarge{
+        text-shadow: -0.313rem 0.313rem 0 rgba(0,0,0,.5);
+    }
+    /* browser shadow from the portfolio section  */
+    .mockBrowserSmallLaptop{
+        box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowserMediumLaptop{
+        box-shadow: 0.833rem 1.042rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowserDesktop{
+        box-shadow: 1rem 1.25rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowserlargeDekstop{
+        box-shadow: 1.25rem 1.563rem 0 0 rgba(0,0,0,.5);
     }
 }

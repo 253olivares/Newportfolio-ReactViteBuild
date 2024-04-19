@@ -12,8 +12,10 @@ export default {
       colors: {
         "PrimaryWhite" : "var(--rPrimaryWhite)",
         "SidebarGray" : "var(--rSidebarGray)",
-        "SiteYellow" : "var(--rYellow)"
-
+        "SiteYellow" : "var(--rYellow)",
+        "SiteGreen" : "var(--rBgGreen)",
+        "GlassBackground": "var(--rGlassWindow)",
+        "GrayBackground": "var(--rGrayBack)"
       },
       screens: {
         'sMobile': '640px',
@@ -31,8 +33,10 @@ export default {
         'desktop': '1536px',
         // => @media (min-width: 1536px) { ... }
 
-        'largeDesktop': '1830px'
+        'largeDesktop': '1900px',
         // => @media (min-width: 1830px) { ... }
+        'extra': '2100px'
+        
       },
     },
   },

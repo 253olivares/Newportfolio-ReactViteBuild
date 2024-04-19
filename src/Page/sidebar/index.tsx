@@ -42,7 +42,8 @@ const index =() => {
   flex flex-col
   justify-between 
   items-center
-  customShadow">
+  customShadow
+  ">
       <Doll character={Character1} />
       <div className='
       flex flex-col 
