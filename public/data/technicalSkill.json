@@ -1,0 +1,84 @@
+{
+  "Skills": {
+    "HTML": {
+      "id": 0,
+      "title": "HTML",
+      "imgSRC": "html.svg",
+      "skillLevel": "Proficient",
+      "desc": "Began learning HTML coding in high school and have spent several years building html experience.",
+      "years": "5"
+    },
+    "CSS": {
+      "id": 1,
+      "title": "CSS",
+      "imgSRC": "css.svg",
+      "skillLevel": "Proficient",
+      "desc": "Began learning CSS coding in high school along side html and have spent several years building css experience. Have in depth knowledge in creating page layouts and animations using css.",
+      "years": "5"
+    },
+    "TailwindCSS": {
+      "id": 2,
+      "title": "Tailwind",
+      "imgSRC": "TailwindCSS-Dark.svg",
+      "skillLevel": "Proficient",
+      "desc": "Picked up Tailwind after using Scss for several years. Helps streamline CSS styling and management with useful utility class-centered styling. My CSS processor of choice.",
+      "years": "1"
+    },
+    "Javascript": {
+      "id": 3,
+      "title": "Javascript",
+      "imgSRC": "JavaScript.svg",
+      "skillLevel": "Intermediate",
+      "desc": "My most recent development. I have recently began to utilize typescript to strengthen my JavaScript coding. This preprocessor helps eliminate type errors within my code and create a stronger application.",
+      "years": "5"
+    },
+    "Typescript": {
+      "id": 4,
+      "title": "Typescript",
+      "imgSRC": "TypeScript.svg",
+      "skillLevel": "Intermediate",
+      "desc": "My most recent development. I have recently began to utilize typescript to strengthen my JavaScript coding. This preprocessor helps eliminate type errors within my code and create a stronger application.",
+      "years": "1/2"
+    },
+    "React": {
+      "id": 5,
+      "title": "Javascript",
+      "imgSRC": "react.svg",
+      "skillLevel": "Intermediate",
+      "desc": "Alongside typescript I have begin to take on the react framework and ecosystems. Previously frameworks like these scared me but after developing my JavaScript experience I have been able to take on the react framework and love to use it.",
+      "years": "1/2"
+    },
+    "PHP": {
+      "id": 6,
+      "title": "PHP",
+      "imgSRC": "php.svg",
+      "skillLevel": "Intermediate",
+      "desc": "Server side scripting language that I picked up during my sophomore year of college. Since I haven't actively used php I have made sure to sharpen my skills to keep up with this language.  You can check some of my projects with php below.",
+      "years": "1"
+    },
+    "MySQL": {
+      "id": 7,
+      "title": "My SQL",
+      "imgSRC": "mySQL.svg",
+      "skillLevel": "Intermediate",
+      "desc": "Data relational database that I have picked up along side my study of php during my sophomore yea rof college. While not my preferences I sharpen my knowledge in sql to make sure I can keep up with structured query databases.",
+      "years": "1"
+    },
+    "Firebase": {
+      "id": 8,
+      "title": "Firebase",
+      "imgSRC": "firebase.svg",
+      "skillLevel": "Intermediate",
+      "desc": "Backend cloud computing service that I familiarize myself and continue to use in my projects. Specifically utilizing its no sql cloud database. Check out the list of project I have integrated with firebase below.",
+      "years": "1 1/2"
+    },
+    "Figma": {
+      "id": 9,
+      "title": "Figma",
+      "imgSRC": "figma.svg",
+      "skillLevel": "Intermediate",
+      "desc": "Web design software of choice. Recently picked up due to adobes lack of support for adobe xd. Check out some of work in figma below. Equally I have experience in using xd as well.",
+      "years": "1/2"
+    }
+  }
+}

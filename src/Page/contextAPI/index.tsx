@@ -4,6 +4,7 @@ import { createContext, ReactElement, useRef } from "react";
 // type check to look over all global functions and values
 export type contextType = {
     pageRef: MutableRefObject<(HTMLDivElement | HTMLElement)[]>,
+    iconsRef: MutableRefObject<(HTMLImageElement | HTMLElement)[]>
     currentSection:string,
     setCurrentSection: React.Dispatch<React.SetStateAction<string>>
     scrollState:string,
@@ -15,11 +16,13 @@ export const AppContext = createContext<contextType | null>(null);
 export const PageProvider = ({children}:{children:ReactElement}) => {
 
     const pageRef = useRef<(HTMLDivElement | HTMLElement)[]>([]);
+    const iconsRef = useRef<(HTMLImageElement | HTMLElement)[]>([]);
     const [scrollState, setScrollState] = useState<string>("Home");
     const [currentSection, setCurrentSection] = useState<string>('Home');
 
     const contextValues = {
-        pageRef, 
+        pageRef,
+        iconsRef, 
         currentSection, setCurrentSection, 
         scrollState, setScrollState
     }

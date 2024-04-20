@@ -1,6 +1,18 @@
 import square from '/assets/backgroundStrips1.svg';
+import { useAppSelector } from '../../../../store/hook';
+import { selectById, selectEntities, getSkillsError, getSkillsStatus } from '../../../../store/skillsSlice';
 
 const index = () => {
+  // // test selector
+  // const category = useAppSelector(state => selectById(state,'My SQL'));
+  // // test
+  // const entities = useAppSelector(selectEntities);
+  // // test
+  // const error = useAppSelector(getSkillsError);
+  // // test
+  // const status = useAppSelector(getSkillsStatus);
+  // // show results
+  // console.log(category, entities,error,status);
   return (
     <div className="partTwoCSS">
         <div className="w-full flex flex-col px-[3.6%] extra:px-0">
@@ -20,7 +32,16 @@ const index = () => {
             largeDesktop:textShadowLarge
             ">Check out some of my strongest technical skills!</p>
           </div>
+          <div className=''>
+            {/* select options */}
+            <div className=''>
 
+            </div>
+            {/* result select */}
+            <div className=''>
+
+            </div>
+          </div>
         </div>
         <img className="absolute 
         hidden

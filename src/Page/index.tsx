@@ -6,8 +6,6 @@ import Section3 from './sections/2_Portfolio';
 import Section4 from './sections/3_ContactMe';
 
 const index = memo(() => {
-  const css = `w-full sLaptop:min-h-[576px] mLaptop:min-h-[720px] desktop:min-h-[864px] largeDesktop:min-h-[1080px] flex justify-center items-center`
-  const textcss = 'text-PrimaryWhite text-8xl font-bold'
 
   const appContext = useContext(AppContext);
   if (!appContext) return null;
@@ -30,7 +28,7 @@ const index = memo(() => {
       }
     }
     window.addEventListener('scroll',scrollCheck,true);
-    ()=> {
+    return ()=> {
       window.removeEventListener('scroll',scrollCheck,true);
     }
   },[])
