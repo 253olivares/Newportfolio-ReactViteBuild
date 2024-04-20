@@ -1,6 +1,5 @@
 import square from '/assets/backgroundStrips1.svg';
-import { useAppSelector } from '../../../../store/hook';
-import { selectById, selectEntities, getSkillsError, getSkillsStatus } from '../../../../store/skillsSlice';
+
 
 const index = () => {
   // // test selector
