@@ -3,8 +3,9 @@ import profile from '/assets/profileImage.svg'
 import bracketLeft from '/assets/leftBraket.svg'
 import braketRight from '/assets/rightBraket.svg'
 import moneySign from '/assets/dollarSign.svg'
+import { memo } from 'react'
 
-const index = () => {
+const index = memo(() => {
 
   return (
     <div className="partOneCSS">
@@ -331,6 +332,6 @@ const index = () => {
         imgCSS" src={triangle}/>
       </div>
   )
-}
+})
 
 export default index

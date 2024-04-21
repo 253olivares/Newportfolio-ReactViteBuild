@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import { AppContext } from "../../contextAPI";
 import Footer from '../../footer'
 
-const index = () => {
+const index = memo(() => {
 
   const appContext = useContext(AppContext);
   if (!appContext) return null;
@@ -45,6 +45,6 @@ const index = () => {
       <Footer />
     </div>
   )
-}
+})
 
 export default index

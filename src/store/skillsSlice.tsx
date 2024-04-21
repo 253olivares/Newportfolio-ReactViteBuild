@@ -3,7 +3,7 @@ import { RootState } from './store';
 import axios, { CancelTokenSource} from 'axios';
 
 // create type for our json document data
-type skillsStateType = {
+export type skillsStateType = {
     id:number,
     title:string,
     imgSRC:string,
@@ -24,6 +24,7 @@ type initialStateType = {
 const skillsAdapter = createEntityAdapter({
     // our ids that we are using to track our skills is our title
     selectId: (skill:skillsStateType) => skill.title,
+    sortComparer: (a,b) => a.id - b.id,
 })
 
 // create our state tue it into our adapter
@@ -52,8 +53,8 @@ export const fetchSkills = createAsyncThunk('skills/fetchSkills',async(_,{reject
             throw new Error("Api had issues");
         })
         // log our return
-        console.log(`Axios Return:${response}`)
-        console.log(`Axios Data:${response.data}`)
+        // console.log(`Axios Return:${response}`)
+        // console.log(`Axios Data:${response.data}`)
         // return our data
         return response.data.Skills;
     }catch(error:unknown){
@@ -73,18 +74,18 @@ const skillSlice = createSlice({
             .addCase(fetchSkills.pending,(state)=> {
                 // when loading change our status to loading
                 state.status = "loading";
-                console.log(state)
+                // console.log(state)
             })
             .addCase(fetchSkills.fulfilled, (state,action:{payload:Record<string,skillsStateType>})=> {
                 // take in our data change our status
                 state.status = "succeeded"
-                console.log("action",action);
+                // console.log("action",action);
                 // mold our data by taking our payload and pushing our value data into our data array
                 const dataArray:skillsStateType[] = [];
                 Object.entries(action.payload).map(([_,v]:[unknown,skillsStateType])=> {
                     dataArray.push(v);
                 })
-                console.log("dataArray:",dataArray)
+                // console.log("dataArray:",dataArray)
                 // using upsery many add our array into our our state in entity format
                 skillsAdapter.upsertMany(state,dataArray);
             })
@@ -95,7 +96,6 @@ const skillSlice = createSlice({
                     state.error = action.error.message;
                 }
             })
-
     }
 })
 

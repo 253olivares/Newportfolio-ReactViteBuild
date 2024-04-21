@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../sidebar';
+import { memo } from 'react';
 
-const index = () => {
+const index = memo(() => {
   return (
     <>
       <main className='relative flex justify-center items-center h-screen text-center sLaptop:hidden'>
@@ -23,6 +24,6 @@ const index = () => {
       </main>
     </>
   )
-}
+})
 
 export default index

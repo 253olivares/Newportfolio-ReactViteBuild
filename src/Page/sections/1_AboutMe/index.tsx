@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import { AppContext } from "../../contextAPI";
 import Part1 from './part1';
 import Part2 from './part2';
 
-const index = () => {
+const index = memo(() => {
 
   const appContext = useContext(AppContext);
   if (!appContext) return null;
@@ -17,6 +17,6 @@ const index = () => {
       <Part2 />
     </div>
   )
-}
+})
 
 export default index

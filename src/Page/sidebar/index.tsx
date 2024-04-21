@@ -9,8 +9,9 @@ import PortfolioIconSelected from '/assets/portfolioIconSelected.svg';
 import ContactMeIconSelected from '/assets/contactmeIconSelected.svg';
 import Doll from './component/doll'
 import NavItems from './component/navItems'
+import { memo } from 'react';
 
-const index =() => {
+const index = memo(() => {
 
   const svgArray:Record<string,string> = {
     "Home" : HomeIcon,
@@ -70,6 +71,6 @@ const index =() => {
       </div>
     </div>
   )
-}
+})
 
 export default index

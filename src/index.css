@@ -18,6 +18,7 @@
         --rSidebarGray: #333533;
         --rYellow: #F5CB5C;
         --rBgGreen: #0FAC82;
+        --rDarkGreen: #085641;
         --rGlassWindow: rgba(44, 47, 72,.5);
         --rGrayBack: #C5C5C5;
     }
@@ -156,6 +157,19 @@
 @layer utilities {
     .customShadow {
         box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
+    }
+    /* Skills box shadow */
+    .infoSmall{
+        box-shadow: 0.66rem 0.825rem 0 0 rgba(0,0,0,.5);
+    }
+    .infoMedium{
+        box-shadow: 0.825rem 1.031rem 0 0 rgba(0,0,0,.5);
+    }
+    .infoDesktop{
+        box-shadow: 0.99rem 1.238rem 0 0 rgba(0,0,0,.5);
+    }
+    .infoLargeDesktop{
+        box-shadow: 1.238rem 1.547rem 0 0 rgba(0,0,0,.5);
     }
     /* shadow for the about me divs */
     .divSmallShadow{

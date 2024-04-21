@@ -1,17 +1,37 @@
 import square from '/assets/backgroundStrips1.svg';
+import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
+import { useAppSelector } from '../../../../store/hook';
+import DescBox from './components/description';
+import Icons from './components/icons';
+import { memo, useContext } from 'react';
+import { AppContext } from '../../../contextAPI';
+
+const index = memo(() => {
 
 
-const index = () => {
-  // // test selector
-  // const category = useAppSelector(state => selectById(state,'My SQL'));
-  // // test
-  // const entities = useAppSelector(selectEntities);
-  // // test
-  // const error = useAppSelector(getSkillsError);
-  // // test
-  // const status = useAppSelector(getSkillsStatus);
-  // // show results
-  // console.log(category, entities,error,status);
+  const appContext = useContext(AppContext);
+  if(!appContext) return null;
+  const {selectSkill} = appContext
+
+  const entities = useAppSelector(selectEntities);
+  const status = useAppSelector(getSkillsStatus);
+  const error = useAppSelector(getSkillsError);
+
+  let display
+
+  if(status === 'failed') {
+    console.log(error);
+    display = "Skills Failed to load"
+  } else if (status === 'loading') {
+    display = "Loading..."
+  } else if (status === 'succeeded'){
+    display = Object.entries(entities).map(([k,v],index) => 
+      <Icons key={k} skill={v} loc={index} />
+    )
+  }
+
+
+
   return (
     <div className="partTwoCSS">
         <div className="w-full flex flex-col px-[3.6%] extra:px-0">
@@ -31,16 +51,33 @@ const index = () => {
             largeDesktop:textShadowLarge
             ">Check out some of my strongest technical skills!</p>
           </div>
-          <div className=''>
-            {/* select options */}
-            <div className=''>
 
+           {/* select options */}
+           {status === 'failed' || status === 'loading' ? 
+            display
+           : 
+            <div className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
+              <div className='
+              sLaptop:mt-[3.25rem]
+              mLaptop:mt-[4.25rem]
+              desktop:mt-[5rem]
+              largeDesktop:mt-[6.75rem]
+              sLaptop:py-[0.99rem]
+              mLaptop:py-[1.238rem]
+              desktop:py-[1.485rem]
+              largeDesktop:py-[1.856rem]
+              sLaptop:px-[0.99rem]
+              mLaptop:px-[1.238rem]
+              desktop:px-[1.531rem]
+              largeDesktop:px-[1.856rem]
+              w-full 
+              flex justify-between
+              '>
+                {display}
+              </div>
+              <DescBox selectSkill={entities[selectSkill]} />
             </div>
-            {/* result select */}
-            <div className=''>
-
-            </div>
-          </div>
+            }
         </div>
         <img className="absolute 
         hidden
@@ -50,6 +87,6 @@ const index = () => {
         largeDesktop:right-[-2rem] largeDesktop:top-[-20rem]" src={square} alt="" />
       </div>
   )
-}
+})
 
 export default index

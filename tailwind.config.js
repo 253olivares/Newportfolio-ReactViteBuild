@@ -15,7 +15,8 @@ export default {
         "SiteYellow" : "var(--rYellow)",
         "SiteGreen" : "var(--rBgGreen)",
         "GlassBackground": "var(--rGlassWindow)",
-        "GrayBackground": "var(--rGrayBack)"
+        "GrayBackground": "var(--rGrayBack)",
+        "SiteDarkGreen": "var(--rDarkGreen)"
       },
       screens: {
         'sMobile': '640px',

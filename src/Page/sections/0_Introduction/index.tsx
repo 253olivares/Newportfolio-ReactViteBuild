@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { AppContext } from "../../contextAPI";
 import heroDrawing from '/assets/hero_Drawing.svg'
 import triangleColapse from '/assets/trianglePNG.png'
 
-const index = () => {
+const index = memo(() => {
   
   const appContext = useContext(AppContext);
   if (!appContext) return null;
@@ -79,6 +79,6 @@ const index = () => {
       </div>
     </div>
   )
-}
+})
 
 export default index

@@ -10,7 +10,7 @@ import { store } from './store/store'
 
 // home page
 // application will be one singular app but for purpose of creating a layout and 404 I will be using React Router
-function App() {
+const App = () => {
 
   useEffect(()=> {
     const promise = store.dispatch(fetchSkills());
