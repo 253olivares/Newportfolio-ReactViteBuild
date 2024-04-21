@@ -1,7 +1,5 @@
 import { MutableRefObject, useState } from "react"
 import { createContext, ReactElement, useRef } from "react";
-import { useAppSelector } from "../../store/hook";
-import { selectEntities } from "../../store/skillsSlice";
 // type check to look over all global functions and values
 export type contextType = {
     pageRef: MutableRefObject<(HTMLDivElement | HTMLElement)[]>,

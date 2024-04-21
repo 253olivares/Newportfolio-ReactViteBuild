@@ -25,8 +25,8 @@ const index = memo(() => {
   } else if (status === 'loading') {
     display = "Loading..."
   } else if (status === 'succeeded'){
-    display = Object.entries(entities).map(([k,v],index) => 
-      <Icons key={k} skill={v} loc={index} />
+    display = Object.entries(entities).map(([k,v]) => 
+      <Icons key={k} skill={v} />
     )
   }
 

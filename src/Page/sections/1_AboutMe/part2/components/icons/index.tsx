@@ -2,7 +2,7 @@ import { memo, useContext, useEffect, useRef } from "react"
 import { skillsStateType } from "../../../../../../store/skillsSlice"
 import { AppContext } from "../../../../../contextAPI";
 
-const index = memo(({skill,loc}:{skill: skillsStateType, loc:number}) => {
+const index = memo(({skill}:{skill: skillsStateType}) => {
   
 
   const iconRef = useRef<HTMLImageElement>(null);
