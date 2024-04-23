@@ -49,10 +49,10 @@ const index = () => {
           flex justify-center">
             <p className="
             w-[30rem] 
-            sLaptop:py-[0.875rem]
-            mLaptop:py-[1rem]
-            desktop:py-[1.25rem]
-            largeDesktop:py-[1.55rem] 
+            sLaptop:py-[0.65rem]
+            mLaptop:py-[.75rem]
+            desktop:py-[.875rem]
+            largeDesktop:py-[1rem] 
             font-semibold 
             text-center 
             sLaptop:text-[1.5rem]

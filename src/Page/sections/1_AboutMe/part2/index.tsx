@@ -3,15 +3,16 @@ import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../sto
 import { useAppSelector } from '../../../../store/hook';
 import DescBox from './components/description';
 import Icons from './components/icons';
-import { memo, useContext } from 'react';
+import { memo, useContext} from 'react';
 import { AppContext } from '../../../contextAPI';
+import pointer from '/assets/pointer.svg'
 
 const index = memo(() => {
 
 
   const appContext = useContext(AppContext);
   if(!appContext) return null;
-  const {selectSkill} = appContext
+  const {arrowRef,selectSkill} = appContext
 
   const entities = useAppSelector(selectEntities);
   const status = useAppSelector(getSkillsStatus);
@@ -25,11 +26,10 @@ const index = memo(() => {
   } else if (status === 'loading') {
     display = "Loading..."
   } else if (status === 'succeeded'){
-    display = Object.entries(entities).map(([k,v]) => 
-      <Icons key={k} skill={v} />
+    display = Object.entries(entities).map(([k,v], index) => 
+      <Icons key={k} skill={v} loc={index} />
     )
   }
-
 
 
   return (
@@ -56,6 +56,7 @@ const index = memo(() => {
            {status === 'failed' || status === 'loading' ? 
             display
            : 
+
             <div className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
               <div className='
               sLaptop:mt-[3.25rem]
@@ -66,14 +67,22 @@ const index = memo(() => {
               mLaptop:py-[1.238rem]
               desktop:py-[1.485rem]
               largeDesktop:py-[1.856rem]
-              sLaptop:px-[0.99rem]
-              mLaptop:px-[1.238rem]
-              desktop:px-[1.531rem]
-              largeDesktop:px-[1.856rem]
+              px-[1.82%]
               w-full 
-              flex justify-between
+              flex 
+              justify-between
+              relative
               '>
                 {display}
+              </div>
+              <div className='w-full relative sLaptop:min-h-[1.716rem] mLaptop:min-h-[2.145rem] desktop:min-h-[2.574rem] largeDesktop:min-h-[3.218rem]'>
+                <img
+                ref={arrowRef}
+                className={`
+                absolute
+                sLaptop:h-[1.716rem] mLaptop:h-[2.145rem] desktop:h-[2.574rem] largeDesktop:h-[3.218rem]
+                left-[03.20%]
+                `}  src={pointer} alt="pointerSVG" />
               </div>
               <DescBox selectSkill={entities[selectSkill]} />
             </div>

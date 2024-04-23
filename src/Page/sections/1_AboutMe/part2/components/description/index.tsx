@@ -1,20 +1,28 @@
-
 import { memo } from "react"
 import { skillsStateType } from "../../../../../../store/skillsSlice"
+import { useContext } from "react"
+import { AppContext } from "../../../../../contextAPI"
 
 const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
+
+   const appContext = useContext(AppContext);
+   if(!appContext) return null;
+   const {descRef} = appContext;
+
+   if(!selectSkill) {
+      return
+   }
+
   return (
-     <div className="
+     <div
+     ref={descRef}
+     className="
      relative
      w-full 
      sLaptop:min-h-[14.157rem]
      mLaptop:min-h-[17.696rem]
      desktop:min-h-[21.236rem]
      largeDesktop:min-h-[26.544rem] 
-     sLaptop:mt-[1.716rem]
-     mLaptop:mt-[2.145rem]
-     desktop:mt-[2.574rem]
-     largeDesktop:mt-[3.218rem]
      sLaptop:mb-[2.663rem]
      mLaptop:mb-[3.321rem]
      desktop:mb-[3.984rem]
@@ -42,7 +50,7 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
          largeDesktop:text-[3.713rem]
          font-bold
          leading-none
-         ">{selectSkill?.title??null}</h1>
+         ">{selectSkill.title}</h1>
          <span className={`
          sLaptop:text-[1.815rem]
          mLaptop:text-[2.269rem]
@@ -64,7 +72,7 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
          leading-none
          text-PrimaryWhite
          ${selectSkill.skillLevel === 'Proficient' ? ' bg-SiteYellow' : 'bg-SiteGreen'}
-         `}>{selectSkill?.skillLevel??null}</span>
+         `}>{selectSkill.skillLevel}</span>
       </div>
       <p className="
       font-medium
@@ -85,7 +93,7 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
       desktop:mb-[5.451rem]
       largeDesktop:mb-[6.821rem]
       leading-[1.15]
-      ">{selectSkill?.desc??null}</p>
+      ">{selectSkill.desc}</p>
       <span className="
       absolute
       sLaptop:left-[0.938rem]
@@ -101,7 +109,7 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
       desktop:text-[2.228rem]
       largeDesktop:text-[2.784rem]
       font-medium
-      ">Years Experience: {selectSkill?.years??null}</span>
+      ">Years Experience: {selectSkill.years}</span>
      </div>
   )
 })

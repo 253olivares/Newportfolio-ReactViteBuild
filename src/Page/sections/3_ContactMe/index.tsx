@@ -1,6 +1,7 @@
 import { useContext, memo } from "react";
 import { AppContext } from "../../contextAPI";
 import Footer from '../../footer'
+import Form from './component/contactForm'
 
 const index = memo(() => {
 
@@ -22,25 +23,41 @@ const index = memo(() => {
         mLaptop:pt-[2.083rem]
         desktop:pt-[2.5rem]
         largeDesktop:pt-[3.125rem]
+        sLaptop:pb-[7.791rem]
+        mLaptop:pb-[9.754rem]
+        desktop:pb-[11.655rem]
+        largeDesktop:pb-[14.6rem]
         ">
-        <div className="
-        w-full 
-        flex 
-        justify-between 
-        extra:max-w-[1920px]
-        extra:mx-auto
-        min-h-[500px]">
-          <div className="flex flex-col pl-[3.6%] extra:pl-0">
-            <h1 className="
-            sectionCSS
-            ">CONTACT ME</h1>
-            <div></div>
-            <div></div>
+          <div className="
+          w-full pl-[3.6%] extra:pl-0 extra:max-w-[1920px] extra:mx-auto
+          ">
+            <h1 className="sectionCSS">CONTACT ME</h1>
           </div>
-          <div>
+          <div className="
+          w-full 
+          flex flex-row justify-between 
+          gap-[4.75%]
+          sLaptop:mt-[1.667rem]
+          mLaptop:mt-[2.083rem]
+          desktop:mt-[2.5rem]
+          largeDesktop:mt-[3.125rem]
+          ">
+            <div className="w-auto 
+            flex flex-grow 
+            justify-end 
+            ">
+              <Form/>
+            </div>
+            <div className="
+            w-[48%] 
+            sLaptop:mt-[1.421rem] mLaptop:mt-[1.792rem] desktop:mt-[2.163rem] largeDesktop:mt-[2.688rem]
+            sLaptop:contactDivShadowSmall mLaptop:contactDivShadowMedium desktop:contactDivShadowDesktop largeDesktop:contactDivShadowLarge
+            sLaptop:rounded-l-[0.54rem] mLaptop:rounded-l-[0.675rem] desktop:rounded-l-[0.81rem] largeDesktop:rounded-l-[1.013rem]
+            sLaptop:h-[26.033rem] mLaptop:h-[32.542rem] desktop:h-[39.05rem] largeDesktop:h-[48.813rem] 
+            bg-SiteYellow">
 
+            </div>
           </div>
-        </div>
       </div>
       <Footer />
     </div>

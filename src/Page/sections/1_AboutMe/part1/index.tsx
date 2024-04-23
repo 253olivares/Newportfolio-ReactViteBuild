@@ -168,7 +168,7 @@ const index = memo(() => {
                   <div className='
                   absolute
                   bg-SiteYellow
-                  sLaptop:w-[136.53rem]
+                  sLaptop:w-[8.533rem]
                   mLaptop:w-[10.667rem]
                   desktop:w-[12.8rem]
                   largeDesktop:w-[16rem]

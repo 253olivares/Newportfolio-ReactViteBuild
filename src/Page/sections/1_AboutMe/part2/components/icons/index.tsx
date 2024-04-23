@@ -1,31 +1,43 @@
-import { memo, useContext, useEffect, useRef } from "react"
+import { memo, useContext, useEffect} from "react"
 import { skillsStateType } from "../../../../../../store/skillsSlice"
 import { AppContext } from "../../../../../contextAPI";
 
-const index = memo(({skill}:{skill: skillsStateType}) => {
+const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
   
-
-  const iconRef = useRef<HTMLImageElement>(null);
 
   const appContext = useContext(AppContext);
   if(!appContext) return null;
-  const {selectSkill, setSelectSkill} = appContext
+  const {iconsRef,arrowRef,descRef,selectSkill, setSelectSkill} = appContext
 
 
   useEffect(()=> {
     const setSelect = () => {
-      setSelectSkill(skill.title);
+      setSelectSkill(_=>skill.title);
+      
+      if (!arrowRef.current) return
+
+      const selectx = iconsRef.current[loc].offsetLeft + 
+                      iconsRef.current[loc].offsetWidth/2;
+      const halfArrow = arrowRef.current?.offsetWidth/2;
+      
+      const left = selectx-halfArrow;
+      const divWidth = descRef.current!.offsetWidth;
+
+      arrowRef.current.style.left = `${((left/divWidth) * 100).toFixed(2)}%`;
+
+      // console.log(iconsRef,arrowRef);
+      // console.log(iconsRef.current[loc]);
     }
 
-    iconRef.current?.addEventListener('mouseover',setSelect,true);
+    iconsRef.current[loc].addEventListener('mouseover',setSelect,true);
     return ()=> {
-      iconRef.current?.removeEventListener('mouseover',setSelect,true);
+      iconsRef.current[loc].removeEventListener('mouseover',setSelect,true);
     }
   },[])
 
   return (
       <img
-      ref={iconRef}
+      ref={el => iconsRef.current[loc] = el!}
       className={`
       cursor-pointer
       sLaptop:w-[4.224rem]

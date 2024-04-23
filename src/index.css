@@ -21,10 +21,10 @@
         --rDarkGreen: #085641;
         --rGlassWindow: rgba(44, 47, 72,.5);
         --rGrayBack: #C5C5C5;
+        --rSelectBlue: #4699E5;
     }
     html,body {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        
         @apply bg-PrimaryWhite font-Akshar
     }
 }
@@ -152,11 +152,32 @@
         desktop:mockBrowserDesktop
         largeDesktop:mockBrowserlargeDekstop
     }
+    .contactLabelText{
+        @apply text-PrimaryWhite 
+        sLaptop:text-[2rem]
+        mLaptop:text-[2.5rem]
+        desktop:text-[3rem]
+        largeDesktop:text-[3.75rem] 
+        leading-tight   
+        font-medium
+    }
 }
 
 @layer utilities {
     .customShadow {
         box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
+    }
+    .contactDivShadowSmall{
+        box-shadow: 0.6rem 0.75rem 0 rgba(0, 0, 0, .5);
+    }
+    .contactDivShadowMedium{
+        box-shadow: 0.75rem 0.938rem 0 rgba(0, 0, 0, .5);
+    }
+    .contactDivShadowDesktop{
+        box-shadow: 0.9rem 1.125rem 0 rgba(0, 0, 0, .5);
+    }
+    .contactDivShadowLarge{
+        box-shadow: 1.125rem 1.406rem 0 rgba(0, 0, 0, .5);
     }
     /* Skills box shadow */
     .infoSmall{
