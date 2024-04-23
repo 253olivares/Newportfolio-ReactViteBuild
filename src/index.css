@@ -30,6 +30,76 @@
 }
 
 @layer components{
+    .mockBrowserSelected {
+        @apply 
+        sLaptop:w-[8.9rem]
+        mLaptop:w-[11.125rem]
+        desktop:w-[13.35rem]
+        largeDesktop:w-[16.688rem]
+        
+
+        sLaptop:h-full
+        absolute
+        z-[4]
+        bottom-0
+        sLaptop:left-[1.333rem]
+        mLaptop:left-[1.666rem]
+        desktop:left-[2rem]
+        largeDesktop:left-[3.125rem]
+        bg-PrimaryWhite
+
+        sLaptop:rounded-t-[.53rem]
+        mLaptop:rounded-t-[.66rem]
+        desktop:rounded-t-[.8rem]
+        largeDesktop:rounded-t-[1rem]
+
+        after:content-['']
+        after:block
+        after:absolute
+        after:sLaptop:w-[1.325rem]
+        after:mLaptop:w-[1.65rem]
+        after:desktop:w-[2rem]
+        after:largeDesktop:w-[2.5rem]
+        after:sLaptop:h-[1rem]
+        after:mLaptop:h-[1.33rem]
+        after:desktop:h-[1.66rem]
+        after:largeDesktop:h-[2rem]
+        after:bottom-0
+        after:sLaptop:right-[-1.325rem]
+        after:mLaptop:right-[-1.65rem]
+        after:desktop:right-[-2rem]
+        after:largeDesktop:right-[-2.5rem]
+        after:sLaptop:rounded-bl-[.424rem]
+        after:mLaptop:rounded-bl-[0.528rem]
+        after:desktop:rounded-bl-[.64rem]
+        after:largeDesktop:rounded-bl-[.8rem]
+        after:invertRight
+        after:bg-transparent
+
+        before:content-['']
+        before:block
+        before:absolute
+        before:sLaptop:w-[1.325rem]
+        before:mLaptop:w-[1.65rem]
+        before:desktop:w-[2rem]
+        before:largeDesktop:w-[2.5rem]
+        before:sLaptop:h-[1rem]
+        before:mLaptop:h-[1.33rem]
+        before:desktop:h-[1.66rem]
+        before:largeDesktop:h-[2rem]
+        before:bottom-0
+        before:sLaptop:left-[-1.325rem]
+        before:mLaptop:left-[-1.65rem]
+        before:desktop:left-[-2rem]
+        before:largeDesktop:left-[-2.5rem]
+        before:sLaptop:rounded-br-[.424rem]
+        before:mLaptop:rounded-br-[0.528rem]
+        before:desktop:rounded-br-[.64rem]
+        before:largeDesktop:rounded-br-[.8rem]
+        before:invertLeft
+        before:bg-transparent
+
+    }
     .sectionCSS {
         @apply text-SiteYellow
         font-bold
@@ -137,10 +207,26 @@
     }
     .mockBrowser{
         @apply relative z-[10] 
-        backdrop-blur-[.75rem] 
-        w-full min-h-[43.75rem] 
+        backdrop-blur-[.75rem]
         bg-GlassBackground
-        overflow-hidden
+        overflow-hidden 
+        w-full 
+        flex flex-col
+
+        sLaptop:px-[0.667rem]
+        mLaptop:px-[0.833rem]
+        desktop:px-[1rem]
+        largeDesktop:px-[1.25rem]
+
+        sLaptop:pb-[0.667rem]
+        mLaptop:pb-[0.833rem]
+        desktop:pb-[1rem]
+        largeDesktop:pb-[1.25rem]
+
+        sLaptop:pt-[0.333rem]
+        mLaptop:pt-[0.417rem]
+        desktop:pt-[0.5rem]
+        largeDesktop:pt-[.75rem]
         
         sLaptop:rounded-[0.667rem]
         mLaptop:rounded-[0.833rem]
@@ -164,6 +250,18 @@
 }
 
 @layer utilities {
+
+    .invertLeft{
+        box-shadow: 1rem 0 0 0 var(--rPrimaryWhite);
+    }
+
+    /* css for the inverted border radius for the selected tab */
+    .invertRight{
+        box-shadow: -1rem 0 0 0 var(--rPrimaryWhite);
+    }
+    /* filtering the x svg but didnt work so its unused */
+    .filterCloseSVG {
+        filter: invert(18%) sepia(0%) saturate(1575%) hue-rotate(209deg) brightness(100%) contrast(93%);    }
     .customShadow {
         box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
     }
