@@ -1,5 +1,5 @@
 import { memo, useContext } from "react";
-import { AppContext } from "../../contextAPI";
+import { AppContext } from "../../contextSidebarAPI";
 import heroDrawing from '/assets/hero_Drawing.svg'
 import triangleColapse from '/assets/trianglePNG.png'
 

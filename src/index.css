@@ -20,6 +20,8 @@
         --rBgGreen: #0FAC82;
         --rDarkGreen: #085641;
         --rGlassWindow: rgba(44, 47, 72,.5);
+        --rGlassWindowLighter:rgba(44, 47, 72,.2);
+        --rGlassWindowLighterSelect:rgba(44, 47, 72,.1);
         --rGrayBack: #C5C5C5;
         --rSelectBlue: #4699E5;
     }
@@ -251,6 +253,12 @@
 
 @layer utilities {
 
+    /* fix overflow bug */
+    .overflowFix{
+        -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); /* this fixes the overflow:hidden in Chrome/Opera */
+    }
+
+    /* add curve to browser select */
     .invertLeft{
         box-shadow: 1rem 0 0 0 var(--rPrimaryWhite);
     }

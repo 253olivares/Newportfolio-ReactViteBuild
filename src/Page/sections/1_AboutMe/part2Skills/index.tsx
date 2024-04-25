@@ -1,16 +1,16 @@
 import square from '/assets/backgroundStrips1.svg';
-import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
-import { useAppSelector } from '../../../../store/hook';
+import pointer from '/assets/pointer.svg'
 import DescBox from './components/description';
 import Icons from './components/icons';
 import { memo, useContext} from 'react';
-import { AppContext } from '../../../contextAPI';
-import pointer from '/assets/pointer.svg'
+import { SkillsContext } from './skillsContextAPI';
+
+import { useAppSelector } from '../../../../store/hook';
+import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
 
 const index = memo(() => {
 
-
-  const appContext = useContext(AppContext);
+  const appContext = useContext(SkillsContext);
   if(!appContext) return null;
   const {arrowRef,selectSkill} = appContext
 
@@ -30,7 +30,6 @@ const index = memo(() => {
       <Icons key={k} skill={v} loc={index} />
     )
   }
-
 
   return (
     <div className="partTwoCSS">
@@ -56,7 +55,6 @@ const index = memo(() => {
            {status === 'failed' || status === 'loading' ? 
             display
            : 
-
             <div className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
               <div className='
               sLaptop:mt-[3.25rem]
@@ -82,7 +80,7 @@ const index = memo(() => {
                 absolute
                 sLaptop:h-[1.716rem] mLaptop:h-[2.145rem] desktop:h-[2.574rem] largeDesktop:h-[3.218rem]
                 left-[03.20%]
-                `}  src={pointer} alt="pointerSVG" />
+                `} src={pointer} alt="pointerSVG" />
               </div>
               <DescBox selectSkill={entities[selectSkill]} />
             </div>

@@ -1,11 +1,11 @@
 import { memo } from "react"
 import { skillsStateType } from "../../../../../../store/skillsSlice"
 import { useContext } from "react"
-import { AppContext } from "../../../../../contextAPI"
+import { SkillsContext } from "../../skillsContextAPI";
 
 const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
 
-   const appContext = useContext(AppContext);
+   const appContext = useContext(SkillsContext);
    if(!appContext) return null;
    const {descRef} = appContext;
 

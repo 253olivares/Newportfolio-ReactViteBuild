@@ -1,10 +1,15 @@
 import { Fragment, memo, useContext } from "react"
-import { AppContext } from "../../../../contextAPI";
+import { BrowserAppContext } from "../../mockBrowserContext";
+import { windowResize } from "./hooks";
 
 const index = memo(() => {
-  const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const { tabRef, backgroundSelectRef, tabSelect, setTabSelect} = appContext
+
+  // hook that runs code when window resizes
+  // intented to make sure that our select tab is keep track in the correct space
+  windowResize();
+
+  const appContext = useContext(BrowserAppContext);
+  const { tabRef, backgroundSelectRef, tabSelect, setTabSelect} = appContext!;
 
   const tabs:["Programming", "Art", "UI / UX"] = ["Programming", "Art", "UI / UX"]
 

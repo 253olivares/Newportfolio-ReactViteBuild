@@ -1,12 +1,12 @@
 import { memo, useContext } from "react";
-import { AppContext } from "../../contextAPI";
+import { AppContext } from "../../contextSidebarAPI";
 import MockBrowser from './component/mockBrowser'
+import { PortfolioProvider } from "./mockBrowserContext";
 
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {pageRef} = appContext;
+  const {pageRef} = appContext!;
 
   return (
     <div ref={el => {
@@ -41,7 +41,9 @@ const index = memo(() => {
           extra:w-[1920px]
           sectionCSS
           ">PORTFOLIO</h1>
-          <MockBrowser />
+          <PortfolioProvider>
+            <MockBrowser />
+          </PortfolioProvider>
         </div>
       </div>
     </div>

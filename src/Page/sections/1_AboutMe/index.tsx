@@ -1,7 +1,8 @@
 import { useContext, memo } from "react";
-import { AppContext } from "../../contextAPI";
-import Part1 from './part1';
-import Part2 from './part2';
+import { AppContext } from "../../contextSidebarAPI";
+import Part1Profile from './part1Profile';
+import Part2Skills from './part2Skills';
+import { SkillProvider } from "./part2Skills/skillsContextAPI";
 
 const index = memo(() => {
 
@@ -13,8 +14,10 @@ const index = memo(() => {
     <div  ref={el => {
       if(el) pageRef.current[1] = el
     }} id="AboutMe" className={`relative w-full`}>
-      <Part1 />
-      <Part2 />
+      <Part1Profile />
+      <SkillProvider>
+        <Part2Skills />
+      </SkillProvider>
     </div>
   )
 })

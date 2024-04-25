@@ -1,5 +1,5 @@
 import { useContext, useEffect, memo } from "react"
-import { AppContext } from "./contextAPI";
+import { AppContext } from "./contextSidebarAPI";
 import Section1 from './sections/0_Introduction';
 import Section2 from './sections/1_AboutMe';
 import Section3 from './sections/2_Portfolio';

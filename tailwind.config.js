@@ -14,8 +14,10 @@ export default {
         "SidebarGray" : "var(--rSidebarGray)",
         "SiteYellow" : "var(--rYellow)",
         "SiteGreen" : "var(--rBgGreen)",
-        "GlassBackground": "var(--rGlassWindow)",
-        "GrayBackground": "var(--rGrayBack)",
+        "GlassBackground" : "var(--rGlassWindow)",
+        "GlassLighterBackground" : "var(--rGlassWindowLighter)",
+        "GlassLighterBackgroundSelect" : "var(--rGlassWindowLighterSelect)",
+        "GrayBackground" : "var(--rGrayBack)",
         "SiteDarkGreen": "var(--rDarkGreen)",
         "SelectBlue" : "var(--rSelectBlue)"
       },

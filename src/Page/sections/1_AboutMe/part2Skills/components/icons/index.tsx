@@ -1,19 +1,21 @@
-import { memo, useContext, useEffect} from "react"
-import { skillsStateType } from "../../../../../../store/skillsSlice"
-import { AppContext } from "../../../../../contextAPI";
+import { memo, useContext, useEffect} from "react";
+import { SkillsContext } from "../../skillsContextAPI";
+import { skillsStateType } from "../../../../../../store/skillsSlice";
 
 const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
-  
 
-  const appContext = useContext(AppContext);
+  const appContext = useContext(SkillsContext);
   if(!appContext) return null;
   const {iconsRef,arrowRef,descRef,selectSkill, setSelectSkill} = appContext
 
-
   useEffect(()=> {
+    // function that will reposition our arrow every time our mouse
+    // hovers a skill
     const setSelect = () => {
+      // sets our skill and triggers a rerender our description
       setSelectSkill(_=>skill.title);
       
+      // reposition our arrow
       if (!arrowRef.current) return
 
       const selectx = iconsRef.current[loc].offsetLeft + 
@@ -24,9 +26,6 @@ const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
       const divWidth = descRef.current!.offsetWidth;
 
       arrowRef.current.style.left = `${((left/divWidth) * 100).toFixed(2)}%`;
-
-      // console.log(iconsRef,arrowRef);
-      // console.log(iconsRef.current[loc]);
     }
 
     iconsRef.current[loc].addEventListener('mouseover',setSelect,true);
