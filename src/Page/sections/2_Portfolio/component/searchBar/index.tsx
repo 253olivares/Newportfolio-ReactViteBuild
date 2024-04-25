@@ -1,8 +1,13 @@
-import { memo } from "react"
+import { memo, useContext } from "react"
 import searchIcon from '/assets/searchButton.svg'
+import { BrowserAppContext } from "../../mockBrowserContext"
 
 
 const index = memo(() => {
+
+  const appContext = useContext(BrowserAppContext);
+  const {searchTerm, setSearchTerm} = appContext!;
+
   return (
     <div className="flex 
     sLaptop:gap-[1.333rem]
@@ -37,6 +42,8 @@ const index = memo(() => {
       focus-within:ring-SelectBlue
       ">
           <input 
+           value={searchTerm}
+           onChange={(e)=> setSearchTerm(e.target.value)}
            id="Search"
            className="
            sLaptop:text-[1rem]

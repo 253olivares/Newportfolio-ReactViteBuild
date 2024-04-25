@@ -1,6 +1,11 @@
-import { memo } from "react"
+import { memo, useContext } from "react"
+import { BrowserAppContext } from "../../mockBrowserContext"
 
 const index = memo(() => {
+
+  const appContext = useContext(BrowserAppContext);
+  const {liveDemos, setLiveDemo} = appContext!;
+
   return (
     <div className="
     flex flex-row items-center
@@ -9,7 +14,10 @@ const index = memo(() => {
      desktop:gap-[1rem]
      largeDesktop:gap-[1.25rem]
     ">
-      <input className="
+      <input
+       checked={liveDemos as boolean}
+       onChange={()=>setLiveDemo(x=>!x)}
+       className="
        block
        sLaptop:rounded-[0.167rem] 
        mLaptop:rounded-[0.208rem] 

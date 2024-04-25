@@ -8,6 +8,9 @@ import { SkillsContext } from './skillsContextAPI';
 import { useAppSelector } from '../../../../store/hook';
 import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
 
+import { fetchSkills } from '../../../../store/skillsSlice';
+import { store } from '../../../../store/store';
+
 const index = memo(() => {
 
   const appContext = useContext(SkillsContext);
@@ -22,9 +25,41 @@ const index = memo(() => {
 
   if(status === 'failed') {
     console.log(error);
-    display = "Skills Failed to load"
+    display = (
+      <div className='
+      w-full 
+      sLaptop:mt-[3.25rem]
+      mLaptop:mt-[4.25rem]
+      desktop:mt-[5rem]
+      largeDesktop:mt-[6.75rem]
+      flex flex-col justify-center items-center
+      sLaptop:text-lg
+      mLaptop:text-xl
+      desktop:text-2xl
+      largeDesktop:text-4xl
+      text-PrimaryWhite
+      '>
+        <p>Data Failed to load please try again.</p>
+        <button onClick={()=>store.dispatch(fetchSkills())}>Reload</button>
+      </div>
+    )
   } else if (status === 'loading') {
-    display = "Loading..."
+    display = (
+      <div className='w-full 
+      sLaptop:mt-[3.25rem]
+      mLaptop:mt-[4.25rem]
+      desktop:mt-[5rem]
+      largeDesktop:mt-[6.75rem]
+      flex justify-center items-center
+      sLaptop:text-lg
+      mLaptop:text-xl
+      desktop:text-2xl
+      largeDesktop:text-4xl
+      text-PrimaryWhite
+      '>
+        Loading....
+      </div>
+    )
   } else if (status === 'succeeded'){
     display = Object.entries(entities).map(([k,v], index) => 
       <Icons key={k} skill={v} loc={index} />
@@ -67,7 +102,7 @@ const index = memo(() => {
               largeDesktop:py-[1.856rem]
               px-[1.82%]
               w-full 
-              flex 
+              flex flex-row
               justify-between
               relative
               '>
