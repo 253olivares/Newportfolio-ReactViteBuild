@@ -30,7 +30,7 @@ const index = memo((
       break;
     case 'About Me':
       section="AboutMe"
-      imgcss = `sLaptop:w-[2.133rem] mLaptop:w-[2.667rem] desktop:w-[3.2rem] largeDesktop:w-[4rem]`
+      imgcss = `sLaptop:w-[1.40238rem] mLaptop:w-[1.74636rem] desktop:w-[2.1168rem] largeDesktop:w-[2.646rem]`
       break;
     case 'Portfolio':
       section = "Portfolio"

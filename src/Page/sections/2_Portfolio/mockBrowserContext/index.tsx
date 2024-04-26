@@ -12,7 +12,10 @@ export type mockBrowserContext = {
     tabSelect:"Programming" | "Art" | "UI / UX" , 
     setTabSelect: React.Dispatch<React.SetStateAction<"Programming" | "Art" | "UI / UX">>,
     openFilter: boolean, 
-    setOpenFilter: React.Dispatch<React.SetStateAction<boolean>>
+    setOpenFilter: React.Dispatch<React.SetStateAction<boolean>>,
+    selectedFilter: string[] , 
+    setSelectedFilter: React.Dispatch<React.SetStateAction<string[]>>,
+    labels:Record<string,string>
 }
 
 
@@ -28,6 +31,22 @@ export const PortfolioProvider = ({children}:{children:ReactElement}) => {
     const [tabSelect, setTabSelect] = useState<"Programming" | "Art" | "UI / UX">("Programming");  
     const [openFilter, setOpenFilter] = useState<boolean>(false); 
 
+    const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+    
+    const labels:Record<string,string> = {
+        'HTML' : '#E14E1D',
+        'CSS': '#0277BD',
+        'SASS': '#CD6799',
+        'Tailwind':'linear-gradient(82.5deg,#F5F5F5, #CD6799 19%,#3886EC 31%, #F5F5F5 )',
+        'JavaScript': '#CAB108',
+        'TypeScript': '#32A3EE',
+        'React': '#242938',
+        'Firebase': '#CF5E1C',
+        'PHP': '#7229D1',
+        'MySQL': '#F57C00'
+    }
+
+
     const contextValues = {
         tabRef,
         filterListRef,
@@ -35,7 +54,9 @@ export const PortfolioProvider = ({children}:{children:ReactElement}) => {
         searchTerm, setSearchTerm,
         liveDemos,setLiveDemo,
         tabSelect, setTabSelect,
-        openFilter, setOpenFilter
+        openFilter, setOpenFilter,
+        selectedFilter, setSelectedFilter,
+        labels
     }
 
     return <BrowserAppContext.Provider value={contextValues} >{children}</BrowserAppContext.Provider>

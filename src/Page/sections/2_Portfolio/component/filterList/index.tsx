@@ -1,11 +1,12 @@
 import { memo, useContext, useEffect } from "react";
 import { BrowserAppContext } from "../../mockBrowserContext";
-import closeBrowserIcon from '/assets/browser_closeButton.svg'
+import closeBrowserIcon from '/assets/browser_closeButton.svg';
+import FilterItems from '../individualFilters'
 
 const index = memo(() => {
 
     const appContext = useContext(BrowserAppContext);
-    const {filterListRef, setOpenFilter} = appContext!;
+    const {filterListRef, setOpenFilter, labels} = appContext!;
 
     useEffect(()=> {
       const clickOnOutside = (e:MouseEvent | TouchEvent)=> {
@@ -70,6 +71,34 @@ const index = memo(() => {
             desktop:w-[1.34rem]
             largeDesktop:w-[1.679rem]
             " src={closeBrowserIcon} alt="" />
+          </div>
+          <div className="
+            flex flex-col
+            sLaptop:px-[1.689rem]
+            mLaptop:px-[2.104rem]
+            desktop:px-[2.55rem]
+            largeDesktop:px-[3.188rem]
+            sLaptop:py-[1.258rem]
+            mLaptop:py-[1.567rem]
+            desktop:py-[1.9rem]
+            largeDesktop:py-[2.375rem]
+            sLaptop:gap-[.894rem]
+            mLaptop:gap-[1.11rem]
+            desktop:gap-[1.35rem]
+            largeDesktop:gap-[1.688rem]
+            overflow-y-scroll
+            sLaptop:h-[calc(100%-1.49rem)]
+            mLaptop:h-[calc(100%-1.856rem)]
+            desktop:h-[calc(100%-2.25rem)]
+            largeDesktop:h-[calc(100%-2.813rem)]
+            scrollSection
+            relative
+          ">
+            {
+              Object.entries(labels).map(([k,v],index)=> (
+                <FilterItems key={index} tag={k} color={v}  />
+              ))
+            }
           </div>
       </div>
   )

@@ -15,7 +15,7 @@ export type skillsStateType = {
 // create initial state for our entity state
 type initialStateType = {
     ids:string[],
-    entities:Record<number, skillsStateType>,
+    entities:Record<string, skillsStateType>,
     status: 'idle'|'loading'|'succeeded'|'failed',
     error: null|string
 }

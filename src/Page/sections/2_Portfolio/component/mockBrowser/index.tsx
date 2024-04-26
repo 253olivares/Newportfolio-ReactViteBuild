@@ -5,6 +5,7 @@ import WindowContent from '../windowContent';
 
 const index = memo(() => {
 
+
   return (
     <div className="
     mockBrowser

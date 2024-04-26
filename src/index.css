@@ -253,6 +253,15 @@
 
 @layer utilities {
 
+    
+    .scrollSection::-webkit-scrollbar{
+        background:transparent;
+    }
+    .scrollSection::-webkit-scrollbar-thumb{
+        background: var(--rDarkGreen);
+        border-radius: 20px;
+    }
+
     /* fix overflow bug */
     .overflowFix{
         -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); /* this fixes the overflow:hidden in Chrome/Opera */
