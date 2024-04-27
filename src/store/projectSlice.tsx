@@ -1,4 +1,4 @@
-import { createAsyncThunk, createEntityAdapter, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createEntityAdapter, createSelector, createSlice } from "@reduxjs/toolkit";
 import axios, { CancelTokenSource } from "axios";
 import { RootState } from "./store";
 
@@ -6,6 +6,7 @@ export type projectStateType = {
     id:number,
     projectName: string,
     projectURL: string,
+    section:string,
     tags: string[],
     live: boolean,
     link:string
@@ -52,7 +53,7 @@ export const fetchProjects = createAsyncThunk('portfolio/fetchProjects',async(_,
 
 
 const projectSlice = createSlice({
-    name:'projects',
+    name:'project',
     initialState,
     reducers:{},
     extraReducers(builder){
@@ -77,17 +78,32 @@ const projectSlice = createSlice({
 })
 
 export const {
-    selectAll,
-    selectById,
-    selectIds,
-    selectEntities
-} = projectsAdapater.getSelectors((state:{projects:initialStateType})=> state.projects);
+    selectAll
+} = projectsAdapater.getSelectors((state: {
+    project:initialStateType
+})=>state.project)
 
-// selector functions
+// selector function    s
 export const getProjectState = (state:RootState) => state;
 export const getProjectStatus = (state:RootState) => state.project.status;
 export const getProjectError = (state:RootState) => state.project.error;
  
 // here we will get our custom selectors that take in our filters and searches.
+
+export const filterProjects = createSelector(
+    [selectAll  ,(_,searchTerm,tabSelect,liveDemos,selectFilter)=>{
+        return {
+            'query':searchTerm,
+            'tab':tabSelect,
+            'live':liveDemos,
+            'filterList':selectFilter
+        }
+    }],
+    (projects,filters)=>{
+        const {query,tab,live,filterList} = filters;
+
+        return <>{"Query:"+query+" Tab:"+tab+" live:"+live+" FilterList:"+filterList}</>
+    }
+)
 
 export default projectSlice.reducer;

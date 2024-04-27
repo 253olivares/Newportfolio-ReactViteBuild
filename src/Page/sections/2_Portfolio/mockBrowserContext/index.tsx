@@ -30,7 +30,6 @@ export const PortfolioProvider = ({children}:{children:ReactElement}) => {
     const [liveDemos,setLiveDemo] = useState<boolean>(false);
     const [tabSelect, setTabSelect] = useState<"Programming" | "Art" | "UI / UX">("Programming");  
     const [openFilter, setOpenFilter] = useState<boolean>(false); 
-
     const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
     
     const labels:Record<string,string> = {

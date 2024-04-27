@@ -3,11 +3,16 @@ import Result from '../results';
 import FilterSection from '../filterSection';
 import FilterList from '../filterList'
 import { BrowserAppContext } from "../../mockBrowserContext";
+import { useAppSelector } from "../../../../../store/hook";
+import { getProjectError, getProjectState, getProjectStatus } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
 
   const appContext = useContext(BrowserAppContext);
   const {openFilter} = appContext!;
+
+  const status = useAppSelector(getProjectStatus);
+  const error = useAppSelector(getProjectError);
 
   return (
     <div className="w-full h-full bg-PrimaryWhite
@@ -46,7 +51,7 @@ const index = memo(() => {
            <FilterSection />
            <hr className="w-fill
             sLaptop:mt-[.36464rem]
-            mLaptop:mt-[.454rem]
+            mLaptop:mt-[.454rem]  
             desktop:mt-[0.5504rem]
             largeDesktop:mt-[0.688rem]
             sLaptop:h-[0.167rem]

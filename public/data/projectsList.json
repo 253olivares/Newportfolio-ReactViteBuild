@@ -1,3 +1,22 @@
 {
-  "Projects": []
+  "Projects": [
+    {
+      "id": 0,
+      "projectName": "test",
+      "projectURL": "test",
+      "section": "test",
+      "tags": ["HTML"],
+      "live": false,
+      "link": "url.com"
+    },
+    {
+      "id": 1,
+      "projectName": "test",
+      "projectURL": "test",
+      "section": "test",
+      "tags": ["HTML"],
+      "live": false,
+      "link": "url.com"
+    }
+  ]
 }

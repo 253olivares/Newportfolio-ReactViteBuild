@@ -10,7 +10,6 @@ const index = memo(({tag,color}: {tag:string, color:string}) => {
 
     if(selectedFilter.length <=0){
         selected = false;
-        console.log('emptyArray')
     } else {
         const test = selectedFilter.find((tags) => tags === tag);
         if(test) {selected=true }
