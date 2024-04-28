@@ -17,6 +17,13 @@ type initialStateType = {
     entities:Record<number, projectStateType>,
     status: 'idle'|'loading'|'succeeded'|'failed',
     error: null|string
+    filters: {
+        searchTerm: string,
+        tabSelect: "Programming" | "Art" | "UI / UX",
+        liveDemos: boolean,
+        selectedFilter:string[]
+    }
+    openFilter:boolean
 }
 
 const projectsAdapater = createEntityAdapter({
@@ -26,7 +33,14 @@ const projectsAdapater = createEntityAdapter({
 
 const initialState:initialStateType = projectsAdapater.getInitialState({
     status: 'idle',
-    error: null
+    error: null,
+    filters:{
+        searchTerm:'',
+        tabSelect:"Programming",
+        liveDemos:false,
+        selectedFilter:[]
+    },
+    openFilter:false
 })
 
 
@@ -101,8 +115,7 @@ export const filterProjects = createSelector(
     }],
     (projects,filters)=>{
         const {query,tab,live,filterList} = filters;
-
-        return <>{"Query:"+query+" Tab:"+tab+" live:"+live+" FilterList:"+filterList}</>
+        return <>{"Query:"+query+" Tab:"+tab+" live:"+live+" FilterList:"+filterList+"Projects: "+projects}</>
     }
 )
 

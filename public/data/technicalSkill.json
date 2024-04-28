@@ -26,7 +26,7 @@
     },
     "Javascript": {
       "id": 3,
-      "title": "Javascript",
+      "title": "JavaScript",
       "imgSRC": "JavaScript.svg",
       "skillLevel": "Proficient",
       "desc": "My most recent development. I have recently began to utilize typescript to strengthen my JavaScript coding. This preprocessor helps eliminate type errors within my code and create a stronger application.",
@@ -34,7 +34,7 @@
     },
     "Typescript": {
       "id": 4,
-      "title": "Typescript",
+      "title": "TypeScript",
       "imgSRC": "TypeScript.svg",
       "skillLevel": "Intermediate",
       "desc": "My most recent development. I have recently began to utilize typescript to strengthen my JavaScript coding. This preprocessor helps eliminate type errors within my code and create a stronger application.",

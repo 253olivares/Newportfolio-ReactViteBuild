@@ -6,8 +6,7 @@ import { SkillsContext } from "../../skillsContextAPI";
 const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
 
    const appContext = useContext(SkillsContext);
-   if(!appContext) return null;
-   const {descRef} = appContext;
+   const {descRef} = appContext!;
 
    if(!selectSkill) {
       return

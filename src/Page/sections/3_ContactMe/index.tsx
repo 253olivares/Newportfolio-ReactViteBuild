@@ -1,5 +1,5 @@
 import { useContext, memo } from "react";
-import { AppContext } from "../../contextSidebarAPI";
+import { AppContext } from "../../sidebar/contextSidebarAPI";
 import Footer from '../../footer'
 import Form from './component/contactForm'
 import DownloadPDF from './component/downloadResume';

@@ -1,8 +1,7 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AppContext } from "../../../contextSidebarAPI";
-
+import { useAppDispatch, useAppSelector } from "../../../../store/hook";
+import { getCurrentSection,setScrollState, setCurrentSelection } from "../../../../store/sidebarSlice";
 
 const index = memo((
   {
@@ -16,9 +15,9 @@ const index = memo((
   }
 ) => {
 
-  const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {currentSection, setCurrentSection, setScrollState} = appContext;
+  const dispatch  = useAppDispatch()
+
+  const currentSection = useAppSelector(getCurrentSection);
 
   let section:string =''
   let imgcss:string = ''
@@ -47,8 +46,8 @@ const index = memo((
     <Link to={'/Newportfolio-ReactViteBuild/'}>
         <div 
         onClick={()=>{
-          setScrollState(section);
-          setCurrentSection(section);
+          dispatch(setCurrentSelection(section));
+          dispatch(setScrollState(item));
         }}
         className={`flex flex-col
         w-full 

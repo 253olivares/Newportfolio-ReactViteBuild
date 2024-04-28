@@ -1,30 +1,35 @@
 import { useContext, useEffect, memo } from "react"
-import { AppContext } from "./contextSidebarAPI";
+import { AppContext } from "./sidebar/contextSidebarAPI";
 import Section1 from './sections/0_Introduction';
 import Section2 from './sections/1_AboutMe';
 import Section3 from './sections/2_Portfolio';
 import Section4 from './sections/3_ContactMe';
+import { useAppDispatch, useAppSelector } from "../store/hook";
+import { getScrollState, setCurrentSelection, setScrollState } from "../store/sidebarSlice";
 
 const index = memo(() => {
 
+  const dispatch = useAppDispatch();
+
   const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {pageRef, setCurrentSection, scrollState, setScrollState} = appContext;
+  const {pageRef} = appContext!;
+
+  const scrollState = useAppSelector(getScrollState);
 
   useEffect(()=> {
     const scrollCheck = () => {
       if(window.scrollY + (window.innerHeight*.35) >= pageRef.current[3].offsetTop) {
-        setCurrentSection(pageRef.current[3].id);
-        setScrollState('');
+        dispatch(setCurrentSelection(pageRef.current[3].id))
+        dispatch(setScrollState(''))
       } else if (window.scrollY+ (window.innerHeight*.35) >= pageRef.current[2].offsetTop) {
-        setCurrentSection(pageRef.current[2].id);
-        setScrollState('');
+        dispatch(setCurrentSelection(pageRef.current[2].id))
+        dispatch(setScrollState(''))
       } else if (window.scrollY + (window.innerHeight*.35) >= pageRef.current[1].offsetTop) {
-        setCurrentSection(pageRef.current[1].id);
-        setScrollState('');
+        dispatch(setCurrentSelection(pageRef.current[1].id))
+        dispatch(setScrollState(''))
       } else if (window.scrollY >= pageRef.current[0].offsetTop) {
-        setCurrentSection(pageRef.current[0].id);
-        setScrollState('');
+        dispatch(setCurrentSelection(pageRef.current[0].id))
+        dispatch(setScrollState(''))
       }
     }
     window.addEventListener('scroll',scrollCheck,true);
@@ -40,7 +45,7 @@ const index = memo(() => {
           behavior:'smooth'
         })
         break;
-      case "AboutMe":
+      case "About Me":
         pageRef.current[1].scrollIntoView({
           behavior:'smooth'
         })
@@ -50,7 +55,7 @@ const index = memo(() => {
           behavior:'smooth'
         })
         break;
-      case "ContactMe":
+      case "Contact Me":
         pageRef.current[3].scrollIntoView({
           behavior:'smooth'
         })

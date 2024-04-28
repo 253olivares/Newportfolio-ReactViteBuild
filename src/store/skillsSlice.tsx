@@ -1,4 +1,4 @@
-import { createAsyncThunk, createEntityAdapter, createSlice} from '@reduxjs/toolkit';
+import { PayloadAction,createAsyncThunk, createEntityAdapter, createSlice} from '@reduxjs/toolkit';
 import { RootState } from './store';
 import axios, { CancelTokenSource} from 'axios';
 
@@ -17,8 +17,10 @@ type initialStateType = {
     ids:string[],
     entities:Record<string, skillsStateType>,
     status: 'idle'|'loading'|'succeeded'|'failed',
-    error: null|string
+    error: null|string,
+    selectSkill: string
 }
+
 
 // create our entity state
 const skillsAdapter = createEntityAdapter({
@@ -30,7 +32,8 @@ const skillsAdapter = createEntityAdapter({
 // create our state tue it into our adapter
 const initialState:initialStateType = skillsAdapter.getInitialState({
     status: 'idle',
-    error:null
+    error:null,
+    selectSkill: 'HTML'
 })
 
 // asyncthunk function that fetches from our data store
@@ -67,7 +70,11 @@ export const fetchSkills = createAsyncThunk('skills/fetchSkills',async(_,{reject
 const skillSlice = createSlice({
     name:'skills',
     initialState,
-    reducers: {},
+    reducers: {
+        changeSkill(state, action:PayloadAction<string>) {
+            state.selectSkill = action.payload;
+        }
+    },
     extraReducers(builder){
         // listeners for our async thunk functions
         builder
@@ -111,6 +118,9 @@ export const {
 export const getSkillsState = (state:RootState) => state;
 export const getSkillsStatus = (state:RootState) => state.skills.status;
 export const getSkillsError = (state:RootState) => state.skills.error;
+export const getSelectSkill = (state:RootState) => state.skills.selectSkill;
+
+export const {changeSkill} = skillSlice.actions;
 
 // export our reducer
 export default skillSlice.reducer;

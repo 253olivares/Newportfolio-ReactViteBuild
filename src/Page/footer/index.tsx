@@ -1,4 +1,4 @@
-import { AppContext } from "../contextSidebarAPI";
+import { AppContext } from "../sidebar/contextSidebarAPI";
 import { useContext } from "react";
 import FooterBack from '/assets/Footer.svg'
 import Character2 from '/assets/character_2.svg'

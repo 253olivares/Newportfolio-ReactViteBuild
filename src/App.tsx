@@ -1,6 +1,6 @@
 import { Fragment } from 'react/jsx-runtime'
 import { Route, Routes } from "react-router-dom"
-import { PageProvider } from './Page/contextSidebarAPI'
+import { PageProvider } from './Page/sidebar/contextSidebarAPI'
 import ErrorPage from './Page/404'
 import Layout from './Page/layout'
 import Page from './Page/index'

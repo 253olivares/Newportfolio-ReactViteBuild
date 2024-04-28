@@ -1,31 +1,13 @@
-import Character1 from '/assets/character_1.svg';
-import HomeIcon from '/assets/homeIcon.svg';
-import AboutMeIcon from '/assets/aboutmeIcon.svg';
-import PortfolioIcon from '/assets/portfolioIcon.svg';
-import ContactMeIcon from '/assets/contactmeIcon.svg';
-import HomeIconSelected from '/assets/HomeIconSelected.svg';
-import AboutMeIconSelected from '/assets/aboutmeIconSelected.svg';
-import PortfolioIconSelected from '/assets/portfolioIconSelected.svg';
-import ContactMeIconSelected from '/assets/contactmeIconSelected.svg';
+
+import { memo, useContext } from 'react';
+import { AppContext } from './contextSidebarAPI';
 import Doll from './component/doll'
 import NavItems from './component/navItems'
-import { memo } from 'react';
 
 const index = memo(() => {
 
-  const svgArray:Record<string,string> = {
-    "Home" : HomeIcon,
-    "About Me": AboutMeIcon ,
-    "Portfolio": PortfolioIcon,
-    "Contact Me": ContactMeIcon
-  }
-
-  const selectSVGArray:string[] = [
-    HomeIconSelected,
-    AboutMeIconSelected,
-    PortfolioIconSelected,
-    ContactMeIconSelected
-  ]
+  const appContext = useContext(AppContext);
+  const {svgArray,selectSVGArray,Character1} = appContext!;
 
   return (
   <div className="

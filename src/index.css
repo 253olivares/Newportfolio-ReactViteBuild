@@ -32,6 +32,22 @@
 }
 
 @layer components{
+
+    .bubble {
+        @apply 
+        sLaptop:w-[2.385rem]
+        mLaptop:w-[2.97rem]
+        desktop:w-[3.6rem]
+        largeDesktop:w-[4.5rem]
+        sLaptop:h-[2.385rem] 
+        mLaptop:h-[2.97rem]
+        desktop:h-[3.6rem]
+        largeDesktop:h-[4.5rem]  
+        opacity-75
+        block 
+        rounded-full
+    }
+
     .mockBrowserSelected {
         @apply 
         sLaptop:w-[8.9rem]
@@ -253,7 +269,30 @@
 
 @layer utilities {
 
-    
+    .animationDelay1s {
+        animation-direction: reverse;
+        animation-delay: .25s;
+    }
+    .animationDelay2s {
+        animation-direction: reverse;
+        animation-delay: .5s;
+    } 
+    .animationDelay3s {
+        animation-direction: reverse;
+        animation-delay: .75s;
+    } 
+
+    @keyframes reversebounce {
+        0%,100% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+        }
+        50% {
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+        }
+    }
+
     .scrollSection::-webkit-scrollbar{
         background:transparent;
     }

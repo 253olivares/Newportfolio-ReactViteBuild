@@ -1,12 +1,11 @@
-import square from '/assets/backgroundStrips1.svg';
-import pointer from '/assets/pointer.svg'
 import DescBox from './components/description';
 import Icons from './components/icons';
+import Loading from '../../loading';
 import { memo, useContext} from 'react';
 import { SkillsContext } from './skillsContextAPI';
 
 import { useAppSelector } from '../../../../store/hook';
-import { getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
+import { getSelectSkill, getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
 
 import { fetchSkills } from '../../../../store/skillsSlice';
 import { store } from '../../../../store/store';
@@ -14,12 +13,12 @@ import { store } from '../../../../store/store';
 const index = memo(() => {
 
   const appContext = useContext(SkillsContext);
-  if(!appContext) return null;
-  const {arrowRef,selectSkill} = appContext
+  const {arrowRef,square,pointer} = appContext!
 
   const entities = useAppSelector(selectEntities);
   const status = useAppSelector(getSkillsStatus);
   const error = useAppSelector(getSkillsError);
+  const selectSkill = useAppSelector(getSelectSkill);
 
   let display
 
@@ -28,36 +27,47 @@ const index = memo(() => {
     display = (
       <div className='
       w-full 
-      sLaptop:mt-[3.25rem]
-      mLaptop:mt-[4.25rem]
-      desktop:mt-[5rem]
-      largeDesktop:mt-[6.75rem]
+      sLaptop:min-h-[21.5rem]
+      mLaptop:min-h-[28rem]
+      desktop:min-h-[35rem]
+      largeDesktop:min-h-[45rem]
       flex flex-col justify-center items-center
-      sLaptop:text-lg
-      mLaptop:text-xl
-      desktop:text-2xl
-      largeDesktop:text-4xl
+      sLaptop:gap-[1.59rem]
+      mLaptop:gap-[1.98rem]
+      desktop:gap-[2.4rem]
+      largeDesktop:gap-[3rem]
       text-PrimaryWhite
       '>
-        <p>Data Failed to load please try again.</p>
-        <button onClick={()=>store.dispatch(fetchSkills())}>Reload</button>
+        <p className='
+         sLaptop:text-[1.9875rem]
+         mLaptop:text-[2.475rem]
+         desktop:text-[3rem]
+         largeDesktop:text-6xl
+         font-semibold
+        '>Data Failed to load please try again.</p>
+        <button
+         className='
+          sLaptop:text-[1.59rem]
+          mLaptop:text-[1.98rem]
+          desktop:text-[2.4rem]
+          largeDesktop:text-5xl
+          hover:cursor-pointer
+          hover:underline
+         '
+        onClick={()=>store.dispatch(fetchSkills())}>Reload</button>
       </div>
     )
   } else if (status === 'loading') {
     display = (
-      <div className='w-full 
-      sLaptop:mt-[3.25rem]
-      mLaptop:mt-[4.25rem]
-      desktop:mt-[5rem]
-      largeDesktop:mt-[6.75rem]
+      <div className='
+      w-full 
       flex justify-center items-center
-      sLaptop:text-lg
-      mLaptop:text-xl
-      desktop:text-2xl
-      largeDesktop:text-4xl
-      text-PrimaryWhite
+      sLaptop:min-h-[26.5rem]
+      mLaptop:min-h-[33rem]
+      desktop:min-h-[40rem]
+      largeDesktop:min-h-[50rem]
       '>
-        Loading....
+        <Loading />
       </div>
     )
   } else if (status === 'succeeded'){

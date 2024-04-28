@@ -4,7 +4,7 @@ import FilterSection from '../filterSection';
 import FilterList from '../filterList'
 import { BrowserAppContext } from "../../mockBrowserContext";
 import { useAppSelector } from "../../../../../store/hook";
-import { getProjectError, getProjectState, getProjectStatus } from "../../../../../store/projectSlice";
+import { getProjectError, getProjectStatus } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
 

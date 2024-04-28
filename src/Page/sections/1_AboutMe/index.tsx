@@ -1,14 +1,13 @@
 import { useContext, memo } from "react";
-import { AppContext } from "../../contextSidebarAPI";
 import Part1Profile from './part1Profile';
 import Part2Skills from './part2Skills';
+import { AppContext } from "../../sidebar/contextSidebarAPI";
 import { SkillProvider } from "./part2Skills/skillsContextAPI";
 
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {pageRef} = appContext;
+  const {pageRef} = appContext!;
 
   return (
     <div  ref={el => {

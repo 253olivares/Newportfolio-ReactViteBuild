@@ -19,6 +19,8 @@ const index = memo(() => {
     backgroundSelectRef.current!.style.left = `${tabOffset}px`;
   }
 
+  console.log('test:'+ tabs)
+
   return (
     <div className="flex 
     flex-row 

@@ -1,16 +1,16 @@
 import { useContext, useLayoutEffect } from "react";
-import { AppContext } from "../contextSidebarAPI";
+import { AppContext } from "../sidebar/contextSidebarAPI";
+import { useAppDispatch } from "../../store/hook";
+import { setCurrentSelection } from "../../store/sidebarSlice";
 
 const index = () => {
 
-  const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {setCurrentSection} = appContext;
+  const dispatch = useAppDispatch();
   
   // use layout cuz otherwise causes an error when setting our state
   useLayoutEffect(()=> {
     // change our section 
-    setCurrentSection('ErrorPage');
+    dispatch(setCurrentSelection('ErrorPage'));
   },[])
 
   return (

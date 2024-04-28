@@ -1,20 +1,23 @@
 import { memo, useContext, useEffect} from "react";
 import { SkillsContext } from "../../skillsContextAPI";
-import { skillsStateType } from "../../../../../../store/skillsSlice";
+import { changeSkill, getSelectSkill, skillsStateType } from "../../../../../../store/skillsSlice";
+import { useAppDispatch, useAppSelector } from "../../../../../../store/hook";
 
 const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
+  const dispatch = useAppDispatch();
 
   const appContext = useContext(SkillsContext);
-  if(!appContext) return null;
-  const {iconsRef,arrowRef,descRef,selectSkill, setSelectSkill} = appContext
+  const {iconsRef,arrowRef,descRef} = appContext!;
+
+  const selectSkill = useAppSelector(getSelectSkill);
 
   useEffect(()=> {
     // function that will reposition our arrow every time our mouse
     // hovers a skill
     const setSelect = () => {
       // sets our skill and triggers a rerender our description
-      setSelectSkill(_=>skill.title);
-      
+      dispatch(changeSkill(skill.title));
+
       // reposition our arrow
       if (!arrowRef.current) return
 

@@ -1,20 +1,14 @@
-import { memo, useContext } from "react"
+import { memo, useContext, useEffect, useMemo} from "react"
 import { BrowserAppContext } from "../../mockBrowserContext/index.tsx"
-import { filterProjects, getProjectState, selectAll } from "../../../../../store/projectSlice.tsx";
+import { filterProjects, selectAll} from "../../../../../store/projectSlice.tsx";
 import { useAppSelector } from "../../../../../store/hook.tsx";
 
 const index = memo(() => {
 
-  // const [content, setContent] = useState<JSX.Element>();
-
-  const appContext = useContext(BrowserAppContext);
-  // @ts-ignore
-  const { searchTerm,tabSelect, liveDemos, selectedFilter } = appContext!;
-
-  const content = useAppSelector((state)=>filterProjects(state,searchTerm,tabSelect,liveDemos,selectedFilter))
+  
 
   return (
-    <div className="
+    <div className="  
     w-fill
     sLaptop:min-h-[23.467rem]
     mLaptop:min-h-[29.333rem]
@@ -27,7 +21,7 @@ const index = memo(() => {
     overflow-hidden
     overflowFix
     ">
-      {content}
+  
     </div>
   )
 })

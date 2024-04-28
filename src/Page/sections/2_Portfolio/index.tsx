@@ -1,5 +1,5 @@
 import { memo, useContext } from "react";
-import { AppContext } from "../../contextSidebarAPI";
+import { AppContext } from "../../sidebar/contextSidebarAPI";
 import MockBrowser from './component/mockBrowser'
 import { PortfolioProvider } from "./mockBrowserContext";
 
