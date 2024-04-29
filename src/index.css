@@ -63,10 +63,11 @@
         desktop:rounded-[0.6048rem]
         largeDesktop:rounded-[.756rem]
         relative
-        sLaptop:hover:ring-[]
-        mLaptop:hover:ring-[]
+        sLaptop:hover:ring-[0.10918rem]
+        mLaptop:hover:ring-[0.13596rem]
         desktop:hover:ring-[0.1648rem]
         largeDesktop:hover:ring-[0.206rem]
+        hover:ring-offset-0
         hover:ring-SelectBlue
         hover:cursor-pointer
     }

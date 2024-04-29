@@ -2,6 +2,7 @@ import { PayloadAction,createAsyncThunk, createEntityAdapter, createSlice} from 
 import { RootState } from './store';
 import axios, { CancelTokenSource} from 'axios';
 
+
 // create type for our json document data
 export type skillsStateType = {
     id:number,
@@ -50,7 +51,7 @@ export const fetchSkills = createAsyncThunk('skills/fetchSkills',async(_,{reject
         })
         // make a fetch request using axios
         // thanks to axios will just return our raw data instead of having to extract it
-        const response = await axios.get('http://localhost:5173/Newportfolio-ReactViteBuild/data/technicalSkill.json',{cancelToken:source.token})
+        const response = await axios.get('https://253olivares.github.io/Newportfolio-ReactViteBuild/data/technicalSkill.json',{cancelToken:source.token})
         // catch any errors
         .catch(()=> {
             throw new Error("Api had issues");

@@ -10,29 +10,56 @@ const index = memo(({project}:{project:projectStateType}) => {
     projectCSS
     '>
         <img className='
-        w-[20.797rem] 
-        h-[23.822rem] 
-        rounded-[.756rem]' src={`http://localhost:5173/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}`} alt={projectName} />
+        sLaptop:w-[11.02241rem]
+        mLaptop:w-[13.72602rem]
+        desktop:w-[16.6376rem]
+        largeDesktop:w-[20.797rem]
+        sLaptop:h-[12.62566rem]
+        mLaptop:h-[15.72252rem]
+        desktop:h-[19.0576rem]
+        largeDesktop:h-[23.822rem] 
+        sLaptop:rounded-[0.40068rem]
+        mLaptop:rounded-[0.49896rem]
+        desktop:rounded-[0.6048rem]
+        largeDesktop:rounded-[.756rem]' src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}`} alt={projectName} />
         <div className='
         flex flex-col 
-        gap-[0.688rem]
+        sLaptop:gap-[0.36464rem]
+        mLaptop:gap-[0.45408rem]
+        desktop:gap-[0.5504rem]
+        largeDesktop:gap-[0.688rem]
         w-full
         text-PrimaryWhite
         bg-GlassBackground
         absolute 
         bottom-0 left-0 
-        py-[1.125rem]
-        pl-[0.688rem]
-        rounded-b-[.756rem]
+        sLaptop:py-[0.59625rem]
+        mLaptop:py-[0.7425rem]
+        desktop:py-[0.9rem]
+        largeDesktop:py-[1.125rem]
+        sLaptop:pl-[0.36464rem]
+        mLaptop:pl-[0.45408rem]
+        desktop:pl-[0.5504rem]
+        largeDesktop:pl-[0.688rem]
+        sLaptop:rounded-b-[0.40068rem]
+        mLaptop:rounded-b-[0.49896rem]
+        desktop:rounded-b-[0.6048rem]
+        largeDesktop:rounded-b-[.756rem]
         '>
             <h1 className='
              font-semibold
-             text-[1.375rem]
+             sLaptop:text-[0.72875rem]
+             mLaptop:text-[0.91575rem]
+             desktop:text-[1.1rem]
+             largeDesktop:text-[1.375rem]
              leading-none
             '>{projectName}</h1>
             <p className='
              font-semibold
-             text-[1.031rem]
+             sLaptop:text-[0.54643rem]
+             mLaptop:text-[0.68046rem]
+             desktop:text-[0.8248rem]
+             largeDesktop:text-[1.031rem]
              leading-none
              opacity-80
             '>{date}</p>
