@@ -744,15 +744,32 @@ Error generating stack: `+s.message+`
                  rounded-full\r
                 `}),x.jsx("span",{className:`\r
                 spanCSSTags\r
-                `,children:e})]}):t=x.jsx("span",{className:`\r
+                `,children:"Live Demo"})]}):t=x.jsx("span",{className:`\r
         spanCSSTags\r
         `,children:e}),x.jsx("div",{className:`\r
     flex flex-row\r
+    justify-center\r
+    items-center \r
     sLaptop:gap-[0.10918rem]\r
     mLaptop:gap-[0.13596rem]\r
     desktop:gap-[0.1648rem]\r
     largeDesktop:gap-[0.206rem]\r
-    items-center \r
+    sLaptop:py-[0.14893rem]\r
+    mLaptop:py-[0.18546rem]\r
+    desktop:py-[0.2248rem]\r
+    largeDesktop:py-[0.281rem]\r
+    sLaptop:w-[2.51432rem]\r
+    mLaptop:w-[3.13104rem]\r
+    desktop:w-[3.7952rem]\r
+    largeDesktop:w-[4.744rem]\r
+    sLaptop:rounded-[0.05459rem]\r
+    mLaptop:rounded-[0.06798rem]\r
+    desktop:rounded-[0.0824rem]\r
+    largeDesktop:rounded-[0.103rem]\r
+    sLaptop:mb-[0.29839rem]\r
+    mLaptop:mb-[0.37158rem]\r
+    desktop:mb-[0.4504rem]\r
+    largeDesktop:mb-[0.563rem]\r
     `,style:{background:n},children:t})},M3=({tag:e,demo:t,projectName:n,date:r})=>x.jsxs("div",{className:`\r
     flex flex-col\r
     w-full\r
@@ -760,6 +777,10 @@ Error generating stack: `+s.message+`
     bottom-0 left-0 \r
     `,children:[x.jsxs("div",{className:`\r
         flex flex-row flex-wrap\r
+        sLaptop:gap-[0.29839rem]\r
+        mLaptop:gap-[0.37158rem]\r
+        desktop:gap-[0.4504rem]\r
+        largeDesktop:gap-[0.563rem]\r
         `,children:[t?x.jsx(Sm,{tag:"Live"}):"",e.map(o=>x.jsx(Sm,{tag:o}))]}),x.jsxs("div",{className:`\r
             flex flex-col\r
             sLaptop:gap-[0.36464rem]\r
