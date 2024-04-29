@@ -1,6 +1,6 @@
-import { memo } from 'react'
 import downloadSVG from '/assets/downloadResume.svg'
 import resume from '/Olivares_Resume2024_Current.pdf';
+import { memo } from 'react';
 
 const index = memo(() => {
   return (
@@ -18,6 +18,8 @@ const index = memo(() => {
             bg-SiteYellow">
             <a href={resume} download>
               <img className="
+              transition-all
+              duration-200
               sLaptop:w-[18.72rem]
               mLaptop:w-[23.4rem]
               desktop:w-[28.08rem]

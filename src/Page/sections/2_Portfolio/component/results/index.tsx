@@ -8,12 +8,35 @@ const index = memo(() => {
 
   const content = useAppSelector(filterProjects);
 
-  console.log(content);
-
   return (
+    content.length === 0 ? 
+    <p className="
+     w-full
+     sLaptop:text-[1.9875rem]
+     mLaptop:text-[2.475rem]
+     desktop:text-[3rem]
+     largeDesktop:text-6xl   
+     leading-none
+     font-semibold
+     sLaptop:h-[23.467rem]
+     mLaptop:h-[29.333rem]
+     desktop:h-[35.2rem]
+     largeDesktop:h-[44rem]
+     flex items-center
+     justify-center
+    ">
+      No results found!
+    </p>
+    :
     <div className={`
     justify-evenly
     pr-[2rem]
+    ${content.length<=3 ?   `
+    overscroll-contain
+    `: `
+    overflow-y-scroll
+    overflowFix
+    `}
     projectFlexDiv
     `}>
       <AnimatePresence>
@@ -24,7 +47,7 @@ const index = memo(() => {
         }
       </AnimatePresence>
       {
-        content.length<3 ?
+        content.length<=3 ?
         <Fragment>
           <div className="
           block

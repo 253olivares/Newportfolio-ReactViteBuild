@@ -51,8 +51,6 @@
         mLaptop:pt-[0.846rem]
         desktop:pt-[1.016rem]
         largeDesktop:pt-[1.25rem]
-        overflow-y-scroll
-        overflowFix
     }
 
     .projectCSS{
@@ -311,6 +309,9 @@
         largeDesktop:text-[3.75rem] 
         leading-tight   
         font-medium
+        relative
+        flex justify-between
+        items-center
     }
 }
 

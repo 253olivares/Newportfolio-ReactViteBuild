@@ -122,6 +122,8 @@ const index = memo(() => {
                 <img
                 ref={arrowRef}
                 className={`
+                transition-[left]
+                duration-150
                 absolute
                 sLaptop:h-[1.716rem] mLaptop:h-[2.145rem] desktop:h-[2.574rem] largeDesktop:h-[3.218rem]
                 left-[03.20%]

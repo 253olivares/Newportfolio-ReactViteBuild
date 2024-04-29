@@ -46,7 +46,11 @@ const index = memo(() => {
     desktop:pl-[2rem]
     largeDesktop:pl-[3.125rem]
     ">
-    <div ref={backgroundSelectRef} className="mockBrowserSelected">
+    <div ref={backgroundSelectRef} className="
+    transition-all
+    duration-100
+    mockBrowserSelected
+    ">
 
     </div>
     {
@@ -66,8 +70,10 @@ const index = memo(() => {
         mLaptop:rounded-[.33rem]
         desktop:rounded-[.4rem]
         largeDesktop:rounded-[0.5rem]
-        ${x=== tabSelect ? ` transition-none text-SidebarGray` : `
-        transition-all
+        ${x=== tabSelect ? `
+        transition-none text-SidebarGray
+        ` : `
+        transition-[background-color]
         duration-500
         text-PrimaryWhite 
         hover:bg-GlassBackground 

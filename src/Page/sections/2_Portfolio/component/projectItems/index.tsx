@@ -4,7 +4,6 @@ import {motion} from 'framer-motion';
 
 const index = memo(({project}:{project:projectStateType}) => {
     const {id,projectName,projectURL, imgURL, date} = project;
-    console.log(imgURL);
 
   return (
     <motion.div 
