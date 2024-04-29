@@ -17,6 +17,10 @@ const projectInfo = ({tag,demo,projectName,date}:{tag:string[],demo:boolean,proj
         mLaptop:gap-[0.37158rem]
         desktop:gap-[0.4504rem]
         largeDesktop:gap-[0.563rem]
+        sLaptop:px-[0.29839rem]
+        mLaptop:px-[0.37158rem]
+        desktoP:px-[0.4504rem]
+        largeDesktop:px-[0.563rem]
         ">
             {
                 demo ? 
