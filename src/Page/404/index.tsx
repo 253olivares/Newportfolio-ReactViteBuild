@@ -1,5 +1,4 @@
-import { useContext, useLayoutEffect } from "react";
-import { AppContext } from "../sidebar/contextSidebarAPI";
+import { useLayoutEffect } from "react";
 import { useAppDispatch } from "../../store/hook";
 import { setCurrentSelection } from "../../store/sidebarSlice";
 

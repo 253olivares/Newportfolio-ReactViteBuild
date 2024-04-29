@@ -1,13 +1,13 @@
-import { memo, useContext } from "react"
+import { memo } from "react"
 import SearchBar from '../searchBar';
 import DemoAndFilter from '../liveandAdditionalFilter';
-import { BrowserAppContext } from "../../mockBrowserContext";
+import { useAppSelector } from "../../../../../store/hook";
+import { getTabSelect } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
 
-  const appContext = useContext(BrowserAppContext)
-  const {tabSelect} = appContext!;
-  
+  const tabSelect = useAppSelector(getTabSelect);
+
   return (
     <div className="flex 
     justify-between

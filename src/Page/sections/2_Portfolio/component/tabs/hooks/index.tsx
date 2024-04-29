@@ -1,14 +1,17 @@
 
 import { useEffect, useState, useContext } from "react";
 import { BrowserAppContext } from "../../../mockBrowserContext";
+import { useAppSelector } from "../../../../../../store/hook";
+import { getTabSelect } from "../../../../../../store/projectSlice";
 
 export const windowResize = ():void => {
 
     const [_, setWindowWidth] = useState<number>(0);
 
     const appContext = useContext(BrowserAppContext);
-    if(!appContext) return
-    const {tabRef, backgroundSelectRef, tabSelect} = appContext;
+    const {tabRef, backgroundSelectRef} = appContext!;
+
+    const tabSelect = useAppSelector(getTabSelect);
 
     if(tabRef.current.length!==0) {
         const test = tabRef.current.filter((x)=> x.innerText === tabSelect);

@@ -1,27 +1,23 @@
-import { memo, useContext, useEffect, useMemo} from "react"
-import { BrowserAppContext } from "../../mockBrowserContext/index.tsx"
-import { filterProjects, selectAll} from "../../../../../store/projectSlice.tsx";
-import { useAppSelector } from "../../../../../store/hook.tsx";
+import { memo} from "react"
+import { useAppSelector } from "../../../../../store/hook";
+import { filterProjects } from "../../../../../store/projectSlice";
+import ProjectListing from '../projectItems';
 
 const index = memo(() => {
 
-  
+  const content = useAppSelector(filterProjects);
+
+  console.log(content);
 
   return (
-    <div className="  
-    w-fill
-    sLaptop:min-h-[23.467rem]
-    mLaptop:min-h-[29.333rem]
-    desktop:min-h-[35.2rem]
-    largeDesktop:min-h-[44rem]
-    sLaptop:pt-[0.667rem]
-    mLaptop:pt-[0.846rem]
-    desktop:pt-[1.016rem]
-    largeDesktop:pt-[1.25rem]
-    overflow-hidden
-    overflowFix
-    ">
-  
+    <div className={`
+    projectFlexDiv
+    `}>
+        {
+          content.map((item, index)=> 
+            <ProjectListing key={index} project={item} />
+          )
+        }
     </div>
   )
 })

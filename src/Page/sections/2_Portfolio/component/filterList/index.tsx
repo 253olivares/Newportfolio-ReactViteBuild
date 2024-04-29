@@ -2,17 +2,20 @@ import { memo, useContext, useEffect } from "react";
 import { BrowserAppContext } from "../../mockBrowserContext";
 import closeBrowserIcon from '/assets/browser_closeButton.svg';
 import FilterItems from '../individualFilters'
+import { useAppDispatch } from "../../../../../store/hook";
+import { closeFilter } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
+    const dispatch = useAppDispatch();
 
     const appContext = useContext(BrowserAppContext);
-    const {filterListRef, setOpenFilter, labels} = appContext!;
+    const {filterListRef, labels} = appContext!;
 
     useEffect(()=> {
       const clickOnOutside = (e:MouseEvent | TouchEvent)=> {
         const element = e.target;
         if (filterListRef.current && !filterListRef.current.contains(element as Node)){
-          setOpenFilter(false);
+          dispatch(closeFilter());
         }
       }
       
@@ -63,7 +66,7 @@ const index = memo(() => {
              largeDesktop:text-[1.875rem]
             ">Select Filters</p>
             <img 
-            onClick={()=> setOpenFilter(false)}
+            onClick={()=> dispatch(closeFilter())}
             className="
             cursor-pointer
             sLaptop:w-[.89rem]

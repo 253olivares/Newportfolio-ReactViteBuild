@@ -33,6 +33,44 @@
 
 @layer components{
 
+    .projectFlexDiv{
+        @apply 
+        sLaptop:h-[23.467rem]
+        mLaptop:h-[29.333rem]
+        desktop:h-[35.2rem]
+        largeDesktop:h-[44rem]
+        sLaptop:pt-[0.667rem]
+        mLaptop:pt-[0.846rem]
+        desktop:pt-[1.016rem]
+        largeDesktop:pt-[1.25rem]
+        overflow-y-scroll
+        overflowFix
+        grid grid-cols-4
+    }
+
+    .projectCSS{
+        @apply 
+        sLaptop:w-[11.02241rem]
+        mLaptop:w-[13.72602rem]
+        desktop:w-[16.6376rem]
+        largeDesktop:w-[20.797rem]
+        sLaptop:h-[12.62566rem]
+        mLaptop:h-[15.72252rem]
+        desktop:h-[19.0576rem]
+        largeDesktop:h-[23.822rem]
+        sLaptop:rounded-[0.40068rem]
+        mLaptop:rounded-[0.49896rem]
+        desktop:rounded-[0.6048rem]
+        largeDesktop:rounded-[.756rem]
+        relative
+        sLaptop:hover:ring-[]
+        mLaptop:hover:ring-[]
+        desktop:hover:ring-[0.1648rem]
+        largeDesktop:hover:ring-[0.206rem]
+        hover:ring-SelectBlue
+        hover:cursor-pointer
+    }
+
     .bubble {
         @apply 
         sLaptop:w-[2.385rem]

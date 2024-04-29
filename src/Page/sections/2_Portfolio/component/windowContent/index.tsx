@@ -1,18 +1,54 @@
-import { memo,useContext } from "react"
+import { memo } from "react"
 import Result from '../results';
 import FilterSection from '../filterSection';
-import FilterList from '../filterList'
-import { BrowserAppContext } from "../../mockBrowserContext";
+import FilterList from '../filterList';
+import Loading from '../../../loading';
 import { useAppSelector } from "../../../../../store/hook";
-import { getProjectError, getProjectStatus } from "../../../../../store/projectSlice";
+import { getOpenFilter, getProjectError, getProjectStatus } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
 
-  const appContext = useContext(BrowserAppContext);
-  const {openFilter} = appContext!;
+  const openFilter = useAppSelector(getOpenFilter);
 
   const status = useAppSelector(getProjectStatus);
   const error = useAppSelector(getProjectError);
+
+  let content
+
+  if (status === 'failed') {
+    console.log(error);
+    content = <div
+    className="
+    flex justify-center items-center
+    sLaptop:mt-[10.6rem]
+    mLaptop:mt-[13.2rem]
+    desktop:mt-[16rem]
+    largeDesktop:mt-[20rem]
+    sLaptop:text-[.9875rem]
+    mLaptop:text-[1.475rem]
+    desktop:text-[2rem]
+    largeDesktop:text-[2.75rem]
+    font-semibold
+    text-SidebarGray
+    "
+    >
+      data fetching failed
+    </div>
+  } else  if ( status === 'loading') {
+    content = <div
+    className="
+    flex justify-center items-center
+    sLaptop:mt-[10.6rem]
+    mLaptop:mt-[13.2rem]
+    desktop:mt-[16rem]
+    largeDesktop:mt-[20rem]
+    "
+    >
+      <Loading color="bg-SidebarGray" />
+    </div>
+  } else if ( status === 'succeeded') {
+    content = <Result />
+  }
 
   return (
     <div className="w-full h-full bg-PrimaryWhite
@@ -32,7 +68,10 @@ const index = memo(() => {
           openFilter &&  <FilterList />
         }
         <div className="w-full
-        min-h-[100%] 
+         sLaptop:min-h-[26.667rem]
+         mLaptop:min-h-[33.333rem]
+         desktop:min-h-[40rem]
+         largeDesktop:min-h-[50rem]
         relative
         flex flex-col
         sLaptop:pt-[0.8rem]
@@ -60,9 +99,10 @@ const index = memo(() => {
             largeDesktop:h-[0.313rem]
             rounded-full
             bg-GlassLighterBackground
+            relative
            " />
            {/* results */}
-           <Result />
+          {content}
         </div>
       </div>
   )

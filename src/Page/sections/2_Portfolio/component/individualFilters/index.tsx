@@ -1,10 +1,12 @@
-import { memo, useContext } from "react";
-import { BrowserAppContext } from "../../mockBrowserContext";
+import { memo } from "react";
+import { useAppDispatch, useAppSelector } from "../../../../../store/hook";
+import { addToFilter, getSelectFiler, removeFromFilter } from "../../../../../store/projectSlice";
 
 const index = memo(({tag,color}: {tag:string, color:string}) => {
+  
+    const dispatch = useAppDispatch();
 
-    const appContext = useContext(BrowserAppContext);
-    const {selectedFilter, setSelectedFilter} = appContext!;
+    const selectedFilter = useAppSelector(getSelectFiler);
 
     let selected:boolean;
 
@@ -21,9 +23,9 @@ const index = memo(({tag,color}: {tag:string, color:string}) => {
     // remove it if it doesnt add it.
     const clicked = () => {
       if(selected) {
-        setSelectedFilter(selectedFilter.filter((x)=> x !== tag))
+        dispatch(removeFromFilter(tag));
       } else {
-        setSelectedFilter((x)=> [...x, tag]);
+        dispatch(addToFilter(tag));
       }
     }
 

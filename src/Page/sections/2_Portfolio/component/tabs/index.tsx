@@ -1,25 +1,31 @@
 import { Fragment, memo, useContext } from "react"
 import { BrowserAppContext } from "../../mockBrowserContext";
 import { windowResize } from "./hooks";
+import { useAppDispatch, useAppSelector } from "../../../../../store/hook";
+import { getTabSelect, setTabSelect } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
+
+  const dispatch = useAppDispatch()
+
+  const tabSelect = useAppSelector(getTabSelect);
 
   // hook that runs code when window resizes
   // intented to make sure that our select tab is keep track in the correct space
   windowResize();
 
   const appContext = useContext(BrowserAppContext);
-  const { tabRef, backgroundSelectRef, tabSelect, setTabSelect} = appContext!;
+  const { tabRef, backgroundSelectRef} = appContext!;
 
   const tabs:["Programming", "Art", "UI / UX"] = ["Programming", "Art", "UI / UX"]
 
   const changeSelectTab = (x:"Programming"| "Art" |"UI / UX", index:number) => {
-    setTabSelect(x)
+    
+    dispatch(setTabSelect(x))
+
     const tabOffset = tabRef.current[index].offsetLeft;
     backgroundSelectRef.current!.style.left = `${tabOffset}px`;
   }
-
-  console.log('test:'+ tabs)
 
   return (
     <div className="flex 

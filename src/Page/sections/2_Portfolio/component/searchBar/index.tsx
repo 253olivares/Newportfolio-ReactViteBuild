@@ -1,18 +1,20 @@
-import { memo, useContext, useEffect, useState } from "react"
-import searchIcon from '/assets/searchButton.svg'
-import { BrowserAppContext } from "../../mockBrowserContext"
-
+import { memo, useEffect, useState } from "react";
+import searchIcon from '/assets/searchButton.svg';
+import { useAppDispatch, useAppSelector } from "../../../../../store/hook"
+import { getTabSelect, setSearchTerm } from "../../../../../store/projectSlice"
+import { resetFilter } from "../../../../../store/projectSlice";
 
 const index = memo(() => {
 
+  const dispatch = useAppDispatch();
+
   const [inputvalue, setInputValue] = useState<string>('');
 
-  const appContext = useContext(BrowserAppContext);
-  const {tabSelect,setSearchTerm} = appContext!;
+  const tabSelect = useAppSelector(getTabSelect);
 
   useEffect(()=> {
     setInputValue('');
-    setSearchTerm('');
+    dispatch(setSearchTerm(''));
     ()=>{
 
     }
@@ -21,7 +23,7 @@ const index = memo(() => {
   return (        
     <form onSubmit={(e)=> {
       e.preventDefault();
-      setSearchTerm(()=>inputvalue);
+      dispatch(setSearchTerm(inputvalue.trim()))
     }}>
       <div className="flex 
       sLaptop:gap-[1.333rem]
@@ -61,7 +63,7 @@ const index = memo(() => {
             onChange={(e)=>{
               setInputValue(e.target.value)
               if (e.target.value === ''){
-                setSearchTerm('')
+                dispatch(setSearchTerm(''))
               }
             }}
             className="
@@ -117,7 +119,7 @@ const index = memo(() => {
         <p
         onClick={()=> {
           setInputValue('');
-          setSearchTerm('');
+          dispatch(resetFilter());
         }}
         className="
         font-semibold

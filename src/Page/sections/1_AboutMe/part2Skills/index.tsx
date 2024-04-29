@@ -67,7 +67,7 @@ const index = memo(() => {
       desktop:min-h-[40rem]
       largeDesktop:min-h-[50rem]
       '>
-        <Loading />
+        <Loading color="bg-PrimaryWhite" />
       </div>
     )
   } else if (status === 'succeeded'){

@@ -1,10 +1,11 @@
-import { memo, useContext } from "react"
-import { BrowserAppContext } from "../../mockBrowserContext"
+import { memo } from "react"
+import { useAppDispatch, useAppSelector } from "../../../../../store/hook"
+import { changeLiveDemo, getLiveDemo } from "../../../../../store/projectSlice"
 
 const index = memo(() => {
+  const dispatch = useAppDispatch()
 
-  const appContext = useContext(BrowserAppContext);
-  const {liveDemos, setLiveDemo} = appContext!;
+  const liveDemos = useAppSelector(getLiveDemo);
 
   return (
     <div className="
@@ -15,8 +16,8 @@ const index = memo(() => {
      largeDesktop:gap-[1.25rem]
     ">
       <input
-       checked={liveDemos as boolean}
-       onChange={()=>setLiveDemo(x=>!x)}
+       checked={liveDemos}
+       onChange={()=>dispatch(changeLiveDemo())}
        className="
        block
        sLaptop:rounded-[0.167rem] 

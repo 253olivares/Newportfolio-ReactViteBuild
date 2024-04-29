@@ -1,15 +1,14 @@
-import { memo, useContext } from 'react';
+import { memo } from 'react';
 import Arrow from '/assets/filter_arrow.svg';
-import { BrowserAppContext } from '../../mockBrowserContext';
+import { useAppDispatch } from '../../../../../store/hook';
+import { openFilter } from '../../../../../store/projectSlice';
 
 const index = memo(() => {
-
-  const appContext = useContext(BrowserAppContext);
-  const {setOpenFilter} = appContext!;
+  const dispatch = useAppDispatch();
 
   return (
     <div 
-    onClick={()=> setOpenFilter(true)}
+    onClick={()=> dispatch(openFilter())}
     className='flex flex-row
      hover:cursor-pointer
      items-center
