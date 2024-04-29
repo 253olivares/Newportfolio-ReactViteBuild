@@ -76,7 +76,7 @@
       "projectURL": "https://personal-project-d1c24.web.app/",
       "imgURL": "Kuerege.svg",
       "section": "Programming",
-      "tags": ["HTML", "css", "Javascript", "SASS", "Firebase"],
+      "tags": ["HTML", "CSS", "JavaScript", "SASS", "Firebase"],
       "live": true,
       "responsive": true,
       "date": "2023 October - December"
@@ -87,7 +87,7 @@
       "projectURL": "https://redux-tool-kit-practice.vercel.app/",
       "imgURL": "ReduxPostingSite.svg",
       "section": "Programming",
-      "tags": ["TypeScript", "React", "Tailwind"],
+      "tags": ["Tailwind", "TypeScript", "React"],
       "live": true,
       "date": "2024 March"
     },
@@ -107,7 +107,7 @@
       "projectURL": "https://www.gradybros.com/",
       "imgURL": "Grady.svg",
       "section": "Programming",
-      "tags": ["HTML", "CSS", "JavaScript", "SASS"],
+      "tags": ["HTML", "CSS", "SASS", "JavaScript"],
       "live": true,
       "date": "2023 September - December"
     },
@@ -117,7 +117,7 @@
       "projectURL": "https://n423-mo-fa21-e0091.web.app/",
       "imgURL": "PrivateShelf.svg",
       "section": "Programming",
-      "tags": ["HTML", "CSS", "JavaScript", "SASS", "Firebase"],
+      "tags": ["HTML", "CSS", "SASS", "JavaScript", "Firebase"],
       "live": true,
       "date": "2021 April"
     },
