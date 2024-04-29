@@ -741,6 +741,7 @@ Error generating stack: `+s.message+`
                  mLaptop:h-[0.40854rem]\r
                  desktop:h-[0.4952rem]\r
                  largeDesktop:h-[0.619rem]\r
+                 rounded-full\r
                 `}),x.jsx("span",{className:`\r
                 spanCSSTags\r
                 `,children:e})]}):t=x.jsx("span",{className:`\r
@@ -751,6 +752,7 @@ Error generating stack: `+s.message+`
     mLaptop:gap-[0.13596rem]\r
     desktop:gap-[0.1648rem]\r
     largeDesktop:gap-[0.206rem]\r
+    items-center \r
     `,style:{background:n},children:t})},M3=({tag:e,demo:t,projectName:n,date:r})=>x.jsxs("div",{className:`\r
     flex flex-col\r
     w-full\r
