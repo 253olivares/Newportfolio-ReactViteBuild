@@ -734,19 +734,8 @@ Error generating stack: `+l.message+`
              text-[1.031rem]\r
              leading-none\r
              opacity-80\r
-            `,children:o})]})]},t)}),ex=S.memo(()=>{const e=ie(zw);return console.log(e),y.jsx("div",{className:`  \r
-    w-fill\r
-    sLaptop:h-[23.467rem]\r
-    mLaptop:h-[29.333rem]\r
-    desktop:h-[35.2rem]\r
-    largeDesktop:h-[44rem]\r
-    sLaptop:pt-[0.667rem]\r
-    mLaptop:pt-[0.846rem]\r
-    desktop:pt-[1.016rem]\r
-    largeDesktop:pt-[1.25rem]\r
-    overflow-y-scroll\r
-    overflowFix\r
-    grid grid-cols-4\r
+            `,children:o})]})]},t)}),ex=S.memo(()=>{const e=ie(zw);return console.log(e),y.jsx("div",{className:`
+    projectFlexDiv
     `,children:e.map((t,r)=>y.jsx(Zw,{project:t},r))})}),tx="/Newportfolio-ReactViteBuild/assets/searchButton.svg",rx=S.memo(()=>{const e=et(),[t,r]=S.useState(""),n=ie($l);return S.useEffect(()=>{r(""),e(Ri(""))},[n]),y.jsx("form",{onSubmit:o=>{o.preventDefault(),e(Ri(t.trim()))},children:y.jsxs("div",{className:`flex \r
       sLaptop:gap-[1.333rem]\r
       mLaptop:gap-[1.667rem]\r
