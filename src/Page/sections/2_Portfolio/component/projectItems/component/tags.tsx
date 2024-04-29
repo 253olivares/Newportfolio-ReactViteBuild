@@ -63,7 +63,7 @@ const tags = ({tag}:{tag:string}) => {
                 " />
                 <span className="
                 spanCSSTags
-                ">Live Demo</span>
+                ">Demo</span>
             </>
         )
     } else {
