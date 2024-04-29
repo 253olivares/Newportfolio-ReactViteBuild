@@ -1,4 +1,4 @@
-  import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Sidebar from '../sidebar';
 import { memo } from 'react';
 
@@ -6,7 +6,7 @@ const index = memo(() => {
   return (
     <>
       <main className='relative flex justify-center items-center h-screen text-center sLaptop:hidden'>
-        <p className=' text-5xl'>Please open this page on a desktop view! <br/> <br />
+        <p className='text-5xl'>Please open this page on a desktop view! <br/> <br />
           Mobile view is under development.
         </p>
       </main>

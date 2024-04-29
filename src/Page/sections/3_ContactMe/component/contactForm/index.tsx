@@ -15,36 +15,6 @@ const index = memo(() => {
 
     const emailRef = useRef<HTMLFormElement|null>(null);
 
-    // validate email
-    function emailValidation (email:string):boolean {
-      // email pattern
-      const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      // test it to see if it passes the check
-      return pattern.test(email);
-    }
-
-    // sanitizer our inputs 
-    // pass our input values and then return a string of them sanitized
-    function sanitize(string:string) {
-      const map:Record<string,string> = {
-          '&': '&amp;',
-          '<': '&lt;',
-          '>': '&gt;',
-          '"': '&quot;',
-          "'": '&#x27;',
-          "/": '&#x2F;',
-          "?": '&#63;',
-          "$": "&#36;",
-          " ": "&#00;"
-      };
-      // look for the following values
-      // create an array of the values I want to search for and declare it as incase sensitive
-      // and mark as a global search
-      const reg = /[&<>"'/?$ ]/ig;
-      // replace each value as its found
-      return string.replace(reg, (match)=>(map[match]));
-    }
-
     const formSubmission = (e:FormEvent) => {
       e.preventDefault();
       // first check out inputs
@@ -53,15 +23,11 @@ const index = memo(() => {
         dispatch(setFormError('email'));
         return
       } 
-
+[]
       if(message.trim() === ''){
         dispatch(setFormError('message'));
         return
       }
-
-      const emailValidated = emailValidation(email);
-      const messageSanitized = sanitize(message);
-
       
       emailjs.sendForm(
         "service_xmr60i9",
@@ -83,7 +49,7 @@ const index = memo(() => {
       dispatch(setEmail(''));
       dispatch(setMessage(''));
       // email and message should be validated and sanitized
-      alert('Message has been sent. Thank you!')
+      alert('Message has been sent. Thank you!');
 
     }
 
