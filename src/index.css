@@ -39,8 +39,6 @@
         mx-auto 
         w-full
         grid
-        justify-center
-        p-[initial]
         sLaptop:sLaptopTempCol
         mLaptop:mLaptopTempCol
         desktop:desktopTempCol

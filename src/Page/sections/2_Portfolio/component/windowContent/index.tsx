@@ -5,6 +5,7 @@ import FilterList from '../filterList';
 import Loading from '../../../loading';
 import { useAppSelector } from "../../../../../store/hook";
 import { getOpenFilter, getProjectError, getProjectStatus } from "../../../../../store/projectSlice";
+import { AnimatePresence } from "framer-motion";
 
 const index = memo(() => {
 
@@ -64,9 +65,11 @@ const index = memo(() => {
       overflowFix
       relative
       ">
-        {
-          openFilter &&  <FilterList />
-        }
+        <AnimatePresence>
+          {
+            openFilter &&  <FilterList />
+          }
+        </AnimatePresence>
         <div className="w-full
          sLaptop:min-h-[26.667rem]
          mLaptop:min-h-[33.333rem]

@@ -28,7 +28,8 @@ const index = memo(() => {
   }
 
   return (
-    <div className="flex 
+    <div className="
+    flex 
     flex-row 
     sLaptop:gap-[0.165rem]
     mLaptop:gap-[.20658rem]
@@ -65,9 +66,13 @@ const index = memo(() => {
         mLaptop:rounded-[.33rem]
         desktop:rounded-[.4rem]
         largeDesktop:rounded-[0.5rem]
-        ${x=== tabSelect ? ` text-SidebarGray` : `text-PrimaryWhite 
+        ${x=== tabSelect ? ` transition-none text-SidebarGray` : `
+        transition-all
+        duration-500
+        text-PrimaryWhite 
         hover:bg-GlassBackground 
         hover:cursor-pointer`}
+
         font-medium
         sLaptop:w-[8.9rem]
         mLaptop:w-[11.125rem]

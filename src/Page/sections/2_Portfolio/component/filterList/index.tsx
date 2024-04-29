@@ -4,6 +4,7 @@ import closeBrowserIcon from '/assets/browser_closeButton.svg';
 import FilterItems from '../individualFilters'
 import { useAppDispatch } from "../../../../../store/hook";
 import { closeFilter } from "../../../../../store/projectSlice";
+import {  motion } from "framer-motion";
 
 const index = memo(() => {
     const dispatch = useAppDispatch();
@@ -18,21 +19,41 @@ const index = memo(() => {
           dispatch(closeFilter());
         }
       }
-      
       window.addEventListener('click',clickOnOutside,true)
       return ()=> {
+
         window.removeEventListener('click',clickOnOutside,true)
       }
     },[])
 
   return (
-      <div
+       <motion.div
+       key="modal"
+       initial={
+        { 
+        scale:.98,
+        left:"100%",
+        right:"auto"
+      }}
+       animate={{ 
+        scale:1,
+        left:"auto",
+        right:"0px" 
+      }}
+       exit={{ 
+        scale:.98,
+        left:"100%",
+        right:"auto" 
+      }}
+       transition={{duration:.15}}
         ref={filterListRef}
-        className={`h-full
+        className={`
+         h-full
          absolute
-         right-0
-         left-auto
-         top-0
+         sLaptop:w-[12.229rem]
+         mLaptop:w-[14.189rem]
+         desktop:w-[18.423rem]
+         largeDesktop:w-[23.033rem]
          z-[5]
          bg-GlassBackground
          backdrop-blur-[0.25rem]  
@@ -103,7 +124,7 @@ const index = memo(() => {
               ))
             }
           </div>
-      </div>
+      </motion.div>
   )
 })
 
