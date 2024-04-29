@@ -55,7 +55,7 @@ export const fetchProjects = createAsyncThunk('portfolio/fetchProjects',async(_,
             source.cancel();
         })
 
-        const response = await axios.get('http://localhost:5173/Newportfolio-ReactViteBuild/data/projectsList.json', {cancelToken:source.token})
+        const response = await axios.get('https://253olivares.github.io/Newportfolio-ReactViteBuild/data/projectsList.json', {cancelToken:source.token})
         .catch(()=> {
             throw new Error("Api had issues");
         })

@@ -97,7 +97,7 @@ const index = memo(() => {
             largeDesktop:w-[1.5rem]
             hover:opacity-75
             `}
-            src={`http://localhost:5173/Newportfolio-ReactViteBuild/assets/browser_closeButton${x === tabSelect ? 'Select': ''}.svg`} alt="tab_Close" />
+            src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/${x === tabSelect ? 'Select': ''}.svg`} alt="tab_Close" />
         </p>
         {
             index<2 && <div 
