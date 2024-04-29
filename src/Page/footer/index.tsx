@@ -9,8 +9,7 @@ import github from '/assets/github.svg';
 const index = () => {
 
   const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {pageRef} = appContext;
+  const {pageRef} = appContext!;
 
   const scrollToTop = () => {
     window.scrollTo({

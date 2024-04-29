@@ -6,8 +6,7 @@ import triangleColapse from '/assets/trianglePNG.png'
 const index = memo(() => {
   
   const appContext = useContext(AppContext);
-  if (!appContext) return null;
-  const {pageRef} = appContext;
+  const {pageRef} = appContext!;
 
   return (
     <div ref={el =>{

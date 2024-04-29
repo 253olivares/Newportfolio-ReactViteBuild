@@ -34,6 +34,11 @@
 
 @layer components{
 
+    .spanCSSTags{   
+        @apply
+        text-PrimaryWhite
+    }
+
     .projectFlexDiv{
         @apply 
         mx-auto 
