@@ -676,7 +676,7 @@ Error generating stack: `+l.message+`
             desktop:w-[1rem]
             largeDesktop:w-[1.5rem]
             hover:opacity-75
-            `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/browser_closeButton${s===t?"Select":""}.svg`,alt:"tab_Close"})]}),a<2&&y.jsx("div",{className:`
+            `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/${s===t?"Select":""}.svg`,alt:"tab_Close"})]}),a<2&&y.jsx("div",{className:`
             ${t==="Art"?"bg-transparent":"bg-PrimaryWhite"}
             ${t==="Programming"&&a===0?"bg-transparent":"bg-PrimaryWhite"}
             ${t==="UI / UX"&&a===1?"bg-transparent":"bg-PrimaryWhite"}
