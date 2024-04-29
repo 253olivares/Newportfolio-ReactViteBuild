@@ -19,6 +19,7 @@
         --rYellow: #F5CB5C;
         --rBgGreen: #0FAC82;
         --rDarkGreen: #085641;
+        --rDarkerGlass:rgba(44, 47, 72,.85);
         --rGlassWindow: rgba(44, 47, 72,.5);
         --rGlassWindowLighter:rgba(44, 47, 72,.2);
         --rGlassWindowLighterSelect:rgba(44, 47, 72,.1);
@@ -35,6 +36,15 @@
 
     .projectFlexDiv{
         @apply 
+        mx-auto 
+        w-full
+        grid
+        justify-center
+        p-[initial]
+        sLaptop:sLaptopTempCol
+        mLaptop:mLaptopTempCol
+        desktop:desktopTempCol
+        largeDesktop:largeDesktoptempCol
         sLaptop:h-[23.467rem]
         mLaptop:h-[29.333rem]
         desktop:h-[35.2rem]
@@ -45,19 +55,19 @@
         largeDesktop:pt-[1.25rem]
         overflow-y-scroll
         overflowFix
-        grid grid-cols-4
     }
 
     .projectCSS{
         @apply 
-        sLaptop:w-[11.02241rem]
-        mLaptop:w-[13.72602rem]
-        desktop:w-[16.6376rem]
-        largeDesktop:w-[20.797rem]
-        sLaptop:h-[12.62566rem]
-        mLaptop:h-[15.72252rem]
-        desktop:h-[19.0576rem]
-        largeDesktop:h-[23.822rem]
+        inline-block
+        sLaptop:w-[11.16339rem]
+        mLaptop:w-[13.90158rem]
+        desktop:w-[16.8504rem]
+        largeDesktop:w-[21.063rem]
+        sLaptop:h-[12.62089rem]
+        mLaptop:h-[15.71658rem]
+        desktop:h-[19.0504rem]
+        largeDesktop:h-[23.813rem]
         sLaptop:rounded-[0.40068rem]
         mLaptop:rounded-[0.49896rem]
         desktop:rounded-[0.6048rem]
@@ -307,6 +317,26 @@
 }
 
 @layer utilities {
+
+    .sLaptopTempCol{
+        grid-template-columns: repeat(auto-fit, minmax(11.02241rem, 11.02241rem));
+        grid-gap: 2.21964rem;
+    }
+
+    .mLaptopTempCol{
+        grid-template-columns: repeat(auto-fit, minmax(13.72602rem, 13.72602rem));
+        grid-gap: 2.7640rem;
+    }
+
+    .desktopTempCol{
+        grid-template-columns: repeat(auto-fit, minmax(16.6376rem, 16.6376rem));
+        grid-gap: 3.3504rem;
+    }
+
+    .largeDesktoptempCol{
+        grid-template-columns: repeat(auto-fit, minmax(20.797rem, 20.797rem));
+        grid-gap: 4.188rem;
+    }
 
     .animationDelay1s {
         animation-direction: reverse;

@@ -10,14 +10,15 @@ const index = memo(({project}:{project:projectStateType}) => {
     projectCSS
     '>
         <img className='
-        sLaptop:w-[11.02241rem]
-        mLaptop:w-[13.72602rem]
-        desktop:w-[16.6376rem]
-        largeDesktop:w-[20.797rem]
-        sLaptop:h-[12.62566rem]
-        mLaptop:h-[15.72252rem]
-        desktop:h-[19.0576rem]
-        largeDesktop:h-[23.822rem] 
+        sLaptop:w-[11.16339rem]
+        mLaptop:w-[13.90158rem]
+        desktop:w-[16.8504rem]
+        largeDesktop:w-[21.063rem]
+        sLaptop:h-[12.62089rem]
+        mLaptop:h-[15.71658rem]
+        desktop:h-[19.0504rem]
+        object-cover
+        largeDesktop:h-[23.813rem]
         sLaptop:rounded-[0.40068rem]
         mLaptop:rounded-[0.49896rem]
         desktop:rounded-[0.6048rem]
@@ -30,7 +31,7 @@ const index = memo(({project}:{project:projectStateType}) => {
         largeDesktop:gap-[0.688rem]
         w-full
         text-PrimaryWhite
-        bg-GlassBackground
+        bg-DarkerGlass
         absolute 
         bottom-0 left-0 
         sLaptop:py-[0.59625rem]

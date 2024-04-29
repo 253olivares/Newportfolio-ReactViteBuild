@@ -101,7 +101,7 @@ const projectSlice = createSlice({
         resetFilter(state){
             state.filters = {
                 searchTerm:'',
-                tabSelect:"Programming",
+                tabSelect:state.filters.tabSelect,
                 liveDemos:false,
                 selectedFilter:[]
             }
