@@ -13,6 +13,10 @@ const projectInfo = ({tag,demo,projectName,date}:{tag:string[],demo:boolean,proj
     >
         <div className="
         flex flex-row flex-wrap
+        sLaptop:gap-[0.29839rem]
+        mLaptop:gap-[0.37158rem]
+        desktop:gap-[0.4504rem]
+        largeDesktop:gap-[0.563rem]
         ">
             {
                 demo ? 

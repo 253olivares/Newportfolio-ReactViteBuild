@@ -59,10 +59,11 @@ const tags = ({tag}:{tag:string}) => {
                  mLaptop:h-[0.40854rem]
                  desktop:h-[0.4952rem]
                  largeDesktop:h-[0.619rem]
+                 rounded-full
                 " />
                 <span className="
                 spanCSSTags
-                ">{tag}</span>
+                ">Live Demo</span>
             </>
         )
     } else {
@@ -75,10 +76,28 @@ const tags = ({tag}:{tag:string}) => {
     <div
     className="
     flex flex-row
+    justify-center
+    items-center 
     sLaptop:gap-[0.10918rem]
     mLaptop:gap-[0.13596rem]
     desktop:gap-[0.1648rem]
     largeDesktop:gap-[0.206rem]
+    sLaptop:py-[0.14893rem]
+    mLaptop:py-[0.18546rem]
+    desktop:py-[0.2248rem]
+    largeDesktop:py-[0.281rem]
+    sLaptop:w-[2.51432rem]
+    mLaptop:w-[3.13104rem]
+    desktop:w-[3.7952rem]
+    largeDesktop:w-[4.744rem]
+    sLaptop:rounded-[0.05459rem]
+    mLaptop:rounded-[0.06798rem]
+    desktop:rounded-[0.0824rem]
+    largeDesktop:rounded-[0.103rem]
+    sLaptop:mb-[0.29839rem]
+    mLaptop:mb-[0.37158rem]
+    desktop:mb-[0.4504rem]
+    largeDesktop:mb-[0.563rem]
     "
     style={{
         background:color

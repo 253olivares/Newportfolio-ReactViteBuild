@@ -37,6 +37,12 @@
     .spanCSSTags{   
         @apply
         text-PrimaryWhite
+        leading-none
+        font-semibold
+        sLaptop:text-[0.32807rem]
+        mLaptop:text-[0.40854rem]
+        desktop:text-[0.4952rem]
+        largeDesktop:text-[0.619rem]
     }
 
     .projectFlexDiv{
