@@ -31,7 +31,10 @@ const index = memo(() => {
           <div className="
           w-full pl-[3.6%] extra:pl-0 extra:max-w-[1920px] extra:mx-auto
           ">
-            <h1 className="sectionCSS">CONTACT ME</h1>
+            <h1 data-aos='fade'
+            data-aos-duration='1250'
+            data-aos-delay='0'
+            className="sectionCSS">CONTACT ME</h1>
           </div>
           <div className="
           w-full 

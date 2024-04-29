@@ -37,7 +37,11 @@ const index = memo(() => {
         desktop:pb-[4.625rem]
         largeDesktop:pb-[6.813rem]
         ">
-          <h1 className="
+          <h1
+          data-aos='fade'
+          data-aos-duration='1250'
+          data-aos-delay='0'
+          className="
           extra:w-[1920px]
           sectionCSS
           ">PORTFOLIO</h1>

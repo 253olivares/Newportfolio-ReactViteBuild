@@ -4,7 +4,11 @@ import { memo } from 'react';
 
 const index = memo(() => {
   return (
-        <div className="
+        <div 
+        data-aos='slide-left'
+        data-aos-duration='1250'
+        data-aos-delay='500'
+        className="
             w-[48%] 
             flex items-center
             sLaptop:px-[5rem]

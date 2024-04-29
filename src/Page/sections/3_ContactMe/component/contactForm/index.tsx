@@ -55,6 +55,9 @@ const index = memo(() => {
 
   return (
           <form
+          data-aos='fade'
+          data-aos-duration='1250'
+          data-aos-delay='0'
           ref={emailRef}
           onSubmit={(e)=> formSubmission(e)}
           className="flex flex-col 

@@ -79,8 +79,12 @@ const index = memo(() => {
   return (
     <div className="partTwoCSS">
         <div className="w-full flex flex-col px-[3.6%] extra:px-0">
-          <div className="w-full flex flex-col extra:max-w-[1920px] extra:mx-auto sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]">
-            <h1 className="sectionCSS">MY TECHNICAL SKILLS</h1>
+          <div
+          data-aos='fade'
+          data-aos-duration='1000'
+          data-aos-delay='0'
+          className="w-full flex flex-col extra:max-w-[1920px] extra:mx-auto sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]">
+            <h1  className="sectionCSS">MY TECHNICAL SKILLS</h1>
             <p className="
             leading-none
             font-bold
@@ -100,7 +104,11 @@ const index = memo(() => {
            {status === 'failed' || status === 'loading' ? 
             display
            : 
-            <div className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
+            <div 
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            data-aos-delay='500'
+            className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
               <div className='
               sLaptop:mt-[3.25rem]
               mLaptop:mt-[4.25rem]

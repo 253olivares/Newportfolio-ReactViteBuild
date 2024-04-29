@@ -35,7 +35,11 @@ const index = memo(() => {
         desktop:heroTextDesktop
         largeDesktop:heroTextLarge
         ">
-          <p className="
+          <p 
+          data-aos='slide-right'
+          data-aos-duration='1250'
+          data-aos-delay='1300'
+          className="
           sLaptop:text-[4.333rem]
           mLaptop:text-[5.375rem]
           desktop:text-[6.5rem]
@@ -45,7 +49,11 @@ const index = memo(() => {
           font-bold
           ">WELCOME !</p>
 
-          <p className="
+          <p 
+          data-aos='slide-right'
+          data-aos-duration='1250'
+          data-aos-delay='1800'
+          className="
           font-bold 
           sLaptop:text-[2.833rem]
           mLaptop:text-[3.5rem]
@@ -56,7 +64,11 @@ const index = memo(() => {
           " >
             <span className="text-SiteYellow" >T</span>o <span className="text-SiteYellow" >M</span>y <span className="text-SiteYellow">P</span>ortfolio
           </p>
-          <img className={`
+          <img 
+          data-aos='fade'
+          data-aos-duration='1250'
+          data-aos-delay='800'
+          className={`
             sLaptop:right-[2%]
             largeDesktop:right-[2.4rem]
             absolute z-[5]

@@ -27,7 +27,13 @@ const index = memo(() => {
             largeDesktop:mr-[.8rem]
             '
             src={bracketLeft} alt="" />
-            ABOUT ME! 
+            <span
+            data-aos='fade'
+            data-aos-duration='1250'
+            data-aos-delay='0'
+            >
+              ABOUT ME! 
+            </span>
             <img 
             className='
             sLaptop:w-[1rem]
@@ -49,7 +55,12 @@ const index = memo(() => {
           flex flex-row
           justify-between
           '>
-            <div className='bg-SiteGreen 
+            <div
+            data-aos='slide-right'
+            data-aos-duration='1250'
+            data-aos-delay='500'
+            className='
+            bg-SiteGreen 
             min-h-32 w-[39.94%] 
             sLaptop:rounded-r-[0.267rem]
             mLaptop:rounded-r-[0.333rem]
@@ -76,7 +87,12 @@ const index = memo(() => {
                 largeDesktop:w-[25rem]
                 ' src={profile} alt="My_Profile_Image" /> 
             </div>
-            <div className='min-h-32 w-[57.69%]'>
+            <div
+            data-aos='slide-left'
+            data-aos-duration='1250'
+            data-aos-delay='500'
+            className='
+            min-h-32 w-[57.69%]'>
                 <h1 className='
                 sLaptop:text-[3.167rem]
                 mLaptop:text-[3.958rem]

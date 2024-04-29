@@ -6,7 +6,11 @@ import WindowContent from '../windowContent';
 const index = memo(() => {
 
   return (
-    <div className="
+    <div 
+    data-aos='fade'
+    data-aos-duration='1250'
+    data-aos-delay='500'
+    className="
     mockBrowser
     ">
       <div className="
