@@ -23,6 +23,8 @@ export default {
         "SelectBlue" : "var(--rSelectBlue)"
       },
       screens: {
+        'tiny': '300px',
+        'mobile' : '400px',
         'sMobile': '640px',
         // => @media (min-width: 640px) { ... }
 

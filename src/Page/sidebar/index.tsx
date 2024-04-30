@@ -14,8 +14,7 @@ const index = memo(() => {
   fixed z-30 
   left-0 
   bottom-0
-  px-[1.04125rem]
-  mMobile::px-[1.25rem]
+  px-[2.6%]
   sLaptop:px-0
   sLaptop:py-[0.667rem]
   mLaptop:py-[0.833rem]
@@ -27,7 +26,8 @@ const index = memo(() => {
   mLaptop:min-w-[4.167rem] 
   desktop:min-w-[5rem] 
   largeDesktop:min-w-[6.25rem] 
-  h-[3.255rem]
+  h-[2.44125rem]
+  mobile:h-[3.255rem]
   sMobile:h-[5.20625rem]
   mMobile:h-[6.25rem]
   sLaptop:h-[100vh] 
@@ -49,7 +49,8 @@ const index = memo(() => {
       sLaptop:w-full
       h-full  
       sLaptop:h-auto
-      px-[.7973rem]
+      px-[0.5979rem]
+      mobile:px-[.7973rem]
       sMobile:px-[1.275323rem]
       mMobile:px-[1.531rem]
       sLaptop:px-0
@@ -66,14 +67,16 @@ const index = memo(() => {
       <div className="
       blank 
       block 
-      w-[1.9531rem]
+      w-[1.4648rem]
+      mobile:w-[1.9531rem]
       sMobile:w-[3.1248rem]
       mMobile:w-[3.75rem]
       sLaptop:w-[2.5rem] 
       mLaptop:w-[3.125rem] 
       desktop:w-[3.75rem] 
       largeDesktop:w-[4.688rem] 
-      min-h-[3.106rem]
+      min-h-[2.3295rem]
+      mobile:min-h-[3.106rem]
       sLaptop:min-h-[1.657rem]
       mLaptop:min-h-[2.071rem]
       desktop:min-h-[2.485rem]

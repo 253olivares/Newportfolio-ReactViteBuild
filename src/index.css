@@ -452,6 +452,18 @@
         box-shadow: -0.625rem 0.938rem 0 0 rgba(0,0,0,.5) ;
     }
     /* Home Sections TExt */
+    .heroTextMobileTiny{
+        text-shadow: -0.1757rem 0.1757rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextMobile{
+        text-shadow: -0.2343rem 0.2343rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextSmallMobile{
+        text-shadow: -0.37rem 0.37rem 0 rgba(0,0,0,.5);
+    }
+    .heroTextMediumMobile{
+        text-shadow: -0.45rem .45rem 0 rgba(0,0,0,.5);
+    }
     .heroTextSmall{
         text-shadow: -0.333rem .333rem 0 rgba(0,0,0,.5);
     }
