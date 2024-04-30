@@ -3,6 +3,7 @@ import { AppContext } from "../../sidebar/contextSidebarAPI";
 import Footer from '../../footer'
 import Form from './component/contactForm'
 import DownloadPDF from './component/downloadResume';
+import strips from '/assets/backgroundStrings2.svg'
 
 const index = memo(() => {
 
@@ -15,6 +16,8 @@ const index = memo(() => {
     }} id="ContactMe" className={`bg-SiteGreen w-full`}>
       <div className="
         w-full
+        relative
+        z-[5]
         sLaptop:pl-[3.333rem]
         mLaptop:pl-[4.167rem]
         desktop:pl-[5rem]
@@ -54,6 +57,14 @@ const index = memo(() => {
             <DownloadPDF />
           </div>
       </div>
+      <img className="
+       absolute bottom-0 left-0
+       z-[0]
+       sLaptop:w-[57.24rem]
+       mLaptop:w-[71.28rem]
+       desktop:w-[86.4rem]
+       largeDesktop:w-[108rem]
+      " src={strips} alt="Stripes_2" />
       <Footer />
     </div>
   )

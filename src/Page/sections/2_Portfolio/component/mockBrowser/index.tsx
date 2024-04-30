@@ -9,7 +9,7 @@ const index = memo(() => {
     <div 
     data-aos='fade'
     data-aos-duration='1250'
-    data-aos-delay='500'
+    data-aos-delay='800'
     className="
     mockBrowser
     ">

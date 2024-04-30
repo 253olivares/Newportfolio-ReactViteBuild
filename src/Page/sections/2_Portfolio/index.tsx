@@ -40,7 +40,7 @@ const index = memo(() => {
           <h1
           data-aos='fade'
           data-aos-duration='1250'
-          data-aos-delay='0'
+          data-aos-delay='300'
           className="
           extra:w-[1920px]
           sectionCSS

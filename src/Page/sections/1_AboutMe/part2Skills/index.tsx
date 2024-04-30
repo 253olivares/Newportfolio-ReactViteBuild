@@ -78,7 +78,9 @@ const index = memo(() => {
 
   return (
     <div className="partTwoCSS">
-        <div className="w-full flex flex-col px-[3.6%] extra:px-0">
+        <div className="w-full 
+         relative z-[5]
+        flex flex-col px-[3.6%] extra:px-0">
           <div
           data-aos='fade'
           data-aos-duration='1000'
@@ -142,10 +144,14 @@ const index = memo(() => {
             }
         </div>
         <img className="absolute 
-        hidden
-        mLaptop:h-[71.643rem] 
+        z-[0]
+        sLaptop:h-[56.71rem]
+        mLaptop:h-[70.62rem] 
+        desktop:h-[85.6rem]
         largeDesktop:h-[107rem] 
-        mLaptop:right-[-1rem] mLaptop:top-[-10rem]
+        sLaptop:right-[-1.06rem] sLaptop:top-[-10.6rem]
+        mLaptop:right-[-1.32rem] mLaptop:top-[-13.2rem]
+        desktop:right-[-1.6rem] desktop:top-[-16rem]
         largeDesktop:right-[-2rem] largeDesktop:top-[-20rem]" src={square} alt="" />
       </div>
   )

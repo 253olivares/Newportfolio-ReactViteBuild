@@ -32,7 +32,7 @@ const projectInfo = ({tag,demo,projectName,date}:{tag:string[],demo:boolean,proj
             }
             {
                 tag.map((t)=> 
-                    <Tags tag={t} />
+                    <Tags key={t} tag={t} />
                 )
             }
         </div>

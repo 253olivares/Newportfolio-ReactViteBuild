@@ -29,7 +29,10 @@ const index = () => {
         if(el) pageRef.current[4] = el
       }} id="Footer" className="
       w-full
-      flex flex-col">
+      flex flex-col
+      relative
+      z-[5]
+      ">
         <div className="
         w-full relative">
           <img className="
