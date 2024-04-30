@@ -13,7 +13,7 @@ const index = memo(() => {
   return (
    <div ref={el => {
       if(el) pageRef.current[3] = el
-    }} id="ContactMe" className={`bg-SiteGreen w-full`}>
+    }} id="ContactMe" className={` hidden bg-SiteGreen w-full`}>
       <div className="
         w-full
         relative

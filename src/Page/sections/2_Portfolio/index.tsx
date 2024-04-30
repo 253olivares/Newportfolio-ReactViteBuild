@@ -11,7 +11,7 @@ const index = memo(() => {
   return (
     <div ref={el => {
       if(el) pageRef.current[2] = el
-    }} id="Portfolio" className={` bg-SiteGreen w-full`}>
+    }} id="Portfolio" className={` hidden bg-SiteGreen w-full`}>
       <div className="
       w-full
       flex flex-col

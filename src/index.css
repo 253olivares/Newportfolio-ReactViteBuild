@@ -11,6 +11,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+ 
 
 @layer base {
     :root {
@@ -27,8 +28,19 @@
         --rSelectBlue: #4699E5;
     }
     html,body {
-        
         @apply bg-PrimaryWhite font-Akshar
+    }
+    @media (max-width:1023px) {
+        html,body{
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        html::-webkit-scrollbar {
+            display: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
 
@@ -328,35 +340,6 @@
 
 @layer utilities {
 
-    /* Page Animate css animations */
-    /* homeanimation */
-    .heroAnimate{
-        animation-duration: 2s;
-        animation-delay: .5s;
-        @apply animate__animated
-        animate__fadeIn
-    }
-    .titleTextAnimate{
-        animation-duration: 1.5s;
-        animation-delay: 1s;
-        animation-fill-mode: both;
-        @apply animate__animated
-        animate__slideInLeft
-    } 
-    .titleTextAnimate2{
-        animation-duration: 1.5s;
-        animation-delay: 1.5s;
-        animation-fill-mode: both;
-        @apply animate__animated
-        animate__slideInLeft
-    }  
-    /* about me part 1 animation */
-    .aboutMeTextAnimate{
-        animation-duration: 2s;
-        animation-delay: .5s;
-        @apply animate__animated
-        animate__fadeIn
-    }
     /* grid columns set up */
     .sLaptopTempCol{
         grid-template-columns: repeat(auto-fit, minmax(11.02241rem, 11.02241rem));

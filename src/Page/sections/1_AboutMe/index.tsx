@@ -12,7 +12,7 @@ const index = memo(() => {
   return (
     <div  ref={el => {
       if(el) pageRef.current[1] = el
-    }} id="AboutMe" className={`relative w-full`}>
+    }} id="AboutMe" className={` hidden relative w-full`}>
       <Part1Profile />
       <SkillProvider>
         <Part2Skills />
