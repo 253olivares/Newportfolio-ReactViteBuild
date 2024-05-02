@@ -1,8 +1,8 @@
-import { memo } from "react"
-import SearchBar from '../searchBar';
-import DemoAndFilter from '../liveandAdditionalFilter';
-import { useAppSelector } from "../../../../../store/hook";
 import { getTabSelect } from "../../../../../store/projectSlice";
+import { useAppSelector } from "../../../../../store/hook";
+import DemoAndFilter from '../liveandAdditionalFilter';
+import SearchBar from '../searchBar';
+import { memo } from "react"
 
 const index = memo(() => {
 

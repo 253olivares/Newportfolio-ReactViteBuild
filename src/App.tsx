@@ -1,16 +1,17 @@
-import { Fragment } from 'react/jsx-runtime'
 import { Route, Routes } from "react-router-dom"
-import { PageProvider } from './Page/sidebar/contextSidebarAPI'
+import { Fragment, useEffect } from "react"
+import { PageProvider } from './Page/contextRefs'
+import { fetchSkills } from './store/skillsSlice'
+import { fetchProjects } from './store/projectSlice'
+import { store } from './store/store'
+
 import ErrorPage from './Page/404'
 import Layout from './Page/layout'
 import Page from './Page/index'
-import { useEffect } from 'react'
-import { fetchSkills } from './store/skillsSlice'
-import { store } from './store/store'
-import { fetchProjects } from './store/projectSlice'
-import 'animate.css';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'animate.css';
 
 
 // home page
@@ -18,14 +19,18 @@ import "aos/dist/aos.css";
 const App = () => {
 
   useEffect(()=> {
+    // initiate our aos scroll
     AOS.init({
       once: true,
-      disable: "phone",
       easing: "ease-out-cubic",
     })
+
+    // create a promise and run a dispatch to fetch projects and skills
     const promise2 = store.dispatch(fetchProjects());
     const promise = store.dispatch(fetchSkills());
+
     return () => {
+      // abort functions to cancel request if the component unloads unexpectedly 
       promise.abort();
       promise2.abort();
     }

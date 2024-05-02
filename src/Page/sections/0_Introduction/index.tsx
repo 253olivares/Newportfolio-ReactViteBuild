@@ -1,5 +1,5 @@
 import { memo, useContext } from "react";
-import { AppContext } from "../../sidebar/contextSidebarAPI";
+import { AppContext } from "../../contextRefs";
 import heroDrawing from '/assets/hero_Drawing.svg'
 import triangleColapse from '/assets/trianglePNG.png'
 import waveBackgroundMobile from '/assets/HeaderWaveMobile.svg'
@@ -20,28 +20,30 @@ const index = memo(() => {
       block sLaptop:hidden  
       relative w-full
       " src={waveBackgroundMobile} alt="WavebackgroundMobile" />
+
       <img className="
       hidden sLaptop:block relative w-full
       " src={triangleColapse} alt="Wavebackground" />
+
       <div className="w-full top-0 absolute">
         <div className="
         max-w-[1920px]
         mx-auto
         relative z-[5] 
         flex flex-col
-        gap-[0.2687rem]
-        mobile:gap-[0.3583rem]
-        sMobile:gap-[0.5733rem]
-        mMobile:gap-[0.688rem]
+        gap-[0.264rem]
+        mobile:gap-[0.351rem]
+        sMobile:gap-[0.563rem]
+        mMobile:gap-[0.675rem]
         sLaptop:gap-[0.5rem]
         largeDesktop:gap-[1rem]
-        pl-[3.25%]
-        mMobile:pl-[06.51%]
+        pl-[3.255%]
+        mobile:pl-[06.51%]
         sLaptop:pl-[8%] 
         largeDesktop:pl-[10.625rem]
-        pt-[1.1718rem]
-        mobile:pt-[1.5625rem]
-        sMobile:pt-[2.5rem]
+        pt-[1.221rem]
+        mobile:pt-[1.628rem]
+        sMobile:pt-[2.604rem]
         mMobile:pt-[3.125rem]
         sLaptop:pt-[8rem]
         mLaptop:pt-[10rem]
@@ -61,9 +63,9 @@ const index = memo(() => {
           data-aos-duration='1250'
           data-aos-delay='1300'
           className="
-          text-[2.2845rem]
-          mobile:text-[3.046rem]
-          sMobile:text-[4.87rem]
+          text-[2.285rem]
+          mobile:text-[3.047rem]
+          sMobile:text-[4.875rem]
           mMobile:text-[5.85rem]
           sLaptop:text-[4.333rem]
           mLaptop:text-[5.375rem]
@@ -82,7 +84,7 @@ const index = memo(() => {
           font-bold 
           text-[1.494rem]
           mobile:text-[1.992rem]
-          sMobile:text-[3.18rem]
+          sMobile:text-[3.188rem]
           mMobile:text-[3.825rem]
           sLaptop:text-[2.833rem]
           mLaptop:text-[3.5rem]
@@ -98,21 +100,22 @@ const index = memo(() => {
           data-aos-duration='1250'
           data-aos-delay='800'
           className={`
-            right-[3.25%]
-            mMobile:right-[06.51%]
+            right-[3.255%]
+            mobile:right-[06.51%]
             sLaptop:right-[2%]
             largeDesktop:right-[2.4rem]
             absolute z-[5]
             top-[5.5rem]
             mobile:top-[7.5rem]
             sMobile:top-[12.49rem]
-            mMobile:top-[15rem]
+            mMobile:top-[15.063rem]
             sLaptop:top-[2.625rem]
             mLaptop:top-[3.313rem] 
             desktop:top-[4rem] 
             largeDesktop:top-[5rem]
-            w-[75%]
-            sMobile:w-[70%]
+            extra:top-[12.5rem]
+            w-[70%]
+            sMobile:w-[67.40%]
             sLaptop:w-[55%]
             largeDesktop:w-[65.25rem]`} src={heroDrawing} alt="" />
              {/* top left */}

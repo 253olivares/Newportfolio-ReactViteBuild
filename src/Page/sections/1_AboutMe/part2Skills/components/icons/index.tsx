@@ -1,12 +1,12 @@
 import { memo, useContext, useEffect} from "react";
-import { SkillsContext } from "../../skillsContextAPI";
+import { AppContext } from "../../../../../contextRefs";
 import { changeSkill, getSelectSkill, skillsStateType } from "../../../../../../store/skillsSlice";
 import { useAppDispatch, useAppSelector } from "../../../../../../store/hook";
 
 const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
   const dispatch = useAppDispatch();
 
-  const appContext = useContext(SkillsContext);
+  const appContext = useContext(AppContext);
   const {iconsRef,arrowRef,descRef} = appContext!;
 
   const selectSkill = useAppSelector(getSelectSkill);

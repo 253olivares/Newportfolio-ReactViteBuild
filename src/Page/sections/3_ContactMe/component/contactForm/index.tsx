@@ -1,10 +1,13 @@
-import { FormEvent, memo, useRef } from "react"
-import emailjs from '@emailjs/browser';
-import EmailInput from './emailInput';
-import MessageInput from './messageInput';
-import ButtonSubmission from './buttonSubmission'
-import { useAppDispatch, useAppSelector } from "../../../../../store/hook";
 import { getEmailState, setEmail, setFormError, setMessage } from "../../../../../store/contactSlice";
+import { useAppDispatch, useAppSelector } from "../../../../../store/hook";
+
+import { FormEvent, memo, useRef } from "react";
+
+import ButtonSubmission from './buttonSubmission';
+import MessageInput from './messageInput';
+import EmailInput from './emailInput';
+
+import emailjs from '@emailjs/browser';
 
 const index = memo(() => {
 
@@ -17,13 +20,13 @@ const index = memo(() => {
 
     const formSubmission = (e:FormEvent) => {
       e.preventDefault();
+      
       // first check out inputs
-
       if(email.trim() === ''){
         dispatch(setFormError('email'));
         return
       } 
-[]
+
       if(message.trim() === ''){
         dispatch(setFormError('message'));
         return
@@ -48,9 +51,9 @@ const index = memo(() => {
       dispatch(setFormError('none'));
       dispatch(setEmail(''));
       dispatch(setMessage(''));
+
       // email and message should be validated and sanitized
       alert('Message has been sent. Thank you!');
-
     }
 
   return (
@@ -61,12 +64,18 @@ const index = memo(() => {
           ref={emailRef}
           onSubmit={(e)=> formSubmission(e)}
           className="flex flex-col 
+            w-full
+            sLaptop:w-auto
+            gap-[1.221rem]
+            mobile:gap-[1.629rem]
+            sMobile:gap-[2.604rem]
+            mMobile:gap-[3.125rem]
             sLaptop:gap-[1.333rem]
             mLaptop:gap-[1.667rem]
             desktop:gap-[2rem]
             largeDesktop:gap-[2.5rem]">
-            
               <div className=" flex flex-col
+                  w-full
                   sLaptop:pr-[3.3rem]
                   mLaptop:pr-[4.125rem]
                   desktop:pr-[4.95rem]

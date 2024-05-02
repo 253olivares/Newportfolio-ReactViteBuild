@@ -1,6 +1,7 @@
-import {memo} from 'react';
 import { projectStateType } from '../../../../../store/projectSlice';
 import {motion} from 'framer-motion';
+import {memo} from 'react';
+
 import ProjectInfo from './component/projectInfo'
 
 const index = memo(({project}:{project:projectStateType}) => {

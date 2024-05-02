@@ -1,9 +1,10 @@
-import minimize from '/assets/browser_MinimizeButto.svg';
-import fullscreen from '/assets/browser_fullscreenButton.svg';
-import close from '/assets/browser_closeButton.svg';
-import { memo } from 'react';
+import { memo, useContext } from 'react';
+import { AppContext } from '../../../../contextRefs';
 
 const index = memo(() => {
+
+  const appContext = useContext(AppContext);
+  const {minimize, fullscreen, close} = appContext!;
 
   const browserControls:string[] = [minimize, fullscreen, close];
 

@@ -187,23 +187,41 @@
 
     }
     .sectionCSS {
-        @apply text-SiteYellow
+        @apply 
+        text-SiteYellow
         font-bold
         leading-none
+        text-[1.458rem]
+        mobile:text-[1.943rem]
+        sMobile:text-[3.109rem]
+        mMobile:text-[3.731rem]
         sLaptop:text-[3.333rem]
         mLaptop:text-[4.167rem]
         desktop:text-[5rem]
         largeDesktop:text-[6.25rem]
+        sectionText
+        mobile:sectionTextMobile
+        sMobile:sectionTextsMobile
+        mMobile:sectionTextmMobile
         sLaptop:sectionTextSmall
         mLaptop:sectionTextMedium
         desktop:sectionTextDesktop
         largeDesktop:sectionTextLarge
     }
     .circle1 {
-        @apply sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
+        @apply 
+        w-[1.511rem] h-[1.511rem]
+        mobile:w-[2.014rem] mobile:h-[2.014rem]
+        sMobile:w-[3.223rem] sMobile:h-[3.223rem]
+        mMobile:w-[3.867rem] mMobile:h-[3.867rem]
+        sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
         mLaptop:w-[4.833rem] mLaptop:h-[4.833rem]
         desktop:w-[5.8rem] desktop:h-[5.8rem]
         largeDesktop:w-[7.25rem] largeDesktop:h-[7.25rem]
+        top-[-0.3906rem]
+        mobile:top-[-.5208rem]
+        sMobile:top-[-1.0941rem]
+        mMobile:top-[-1.313rem] left-[-2.86%]
         sLaptop:top-[-1.367rem] sLaptop:left-[0.533rem]
         mLaptop:top-[-1.708rem] mLaptop:left-[0.667rem]
         desktop:top-[-2.05rem] desktop:left-[0.8rem]
@@ -214,10 +232,19 @@
         rounded-full
     }
     .circle2{
-        @apply sLaptop:w-[3.533rem] sLaptop:h-[3.533rem]
+        @apply 
+        w-[1.38rem] h-[1.38rem]
+        mobile:w-[1.84rem] mobile:h-[1.84rem]
+        sMobile:w-[2.944rem] sMobile:h-[2.944rem]
+        mMobile:w-[3.533rem] mMobile:h-[3.533rem]
+        sLaptop:w-[3.533rem] sLaptop:h-[3.533rem]
         mLaptop:w-[4.417rem] mLaptop:h-[4.417rem]
         desktop:w-[5.3rem] desktop:h-[5.3rem]
         largeDesktop:w-[6.625rem] largeDesktop:h-[6.625rem]
+        top-[13.9397rem]
+        mobile:top-[18.5874rem]
+        sMobile:top-[29.7399rem]
+        mMobile:top-[35.688rem] left-[13.67%]
         sLaptop:left-[12%]
         sLaptop:top-[30.688rem]
         mLaptop:top-[38.375rem]
@@ -229,11 +256,22 @@
         rounded-full
     }
     .circle3{
-        @apply sLaptop:w-[5.5rem] sLaptop:h-[5.5rem]
+        @apply 
+        w-[2.149rem] h-[2.149rem]
+        mobile:w-[2.864rem] mobile:h-[2.864rem]
+        sMobile:w-[4.583rem] sMobile:h-[4.583rem]
+        mMobile:w-[5.5rem] mMobile:h-[5.5rem]
+        sLaptop:w-[5.5rem] sLaptop:h-[5.5rem]
         mLaptop:w-[6.875rem] mLaptop:h-[6.875rem]
         desktop:w-[8.25rem] desktop:h-[8.25rem]
         largeDesktop:w-[10.313rem] largeDesktop:h-[10.313rem]
+        right-[14.84%]
+        sLaptop:right-auto
         sLaptop:left-[37%]
+        top-[0.3906rem]
+        mobile:top-[0.7489rem]
+        sMobile:top-[1.1983rem]
+        mMobile:top-[1.438rem]
         sLaptop:top-[-2.104rem]
         mLaptop:top-[-2.708rem] 
         desktop:top-[-3.25rem] 
@@ -244,11 +282,22 @@
         rounded-full
     }
     .circle4{
-        @apply sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
+        @apply 
+        w-[1.511rem] h-[1.511rem]
+        mobile:w-[2.014rem] mobile:h-[2.014rem]
+        sMobile:w-[3.223rem] sMobile:h-[3.223rem]
+        mMobile:w-[3.867rem] mMobile:h-[3.867rem]
+        sLaptop:w-[3.867rem] sLaptop:h-[3.867rem]
         mLaptop:w-[4.833rem] mLaptop:h-[4.833rem]
         desktop:w-[5.8rem] desktop:h-[5.8rem]
         largeDesktop:w-[7.25rem] largeDesktop:h-[7.25rem]
+        right-[1.82%]
+        sLaptop:right-auto
         sLaptop:left-[64%]
+        top-[15.5519rem]
+        mobile:top-[20.7346rem]
+        sMobile:top-[33.1774rem]
+        mMobile:top-[39.813rem]
         sLaptop:top-[30.375rem] 
         mLaptop:top-[38rem] 
         desktop:top-[45.563rem] 
@@ -268,7 +317,12 @@
     }
     .partOneCSS{
         @apply relative w-full 
-        min-h-[40rem]
+        sLaptop:min-h-[40rem]
+        pb-[3.564rem]
+        mobile:pb-[4.753rem]
+        sMobile:pb-[7.604rem]
+        mMobile:pb-[9.125rem]
+        sLaptop:pb-0
         sLaptop:pl-[3.333rem]
         mLaptop:pl-[4.167rem]
         desktop:pl-[5rem]
@@ -325,12 +379,17 @@
         largeDesktop:mockBrowserlargeDekstop
     }
     .contactLabelText{
-        @apply text-PrimaryWhite 
+        @apply 
+        text-PrimaryWhite 
+        text-[1.343rem]
+        mobile:text-[1.791rem]
+        sMobile:text-[2.864rem]
+        mMobile:text-[3.438rem]
         sLaptop:text-[2rem]
         mLaptop:text-[2.5rem]
         desktop:text-[3rem]
         largeDesktop:text-[3.75rem] 
-        leading-tight   
+        leading-tight 
         font-medium
         relative
         flex justify-between
@@ -365,10 +424,12 @@
         animation-direction: reverse;
         animation-delay: .25s;
     }
+
     .animationDelay2s {
         animation-direction: reverse;
         animation-delay: .5s;
     } 
+
     .animationDelay3s {
         animation-direction: reverse;
         animation-delay: .75s;
@@ -388,6 +449,7 @@
     .scrollSection::-webkit-scrollbar{
         background:transparent;
     }
+
     .scrollSection::-webkit-scrollbar-thumb{
         background: var(--rDarkGreen);
         border-radius: 20px;
@@ -409,109 +471,170 @@
     }
     /* filtering the x svg but didnt work so its unused */
     .filterCloseSVG {
-        filter: invert(18%) sepia(0%) saturate(1575%) hue-rotate(209deg) brightness(100%) contrast(93%);    }
+        filter: invert(18%) sepia(0%) saturate(1575%) hue-rotate(209deg) brightness(100%) contrast(93%); }
+
     .customShadow {
         box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,.5);
     }
+
     .contactDivShadowSmall{
         box-shadow: 0.6rem 0.75rem 0 rgba(0, 0, 0, .5);
     }
+
     .contactDivShadowMedium{
         box-shadow: 0.75rem 0.938rem 0 rgba(0, 0, 0, .5);
     }
+
     .contactDivShadowDesktop{
         box-shadow: 0.9rem 1.125rem 0 rgba(0, 0, 0, .5);
     }
+
     .contactDivShadowLarge{
         box-shadow: 1.125rem 1.406rem 0 rgba(0, 0, 0, .5);
     }
+
     /* Skills box shadow */
     .infoSmall{
         box-shadow: 0.66rem 0.825rem 0 0 rgba(0,0,0,.5);
     }
+
     .infoMedium{
         box-shadow: 0.825rem 1.031rem 0 0 rgba(0,0,0,.5);
     }
+
     .infoDesktop{
         box-shadow: 0.99rem 1.238rem 0 0 rgba(0,0,0,.5);
     }
+
     .infoLargeDesktop{
         box-shadow: 1.238rem 1.547rem 0 0 rgba(0,0,0,.5);
     }
+
     /* shadow for the about me divs */
+    .divTinyShadow{
+        box-shadow: -0.146rem 0.219rem 0 0 rgba(0,0,0,.5);
+    }
+
+    .divMobileShadow{
+        box-shadow: -0.194rem 0.291rem 0 0 rgba(0,0,0,.5);
+    }
+
+    .divsMobileShadow{
+        box-shadow: -0.311rem 0.466rem 0 0 rgba(0,0,0,.5);
+    }
+
+    .divmMobileShadow{
+        box-shadow: -0.373rem 0.56rem 0 0 rgba(0,0,0,.5);
+    }
+
     .divSmallShadow{
         box-shadow: -0.333rem 0.5rem 0 0 rgba(0,0,0,.5);
     }
+
     .divMediumShadow{
         box-shadow: -0.417rem 0.625rem 0 0 rgba(0,0,0,.5);
     }
+
     .divDesktopShadow{
         box-shadow: -0.5rem 0.75rem 0 0 rgba(0,0,0,.5) ;
     }
+
     .divLargeDesktopShadow{
         box-shadow: -0.625rem 0.938rem 0 0 rgba(0,0,0,.5) ;
     }
+
     /* Home Sections TExt */
     .heroTextMobileTiny{
         text-shadow: -0.1757rem 0.1757rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextMobile{
         text-shadow: -0.2343rem 0.2343rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextSmallMobile{
         text-shadow: -0.37rem 0.37rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextMediumMobile{
         text-shadow: -0.45rem .45rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextSmall{
         text-shadow: -0.333rem .333rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextMedium{
         text-shadow: -0.417rem .417rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextDesktop{
         text-shadow: -0.5 .5rem 0 rgba(0,0,0,.5);
     }
+
     .heroTextLarge{
         text-shadow: -0.625rem 0.625rem 0 rgba(0,0,0,.5);
     }
+
     /* Section header text */
+    .sectionText{
+        text-shadow: -0.073rem 0.146rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextMobile{
+        text-shadow: -0.097rem 0.194rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextsMobile{
+        text-shadow: -0.156rem 0.311rem 0 rgba(0,0,0,.5);
+    }
+    .sectionTextmMobile{
+        text-shadow: -0.187rem 0.373rem 0 rgba(0,0,0,.5);
+    }
     .sectionTextSmall{
         text-shadow: -0.167rem 0.333rem 0 rgba(0,0,0,.5);
     }
+
     .sectionTextMedium{
         text-shadow: -0.208rem 0.417rem 0 rgba(0,0,0,.5);
     }
+
     .sectionTextDesktop{
         text-shadow: -0.25rem 0.5rem 0 rgba(0,0,0,.5);
     }
+
     .sectionTextLarge{
         text-shadow: -0.313rem 0.625rem 0 rgba(0,0,0,.5);
     }
+
     /* smaller text shadow */
     .textShadowSmall{
         text-shadow: -0.167rem 0.167rem 0 rgba(0,0,0,.5);
     }
+
     .textShadowMedium{
         text-shadow: -0.208rem .208rem 0 rgba(0,0,0,.5);
     }
+
     .textShadowDesktop{
         text-shadow: -0.25rem .25rem 0 rgba(0,0,0,.5);
     }
+
     .textShadowLarge{
         text-shadow: -0.313rem 0.313rem 0 rgba(0,0,0,.5);
     }
+
     /* browser shadow from the portfolio section  */
     .mockBrowserSmallLaptop{
         box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);
     }
+
     .mockBrowserMediumLaptop{
         box-shadow: 0.833rem 1.042rem 0 0 rgba(0,0,0,.5);
     }
+
     .mockBrowserDesktop{
         box-shadow: 1rem 1.25rem 0 0 rgba(0,0,0,.5);
     }
+
     .mockBrowserlargeDekstop{
         box-shadow: 1.25rem 1.563rem 0 0 rgba(0,0,0,.5);
     }

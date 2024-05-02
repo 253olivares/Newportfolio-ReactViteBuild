@@ -1,7 +1,7 @@
+import { AppContext } from "../../contextRefs";
 import { memo, useContext } from "react";
-import { AppContext } from "../../sidebar/contextSidebarAPI";
-import MockBrowser from './component/mockBrowser'
-import { PortfolioProvider } from "./mockBrowserContext";
+
+import MockBrowser from './component/mockBrowser';
 
 const index = memo(() => {
 
@@ -11,7 +11,7 @@ const index = memo(() => {
   return (
     <div ref={el => {
       if(el) pageRef.current[2] = el
-    }} id="Portfolio" className={` hidden bg-SiteGreen w-full`}>
+    }} id="Portfolio" className={` hidden sLaptop:block bg-SiteGreen w-full`}>
       <div className="
       w-full
       flex flex-col
@@ -42,12 +42,15 @@ const index = memo(() => {
           data-aos-duration='1250'
           data-aos-delay='300'
           className="
+          w-full
+          px-[]
           extra:w-[1920px]
           sectionCSS
           ">PORTFOLIO</h1>
-          <PortfolioProvider>
+          {/* Load two different mock browsers depending on screen width
+          // loading them this was is less computationally intensive then using media queries
+          */}
             <MockBrowser />
-          </PortfolioProvider>
         </div>
       </div>
     </div>

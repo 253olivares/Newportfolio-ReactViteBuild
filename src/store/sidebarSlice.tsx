@@ -3,13 +3,15 @@ import { RootState } from "./store";
 
 type initialStateType = {
     scrollState: string,
-    currentSection: string
+    currentSection: string,
+    windowWidth:number
 }
 
 
 const initialState:initialStateType = {
     scrollState: "Home",
-    currentSection: "Home"
+    currentSection: "Home",
+    windowWidth:window.innerWidth,
 }
 
 const sidebarSlice = createSlice({
@@ -21,13 +23,17 @@ const sidebarSlice = createSlice({
         },
         setCurrentSelection(state,action:PayloadAction<string>){
             state.currentSection = action.payload; 
-        }   
+        },
+        setWindowWidth(state){
+            state.windowWidth = window.innerWidth;
+        }
     }
 })
 
 export const getScrollState = (state:RootState) => state.sidebar.scrollState;
 export const getCurrentSection = (state:RootState) => state.sidebar.currentSection;
+export const getWindowWidth = (state:RootState) => state.sidebar.windowWidth;
 
-export const {setScrollState,setCurrentSelection } = sidebarSlice.actions;
+export const {setScrollState,setCurrentSelection,setWindowWidth} = sidebarSlice.actions;
 
 export default sidebarSlice.reducer;

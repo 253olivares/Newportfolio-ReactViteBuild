@@ -1,8 +1,9 @@
-import { Fragment, memo} from "react"
-import { useAppSelector } from "../../../../../store/hook";
 import { filterProjects } from "../../../../../store/projectSlice";
-import ProjectListing from '../projectItems';
+import { useAppSelector } from "../../../../../store/hook";
 import { AnimatePresence } from "framer-motion";
+import { Fragment, memo} from "react"
+
+import ProjectListing from '../projectItems';
 
 const index = memo(() => {
 

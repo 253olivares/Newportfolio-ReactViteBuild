@@ -1,10 +1,13 @@
-import { memo } from 'react';
-import Arrow from '/assets/filter_arrow.svg';
-import { useAppDispatch } from '../../../../../store/hook';
 import { openFilter } from '../../../../../store/projectSlice';
+import { useAppDispatch } from '../../../../../store/hook';
+import { memo, useContext } from 'react';
+import { AppContext } from '../../../../contextRefs';
 
 const index = memo(() => {
   const dispatch = useAppDispatch();
+
+  const appContext = useContext(AppContext);
+  const {Arrow} = appContext!;
 
   return (
     <div 

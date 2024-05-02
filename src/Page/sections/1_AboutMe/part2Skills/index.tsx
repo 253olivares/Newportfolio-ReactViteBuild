@@ -1,18 +1,18 @@
+import { AppContext } from '../../../contextRefs';
+import { memo, useContext} from 'react';
+
+import { getSelectSkill, getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
+import { fetchSkills } from '../../../../store/skillsSlice';
+import { useAppSelector } from '../../../../store/hook';
+import { store } from '../../../../store/store';
+
 import DescBox from './components/description';
 import Icons from './components/icons';
 import Loading from '../../loading';
-import { memo, useContext} from 'react';
-import { SkillsContext } from './skillsContextAPI';
-
-import { useAppSelector } from '../../../../store/hook';
-import { getSelectSkill, getSkillsError, getSkillsStatus, selectEntities } from '../../../../store/skillsSlice';
-
-import { fetchSkills } from '../../../../store/skillsSlice';
-import { store } from '../../../../store/store';
 
 const index = memo(() => {
 
-  const appContext = useContext(SkillsContext);
+  const appContext = useContext(AppContext);
   const {arrowRef,square,pointer} = appContext!
 
   const entities = useAppSelector(selectEntities);
@@ -77,9 +77,13 @@ const index = memo(() => {
   }
 
   return (
-    <div className="partTwoCSS">
-        <div className="w-full 
-         relative z-[5]
+    <div className="
+    hidden
+    sLaptop:block
+    partTwoCSS">
+        <div className="
+        w-full 
+        relative z-[5]
         flex flex-col px-[3.6%] extra:px-0">
           <div
           data-aos='fade'

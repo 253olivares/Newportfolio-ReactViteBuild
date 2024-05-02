@@ -1,6 +1,6 @@
 
 import { memo, useContext } from 'react';
-import { AppContext } from './contextSidebarAPI';
+import { AppContext } from '../contextRefs';
 import Doll from './component/doll'
 import NavItems from './component/navItems'
 
@@ -14,7 +14,10 @@ const index = memo(() => {
   fixed z-30 
   left-0 
   bottom-0
-  px-[2.6%]
+  px-[0.488rem]
+  mobile:px-[0.651rem]
+  sMobile:px-[1.042rem]
+  mMobile:px-[1.25rem]
   sLaptop:px-0
   sLaptop:py-[0.667rem]
   mLaptop:py-[0.833rem]
@@ -26,12 +29,12 @@ const index = memo(() => {
   mLaptop:min-w-[4.167rem] 
   desktop:min-w-[5rem] 
   largeDesktop:min-w-[6.25rem] 
-  h-[2.44125rem]
-  mobile:h-[3.255rem]
-  sMobile:h-[5.20625rem]
-  mMobile:h-[6.25rem]
+  h-[3.223rem]
+  mobile:h-[4.297rem]
+  sMobile:h-[6.8755rem]
+  mMobile:h-[8.25rem]
   sLaptop:h-[100vh] 
-  flex 
+  flex
   flex-row
   sLaptop:flex-col
   justify-between 
@@ -39,6 +42,13 @@ const index = memo(() => {
   bg-SidebarGray 
   customShadow
   ">
+
+    {/* 
+      px-[0.5979rem]
+      mobile:px-[.7973rem]
+      sMobile:px-[1.275323rem]
+      mMobile:px-[1.531rem]
+    */}
       <Doll character={Character1} />
       <div className='
       flex 
@@ -49,10 +59,6 @@ const index = memo(() => {
       sLaptop:w-full
       h-full  
       sLaptop:h-auto
-      px-[0.5979rem]
-      mobile:px-[.7973rem]
-      sMobile:px-[1.275323rem]
-      mMobile:px-[1.531rem]
       sLaptop:px-0
       sLaptop:py-0
       '>
@@ -67,10 +73,10 @@ const index = memo(() => {
       <div className="
       blank 
       block 
-      w-[1.4648rem]
-      mobile:w-[1.9531rem]
-      sMobile:w-[3.1248rem]
-      mMobile:w-[3.75rem]
+      w-[1.838rem]
+      mobile:w-[2.451rem]
+      sMobile:w-[3.921rem]  
+      mMobile:w-[4.706rem]
       sLaptop:w-[2.5rem] 
       mLaptop:w-[3.125rem] 
       desktop:w-[3.75rem] 

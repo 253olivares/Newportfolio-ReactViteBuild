@@ -1,19 +1,27 @@
+import { AppContext } from "../../contextRefs";
 import { useContext, memo } from "react";
-import { AppContext } from "../../sidebar/contextSidebarAPI";
-import Footer from '../../footer'
-import Form from './component/contactForm'
+
 import DownloadPDF from './component/downloadResume';
-import strips from '/assets/backgroundStrings2.svg'
+import Form from './component/contactForm';
+import Footer from '../../footer';
 
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
-  const {pageRef} = appContext!;
+  const {pageRef, strips} = appContext!;
 
   return (
    <div ref={el => {
       if(el) pageRef.current[3] = el
-    }} id="ContactMe" className={` hidden bg-SiteGreen w-full`}>
+    }} id="ContactMe" className={`
+    bg-SiteGreen 
+    w-full
+    pb-[3.223rem]
+    mobile:pb-[4.297rem]
+    sMobile:pb-[6.8755rem]
+    mMobile:pb-[8.25rem]
+    sLaptop:pb-0
+    `}>
       <div className="
         w-full
         relative
@@ -22,17 +30,29 @@ const index = memo(() => {
         mLaptop:pl-[4.167rem]
         desktop:pl-[5rem]
         largeDesktop:pl-[6.25rem]
+        pt-[1.221rem]
+        mobile:pt-[1.628rem]
+        sMobile:pt-[2.604rem]
+        mMobile:pt-[3.125rem]
         sLaptop:pt-[1.667rem]
         mLaptop:pt-[2.083rem]
         desktop:pt-[2.5rem]
         largeDesktop:pt-[3.125rem]
+        pb-[2.198rem]
+        mobile:pb-[2.93rem]
+        sMobile:pb-[4.688rem]
+        mMobile:pb-[5.625rem]
         sLaptop:pb-[7.791rem]
         mLaptop:pb-[9.754rem]
         desktop:pb-[11.655rem]
         largeDesktop:pb-[14.6rem]
         ">
           <div className="
-          w-full pl-[3.6%] extra:pl-0 extra:max-w-[1920px] extra:mx-auto
+          w-full 
+          px-[6.51%]
+          sLaptop:pl-[3.6%] 
+          sLaptop:pr-0
+          extra:pl-0 extra:max-w-[1920px] extra:mx-auto
           ">
             <h1 data-aos='fade'
             data-aos-duration='1250'
@@ -41,15 +61,28 @@ const index = memo(() => {
           </div>
           <div className="
           w-full 
-          flex flex-row justify-between 
-          gap-[4.75%]
+          sLaptop:flex 
+          flex-col
+          sLaptop:flex-row 
+          sLaptop:justify-between 
+          mMobile:gap-0
+          sLaptop:gap-[4.75%]
+          mt-[1.494rem]
+          mobile:mt-[2.009rem]
+          sMobile:mt-[3.177rem]
+          mMobile:mt-[3.813rem]
           sLaptop:mt-[1.667rem]
           mLaptop:mt-[2.083rem]
           desktop:mt-[2.5rem]
           largeDesktop:mt-[3.125rem]
           ">
-            <div className="w-auto 
-            flex flex-grow 
+            <div className="
+            w-full
+            sLaptop:w-auto 
+            flex 
+            px-[6.51%]
+            sLaptop:px-0
+            sLaptop:flex-grow 
             justify-end 
             ">
               <Form/>
@@ -60,12 +93,15 @@ const index = memo(() => {
       <img className="
        absolute bottom-0 left-0
        z-[0]
+       hidden
        sLaptop:w-[57.24rem]
        mLaptop:w-[71.28rem]
        desktop:w-[86.4rem]
        largeDesktop:w-[108rem]
       " src={strips} alt="Stripes_2" />
+
       <Footer />
+
     </div>
   )
 })

@@ -20,9 +20,10 @@ const index = memo(({character}: {character:string}) => {
     <img 
     ref={dollref}
     className='
-      w-[1.9531rem]
-      sMobile:w-[3.12375rem]  
-      mMobile:w-[3.75rem]
+      w-[1.838rem]
+      mobile:w-[2.451rem]
+      sMobile:w-[3.921rem]  
+      mMobile:w-[4.706rem]
       sLaptop:w-[2.5rem] 
       mLaptop:w-[3.125rem] 
       desktop:w-[3.75rem] 

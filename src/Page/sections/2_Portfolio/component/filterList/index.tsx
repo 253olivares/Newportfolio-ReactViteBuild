@@ -1,15 +1,15 @@
 import { memo, useContext, useEffect } from "react";
-import { BrowserAppContext } from "../../mockBrowserContext";
 import closeBrowserIcon from '/assets/browser_closeButton.svg';
 import FilterItems from '../individualFilters'
 import { useAppDispatch } from "../../../../../store/hook";
 import { closeFilter } from "../../../../../store/projectSlice";
 import {  motion } from "framer-motion";
+import { AppContext } from "../../../../contextRefs";
 
 const index = memo(() => {
     const dispatch = useAppDispatch();
 
-    const appContext = useContext(BrowserAppContext);
+    const appContext = useContext(AppContext);
     const {filterListRef, labels} = appContext!;
 
     useEffect(()=> {
