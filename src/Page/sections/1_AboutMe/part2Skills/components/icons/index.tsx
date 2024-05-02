@@ -42,7 +42,11 @@ const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
       ref={el => iconsRef.current[loc] = el!}
       className={`
       cursor-pointer
-      sLaptop:w-[4.224rem]
+      w-[2.591rem]
+      mobile:w-[3.455rem]
+      sMobile:w-[5.528rem]
+      mMobile:w-[6.634rem]
+      sLaptop:w-[4.224rem] 
       mLaptop:w-[5.28rem]
       desktop:w-[6.336rem]
       largeDesktop:w-[7.92rem]

@@ -78,27 +78,43 @@ const index = memo(() => {
 
   return (
     <div className="
-    hidden
     sLaptop:block
     partTwoCSS">
         <div className="
         w-full 
         relative z-[5]
-        flex flex-col px-[3.6%] extra:px-0">
+        flex 
+        flex-col 
+        sLaptop:px-[3.6%] 
+        extra:px-0">
           <div
           data-aos='fade'
           data-aos-duration='1000'
           data-aos-delay='0'
-          className="w-full flex flex-col extra:max-w-[1920px] extra:mx-auto sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]">
+          className="w-full 
+          flex flex-col 
+          px-[6.51%]
+          sLaptop:px-0
+          extra:max-w-[1920px] extra:mx-auto 
+          gap-[0.195rem] mobile:gap-[0.260rem] sMobile:gap-[0.416rem] mMobile:gap-[0.5rem]
+          sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]">
             <h1  className="sectionCSS">MY TECHNICAL SKILLS</h1>
             <p className="
             leading-none
             font-bold
             text-PrimaryWhite
+            text-[0.781rem]
+            mobile:text-[1.042rem]
+            sMobile:text-[1.667rem]
+            mMobile:text-[2rem]
             sLaptop:text-[2rem]
             mLaptop:text-[2.5rem]
             desktop:text-[3rem]
             largeDesktop:text-[3.75rem]
+            textShadowTiny
+            mobile:textShadowmobile
+            sMobile:textShadowsMobile
+            mMobile:textShadowmMobile
             sLaptop:textShadowSmall
             mLaptop:textShadowMedium
             desktop:textShadowDesktop
@@ -114,25 +130,46 @@ const index = memo(() => {
             data-aos='fade-up'
             data-aos-duration='1000'
             data-aos-delay='500'
-            className='flex flex-col w-full max-w-[1920px] extra:mx-auto'>
+            className='
+            sLaptop:flex 
+            flex-col 
+            w-full 
+            max-w-[1920px] 
+            extra:mx-auto'>
               <div className='
+              overflow-x-auto
+              no-scrollbar
+              mt-[0.977rem]
+              mobile:mt-[1.283ren]
+              sMobile:mt-[2.083rem]
+              mMobile:mt-[2.5rem]
               sLaptop:mt-[3.25rem]
               mLaptop:mt-[4.25rem]
               desktop:mt-[5rem]
               largeDesktop:mt-[6.75rem]
+              py-[0.608rem]
+              mobile:py-[0.81rem]
+              sMobile:py-[1.296rem]
+              mMobile:py-[1.555rem]
               sLaptop:py-[0.99rem]
               mLaptop:py-[1.238rem]
               desktop:py-[1.485rem]
               largeDesktop:py-[1.856rem]
-              px-[1.82%]
+              px-[9.80%]
+              sLaptop:px-[1.82%]
+              gap-[0.729rem]
+              mobile:gap-[0.972rem]
+              sMobile:gap-[1.555rem]
+              mMobile:gap-[1.866rem]
+              sLaptop:gap-0
               w-full 
               flex flex-row
-              justify-between
+              sLaptop:justify-between
               relative
               '>
                 {display}
               </div>
-              <div className='w-full relative sLaptop:min-h-[1.716rem] mLaptop:min-h-[2.145rem] desktop:min-h-[2.574rem] largeDesktop:min-h-[3.218rem]'>
+              <div className='w-full hidden sLaptop:block relative sLaptop:min-h-[1.716rem] mLaptop:min-h-[2.145rem] desktop:min-h-[2.574rem] largeDesktop:min-h-[3.218rem]'>
                 <img
                 ref={arrowRef}
                 className={`
@@ -147,7 +184,9 @@ const index = memo(() => {
             </div>
             }
         </div>
-        <img className="absolute 
+        <img className="
+        hidden
+        absolute 
         z-[0]
         sLaptop:h-[56.71rem]
         mLaptop:h-[70.62rem] 

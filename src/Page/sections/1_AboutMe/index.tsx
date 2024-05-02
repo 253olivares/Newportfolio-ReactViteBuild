@@ -3,11 +3,16 @@ import { useContext, memo } from "react";
 
 import Part1Profile from './part1Profile';
 import Part2Skills from './part2Skills';
+import Part2SkillsMobile from './part2SkillsMobile';
+import { useAppSelector } from "../../../store/hook";
+import { getWindowWidth } from "../../../store/sidebarSlice";
 
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
   const {pageRef} = appContext!;
+
+  const width = useAppSelector(getWindowWidth);
 
   return (
     <div  ref={el => {
@@ -21,7 +26,7 @@ const index = memo(() => {
       load mobile and desktop version
       depending on what our width is
       */}
-      <Part2Skills />
+    <Part2Skills />
     </div>
   )
 })

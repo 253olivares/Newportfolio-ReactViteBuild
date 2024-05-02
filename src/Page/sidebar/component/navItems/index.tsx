@@ -112,9 +112,7 @@ const index = memo((
           : 
           `
           w-[0rem] 
-          left-[50%] 
-          group-hover:w-[50%] 
-          group-hover:left-[25%]`
+          left-[50%] `
         } 
         `} />
 

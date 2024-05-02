@@ -26,6 +26,7 @@ const index = memo(() => {
             mt-[1.953rem] mobile:mt-[2.604rem] sMobile:mt-[4.166rem] mMobile:mt-[5rem]
             sLaptop:mt-[1.421rem] mLaptop:mt-[1.792rem] desktop:mt-[2.163rem] largeDesktop:mt-[2.688rem]
 
+            contactDivShadowmTiny mobile:contactDivShadowMobile sMobile:contactDivShadowsMobile mMobile:contactDivShadowmMobile
             sLaptop:contactDivShadowSmall mLaptop:contactDivShadowMedium desktop:contactDivShadowDesktop largeDesktop:contactDivShadowLarge
 
             rounded-l-[0.223rem] mobile:rounded-l-[0.297rem] sMobile:rounded-l-[0.474rem] mMobile:rounded-l-[0.569rem]

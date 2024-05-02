@@ -564,25 +564,37 @@ const index = memo(() => {
         '
         src={moneySign} alt="DollarSign2" />
         <img className='
-        hidden
         absolute 
+        w-[0.585rem]
+        mobile:w-[0.700rem]
+        sMobile:w-[1.249rem]
+        mMobile:w-[1.5rem]
         sLaptop:w-[1.313rem]
         mLaptop:w-[1.688rem]
         desktop:w-[2rem] 
         largeDesktop:w-[2.5rem] 
-        left-[44.53%] 
+        left-[6.51%]
+        sLaptop:left-[44.53%] 
+        bottom-[40%]
+        sLaptop:bottom-0
         sLaptop:top-[3.54rem]
         mLaptop:top-[4.417rem]
         desktop:top-[5.313rem]
         largeDesktop:top-[6.625rem]' src={bracketLeft} alt="Left_Bracket_background" />
         <img className='
-        hidden
         absolute 
+        w-[0.585rem]
+        mobile:w-[0.700rem]
+        sMobile:w-[1.249rem]
+        mMobile:w-[1.5rem]
         sLaptop:w-[1.313rem]
         mLaptop:w-[1.688rem]
         desktop:w-[2rem] 
         largeDesktop:w-[2.5rem] 
-        right-[07.13%] 
+        left-[6.51%]
+        sLaptop:left-auto
+        sLaptop:right-[07.13%] 
+        top-[87.5%]
         sLaptop:top-[26.3rem]
         mLaptop:top-[32.875rem]
         desktop:top-[39.438rem]
