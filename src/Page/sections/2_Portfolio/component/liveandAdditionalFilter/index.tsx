@@ -5,7 +5,16 @@ import OpenFilter from '../openFilter';
 const index = memo(() => {
 
   return (
-    <div className='flex 
+    <div className='
+    flex
+    justify-between
+    sLaptop:justify-normal
+    px-[4%]
+    sLaptop:px-0
+    mt-[0.488rem]
+    mobile:mt-[0.651rem]
+    sMobile:mt-[1.041rem]
+    mMobile:mt-[1.25rem]
     sLaptop:gap-[1.167rem]
     mLaptop:gap-[1.458rem]
     desktop:gap-[1.75rem]

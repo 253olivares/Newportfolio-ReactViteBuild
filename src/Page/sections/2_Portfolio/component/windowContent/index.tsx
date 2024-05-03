@@ -4,13 +4,14 @@ import FilterSection from '../filterSection';
 import FilterList from '../filterList';
 import Loading from '../../../loading';
 import { useAppSelector } from "../../../../../store/hook";
-import { getOpenFilter, getProjectError, getProjectStatus } from "../../../../../store/projectSlice";
+import { getOpenFilter, getProjectError, getProjectStatus, getTabSelect } from "../../../../../store/projectSlice";
 import { AnimatePresence } from "framer-motion";
 
 const index = memo(() => {
 
   const openFilter = useAppSelector(getOpenFilter);
 
+  const selected = useAppSelector(getTabSelect);
   const status = useAppSelector(getProjectStatus);
   const error = useAppSelector(getProjectError);
 
@@ -54,7 +55,7 @@ const index = memo(() => {
   }
 
   return (
-    <div className="
+    <div className={`
       w-full 
       h-full 
    
@@ -65,6 +66,40 @@ const index = memo(() => {
       mLaptop:min-h-[33.333rem]
       desktop:min-h-[40rem]
       largeDesktop:min-h-[50rem]
+
+      ${
+        selected === 'Programming' && `  
+        rounded-r-[0.244rem]
+        mobile:rounded-r-[0.326rem]
+        sMobile:rounded-r-[0.521rem]
+        mMobile:rounded-r-[0.625rem]
+        rounded-bl-[0.244rem]
+        mobile:rounded-bl-[0.326rem]
+        sMobile:rounded-bl-[0.521rem]
+        mMobile:rounded-bl-[0.625rem]
+        `
+      }
+      ${
+        selected === 'Art' && `
+        rounded-[0.244rem]
+        mobile:rounded-[0.326rem]
+        sMobile:rounded-[0.521rem]
+        mMobile:rounded-[0.625rem]
+        `
+      }
+      ${
+        selected === 'UI / UX' && `
+        rounded-l-[0.244rem]
+        mobile:rounded-l-[0.326rem]
+        sMobile:rounded-l-[0.521rem]
+        mMobile:rounded-l-[0.625rem]
+        rounded-br-[0.244rem]
+        mobile:rounded-br-[0.326rem]
+        sMobile:rounded-br-[0.521rem]
+        mMobile:rounded-br-[0.625rem]
+
+        `
+      }
       sLaptop:rounded-[.66rem]
       mLaptop:rounded-[.83rem]
       desktop:rounded-[1rem]
@@ -72,25 +107,29 @@ const index = memo(() => {
       overflow-hidden
       overflowFix
       relative
-      ">
+    `}>
         <AnimatePresence>
           {
             openFilter &&  <FilterList />
           }
         </AnimatePresence>
         <div className="
-        hidden 
         w-full
         sLaptop:min-h-[26.667rem]
         mLaptop:min-h-[33.333rem]
         desktop:min-h-[40rem]
         largeDesktop:min-h-[50rem]
         relative
-        sLaptop:flex flex-col
+        sLaptop:flex f
+        lex-col
         sLaptop:pt-[0.8rem]
         mLaptop:pt-[1rem]
         desktop:pt-[1.2rem]
         largeDesktop:pt-[1.5rem]
+        pb-[0.488rem]
+        mobile:pb-[0.651rem]
+        sMobile:pb-[1.041rem]
+        mMobile:pb-[1.25rem]
         sLaptop:pb-[0.356rem]
         mLaptop:pb-[0.445rem]
         desktop:pb-[0.534rem]
@@ -101,16 +140,26 @@ const index = memo(() => {
         largeDesktop:px-[3.125rems]">
           {/* filter section */}
            <FilterSection />
-           <hr className="w-fill
+           <hr className="
+            w-fill
+            mx-[2.21%]
+            mt-[0.493rem]
+            mobile:mt-[0.657rem]
+            sMobile:mt-[1.051rem]
+            mMobile:mt-[1.261rem]
             sLaptop:mt-[.36464rem]
             mLaptop:mt-[.454rem]  
             desktop:mt-[0.5504rem]
             largeDesktop:mt-[0.688rem]
+            h-[0.116rems]
+            mobile:h-[0.154rem]
+            sMobile:h-[0.247rem]
+            mMobile:h-[0.297rem]
             sLaptop:h-[0.167rem]
             mLaptop:h-[0.208rem]
             desktop:h-[0.25rem]
             largeDesktop:h-[0.313rem]
-            rounded-full
+            rounded-full      
             bg-GlassLighterBackground
             relative
            " />

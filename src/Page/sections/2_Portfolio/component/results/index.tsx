@@ -30,6 +30,7 @@ const index = memo(() => {
     </p>
     :
     <div className={`
+    hidden sLaptop:block
     justify-evenly
     pr-[2rem]
     ${content.length<=3 ?   `

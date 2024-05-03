@@ -27,7 +27,9 @@ export const windowResize = ():void => {
         // handle resize function
         // runs out dispatch
         function handleResize() {
-            dispatch(setWindowWidth());
+            if(width !== window.innerWidth){
+                dispatch(setWindowWidth());
+            }
         }
 
         window.addEventListener('resize', handleResize);

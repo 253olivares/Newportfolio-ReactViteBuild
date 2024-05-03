@@ -9,8 +9,11 @@ const index = memo(() => {
   const tabSelect = useAppSelector(getTabSelect);
 
   return (
-    <div className="flex 
-    justify-between
+    <div className="
+    flex 
+    flex-col
+    sLaptop:flex-row
+    sLaptop:justify-between
     w-full
     ">
      <SearchBar />

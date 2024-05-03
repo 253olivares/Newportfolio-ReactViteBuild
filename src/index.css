@@ -185,6 +185,7 @@
         after:desktop:rounded-bl-[.64rem]
         after:largeDesktop:rounded-bl-[.8rem]
         after:invertRight
+        after:sMobile:LargerInvertRight
         after:bg-transparent
         
         
@@ -226,6 +227,7 @@
         before:desktop:rounded-br-[.64rem]
         before:largeDesktop:rounded-br-[.8rem]
         before:invertLeft
+        before:sMobile:largerInvertLeft
         before:bg-transparent
 
     }
@@ -482,6 +484,11 @@
 }
 
 @layer utilities {
+
+    .filterSVG{
+        filter: invert(30%) sepia(98%) saturate(324%) hue-rotate(124deg) brightness(94%) contrast(88%);
+    }
+
     /* scrollbark */
     .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -555,6 +562,12 @@
     }
 
     /* add curve to browser select */
+    .largerInvertLeft{
+        box-shadow: 1rem 0 0 0 var(--rPrimaryWhite);
+    }
+    .LargerInvertRight{
+        box-shadow: -1rem 0 0 0 var(--rPrimaryWhite);
+    }
     .invertLeft{
         box-shadow: .5rem 0 0 0 var(--rPrimaryWhite);
     }

@@ -48,7 +48,7 @@ const index = memo(() => {
        transition={{duration:.15}}
         ref={filterListRef}
         className={`
-         hidden
+        hidden
          sLaptop:block
          h-full
          absolute
