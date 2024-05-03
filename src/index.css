@@ -118,22 +118,31 @@
 
     .mockBrowserSelected {
         @apply 
+       
+        w-[calc(100%/3-(0.126rem*2))]
+        mobile:w-[calc(100%/3-(0.169rem*2))]
+        sMobile:w-[calc(100%/3-(0.270rem*2))]
+        mMobile:w-[calc(100%/3-(.325rem*2))]
         sLaptop:w-[8.9rem]
         mLaptop:w-[11.125rem]
         desktop:w-[13.35rem]
         largeDesktop:w-[16.688rem]
         
-
-        sLaptop:h-full
+        h-full
         absolute
         z-[4]
         bottom-0
+        left-0
         sLaptop:left-[1.333rem]
         mLaptop:left-[1.666rem]
         desktop:left-[2rem]
         largeDesktop:left-[3.125rem]
         bg-PrimaryWhite
 
+        rounded-t-[0.244rem]
+        mobile:rounded-t-[0.326rem]
+        sMobile:rounded-t-[0.521rem]
+        mMobile:rounded-t-[0.625rem]
         sLaptop:rounded-t-[.53rem]
         mLaptop:rounded-t-[.66rem]
         desktop:rounded-t-[.8rem]
@@ -142,42 +151,76 @@
         after:content-['']
         after:block
         after:absolute
+        after:w-[1.171rem]
+        after:mobile:w-[1.301rem]
+        after:sMobile:w-[2.499rem]
+        after:mMobile:w-[3rem]
         after:sLaptop:w-[1.325rem]
         after:mLaptop:w-[1.65rem]
         after:desktop:w-[2rem]
         after:largeDesktop:w-[2.5rem]
+        after:h-[1rem]
+        after:mobile:h-[1.5rem]
+        after:sMobile:h-[1.666rem]
+        after:mMobile:h-[2rem]
         after:sLaptop:h-[1rem]
         after:mLaptop:h-[1.33rem]
         after:desktop:h-[1.66rem]
         after:largeDesktop:h-[2rem]
         after:bottom-0
+        after:right-[-1.171rem]
+        after:mobile:right-[-1.301rem]
+        after:sMobile:right-[-2.499rem]
+        after:mMobile:right-[-3rem]
         after:sLaptop:right-[-1.325rem]
         after:mLaptop:right-[-1.65rem]
         after:desktop:right-[-2rem]
         after:largeDesktop:right-[-2.5rem]
+        after:rounded-bl-[0.488rem]
+        after:mobile:rounded-bl-[0.651rem]
+        after:sMobile:rounded-bl-[1.041rem]
+        after:mMobile:rounded-bl-[1.25rem]
         after:sLaptop:rounded-bl-[.424rem]
         after:mLaptop:rounded-bl-[0.528rem]
         after:desktop:rounded-bl-[.64rem]
         after:largeDesktop:rounded-bl-[.8rem]
         after:invertRight
         after:bg-transparent
-
+        
+        
         before:content-['']
         before:block
         before:absolute
+        before:bg-black
+        before:w-[1.171rem]
+        before:mobile:w-[1.5rem]
+        before:sMobile:w-[2.499rem]
+        before:mMobile:w-[3rem]
         before:sLaptop:w-[1.325rem]
         before:mLaptop:w-[1.65rem]
         before:desktop:w-[2rem]
         before:largeDesktop:w-[2.5rem]
+        before:h-[1rem]
+        before:mobile:h-[1.5rem]
+        before:sMobile:h-[1.666rem]
+        before:mMobile:h-[2rem]
         before:sLaptop:h-[1rem]
         before:mLaptop:h-[1.33rem]
         before:desktop:h-[1.66rem]
         before:largeDesktop:h-[2rem]
         before:bottom-0
+        before:left-[-1.171rem]
+        before:mobile:left-[-1.5rem]
+        before:sMobile:left-[-2.499rem]
+        before:mMobile:left-[-3rem]
         before:sLaptop:left-[-1.325rem]
         before:mLaptop:left-[-1.65rem]
         before:desktop:left-[-2rem]
         before:largeDesktop:left-[-2.5rem]
+        before:rounded-br-[0.488rem]
+        before:mobile:rounded-br-[0.651rem]
+        before:sMobile:rounded-br-[1.041rem]
+        before:mMobile:rounded-br-[1.25rem]
         before:sLaptop:rounded-br-[.424rem]
         before:mLaptop:rounded-br-[0.528rem]
         before:desktop:rounded-br-[.64rem]
@@ -335,12 +378,14 @@
     .partTwoCSS{
         @apply 
         bg-SiteGreen
-        relative w-full
-        min-h-[35rem]
+        relative 
+        w-full
+
         sLaptop:pl-[3.333rem]
         mLaptop:pl-[4.167rem]
         desktop:pl-[5rem]
         largeDesktop:pl-[6.25rem]
+
         pt-[1.831rem]
         mobile:pt-[2.441rem]
         sMobile:pt-[3.906rem]
@@ -355,29 +400,63 @@
         backdrop-blur-[.75rem]
         bg-GlassBackground
         overflow-hidden 
-        w-full 
+
+        mt-[1.563rem]
+        mobile:mt-[2.083rem]
+        sMobile:mt-[3.333rem]
+        mMobile:mt-[4rem]
+
+        min-h-[29.296rem]
+        mobile:min-h-[39.062rem]
+        sMobile:min-h-[62.499rem]
+        mMobile:min-h-[75rem]
+        sLaptop:min-h-0
+
+        w-[calc(100%-6.51%)]
+        mx-auto
+        sLaptop:w-full 
         flex flex-col
 
+        px-[0.488rem]
+        mobile:px-[0.651rem]
+        sMobile:px-[1.042rem]
+        mMobile:px-[1.25rem]
         sLaptop:px-[0.667rem]
         mLaptop:px-[0.833rem]
         desktop:px-[1rem]
         largeDesktop:px-[1.25rem]
 
+        pb-[0.488rem]
+        mobile:pb-[0.651rem]
+        sMobile:pb-[1.042rem]
+        mMobile:pb-[1.25rem]
         sLaptop:pb-[0.667rem]
         mLaptop:pb-[0.833rem]
         desktop:pb-[1rem]
         largeDesktop:pb-[1.25rem]
 
+        pt-[0.488rem]
+        mobile:pt-[0.651rem]
+        sMobile:pt-[1.042rem]
+        mMobile:pt-[1.25rem]
         sLaptop:pt-[0.333rem]
         mLaptop:pt-[0.417rem]
         desktop:pt-[0.5rem]
         largeDesktop:pt-[.75rem]
         
+        rounded-[0.293rem]
+        mobile:rounded-[0.391rem]
+        sMobile:rounded-[0.625rem]
+        mMobile:rounded-[0.75rem]
         sLaptop:rounded-[0.667rem]
         mLaptop:rounded-[0.833rem]
         desktop:rounded-[1rem]
         largeDesktop:rounded-[1.25rem]
         
+        mockBrowserTiny
+        mobile:mockBrowsermobile
+        sMobile:mockBrowsersMobile
+        mMobile:mockBrowsermMobile
         sLaptop:mockBrowserSmallLaptop
         mLaptop:mockBrowserMediumLaptop
         desktop:mockBrowserDesktop
@@ -477,12 +556,12 @@
 
     /* add curve to browser select */
     .invertLeft{
-        box-shadow: 1rem 0 0 0 var(--rPrimaryWhite);
+        box-shadow: .5rem 0 0 0 var(--rPrimaryWhite);
     }
 
     /* css for the inverted border radius for the selected tab */
     .invertRight{
-        box-shadow: -1rem 0 0 0 var(--rPrimaryWhite);
+        box-shadow: -.5rem 0 0 0 var(--rPrimaryWhite);
     }
     /* filtering the x svg but didnt work so its unused */
     .filterCloseSVG {
@@ -674,6 +753,18 @@
     }
 
     /* browser shadow from the portfolio section  */
+    .mockBrowserTiny{
+        box-shadow: 0.261rem 0.326rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowsermobile{
+        box-shadow: 0.348rem 0.434rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowsersMobile{
+        box-shadow: 0.556rem 0.694rem 0 0 rgba(0,0,0,.5);
+    }
+    .mockBrowsermMobile{
+        box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);
+    }
 
     .mockBrowserSmallLaptop{
         box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);

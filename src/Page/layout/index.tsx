@@ -11,11 +11,6 @@ const index = memo(() => {
 
   return (
     <>
-      <main className='relative hidden justify-center items-center h-screen text-center sLaptop:hidden'>
-        <p className='text-5xl'>Please open this page on a desktop view! <br/> <br />
-          Mobile view is under development.
-        </p>
-      </main>
       <main className='
       block
       relative w-full 

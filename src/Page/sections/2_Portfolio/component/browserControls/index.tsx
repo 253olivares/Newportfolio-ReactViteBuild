@@ -9,7 +9,10 @@ const index = memo(() => {
   const browserControls:string[] = [minimize, fullscreen, close];
 
   return (
-    <div className="flex flex-row items-center relative
+    <div className="
+    hidden
+    sLaptop:flex flex-row 
+    items-center relative
     sLaptop:px-[0.584rem]
     mLaptop:px-[0.761rem]
     desktop:px-[.85rem]

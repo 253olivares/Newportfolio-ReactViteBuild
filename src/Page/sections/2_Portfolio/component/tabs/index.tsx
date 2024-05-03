@@ -26,16 +26,27 @@ const index = memo(() => {
     <div className="
     flex 
     flex-row 
+    w-full
+    relative
+  
+    overflow-clip
+
+    items-center
+
+    justify-between
+    sLaptop:justify-normal
+
     sLaptop:gap-[0.165rem]
     mLaptop:gap-[.20658rem]
     desktop:gap-[.25rem]
     largeDesktop:gap-[0.313rem]
-    relative
+
     sLaptop:pt-[0.313rem]
     sLaptop:pb-[0.5rem]
     mLaptop:pb-[0.625rem]
     desktop:pb-[0.75rem]
     largeDesktop:pb-[0.938rem]
+
     sLaptop:pl-[1.333rem]
     mLaptop:pl-[1.666rem]
     desktop:pl-[2rem]
@@ -59,8 +70,10 @@ const index = memo(() => {
         leading-none 
         flex 
         flex-row
-        justify-between
+        justify-center
+        sLaptop:justify-between
         items-center
+
         sLaptop:rounded-[.26rem]
         mLaptop:rounded-[.33rem]
         desktop:rounded-[.4rem]
@@ -71,22 +84,44 @@ const index = memo(() => {
         transition-[background-color]
         duration-500
         text-PrimaryWhite 
-        hover:bg-GlassBackground 
-        hover:cursor-pointer`}
+        sLaptop:hover:bg-GlassBackground 
+        sLaptop:hover:cursor-pointer
+        `}
 
-        font-medium
+        font-bold
+        sLaptop:font-medium
+
+        w-[calc(100%/3-(0.126rem*2))]
+        mobile:w-[calc(100%/3-(0.169rem*2))]
+        sMobile:w-[calc(100%/3-(0.270rem*2))]
+        mMobile:w-[calc(100%/3-(.325rem*2))]
         sLaptop:w-[8.9rem]
         mLaptop:w-[11.125rem]
         desktop:w-[13.35rem]
         largeDesktop:w-[16.688rem]
+
+        px-[0.292rem]
+        mobile:px-[0.390rem]
+        sMobile:px-[0.624rem]
+        mMobile:px-[0.75rem]
         sLaptop:px-[0.833rem]
         mLaptop:px-[1.042rem]
         desktop:px-[1.25rem]
         largeDesktop:px-[1.563rem]
+
+        text-[0.696rem]
+        mobile:text-[0.928rem]
+        sMobile:text-[1.484rem]
+        mMobile:text-[1.781rem]
         sLaptop:text-[1rem]
         mLaptop:text-[1.25rem]
         desktop:text-[1.5rem]
         largeDesktop:text-[1.875rem]
+
+        py-[0.683rem]
+        mobile:py-[0.911rem]
+        sMobile:py-[1.458rem]
+        mMobile:py-[1.75rem]
         sLaptop:py-[0.288rem]
         mLaptop:py-[0.375rem]
         desktop:py-[0.463rem]
@@ -97,6 +132,12 @@ const index = memo(() => {
             {x}
             <img 
             className={`
+            hidden
+            sLaptop:block
+            w-[0.488rem]
+            mobile:w-[0.651rem]
+            sMobile:w-[1.042rem]
+            mMobile:w-[1.25rem]
             sLaptop:w-[0.667rem]
             mLaptop:w-[0.833rem]
             desktop:w-[1rem]
@@ -106,13 +147,22 @@ const index = memo(() => {
             src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/browser_closeButton${x === tabSelect ? 'Select': ''}.svg`} alt="tab_Close" />
         </p>
         {
-            index<2 && <div 
+            index < 2 
+            && 
+            <div 
             className={`
             ${tabSelect === "Art" ? 'bg-transparent': 'bg-PrimaryWhite'}
             ${tabSelect === "Programming" && index === 0 ? 'bg-transparent': 'bg-PrimaryWhite'}
             ${tabSelect === "UI / UX" && index === 1 ? 'bg-transparent': 'bg-PrimaryWhite'}
-            h-full 
-            block
+            h-[1.269rem]
+            mobile:h-[1.692rem]
+            sMobile:h-[2.708rem]
+            mMobile:h-[3.25rem]
+            sLaptop:h-full
+            w-[0.126rem]
+            mobile:w-[0.169rem]
+            sMobile:w-[0.270rem]
+            mMobile:w-[.325rem]
             sLaptop:w-[.125rem]
             mLaptop:w-[.165rem]
             desktop:w-[.20rem]

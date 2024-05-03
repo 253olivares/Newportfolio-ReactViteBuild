@@ -20,7 +20,9 @@ const index = memo(() => {
     console.log(error);
     content = <div
     className="
-    flex justify-center items-center
+    flex 
+    justify-center 
+    items-center
     sLaptop:mt-[10.6rem]
     mLaptop:mt-[13.2rem]
     desktop:mt-[16rem]
@@ -52,7 +54,13 @@ const index = memo(() => {
   }
 
   return (
-    <div className="w-full h-full bg-PrimaryWhite
+    <div className="
+      w-full 
+      h-full 
+   
+      sLaptop:block
+      bg-PrimaryWhite
+      min-h-[10rem]
       sLaptop:min-h-[26.667rem]
       mLaptop:min-h-[33.333rem]
       desktop:min-h-[40rem]
@@ -70,13 +78,15 @@ const index = memo(() => {
             openFilter &&  <FilterList />
           }
         </AnimatePresence>
-        <div className="w-full
-         sLaptop:min-h-[26.667rem]
-         mLaptop:min-h-[33.333rem]
-         desktop:min-h-[40rem]
-         largeDesktop:min-h-[50rem]
+        <div className="
+        hidden 
+        w-full
+        sLaptop:min-h-[26.667rem]
+        mLaptop:min-h-[33.333rem]
+        desktop:min-h-[40rem]
+        largeDesktop:min-h-[50rem]
         relative
-        flex flex-col
+        sLaptop:flex flex-col
         sLaptop:pt-[0.8rem]
         mLaptop:pt-[1rem]
         desktop:pt-[1.2rem]

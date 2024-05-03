@@ -14,7 +14,8 @@ const index = memo(() => {
     mockBrowser
     ">
       <div className="
-      flex flex-row 
+      flex 
+      sLaptop:flex-row 
       justify-between
       ">
         <BrowserTabs />
