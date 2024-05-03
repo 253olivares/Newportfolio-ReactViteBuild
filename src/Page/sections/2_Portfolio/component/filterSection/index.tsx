@@ -10,7 +10,7 @@ const index = memo(() => {
 
   return (
     <div className="
-    flex 
+    flex
     flex-col
     sLaptop:flex-row
     sLaptop:justify-between

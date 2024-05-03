@@ -24,14 +24,23 @@ const index = memo(() => {
     flex 
     justify-center 
     items-center
+
+    flex-grow
+
     sLaptop:mt-[10.6rem]
     mLaptop:mt-[13.2rem]
     desktop:mt-[16rem]
     largeDesktop:mt-[20rem]
+
+    text-[1.171rem]
+    mobile:text-[1.562rem]
+    sMobile:text-[2.499rem]
+    mMobile:text-[3rem]
     sLaptop:text-[.9875rem]
     mLaptop:text-[1.475rem]
     desktop:text-[2rem]
     largeDesktop:text-[2.75rem]
+
     font-semibold
     text-SidebarGray
     "
@@ -41,7 +50,10 @@ const index = memo(() => {
   } else  if ( status === 'loading') {
     content = <div
     className="
-    flex justify-center items-center
+    flex 
+    justify-center 
+    items-center
+    flex-grow
     sLaptop:mt-[10.6rem]
     mLaptop:mt-[13.2rem]
     desktop:mt-[16rem]
@@ -53,25 +65,31 @@ const index = memo(() => {
   } else if ( status === 'succeeded') {
     content = <Result />
   }
-  
 
   return (
     <div className={`
+      relative
+
       w-full 
-   
+  
       sLaptop:block
       bg-PrimaryWhite
       
-      h-[27.099rem]
-      mobile:h-[36.132rem]
-      sMobile:h-[57.812rem]
-      mMobile:h-[69.375rem]
+      h-[29.296rem]
+      mobile:h-[39.062rem]
+      sMobile:h-[62.499rem]
+      mMobile:h-[75rem]
 
-      sLaptop:h-auto
-      sLaptop:min-h-[26.667rem]
-      mLaptop:min-h-[33.333rem]
-      desktop:min-h-[40rem]
-      largeDesktop:min-h-[50rem]
+      pb-[0.488rem]
+      mobile:pb-[0.651rem]
+      sMobile:pb-[1.041rem]
+      mMobile:pb-[1.25rem]
+
+      flex
+      flex-col
+      
+      overflow-hidden
+      overflowFix
 
       ${
         selected === 'Programming' && `  
@@ -110,9 +128,6 @@ const index = memo(() => {
       mLaptop:rounded-[.83rem]
       desktop:rounded-[1rem]
       largeDesktop:rounded-[1.25rem]
-      overflow-hidden
-      overflowFix
-      relative
     `}>
         <AnimatePresence>
           {
@@ -120,36 +135,24 @@ const index = memo(() => {
           }
         </AnimatePresence>
         <div className="
-        w-full
-        h-full
-        sLaptop:h-auto
-        sLaptop:min-h-[26.667rem]
-        mLaptop:min-h-[33.333rem]
-        desktop:min-h-[40rem]
-        largeDesktop:min-h-[50rem]
         relative
         flex-col
-        sLaptop:pt-[0.8rem]
-        mLaptop:pt-[1rem]
-        desktop:pt-[1.2rem]
-        largeDesktop:pt-[1.5rem]
-        pb-[0.488rem]
-        mobile:pb-[0.651rem]
-        sMobile:pb-[1.041rem]
-        mMobile:pb-[1.25rem]
-        sLaptop:pb-[0.356rem]
-        mLaptop:pb-[0.445rem]
-        desktop:pb-[0.534rem]
-        largeDesktop:pb-[0.625rem]
-        sLaptop:px-[1.667rem]
-        mLaptop:px-[2.083rem]
-        desktop:px-[2.5rem]
-        largeDesktop:px-[3.125rems]">
+        flex-shrink-0
+        flex-grow-0
+        w-full
+        ">
           {/* filter section */}
            <FilterSection />
            <hr className="
+            relative
+
             w-fill
-            mx-[2.21%]
+            rounded-full  
+            bg-GlassLighterBackground
+
+            mx-[2.21%] 
+            sLaptop:mx-0
+
             mt-[0.493rem]
             mobile:mt-[0.657rem]
             sMobile:mt-[1.051rem]
@@ -158,21 +161,19 @@ const index = memo(() => {
             mLaptop:mt-[.454rem]  
             desktop:mt-[0.5504rem]
             largeDesktop:mt-[0.688rem]
-            h-[0.116rems]
-            mobile:h-[0.154rem]
-            sMobile:h-[0.247rem]
-            mMobile:h-[0.297rem]
+
+            h-[0.158rems]
+            mobile:h-[0.211rem]
+            sMobile:h-[0.338rem]
+            mMobile:h-[0.406rem]
             sLaptop:h-[0.167rem]
             mLaptop:h-[0.208rem]
             desktop:h-[0.25rem]
             largeDesktop:h-[0.313rem]
-            rounded-full      
-            bg-GlassLighterBackground
-            relative
            " />
            {/* results */}
-          {content}
         </div>
+        {content}
       </div>
   )
 })

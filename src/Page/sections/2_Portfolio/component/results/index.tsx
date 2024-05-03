@@ -13,12 +13,20 @@ const index = memo(() => {
     content.length === 0 ? 
     <p className="
      w-full
+
+     flex-grow
+
+     text-[1.171rem]
+     mobile:text-[1.562rem]
+     sMobile:text-[2.499rem]
+     mMobile:text-[3rem]
      sLaptop:text-[1.9875rem]
      mLaptop:text-[2.475rem]
      desktop:text-[3rem]
      largeDesktop:text-6xl   
      leading-none
      font-semibold
+
      sLaptop:h-[23.467rem]
      mLaptop:h-[29.333rem]
      desktop:h-[35.2rem]
@@ -29,16 +37,11 @@ const index = memo(() => {
       No results found!
     </p>
     :
+    // ${content.length<=3 ? `
+    // overscroll-contain
+    // `: `
+    // overflow-y-scroll
     <div className={`
-    hidden sLaptop:block
-    justify-evenly
-    pr-[2rem]
-    ${content.length<=3 ?   `
-    overscroll-contain
-    `: `
-    overflow-y-scroll
-    overflowFix
-    `}
     projectFlexDiv
     `}>
       <AnimatePresence>
@@ -52,7 +55,10 @@ const index = memo(() => {
         content.length<=3 ?
         <Fragment>
           <div className="
-          block
+          hidden
+          sLaptop:block
+          w-[18.718rem]
+          h-[21.439rem]
           sLaptop:w-[11.16339rem]
           mLaptop:w-[13.90158rem]
           desktop:w-[16.8504rem]
@@ -63,7 +69,11 @@ const index = memo(() => {
           largeDesktop:h-[23.813rem]
           " />
           <div className="
-          block
+        
+          hidden
+          sLaptop:block
+          w-[18.718rem]
+          h-[21.439rem]
           sLaptop:w-[11.16339rem]
           mLaptop:w-[13.90158rem]
           desktop:w-[16.8504rem]

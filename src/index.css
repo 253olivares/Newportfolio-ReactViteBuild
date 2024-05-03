@@ -46,30 +46,44 @@
 
 @layer components{
 
-    .spanCSSTags{   
-        @apply
-        text-PrimaryWhite
-        leading-none
-        font-semibold
-        sLaptop:text-[0.52807rem]
-        mLaptop:text-[0.60854rem]
-        desktop:text-[0.6952rem]
-        largeDesktop:text-[0.819rem]
-    }
-
     .projectFlexDiv{
         @apply 
-        mx-auto 
-        w-full
+        flex-grow
+        overflow-y-scroll
+       
+        w-auto
+        
+        px-[2.21%]
+
+        sLaptop:px-0
+
         grid
-        sLaptop:sLaptopTempCol
+        justify-center
+        sLaptop:justify-evenly
+
+        tinyCol
+        mobile:mobileCol
+        sMobile:sMobileCol
+        mMobile:mMobileCol
+        sLaptop:sLaptopTempCol  
         mLaptop:mLaptopTempCol
         desktop:desktopTempCol
         largeDesktop:largeDesktoptempCol
+
+        /* h-[20.996rem]
+        mobile:h-[27.994rem]
+        sMobile:h-[44.791rem]
+        mMobile:h-[53.75rem] */
+
         sLaptop:h-[23.467rem]
         mLaptop:h-[29.333rem]
         desktop:h-[35.2rem]
         largeDesktop:h-[44rem]
+
+        pt-[0.732rem]
+        mobile:pt-[0.976rem]
+        sMobile:pt-[1.562rem]
+        mMobile:pt-[1.875rem]
         sLaptop:pt-[0.667rem]
         mLaptop:pt-[0.846rem]
         desktop:pt-[1.016rem]
@@ -103,15 +117,23 @@
 
     .bubble {
         @apply 
+        w-[1.171rem]
+        mobile:w-[1.562rem]
+        sMobile:w-[2.499rem]
+        mMobile:w-[3rem]
         sLaptop:w-[2.385rem]
         mLaptop:w-[2.97rem]
         desktop:w-[3.6rem]
         largeDesktop:w-[4.5rem]
+        h-[1.171rem]
+        mobile:h-[1.562rem]
+        sMobile:h-[2.499rem]
+        mMobile:h-[3rem]
         sLaptop:h-[2.385rem] 
         mLaptop:h-[2.97rem]
         desktop:h-[3.6rem]
         largeDesktop:h-[4.5rem]  
-        opacity-75
+        opacity-50
         block 
         rounded-full
     }
@@ -408,12 +430,6 @@
         sMobile:mt-[3.333rem]
         mMobile:mt-[4rem]
 
-        min-h-[29.296rem]
-        mobile:min-h-[39.062rem]
-        sMobile:min-h-[62.499rem]
-        mMobile:min-h-[75rem]
-        sLaptop:min-h-0
-
         w-[calc(100%-6.51%)]
         mx-auto
         sLaptop:w-full 
@@ -501,6 +517,26 @@
     }
 
     /* grid columns set up */
+    .tinyCol{
+        grid-template-rows:minmax(8.375rem, 8.375rem);
+        grid-template-columns: repeat(auto-fit, minmax(7.311rem,7.311rem));
+        grid-gap:0.611rem;
+    }
+    .mobileCol{
+        grid-template-rows:minmax(11.166rem, 11.166rem);
+        grid-template-columns: repeat(auto-fit, minmax(9.749rem,9.749rem));
+        grid-gap: 0.814rem;
+    }
+    .sMobileCol{
+        grid-template-rows:minmax(17.866rem,17.866rem);
+        grid-template-columns: repeat(auto-fit, minmax(15.598rem,15.598rem));
+        grid-gap: 1.302rem;
+    }
+    .mMobileCol{
+        grid-template-rows:minmax(21.439rem,21.439rem);
+        grid-template-columns: repeat(auto-fit, minmax(18.718rem,18.718rem));
+        grid-gap: 1.563rem;
+    }
     .sLaptopTempCol{
         grid-template-columns: repeat(auto-fit, minmax(11.02241rem, 11.02241rem));
         grid-gap: 2.21964rem;

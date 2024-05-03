@@ -1,7 +1,7 @@
 import { memo} from "react";
 import BrowserTabs from '../tabs';
 import BrowserControls from '../browserControls';
-import WindowContent from '../windowContent';
+import WindowContent from '../windowContentTest';
 
 const index = memo(() => {
 

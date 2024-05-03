@@ -51,14 +51,27 @@ const tags = ({tag}:{tag:string}) => {
                 <div className="
                  bg-[#E14E1D]
                  block
+
+                 animate-pulse
+                 
+                 w-[0.219rem]
+                 mobile:w-[0.293rem]
+                 sMobile:w-[0.469rem]
+                 mMobile:w-[0.563rem]
                  sLaptop:w-[0.32807rem]
                  mLaptop:w-[0.40854rem]
                  desktop:w-[0.4952rem]
                  largeDesktop:w-[0.619rem]
+
+                 h-[0.219rem]
+                 mobile:h-[0.293rem]
+                 sMobile:h-[0.469rem]
+                 mMobile:h-[0.563rem]
                  sLaptop:h-[0.32807rem]
                  mLaptop:h-[0.40854rem]
                  desktop:h-[0.4952rem]
                  largeDesktop:h-[0.619rem]
+
                  rounded-full
                 " />
                 <span className="
@@ -67,9 +80,7 @@ const tags = ({tag}:{tag:string}) => {
             </>
         )
     } else {
-        content = <span className="
-        spanCSSTags
-        ">{tag}</span>
+        content = tag
     }
 
   return (
@@ -78,26 +89,63 @@ const tags = ({tag}:{tag:string}) => {
     flex flex-row
     justify-center
     items-center 
+
+    gap-[0.193rem]
+    mobile:gap-[0.257rem]
+    sMobile:gap-[0.412rem]
+    mMobile:gap-[0.495rem]
     sLaptop:gap-[0.10918rem]
     mLaptop:gap-[0.13596rem]
     desktop:gap-[0.1648rem]
     largeDesktop:gap-[0.206rem]
+
+    py-[0.097rem]
+    mobile:py-[0.130rem]
+    sMobile:py-[0.208rem]
+    mMobile:py-[0.20rem]
     sLaptop:py-[0.14893rem]
     mLaptop:py-[0.18546rem]
     desktop:py-[0.2248rem]
     largeDesktop:py-[0.281rem]
+
+    w-[1.667rem]
+    mobile:w-[2.223rem]
+    sMobile:w-[3.557rem]
+    mMobile:w-[4.269rem]
     sLaptop:w-[2.51432rem]
     mLaptop:w-[3.13104rem]
     desktop:w-[3.7952rem]
     largeDesktop:w-[4.744rem]
+
+    rounded-[0.036328125rem]
+    mobile:rounded-[0.04843749999rem]
+    sMobile:rounded-[0.07749999999rem]
+    mMobile:rounded-[0.093rem]
     sLaptop:rounded-[0.05459rem]
     mLaptop:rounded-[0.06798rem]
     desktop:rounded-[0.0824rem]
     largeDesktop:rounded-[0.103rem]
+
+    mb-[0.195rem]
+    mobile:mb-[0.260rem]
+    sMobile:mb-[0.416rem]
+    mMobile:mb-[0.5rem]
     sLaptop:mb-[0.29839rem]
     mLaptop:mb-[0.37158rem]
     desktop:mb-[0.4504rem]
     largeDesktop:mb-[0.563rem]
+
+        text-PrimaryWhite
+        font-semibold
+        text-[0.29296875rem]
+        mobile:text-[0.39062499999rem]
+        sMobile:text-[0.62499999999rem]
+        mMobile:text-[.75rem]
+        sLaptop:text-[0.52807rem]
+        mLaptop:text-[0.60854rem]
+        desktop:text-[0.6952rem]
+        largeDesktop:text-[0.819rem]
+        leading-[1]
     "
     style={{
         background:color
