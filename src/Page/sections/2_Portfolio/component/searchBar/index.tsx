@@ -41,7 +41,7 @@ const index = memo(() => {
       ">
         <label className="
         hidden
-        sLaptop:hidden
+        sLaptop:block
         sLaptop:text-[1rem]
         mLaptop:text-[1.25rem]
         desktop:text-[1.5rem]
@@ -144,7 +144,7 @@ const index = memo(() => {
             className="
             hidden
             sLaptop:block
-            px-[]
+            px-0
             sLaptop:px-[.6296rem]
             mLaptop:px-[.7840rem]
             desktop:px-[0.9504rem]
@@ -160,12 +160,11 @@ const index = memo(() => {
             ">
               <img 
               className="
+              max-w-none
               sLaptop:w-[1.033rem]
               mLaptop:w-[1.292rem]
               desktop:w-[1.55rem]
               largeDesktop:w-[1.938rem]
-              filterSVG
-              sLaptop:filter-none
               "
               src={searchIcon} alt="SearchIcon" />
             </button>

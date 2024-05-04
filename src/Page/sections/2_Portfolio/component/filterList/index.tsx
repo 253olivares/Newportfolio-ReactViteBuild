@@ -48,6 +48,8 @@ const index = memo(() => {
          flex flex-col
 
          absolute
+        
+         sLaptop:top-0
 
          h-full
          w-full

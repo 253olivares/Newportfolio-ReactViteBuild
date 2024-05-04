@@ -71,19 +71,36 @@ const index = memo(() => {
       relative
 
       w-full 
-  
-      sLaptop:block
       bg-PrimaryWhite
       
       h-[29.296rem]
       mobile:h-[39.062rem]
       sMobile:h-[62.499rem]
       mMobile:h-[75rem]
+      sLaptop:h-[26.667rem]
+      mLaptop:h-[33.333rem]
+      desktop:h-[40rem]
+      largeDesktop:h-[50rem]
 
       pb-[0.488rem]
       mobile:pb-[0.651rem]
       sMobile:pb-[1.041rem]
       mMobile:pb-[1.25rem]
+      sLaptop:pb-[0.356rem]
+      mLaptop:pb-[0.445rem]
+      desktop:pb-[0.534rem]
+      largeDesktop:pb-[0.625rem]
+
+      sLaptop:px-[1.667rem]
+      mLaptop:px-[2.083rem]
+      desktop:px-[2.5rem]
+      largeDesktop:px-[3.125rems]
+      
+      pt-0
+      sLaptop:pt-[0.8rem]
+      mLaptop:pt-[1rem]
+      desktop:pt-[1.2rem]
+      largeDesktop:pt-[1.5rem]
 
       flex
       flex-col

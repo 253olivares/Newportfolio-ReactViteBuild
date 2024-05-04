@@ -50,12 +50,13 @@
         @apply 
         flex-grow
         overflow-y-scroll
-       
+        
         w-auto
         
         px-[2.21%]
 
         sLaptop:px-0
+        sLaptop:pr-[2rem]
 
         grid
         justify-center
@@ -420,7 +421,8 @@
         largeDesktop:pt-[8rem]
     }
     .mockBrowser{
-        @apply relative z-[10] 
+        @apply 
+        relative z-[10] 
         backdrop-blur-[.75rem]
         bg-GlassBackground
         overflow-hidden 
@@ -429,6 +431,7 @@
         mobile:mt-[2.083rem]
         sMobile:mt-[3.333rem]
         mMobile:mt-[4rem]
+        sLaptop:mt-0
 
         w-[calc(100%-6.51%)]
         mx-auto
@@ -585,6 +588,7 @@
 
     .scrollSection::-webkit-scrollbar{
         background:transparent;
+        scrollbar-width: thin;  
     }
 
     .scrollSection::-webkit-scrollbar-thumb{

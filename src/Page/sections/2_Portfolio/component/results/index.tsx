@@ -13,7 +13,6 @@ const index = memo(() => {
     content.length === 0 ? 
     <p className="
      w-full
-
      flex-grow
 
      text-[1.171rem]
