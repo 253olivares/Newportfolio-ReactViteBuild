@@ -858,7 +858,7 @@ Error generating stack: `+i.message+`
       mLaptop:mt-[1.65rem]\r
       desktop:mt-[1.98rem]\r
       largeDesktop:mt-[2.475rem]\r
-      pl-[0.854rem]]\r
+      pl-[0.854rem]\r
       mobile:pl-[1.139rem]\r
       sMobile:pl-[1.823rem]\r
       mMobile:pl-[2.188rem]\r
