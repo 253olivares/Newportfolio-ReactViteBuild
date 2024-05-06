@@ -11,7 +11,7 @@ const index = memo(() => {
 
   return (
     <div ref={el =>{
-      if(el) pageRef.current[0] = el
+      if(el) pageRef.current['Home'] = el
     }} id="Home" className={`relative w-full sLaptop:min-h-[42rem] mLaptop:min-h-[52.5rem] desktop:min-h-[63rem] largeDesktop:min-h-[78.75rem]`}>
       {/* <img className="absolute w-full top-0 left-0 z-[3]" src={rectangle1} alt="svg1" />
       <img className="absolute w-full top-0 left-0 z-[2]" src={rectangle2} alt="svg2" />

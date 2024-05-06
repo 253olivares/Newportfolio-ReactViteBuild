@@ -1,5 +1,6 @@
 import { AppContext } from "../contextRefs";
 import { useContext } from "react";
+import FooterMobile from '/assets/FooterMobile.svg'
 import FooterBack from '/assets/Footer.svg'
 import Character2 from '/assets/character_2.svg'
 import instagram from '/assets/instagram.svg';
@@ -29,29 +30,40 @@ const index = () => {
         if(el) pageRef.current[4] = el
       }} id="Footer" className="
       w-full
-      sLaptop:flex flex-col
+      sLaptop:flex 
+      flex-col
       relative
       z-[5]
       ">
         <div className="
-        hidden
         sLaptop:block
         w-full 
-        relative">
+        relative
+        ">
+          <img 
+            className="
+            w-full
+            sLaptop:hidden
+            "
+            onClick={()=>scrollToTop()}
+           src={FooterMobile}
+           alt="MobileFooter" />
           <img className="
+          hidden
           sLaptop:w-[calc(100%-3.333rem)]
           mLaptop:w-[calc(100%-4.167rem)]
           desktop:w-[calc(100%-5rem)]
           largeDesktop:w-[calc(100%-6.25rem)]
           float-right" src={FooterBack} alt="Footer" />
           <div onClick={()=>scrollToTop()} className="
+          hidden
           absolute 
           right-0 top-0 
           sLaptop:w-[calc(100%-3.333rem)]
           mLaptop:w-[calc(100%-4.167rem)]
           desktop:w-[calc(100%-5rem)]
           largeDesktop:w-[calc(100%-6.25rem)] 
-          flex justify-center">
+          sLaptop:flex justify-center">
             <p className="
             w-[30rem] 
             sLaptop:py-[0.65rem]
@@ -65,7 +77,8 @@ const index = () => {
             desktop:text-[2.5rem]
             largeDesktop:text-[3.125rem] 
             cursor-pointer 
-            text-PrimaryWhite">To Top</p>
+            text-PrimaryWhite
+            ">To Top</p>
           </div>
         </div>
         <div className="

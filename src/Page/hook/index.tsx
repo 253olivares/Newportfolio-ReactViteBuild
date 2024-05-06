@@ -5,16 +5,13 @@ import { useEffect, useContext } from "react";
 import { AppContext } from "../contextRefs";
 
 export const windowResize = ():void => {
+    const dispatch = useAppDispatch();
 
     const appContext = useContext(AppContext);
     const {tabRef, backgroundSelectRef} = appContext!;
 
-    const dispatch = useAppDispatch();
-
-    const width = useAppSelector(getWindowWidth);
-    console.log(width);
-
     const tabSelect = useAppSelector(getTabSelect);
+    const width = useAppSelector(getWindowWidth);
 
     if(tabRef.current.length !==0) {
         const test = tabRef.current.filter((x)=> x.innerText === tabSelect);

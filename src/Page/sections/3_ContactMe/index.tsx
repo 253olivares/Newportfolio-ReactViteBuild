@@ -8,11 +8,11 @@ import Footer from '../../footer';
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
-  const {pageRef, strips} = appContext!;
+  const {pageRef, strips, stripsMobile} = appContext!;
 
   return (
    <div ref={el => {
-      if(el) pageRef.current[3] = el
+      if(el) pageRef.current['ContactMe'] = el
     }} id="ContactMe" className={`
     bg-SiteGreen 
     w-full
@@ -90,6 +90,15 @@ const index = memo(() => {
             <DownloadPDF />
           </div>
       </div>
+      <img 
+      className="
+      absolute bottom-0 left-0
+      z-[0]
+      sLaptop:hidden
+      w-full
+      "
+      src={stripsMobile} 
+      alt="mobile strips" />
       <img className="
        absolute bottom-0 left-0
        z-[0]

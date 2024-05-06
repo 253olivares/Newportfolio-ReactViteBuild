@@ -10,7 +10,7 @@ const index = memo(() => {
 
   return (
     <div ref={el => {
-      if(el) pageRef.current[2] = el
+      if(el) pageRef.current['Portfolio'] = el
     }} id="Portfolio" className={`
     block bg-SiteGreen w-full`}>
       <div className="

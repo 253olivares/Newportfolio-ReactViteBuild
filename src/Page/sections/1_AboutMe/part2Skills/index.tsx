@@ -13,7 +13,7 @@ import Loading from '../../loading';
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
-  const {arrowRef,square,pointer} = appContext!
+  const {arrowRef,square,pointer,squareMobile} = appContext!
 
   const entities = useAppSelector(selectEntities);
   const status = useAppSelector(getSkillsStatus);
@@ -184,6 +184,14 @@ const index = memo(() => {
             </div>
             }
         </div>
+        <img className='
+        absolute 
+        z-[0]
+        top-0
+        right-0 
+        w-[92.5%]
+        sLaptop:hidden
+        ' src={squareMobile} alt="Mobile square" />
         <img className="
         hidden
         absolute 

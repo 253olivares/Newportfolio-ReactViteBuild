@@ -7,6 +7,7 @@ import HomeIconSelected from '/assets/HomeIconSelected.svg';
 import AboutMeIconSelected from '/assets/aboutmeIconSelected.svg';
 import PortfolioIconSelected from '/assets/portfolioIconSelected.svg';
 import ContactMeIconSelected from '/assets/contactmeIconSelected.svg';
+import squareMobile from '/assets/backgroundStrips1Mobile.svg'
 import square from '/assets/backgroundStrips1.svg';
 import pointer from '/assets/pointer.svg'
 import Arrow from '/assets/filter_arrow.svg';
@@ -14,6 +15,7 @@ import minimize from '/assets/browser_MinimizeButto.svg';
 import fullscreen from '/assets/browser_fullscreenButton.svg';
 import close from '/assets/browser_closeButton.svg';
 import strips from '/assets/backgroundStrings2.svg';
+import stripsMobile from '/assets/backgroundStrings2Mobile.svg'
 import downloadSVG from '/assets/downloadResume.svg';
 import triangle from '/assets/Triangle.svg';
 import mobileTriangle from '/assets/TriangleMobile.svg';
@@ -27,7 +29,7 @@ import { MutableRefObject,createContext, ReactElement, useRef } from "react";
 // click on it
 export type contextType = {
     
-    pageRef: MutableRefObject<(HTMLDivElement | HTMLElement)[]>,
+    pageRef: MutableRefObject<Record<string,(HTMLDivElement | HTMLElement)>>,
     svgArray:Record<string,string>,
     selectSVGArray:string[],
     Character1:string
@@ -45,6 +47,7 @@ export type contextType = {
     arrowRef: MutableRefObject<HTMLImageElement | null>,
     descRef: MutableRefObject<HTMLDivElement|null>,
     square:string,
+    squareMobile:string,
     pointer:string,
 
     // Portfolio section
@@ -60,6 +63,7 @@ export type contextType = {
     // contact me
     strips:string,
     downloadSVG:string
+    stripsMobile:string
   }
 
 export const AppContext = createContext<contextType | null>(null);
@@ -67,7 +71,7 @@ export const AppContext = createContext<contextType | null>(null);
 export const PageProvider = ({children}:{children:ReactElement}) => {
 
     // ref to keep track of all our page sections
-    const pageRef = useRef<(HTMLDivElement | HTMLElement)[]>([]);
+    const pageRef = useRef<Record<string,(HTMLDivElement | HTMLElement)>>({});
 
     // Skill stuff to keep ref
     const iconsRef = useRef<(HTMLImageElement)[]>([]);
@@ -128,6 +132,7 @@ export const PageProvider = ({children}:{children:ReactElement}) => {
         arrowRef,
         descRef,
         square,
+        squareMobile,
         pointer,
 
         // Portfolio refs and svg
@@ -142,7 +147,8 @@ export const PageProvider = ({children}:{children:ReactElement}) => {
 
         // Contact me
         strips,
-        downloadSVG
+        downloadSVG,
+        stripsMobile
     }
 
     return <AppContext.Provider value={contextValues} >{children}</AppContext.Provider>

@@ -18,17 +18,17 @@ const index = memo(() => {
 
   useEffect(()=> {
     const scrollCheck = () => {
-      if(window.scrollY + (window.innerHeight*.35) >= pageRef.current[3].offsetTop) {
-        dispatch(setCurrentSelection(pageRef.current[3].id))
+      if(window.scrollY + (window.innerHeight*.35) >= pageRef.current['ContactMe'].offsetTop) {
+        dispatch(setCurrentSelection(pageRef.current['ContactMe'].id))
         dispatch(setScrollState(''))
-      } else if (window.scrollY+ (window.innerHeight*.35) >= pageRef.current[2].offsetTop) {
-        dispatch(setCurrentSelection(pageRef.current[2].id))
+      } else if (window.scrollY+ (window.innerHeight*.35) >= pageRef.current['Portfolio'].offsetTop) {
+        dispatch(setCurrentSelection(pageRef.current['Portfolio'].id))
         dispatch(setScrollState(''))
-      } else if (window.scrollY + (window.innerHeight*.35) >= pageRef.current[1].offsetTop) {
-        dispatch(setCurrentSelection(pageRef.current[1].id))
+      } else if (window.scrollY + (window.innerHeight*.35) >= pageRef.current['AboutMe'].offsetTop) {
+        dispatch(setCurrentSelection(pageRef.current['AboutMe'].id))
         dispatch(setScrollState(''))
-      } else if (window.scrollY >= pageRef.current[0].offsetTop) {
-        dispatch(setCurrentSelection(pageRef.current[0].id))
+      } else if (window.scrollY >= pageRef.current['Home'].offsetTop) {
+        dispatch(setCurrentSelection(pageRef.current['Home'].id))
         dispatch(setScrollState(''))
       }
     }
@@ -41,22 +41,22 @@ const index = memo(() => {
   useEffect(()=> {
     switch (scrollState) {
       case "Home":
-        pageRef.current[0].scrollIntoView({
+        pageRef.current['Home'].scrollIntoView({
           behavior:'smooth'
         })
         break;
       case "About Me":
-        pageRef.current[1].scrollIntoView({
+        pageRef.current['AboutMe'].scrollIntoView({
           behavior:'smooth'
         })
         break;
       case "Portfolio":
-        pageRef.current[2].scrollIntoView({
+        pageRef.current['Portfolio'].scrollIntoView({
           behavior:'smooth'
         })
         break;
       case "Contact Me":
-        pageRef.current[3].scrollIntoView({
+        pageRef.current['ContactMe'].scrollIntoView({
           behavior:'smooth'
         })
         break;

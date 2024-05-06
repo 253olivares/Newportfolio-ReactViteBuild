@@ -62,7 +62,7 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
       mLaptop:mt-[1.65rem]
       desktop:mt-[1.98rem]
       largeDesktop:mt-[2.475rem]
-      pl-[0.854rem]]
+      pl-[0.854rem]
       mobile:pl-[1.139rem]
       sMobile:pl-[1.823rem]
       mMobile:pl-[2.188rem]

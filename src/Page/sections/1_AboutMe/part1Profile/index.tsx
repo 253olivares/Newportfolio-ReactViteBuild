@@ -1,10 +1,14 @@
 import { memo, useContext } from 'react'
 import { AppContext } from '../../../contextRefs'
+import { useAppSelector } from '../../../../store/hook';
+import { getWindowWidth } from '../../../../store/sidebarSlice';
 
 const index = memo(() => {
 
   const appContext = useContext(AppContext);
   const {triangle,mobileTriangle,profile,bracketLeft,bracketRight, moneySign} = appContext!;
+
+  const width = useAppSelector(getWindowWidth);
 
   return (
     <div className="
@@ -56,7 +60,12 @@ const index = memo(() => {
             <span
             data-aos='fade'
             data-aos-duration='1250'
-            data-aos-delay='0'
+            data-aos-delay={
+              width <1024 ?
+              '1300'
+              :
+              '0'
+            }
             >
               ABOUT ME! 
             </span>
@@ -97,7 +106,7 @@ const index = memo(() => {
             <div
             data-aos='slide-right'
             data-aos-duration='1250'
-            data-aos-delay='500'
+            data-aos-delay='1800'
             className='
             bg-SiteGreen 
             sLaptop:min-h-32 
