@@ -106,7 +106,12 @@ const index = memo(() => {
             <div
             data-aos='slide-right'
             data-aos-duration='1250'
-            data-aos-delay='1800'
+            data-aos-delay={
+              width <1024 ?
+              '1500'
+              :
+              '500'
+            }
             className='
             bg-SiteGreen 
             sLaptop:min-h-32 
@@ -173,7 +178,12 @@ const index = memo(() => {
               <p
               data-aos='slide-right'
               data-aos-duration='1250'
-              data-aos-delay='500'>
+              data-aos-delay={
+                width <1024 ?
+                '1500'
+                :
+                '500'
+              }>
                 <span
                 className='
                 text-[0.781rem]
