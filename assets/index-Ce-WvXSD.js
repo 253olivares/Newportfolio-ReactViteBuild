@@ -1453,8 +1453,6 @@ Error generating stack: `+i.message+`
                 `,children:r})]})]}),eC=k.memo(({project:e})=>{const{id:t,projectName:n,projectURL:r,imgURL:o,date:i,tags:s,live:a,responsive:l}=e;return x.jsxs(Ev.div,{initial:{scale:.98,opacity:0},animate:{scale:1,opacity:1},exit:{scale:.98,opacity:0},transition:{duration:.5},onClick:()=>window.open(r),className:`\r
         block\r
         relative\r
-        transition-all\r
-        duration-200\r
 \r
         w-[7.311rem]\r
         h-[8.375rem]\r
