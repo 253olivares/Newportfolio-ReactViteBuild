@@ -2389,6 +2389,7 @@ Error generating stack: `+i.message+`
             sLaptop:hidden\r
             `,onClick:()=>n(),src:NC,alt:"MobileFooter"}),x.jsx("img",{className:`\r
           hidden\r
+          sLaptop:block\r
           sLaptop:w-[calc(100%-3.333rem)]\r
           mLaptop:w-[calc(100%-4.167rem)]\r
           desktop:w-[calc(100%-5rem)]\r
