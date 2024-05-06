@@ -369,7 +369,7 @@ Error generating stack: `+i.message+`
           largeDesktop:pt-[6.563rem]\r
           sLaptop:flex flex-row\r
           justify-between\r
-          `,children:[x.jsx("div",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":"1800",className:`\r
+          `,children:[x.jsx("div",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":a<1024?"1500":"500",className:`\r
             bg-SiteGreen \r
             sLaptop:min-h-32 \r
             w-[76.69%]\r
@@ -427,7 +427,7 @@ Error generating stack: `+i.message+`
             mMobile:tet-[1.608rem]\r
             font-medium\r
             leading-none\r
-            `,children:x.jsxs("p",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":"500",children:[x.jsx("span",{className:`\r
+            `,children:x.jsxs("p",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":a<1024?"1500":"500",children:[x.jsx("span",{className:`\r
                 text-[0.781rem]\r
                 mobile:text-[1.041rem]\r
                 sMobile:text-[1.666rem]\r
