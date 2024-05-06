@@ -27,8 +27,6 @@ const index = memo(({project}:{project:projectStateType}) => {
     className='
         block
         relative
-        transition-all
-        duration-200
 
         w-[7.311rem]
         h-[8.375rem]
