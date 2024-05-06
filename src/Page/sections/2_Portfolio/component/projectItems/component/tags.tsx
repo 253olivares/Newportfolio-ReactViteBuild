@@ -6,6 +6,12 @@ const tags = ({tag}:{tag:string}) => {
     let color;
 
     switch(tag){
+        case 'XD':
+        color = '#2E001D'
+            break;
+        case 'PS':
+        color = '#18152E'
+            break;
         case'Mobile Responsive':
         color = '#b148d2'
         break;
@@ -13,7 +19,7 @@ const tags = ({tag}:{tag:string}) => {
         color='#333533'
             break;
         case'HTML':
-        color='#CF5E1C'
+        color='#CF5E1C' 
             break;
         case 'CSS':
         color='#0277BD'
