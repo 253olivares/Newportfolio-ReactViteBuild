@@ -50,6 +50,7 @@ const index = () => {
            alt="MobileFooter" />
           <img className="
           hidden
+          sLaptop:block
           sLaptop:w-[calc(100%-3.333rem)]
           mLaptop:w-[calc(100%-4.167rem)]
           desktop:w-[calc(100%-5rem)]
