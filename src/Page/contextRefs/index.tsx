@@ -100,6 +100,7 @@ export const PageProvider = ({children}:{children:ReactElement}) => {
     ]
 
     const labels:Record<string,string> = {
+      'Mobile': '#b148d2',
       'HTML' : '#E14E1D',
       'CSS': '#0277BD',
       'SASS': '#CD6799',

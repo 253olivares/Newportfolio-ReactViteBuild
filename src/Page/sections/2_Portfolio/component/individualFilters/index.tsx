@@ -1,31 +1,40 @@
 import { memo } from "react";
 import { useAppDispatch, useAppSelector } from "../../../../../store/hook";
-import { addToFilter, getSelectFiler, removeFromFilter } from "../../../../../store/projectSlice";
+import { addToFilter, changeResponsive, getResponsive, getSelectFiler, removeFromFilter } from "../../../../../store/projectSlice";
 
 const index = memo(({tag,color}: {tag:string, color:string}) => {
   
     const dispatch = useAppDispatch();
 
     const selectedFilter = useAppSelector(getSelectFiler);
+    const responsive = useAppSelector(getResponsive);
 
     let selected:boolean;
 
-    if(selectedFilter.length <=0){
-        selected = false;
+    if(tag !== 'Mobile'){
+      if(selectedFilter.length <=0){
+          selected = false;
+      } else {
+          const test = selectedFilter.find((tags) => tags === tag);
+          if(test) {selected=true }
+          else 
+            {selected = false};
+      }
     } else {
-        const test = selectedFilter.find((tags) => tags === tag);
-        if(test) {selected=true }
-        else 
-          {selected = false};
+      selected = responsive;
     }
 
     // this function will check to see if our filter exists on the array already if it does then 
     // remove it if it doesnt add it.
     const clicked = () => {
-      if(selected) {
-        dispatch(removeFromFilter(tag));
+      if(tag !== 'Mobile'){
+        if(selected) {
+          dispatch(removeFromFilter(tag));
+        } else {
+          dispatch(addToFilter(tag));
+        }
       } else {
-        dispatch(addToFilter(tag));
+        dispatch(changeResponsive());
       }
     }
 

@@ -3,7 +3,6 @@ import {motion} from 'framer-motion';
 import {memo} from 'react';
 
 import ProjectInfo from './component/projectInfo';
-import Tag from './component/tags';
 
 const index = memo(({project}:{project:projectStateType}) => {
     const {id,projectName,projectURL, imgURL, date,tags,live,responsive} = project;
@@ -47,6 +46,7 @@ const index = memo(({project}:{project:projectStateType}) => {
         mLaptop:h-[15.881rem]
         desktop:h-[19.058rem]
         largeDesktop:h-[23.822rem]
+
         rounded-[0.266rem]
         mobile:rounded-[0.354rem]
         sMobile:rounded-[0.567rem]
@@ -98,7 +98,44 @@ const index = memo(({project}:{project:projectStateType}) => {
         alt={projectName} />
         {
           responsive ? 
-          <Tag tag={'Mobile Responsive'} />
+          <p
+          className='
+          absolute
+          text-PrimaryWhite
+          bg-[#b148d2]
+          px-[5%]
+          
+          top-[0.427rem]
+          mobile:top-[0.520rem]
+          sMobile:top-[0.911rem]
+          mMobile:top-[1.094rem]
+          sLaptop:top-[0.62964rem]
+          mLaptop:top-[0.78408rem]
+          desktop:top-[0.9504rem]
+          largeDesktop:top-[1.188rem]
+
+          font-semibold
+
+          py-[0.097rem]
+          mobile:py-[0.130rem]
+          sMobile:py-[0.208rem]
+          mMobile:py-[0.20rem]
+          sLaptop:py-[0.14893rem]
+          mLaptop:py-[0.18546rem] 
+          desktop:py-[0.2248rem]
+          largeDesktop:py-[0.281rem]
+
+          text-[0.29296875rem]
+          mobile:text-[0.39062499999rem]
+          sMobile:text-[0.62499999999rem]
+          mMobile:text-[.75rem]
+          sLaptop:text-[0.52807rem]
+          mLaptop:text-[0.60854rem]
+          desktop:text-[0.6952rem]
+          largeDesktop:text-[0.819rem]
+          leading-[1]
+          '
+          >Mobile Responsive</p>
           :
           null
         }

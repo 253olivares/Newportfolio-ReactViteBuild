@@ -93,15 +93,6 @@ const tags = ({tag}:{tag:string}) => {
     justify-center
     items-center 
 
-    gap-[0.193rem]
-    mobile:gap-[0.257rem]
-    sMobile:gap-[0.412rem]
-    mMobile:gap-[0.495rem]
-    sLaptop:gap-[0.10918rem]
-    mLaptop:gap-[0.13596rem]
-    desktop:gap-[0.1648rem]
-    largeDesktop:gap-[0.206rem]
-
     py-[0.097rem]
     mobile:py-[0.130rem]
     sMobile:py-[0.208rem]
@@ -110,11 +101,16 @@ const tags = ({tag}:{tag:string}) => {
     mLaptop:py-[0.18546rem]
     desktop:py-[0.2248rem]
     largeDesktop:py-[0.281rem]
-    ${
-        tag === 'Mobile Responsive'?
-        null
-        :
-        `
+    
+        gap-[0.193rem]
+        mobile:gap-[0.257rem]
+        sMobile:gap-[0.412rem]
+        mMobile:gap-[0.495rem]
+        sLaptop:gap-[0.10918rem]
+        mLaptop:gap-[0.13596rem]
+        desktop:gap-[0.1648rem]
+        largeDesktop:gap-[0.206rem]
+
         w-[1.667rem]
         mobile:w-[2.223rem]
         sMobile:w-[3.557rem]
@@ -123,8 +119,15 @@ const tags = ({tag}:{tag:string}) => {
         mLaptop:w-[3.13104rem]
         desktop:w-[3.7952rem]
         largeDesktop:w-[4.744rem]
-        `
-    }
+
+        mb-[0.195rem]
+        mobile:mb-[0.260rem]
+        sMobile:mb-[0.416rem]
+        mMobile:mb-[0.5rem]
+        sLaptop:mb-[0.29839rem]
+        mLaptop:mb-[0.37158rem]
+        desktop:mb-[0.4504rem]
+        largeDesktop:mb-[0.563rem]
 
     rounded-[0.036328125rem]
     mobile:rounded-[0.04843749999rem]
@@ -134,15 +137,6 @@ const tags = ({tag}:{tag:string}) => {
     mLaptop:rounded-[0.06798rem]
     desktop:rounded-[0.0824rem]
     largeDesktop:rounded-[0.103rem]
-
-    mb-[0.195rem]
-    mobile:mb-[0.260rem]
-    sMobile:mb-[0.416rem]
-    mMobile:mb-[0.5rem]
-    sLaptop:mb-[0.29839rem]
-    mLaptop:mb-[0.37158rem]
-    desktop:mb-[0.4504rem]
-    largeDesktop:mb-[0.563rem]
 
     text-PrimaryWhite
     font-semibold

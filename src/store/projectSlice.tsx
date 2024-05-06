@@ -242,6 +242,7 @@ export const {setSearchTerm,
             addToFilter, 
             openFilter,
             closeFilter,
-            resetFilter} = projectSlice.actions;
+            resetFilter, 
+            changeResponsive} = projectSlice.actions;
 
 export default projectSlice.reducer;
