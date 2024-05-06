@@ -492,6 +492,26 @@
         flex justify-between
         items-center
     }
+    .emptySpaceTemplate {
+        @apply  
+        sLaptop:block
+        w-[7.311rem]
+        h-[8.375rem]
+        mobile:w-[9.749rem]
+        mobile:h-[11.166rem]
+        sMobile:w-[15.598rem]
+        sMobile:h-[17.866rem]
+        mMobile:w-[18.718rem]
+        mMobile:h-[21.439rem]
+        sLaptop:w-[11.092rem]
+        mLaptop:w-[13.864rem]
+        desktop:w-[16.638rem]
+        largeDesktop:w-[20.797rem]
+        sLaptop:h-[12.705rem]
+        mLaptop:h-[15.881rem]
+        desktop:h-[19.058rem]
+        largeDesktop:h-[23.822rem]
+    }
 }
 
 @layer utilities {

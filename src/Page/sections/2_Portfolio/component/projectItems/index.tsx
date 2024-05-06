@@ -2,10 +2,11 @@ import { projectStateType } from '../../../../../store/projectSlice';
 import {motion} from 'framer-motion';
 import {memo} from 'react';
 
-import ProjectInfo from './component/projectInfo'
+import ProjectInfo from './component/projectInfo';
+import Tag from './component/tags';
 
 const index = memo(({project}:{project:projectStateType}) => {
-    const {id,projectName,projectURL, imgURL, date,tags,live} = project;
+    const {id,projectName,projectURL, imgURL, date,tags,live,responsive} = project;
 
   return (
     <motion.div 
@@ -95,6 +96,12 @@ const index = memo(({project}:{project:projectStateType}) => {
         src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}.svg`} 
         
         alt={projectName} />
+        {
+          responsive ? 
+          <Tag tag={'Mobile Responsive'} />
+          :
+          null
+        }
         <ProjectInfo tag={tags} demo={live} projectName={projectName} date={date} />
     </motion.div>
   )

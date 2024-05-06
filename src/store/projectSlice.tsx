@@ -9,6 +9,7 @@ export type projectStateType = {
     imgURL:string
     section:string,
     tags: string[],
+    responsive:boolean,
     live: boolean,
     date:string
 }
@@ -22,7 +23,8 @@ type initialStateType = {
         searchTerm: string,
         tabSelect: Tabs,
         liveDemos: boolean,
-        selectedFilter:string[]
+        selectedFilter:string[],
+        responsive:boolean
     }
     openFilter:boolean
 }
@@ -41,7 +43,8 @@ const initialState:initialStateType = projectsAdapater.getInitialState({
         searchTerm:'',
         tabSelect:"Programming",
         liveDemos:false,
-        selectedFilter:[]
+        selectedFilter:[],
+        responsive:false
     },
     openFilter:false
 })
@@ -92,6 +95,9 @@ const projectSlice = createSlice({
             const previousState = state.filters.selectedFilter
             state.filters.selectedFilter = [...previousState,action.payload]
         },
+        changeResponsive(state) {
+            state.filters.responsive = !state.filters.responsive;
+        },
         openFilter(state){
             state.openFilter = true;
         },
@@ -103,7 +109,8 @@ const projectSlice = createSlice({
                 searchTerm:'',
                 tabSelect:state.filters.tabSelect,
                 liveDemos:false,
-                selectedFilter:[]
+                selectedFilter:[],
+                responsive:false
             }
         }
     },
@@ -134,7 +141,7 @@ export const {
     project:initialStateType
 })=>state.project)
 
-// selector function    s
+// selector functions
 export const getProjectState = (state:RootState) => state;
 export const getProjectStatus = (state:RootState) => state.project.status;
 export const getProjectError = (state:RootState) => state.project.error;
@@ -142,6 +149,7 @@ export const getSearchTerm = (state:RootState) => state.project.filters.searchTe
 export const getTabSelect = (state:RootState) => state.project.filters.tabSelect;
 export const getLiveDemo = (state:RootState) => state.project.filters.liveDemos;
 export const getSelectFiler = (state:RootState) => state.project.filters.selectedFilter;
+export const getResponsive = (state:RootState) => state.project.filters.responsive;
 export const getFilters = (state:RootState) => state.project.filters;
 export const getOpenFilter= (state:RootState) => state.project.openFilter;
 
@@ -149,7 +157,7 @@ export const getOpenFilter= (state:RootState) => state.project.openFilter;
 export const filterProjects = createSelector(
     [selectAll , getFilters],
     (projects,params)=>{
-        const {searchTerm,tabSelect,liveDemos,selectedFilter} = params;
+        const {searchTerm,tabSelect,liveDemos,selectedFilter, responsive} = params;
         let filteredArray
         let query = searchTerm.trim().toLowerCase();
         
@@ -190,8 +198,12 @@ export const filterProjects = createSelector(
 
         filteredArray = filteredArray.filter((item)=> item.section === tabSelect);
 
-        if(liveDemos === true){
+        if(liveDemos === true && tabSelect === 'Programming'){
             filteredArray = filteredArray.filter((item)=> item.live===true);
+        }
+
+        if (responsive === true && tabSelect === 'Programming'){
+            filteredArray = filteredArray.filter((item)=> item.responsive===true);
         }
 
         let finalFilter = [];

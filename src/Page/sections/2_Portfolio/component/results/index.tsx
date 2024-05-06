@@ -9,6 +9,29 @@ const index = memo(() => {
 
   const content = useAppSelector(filterProjects);
 
+  const emptySpaceTemplate:JSX.Element =  <div className="
+  emptySpaceTemplate 
+  " />;
+  let space;
+  let array
+
+  switch(content.length){
+    case 1:
+      array = Array(3).fill(null);
+      space = array.map((_,index)=> <Fragment key={index}>{emptySpaceTemplate}</Fragment>);
+      break;
+    case 2: 
+      array = Array(2).fill(null);
+      space = array.map((_,index)=> <Fragment key={index}>{emptySpaceTemplate}</Fragment>);
+      break;
+    case 3:
+      array = Array(1).fill(null);
+      space = array.map((_,index)=> <Fragment key={index}>{emptySpaceTemplate}</Fragment>);
+      break;
+    default:
+      break;
+  }
+
   return (
     content.length === 0 ? 
     <p className="
@@ -51,40 +74,7 @@ const index = memo(() => {
         }
       </AnimatePresence>
       {
-        content.length<=3 ?
-        <Fragment>
-          <div className="
-          hidden
-          sLaptop:block
-          w-[18.718rem]
-          h-[21.439rem]
-          sLaptop:w-[11.16339rem]
-          mLaptop:w-[13.90158rem]
-          desktop:w-[16.8504rem]
-          largeDesktop:w-[21.063rem]
-          sLaptop:h-[12.62089rem]
-          mLaptop:h-[15.71658rem]
-          desktop:h-[19.0504rem]
-          largeDesktop:h-[23.813rem]
-          " />
-          <div className="
-        
-          hidden
-          sLaptop:block
-          w-[18.718rem]
-          h-[21.439rem]
-          sLaptop:w-[11.16339rem]
-          mLaptop:w-[13.90158rem]
-          desktop:w-[16.8504rem]
-          largeDesktop:w-[21.063rem]
-          sLaptop:h-[12.62089rem]
-          mLaptop:h-[15.71658rem]
-          desktop:h-[19.0504rem]
-          largeDesktop:h-[23.813rem]
-          " />
-        </Fragment>
-        :
-        ''
+        space
       }
     </div>
   )

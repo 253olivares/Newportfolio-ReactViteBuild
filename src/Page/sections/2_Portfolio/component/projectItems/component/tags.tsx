@@ -6,6 +6,9 @@ const tags = ({tag}:{tag:string}) => {
     let color;
 
     switch(tag){
+        case'Mobile Responsive':
+        color = '#b148d2'
+        break;
         case'Live':
         color='#333533'
             break;
@@ -85,7 +88,7 @@ const tags = ({tag}:{tag:string}) => {
 
   return (
     <div
-    className="
+    className={`
     flex flex-row
     justify-center
     items-center 
@@ -107,15 +110,21 @@ const tags = ({tag}:{tag:string}) => {
     mLaptop:py-[0.18546rem]
     desktop:py-[0.2248rem]
     largeDesktop:py-[0.281rem]
-
-    w-[1.667rem]
-    mobile:w-[2.223rem]
-    sMobile:w-[3.557rem]
-    mMobile:w-[4.269rem]
-    sLaptop:w-[2.51432rem]
-    mLaptop:w-[3.13104rem]
-    desktop:w-[3.7952rem]
-    largeDesktop:w-[4.744rem]
+    ${
+        tag === 'Mobile Responsive'?
+        null
+        :
+        `
+        w-[1.667rem]
+        mobile:w-[2.223rem]
+        sMobile:w-[3.557rem]
+        mMobile:w-[4.269rem]
+        sLaptop:w-[2.51432rem]
+        mLaptop:w-[3.13104rem]
+        desktop:w-[3.7952rem]
+        largeDesktop:w-[4.744rem]
+        `
+    }
 
     rounded-[0.036328125rem]
     mobile:rounded-[0.04843749999rem]
@@ -135,18 +144,18 @@ const tags = ({tag}:{tag:string}) => {
     desktop:mb-[0.4504rem]
     largeDesktop:mb-[0.563rem]
 
-        text-PrimaryWhite
-        font-semibold
-        text-[0.29296875rem]
-        mobile:text-[0.39062499999rem]
-        sMobile:text-[0.62499999999rem]
-        mMobile:text-[.75rem]
-        sLaptop:text-[0.52807rem]
-        mLaptop:text-[0.60854rem]
-        desktop:text-[0.6952rem]
-        largeDesktop:text-[0.819rem]
-        leading-[1]
-    "
+    text-PrimaryWhite
+    font-semibold
+    text-[0.29296875rem]
+    mobile:text-[0.39062499999rem]
+    sMobile:text-[0.62499999999rem]
+    mMobile:text-[.75rem]
+    sLaptop:text-[0.52807rem]
+    mLaptop:text-[0.60854rem]
+    desktop:text-[0.6952rem]
+    largeDesktop:text-[0.819rem]
+    leading-[1]
+    `}
     style={{
         background:color
     }}
