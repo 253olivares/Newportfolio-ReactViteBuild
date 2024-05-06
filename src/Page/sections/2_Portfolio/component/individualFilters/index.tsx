@@ -66,10 +66,10 @@ const index = memo(({tag,color}: {tag:string, color:string}) => {
     `}>
         <p className={`
         text-PrimaryWhite
-        text-[1.660rem]
-        mobile:text-[2.213rem]
-        sMobile:text-[3.541rem]
-        mMobile:text-[4.25rem]
+        text-[1.562rem]
+        mobile:text-[2.083rem]
+        sMobile:text-[3.333rem]
+        mMobile:text-[4rem]
         sLaptop:text-[1.207rem]
         mLaptop:text-[1.503rem]
         desktop:text-[1.8224rem]

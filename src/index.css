@@ -53,14 +53,11 @@
         
         w-auto
         
-        px-[2.21%]
-
+        px-[1.5%]
         sLaptop:px-0
-        sLaptop:pr-[2rem]
 
         grid
-        justify-center
-        sLaptop:justify-evenly
+        justify-evenly
 
         tinyCol
         mobile:mobileCol
@@ -70,11 +67,6 @@
         mLaptop:mLaptopTempCol
         desktop:desktopTempCol
         largeDesktop:largeDesktoptempCol
-
-        /* h-[20.996rem]
-        mobile:h-[27.994rem]
-        sMobile:h-[44.791rem]
-        mMobile:h-[53.75rem] */
 
         sLaptop:h-[23.467rem]
         mLaptop:h-[29.333rem]
@@ -523,41 +515,48 @@
     .tinyCol{
         grid-template-rows:minmax(8.375rem, 8.375rem);
         grid-template-columns: repeat(auto-fit, minmax(7.311rem,7.311rem));
-        grid-gap:0.611rem;
+        grid-gap:2.5%;
+        /* grid-gap:0.531rem; */
     }
     .mobileCol{
         grid-template-rows:minmax(11.166rem, 11.166rem);
         grid-template-columns: repeat(auto-fit, minmax(9.749rem,9.749rem));
-        grid-gap: 0.814rem;
+        /* grid-gap: 0.792rem; */
     }
     .sMobileCol{
         grid-template-rows:minmax(17.866rem,17.866rem);
         grid-template-columns: repeat(auto-fit, minmax(15.598rem,15.598rem));
-        grid-gap: 1.302rem;
+        /* grid-gap: 1.302rem; */
     }
     .mMobileCol{
         grid-template-rows:minmax(21.439rem,21.439rem);
         grid-template-columns: repeat(auto-fit, minmax(18.718rem,18.718rem));
-        grid-gap: 1.563rem;
+        /* grid-gap: 1.563rem; */
     }
     .sLaptopTempCol{
-        grid-template-columns: repeat(auto-fit, minmax(11.02241rem, 11.02241rem));
-        grid-gap: 2.21964rem;
+        grid-template-rows:minmax(12.705rem,12.705rem);
+        grid-template-columns: repeat(auto-fit, minmax(11.092rem,11.092rem));
+        grid-gap:2.85%
+        /* grid-gap: 2.21964rem; */
     }
 
     .mLaptopTempCol{
-        grid-template-columns: repeat(auto-fit, minmax(13.72602rem, 13.72602rem));
-        grid-gap: 2.7640rem;
+        grid-template-rows:minmax(15.881rem,15.881rem);
+        grid-template-columns: repeat(auto-fit, minmax(13.864rem,13.864rem));
+        
+        /* grid-gap: 2.7640rem; */
     }
 
     .desktopTempCol{
-        grid-template-columns: repeat(auto-fit, minmax(16.6376rem, 16.6376rem));
-        grid-gap: 3.3504rem;
+        grid-template-rows:minmax(19.058rem,19.058rem);
+        grid-template-columns: repeat(auto-fit, minmax(16.638rem,16.638rem));
+        /* grid-gap: 3.3504rem; */
     }
 
     .largeDesktoptempCol{
-        grid-template-columns: repeat(auto-fit, minmax(20.797rem, 20.797rem));
-        grid-gap: 4.188rem;
+        grid-template-rows:minmax(23.822rem,23.822rem);
+        grid-template-columns: repeat(auto-fit, minmax(20.797rem,20.797rem));
+        /* grid-gap: 4.188rem; */
     }
 
     .animationDelay1s {
