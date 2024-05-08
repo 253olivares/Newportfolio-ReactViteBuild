@@ -10,7 +10,6 @@ const index = memo(() => {
   windowResize();
 
   return (
-    <>
       <main className='
       block
       relative w-full 
@@ -23,7 +22,6 @@ const index = memo(() => {
           <Outlet />
         </div>
       </main>
-    </>
   )
 })
 
