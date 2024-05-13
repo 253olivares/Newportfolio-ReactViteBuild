@@ -216,13 +216,13 @@ Error generating stack: `+i.message+`
       sLaptop:min-h-[1.657rem]\r
       mLaptop:min-h-[2.071rem]\r
       desktop:min-h-[2.485rem]\r
-      largeDesktop:min-h-[3.106rem]`})]})}),bL=()=>{const e=qe(),t=k.useContext(Ce),{tabRef:n,backgroundSelectRef:r}=t,o=W(ii),i=W(Y0);if(n.current.length!==0){const a=n.current.filter(l=>l.innerText===o)[0].offsetLeft;r.current.style.left=`${a}px`}k.useEffect(()=>{function s(){i!==window.innerWidth&&e($2())}return window.addEventListener("resize",s),s(),()=>window.removeEventListener("resize",s)},[])},SL=k.memo(()=>(bL(),x.jsx(x.Fragment,{children:x.jsxs("main",{className:`\r
+      largeDesktop:min-h-[3.106rem]`})]})}),bL=()=>{const e=qe(),t=k.useContext(Ce),{tabRef:n,backgroundSelectRef:r}=t,o=W(ii),i=W(Y0);if(n.current.length!==0){const a=n.current.filter(l=>l.innerText===o)[0].offsetLeft;r.current.style.left=`${a}px`}k.useEffect(()=>{function s(){i!==window.innerWidth&&e($2())}return window.addEventListener("resize",s),s(),()=>window.removeEventListener("resize",s)},[])},SL=k.memo(()=>(bL(),x.jsxs("main",{className:`\r
       block\r
       relative w-full \r
       min-h-[100vh]\r
       overflow-x-hidden\r
       overflow-y-hidden\r
-      `,children:[x.jsx(kL,{}),x.jsx("div",{children:x.jsx(rk,{})})]})}))),LL="/Newportfolio-ReactViteBuild/assets/hero_Drawing.svg",ML="/Newportfolio-ReactViteBuild/assets/trianglePNG.png",EL="/Newportfolio-ReactViteBuild/assets/HeaderWaveMobile.svg",CL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:n=>{n&&(t.current.Home=n)},id:"Home",className:"relative w-full sLaptop:min-h-[42rem] mLaptop:min-h-[52.5rem] desktop:min-h-[63rem] largeDesktop:min-h-[78.75rem]",children:[x.jsx("img",{className:`\r
+      `,children:[x.jsx(kL,{}),x.jsx("div",{children:x.jsx(rk,{})})]}))),LL="/Newportfolio-ReactViteBuild/assets/hero_Drawing.svg",ML="/Newportfolio-ReactViteBuild/assets/trianglePNG.png",EL="/Newportfolio-ReactViteBuild/assets/HeaderWaveMobile.svg",CL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:n=>{n&&(t.current.Home=n)},id:"Home",className:"relative w-full sLaptop:min-h-[42rem] mLaptop:min-h-[52.5rem] desktop:min-h-[63rem] largeDesktop:min-h-[78.75rem]",children:[x.jsx("img",{className:`\r
       block sLaptop:hidden  \r
       relative w-full\r
       `,src:EL,alt:"WavebackgroundMobile"}),x.jsx("img",{className:`\r
