@@ -22,13 +22,15 @@ const index = memo(() => {
   sLaptop:py-[0.667rem]
   mLaptop:py-[0.833rem]
   desktop:py-[1rem]
-  largeDesktop:py-5
+  largeDesktop:py-[1.25rem]
+  4k:py-[1.666rem]
   w-[100vw]
   sLaptop:w-auto
   sLaptop:min-w-[3.333rem] 
   mLaptop:min-w-[4.167rem] 
   desktop:min-w-[5rem] 
   largeDesktop:min-w-[6.25rem] 
+  4k:min-w-[8.333rem]
   h-[3.223rem]
   mobile:h-[4.297rem]
   sMobile:h-[6.8755rem]
@@ -81,12 +83,14 @@ const index = memo(() => {
       mLaptop:w-[3.125rem] 
       desktop:w-[3.75rem] 
       largeDesktop:w-[4.688rem] 
+      4k:w-[6.250rem]
       min-h-[2.3295rem]
       mobile:min-h-[3.106rem]
       sLaptop:min-h-[1.657rem]
       mLaptop:min-h-[2.071rem]
       desktop:min-h-[2.485rem]
-      largeDesktop:min-h-[3.106rem]">
+      largeDesktop:min-h-[3.106rem]
+      4k:min-h-[4.141rem]">
       </div>
     </div>
   )

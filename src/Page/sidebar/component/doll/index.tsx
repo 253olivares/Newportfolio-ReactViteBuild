@@ -27,7 +27,9 @@ const index = memo(({character}: {character:string}) => {
       sLaptop:w-[2.5rem] 
       mLaptop:w-[3.125rem] 
       desktop:w-[3.75rem] 
-      largeDesktop:w-[4.688rem]' 
+      largeDesktop:w-[4.688rem]
+      4k:w-[6.250rem]
+    ' 
       src={character} alt="Character_1_svg" />
   )
 })

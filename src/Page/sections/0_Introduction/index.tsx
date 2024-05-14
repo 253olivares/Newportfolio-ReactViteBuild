@@ -17,12 +17,19 @@ const index = memo(() => {
       <img className="absolute w-full top-0 left-0 z-[2]" src={rectangle2} alt="svg2" />
       <img className="absolute w-full top-0 left-0 z-[1]" src={rectangle3} alt="svg" /> */}
       <img className="
-      block sLaptop:hidden  
-      relative w-full
+      block 
+      sLaptop:hidden  
+      relative 
+      w-full
       " src={waveBackgroundMobile} alt="WavebackgroundMobile" />
 
       <img className="
-      hidden sLaptop:block relative w-full
+      hidden 
+      sLaptop:block 
+      relative
+      w-full
+      h-auto
+      extra:h-[77.075rem]
       " src={triangleColapse} alt="Wavebackground" />
 
       <div className="w-full top-0 absolute">
@@ -113,7 +120,7 @@ const index = memo(() => {
             mLaptop:top-[3.313rem] 
             desktop:top-[4rem] 
             largeDesktop:top-[5rem]
-            extra:top-[12.5rem]
+         
             w-[70%]
             sMobile:w-[67.40%]
             sLaptop:w-[55%]

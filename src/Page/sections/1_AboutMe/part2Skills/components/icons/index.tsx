@@ -51,7 +51,7 @@ const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
       desktop:w-[6.336rem]
       largeDesktop:w-[7.92rem]
       `} 
-      src={`http://localhost:5173/Newportfolio-ReactViteBuild/assets/SkillIcons/${selectSkill === skill.title ? 'Select': ''}${skill.imgSRC}`} alt={skill.title} /> 
+      src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/SkillIcons/${selectSkill === skill.title ? 'Select': ''}${skill.imgSRC}`} alt={skill.title} /> 
   )
 })
 

@@ -25,19 +25,54 @@ const index = memo((
   switch (item) {
     case 'Home':
       section="Home"
-      imgcss = `w-[1.841rem] mobile:w-[2.455rem] sMobile:w-[3.928rem] mMobile:w-[4.714rem] sLaptop:w-[2.133rem] mLaptop:w-[2.667rem] desktop:w-[3.2rem] largeDesktop:w-[4rem]`
+      imgcss = `
+      w-[1.841rem] 
+      mobile:w-[2.455rem] 
+      sMobile:w-[3.928rem] 
+      mMobile:w-[4.714rem] 
+      sLaptop:w-[2.133rem] 
+      mLaptop:w-[2.667rem] 
+      desktop:w-[3.2rem] 
+      largeDesktop:w-[4rem]
+      4k:w-[5.333rem]
+      `
       break;
     case 'About Me':
       section="AboutMe"
-      imgcss = `w-[1.218rem] mobile:w-[1.624rem] sMobile:w-[2.598rem] mMobile:w-[3.118rem] sLaptop:w-[1.40238rem] mLaptop:w-[1.74636rem] desktop:w-[2.1168rem] largeDesktop:w-[2.646rem]`
+      imgcss = `
+      w-[1.218rem] 
+      mobile:w-[1.624rem] 
+      sMobile:w-[2.598rem] 
+      mMobile:w-[3.118rem] 
+      sLaptop:w-[1.40238rem] 
+      mLaptop:w-[1.74636rem] 
+      desktop:w-[2.1168rem] 
+      largeDesktop:w-[2.646rem]
+      4k:w-[3.527rem]`
       break;
     case 'Portfolio':
       section = "Portfolio"
-      imgcss = `w-[1.271rem] mobile:w-[1.694rem] sMobile:w-[2.711rem] mMobile:w-[3.253rem] sLaptop:w-[1.472rem] mLaptop:w-[1.84rem] desktop:w-[2.208rem] largeDesktop:w-[2.76rem]`
+      imgcss = `w-[1.271rem] 
+      mobile:w-[1.694rem] 
+      sMobile:w-[2.711rem] 
+      mMobile:w-[3.253rem] 
+      sLaptop:w-[1.472rem] 
+      mLaptop:w-[1.84rem] 
+      desktop:w-[2.208rem] 
+      largeDesktop:w-[2.76rem]
+      4k:w-[3.679rem]`
       break;
     case 'Contact Me':
       section = "ContactMe"
-      imgcss = `w-[1.658rem] mobile:w-[2.209rem] sMobile:w-[3.536rem] mMobile:w-[4.243rem] sLaptop:w-[1.92rem] mLaptop:w-[2.4rem] desktop:w-[2.88rem] largeDesktop:w-[3.6rem]`
+      imgcss = `w-[1.658rem] 
+      mobile:w-[2.209rem] 
+      sMobile:w-[3.536rem] 
+      mMobile:w-[4.243rem] 
+      sLaptop:w-[1.92rem] 
+      mLaptop:w-[2.4rem] 
+      desktop:w-[2.88rem] 
+      largeDesktop:w-[3.6rem]
+      4k:w-[4.799rem]`
       break;
   }
 
@@ -70,9 +105,19 @@ const index = memo((
         mLaptop:py-[calc(1.667rem/2)]
         desktop:py-[1rem] 
         largeDesktop:py-[1.25rem]
+        4k:py-[1.666rem]
         ${currentSection !== section && 'group'}
         ${currentSection !== section  ? `cursor-pointer hover:opacity-75`: 'cursor-default'}
-         gap-[0.288rem] mobile:gap-[0.384rem] sMobile:gap-[0.614rem] mMobile:gap-[0.736rem] sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]`}
+         gap-[0.288rem] 
+         mobile:gap-[0.384rem] 
+         sMobile:gap-[0.614rem]
+        mMobile:gap-[0.736rem] 
+        sLaptop:gap-[0.333rem] 
+        mLaptop:gap-[0.417rem] 
+        desktop:gap-[0.5rem] 
+        largeDesktop:gap-[0.625rem]
+        4k:gap-[0.833rem]
+        `}
         >
           <img className={imgcss} src={currentSection === section ? imgAlternate : imgURLBase} alt={section} />
           <p className={`
@@ -85,6 +130,7 @@ const index = memo((
           mLaptop:min-w-[4.167rem] 
           desktop:min-w-[5rem] 
           largeDesktop:min-w-[6.25rem]
+          4k:min-w-[8.333rem]
           text-[0.518rem]
           mobile:text-[0.691rem]
           sMobile:text-[1.105rem]
@@ -93,6 +139,7 @@ const index = memo((
           mLaptop:text-[0.75rem] 
           desktop:text-[0.9rem] 
           largeDesktop:text-[1.125rem]
+          4k:text-[1.5rem]
           `}
           >{item}</p>
         <div className={`
@@ -135,6 +182,7 @@ const index = memo((
         mLaptop:w-[.25rem]
         desktop:w-[.275rem]
         largeDesktop:w-[.3rem]
+        4k:w-[0.399rem]
         sLaptop:right-0 
         bg-SiteYellow
         `} />

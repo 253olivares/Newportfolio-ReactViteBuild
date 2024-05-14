@@ -42,7 +42,10 @@ export default {
 
         'largeDesktop': '1900px',
         // => @media (min-width: 1830px) { ... }
-        'extra': '2100px'
+        'extra': '2100px',
+
+        
+        '4k':'2300px'
         
       },
     },
