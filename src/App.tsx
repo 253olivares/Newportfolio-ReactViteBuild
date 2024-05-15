@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom"
-import { Fragment, useEffect } from "react"
-import { PageProvider } from './Page/contextRefs'
-import { fetchSkills } from './store/skillsSlice'
-import { fetchProjects } from './store/projectSlice'
-import { store } from './store/store'
+import { Route, Routes } from "react-router-dom";
+import { Fragment, useEffect } from "react";
+import { PageProvider } from './Page/contextRefs';
+import { fetchSkills } from './store/skillsSlice';
+import { fetchProjects } from './store/projectSlice';
+import { store } from './store/store';
 
-import ErrorPage from './Page/404'
-import Layout from './Page/layout'
-import Page from './Page/index'
+import ErrorPage from './Page/404';
+import Layout from './Page/layout';
+import Page from './Page/index';
 
 import AOS from "aos";
 import "aos/dist/aos.css";

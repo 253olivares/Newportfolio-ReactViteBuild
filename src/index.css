@@ -134,6 +134,7 @@
     .mockBrowserSelected {
         @apply 
        
+
         w-[calc(100%/3-(0.126rem*2))]
         mobile:w-[calc(100%/3-(0.169rem*2))]
         sMobile:w-[calc(100%/3-(0.270rem*2))]
@@ -145,13 +146,17 @@
         
         h-full
         absolute
+
         z-[4]
+
         bottom-0
         left-0
+
         sLaptop:left-[1.333rem]
         mLaptop:left-[1.666rem]
         desktop:left-[2rem]
         largeDesktop:left-[3.125rem]
+
         bg-PrimaryWhite
 
         rounded-t-[0.244rem]

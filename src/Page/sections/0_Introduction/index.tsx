@@ -12,10 +12,15 @@ const index = memo(() => {
   return (
     <div ref={el =>{
       if(el) pageRef.current['Home'] = el
-    }} id="Home" className={`relative w-full sLaptop:min-h-[42rem] mLaptop:min-h-[52.5rem] desktop:min-h-[63rem] largeDesktop:min-h-[78.75rem]`}>
-      {/* <img className="absolute w-full top-0 left-0 z-[3]" src={rectangle1} alt="svg1" />
-      <img className="absolute w-full top-0 left-0 z-[2]" src={rectangle2} alt="svg2" />
-      <img className="absolute w-full top-0 left-0 z-[1]" src={rectangle3} alt="svg" /> */}
+    }} id="Home" className={`
+    relative 
+    w-full 
+    sLaptop:min-h-[42rem]
+    mLaptop:min-h-[52.5rem] 
+    desktop:min-h-[63rem] 
+    largeDesktop:min-h-[78.75rem]
+    `}>
+     
       <img className="
       block 
       sLaptop:hidden  
@@ -38,16 +43,19 @@ const index = memo(() => {
         mx-auto
         relative z-[5] 
         flex flex-col
+
         gap-[0.264rem]
         mobile:gap-[0.351rem]
         sMobile:gap-[0.563rem]
         mMobile:gap-[0.675rem]
         sLaptop:gap-[0.5rem]
         largeDesktop:gap-[1rem]
+
         pl-[3.255%]
         mobile:pl-[06.51%]
         sLaptop:pl-[8%] 
         largeDesktop:pl-[10.625rem]
+
         pt-[1.221rem]
         mobile:pt-[1.628rem]
         sMobile:pt-[2.604rem]
@@ -56,6 +64,7 @@ const index = memo(() => {
         mLaptop:pt-[10rem]
         desktop:pt-[12rem]
         largeDesktop:pt-[15rem]
+
         heroTextMobileTiny
         mobile:heroTextMobile
         sMobile:heroTextSmallMobile
@@ -70,6 +79,7 @@ const index = memo(() => {
           data-aos-duration='1250'
           data-aos-delay='1300'
           className="
+
           text-[2.285rem]
           mobile:text-[3.047rem]
           sMobile:text-[4.875rem]
@@ -78,6 +88,7 @@ const index = memo(() => {
           mLaptop:text-[5.375rem]
           desktop:text-[6.5rem]
           largeDesktop:text-[8.125rem] 
+
           leading-none
           text-SiteYellow 
           font-bold
@@ -89,6 +100,7 @@ const index = memo(() => {
           data-aos-delay='1800'
           className="
           font-bold 
+
           text-[1.494rem]
           mobile:text-[1.992rem]
           sMobile:text-[3.188rem]
@@ -97,6 +109,7 @@ const index = memo(() => {
           mLaptop:text-[3.5rem]
           desktop:text-[4.25rem]
           largeDesktop:text-[5.313rem]
+
           leading-none 
           text-PrimaryWhite
           " >
@@ -107,11 +120,14 @@ const index = memo(() => {
           data-aos-duration='1250'
           data-aos-delay='800'
           className={`
+
             right-[3.255%]
             mobile:right-[06.51%]
             sLaptop:right-[2%]
             largeDesktop:right-[2.4rem]
+
             absolute z-[5]
+
             top-[5.5rem]
             mobile:top-[7.5rem]
             sMobile:top-[12.49rem]
@@ -124,7 +140,9 @@ const index = memo(() => {
             w-[70%]
             sMobile:w-[67.40%]
             sLaptop:w-[55%]
-            largeDesktop:w-[65.25rem]`} src={heroDrawing} alt="" />
+            largeDesktop:w-[65.25rem]
+            
+            `} src={heroDrawing} alt="" />
              {/* top left */}
             <div className="circle1" />
             {/* second bubble to left */}
