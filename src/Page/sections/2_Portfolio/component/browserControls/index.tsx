@@ -30,6 +30,7 @@ const index = memo(() => {
         {
           browserControls.map((x,index)=> 
             <img className='
+            sLaptop:scale-90
             hover:opacity-75
             hover:cursor-pointer
             py-auto

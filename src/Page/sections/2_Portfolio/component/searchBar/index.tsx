@@ -28,15 +28,18 @@ const index = memo(() => {
     }}>
       <div className="
       flex 
+      
       mt-[0.488rem]
       mobile:mt-[0.651rem]
       sMobile:mt-[1.042rem]
       mMobile:mt-[1.25rem]
       sLaptop:mt-0
-      sLaptop:gap-[1.333rem]
-      mLaptop:gap-[1.667rem]
-      desktop:gap-[2rem]
-      largeDesktop:gap-[2.5rem]
+
+      sLaptop:gap-[0.933rem]
+      mLaptop:gap-[1.166rem]
+      desktop:gap-[1.4rem]
+      largeDesktop:gap-[1.75rem]
+
       items-center
       ">
         <label className="
@@ -45,7 +48,8 @@ const index = memo(() => {
         sLaptop:text-[1rem]
         mLaptop:text-[1.25rem]
         desktop:text-[1.5rem]
-        largeDesktop:text-[1.875rem]
+        largeDesktop:text-[1.687rem]
+
         font-medium
         text-SidebarGray
         " htmlFor="Search">
@@ -66,15 +70,17 @@ const index = memo(() => {
         mobile:h-[2.278rem]
         sMobile:h-[3.645rem]
         mMobile:h-[4.375rem]
-        sLaptop:h-[1.667rem]
-        mLaptop:h-[2.083rem]  
-        desktop:h-[2.5rem]
-        largeDesktop:h-[3.125rem]
+        sLaptop:h-[1.499rem]
+        mLaptop:h-[1.874rem]  
+        desktop:h-[2.249rem]
+        largeDesktop:h-[2.812rem]
+
         rounded-full
         sLaptop:rounded-[.265rem]
         mLaptop:rounded-[.33rem]
         desktop:rounded-[.4rem]
         largeDesktop:rounded-[0.5rem]
+
         focus-within:ring-[2.734px]
         mobile:focus-within:ring-[3.645px]
         sMobile:focus-within:ring-[5.833px]
@@ -83,6 +89,7 @@ const index = memo(() => {
         mLaptop:focus-within:ring-[2.64px]
         desktop:focus-within:ring-[3.2px]
         largeDesktop:focus-within:ring-[4px]
+
         focus-within:ring-SelectBlue
         ">
             <input 
@@ -100,25 +107,31 @@ const index = memo(() => {
             sMobile:text-[2.083rem]
             mMobile:text-[2.5rem]
             font-medium
+
             sLaptop:font-normal
-            sLaptop:text-[1rem]
-            mLaptop:text-[1.25rem]
-            desktop:text-[1.5rem]
-            largeDesktop:text-[1.875rem]
+            sLaptop:text-[0.899rem]
+            mLaptop:text-[1.124rem]
+            desktop:text-[1.349rem]
+            largeDesktop:text-[1.687rem]
+
             w-full
-            sLaptop:w-[9.9375rem]
-            mLaptop:w-[12.375rem]
-            desktop:w-[15rem]
-            largeDesktop:w-[18.75rem]
+
+            sLaptop:w-[8.999rem]
+            mLaptop:w-[11.249rem]
+            desktop:w-[13.5rem]
+            largeDesktop:w-[16.875rem]
+
             px-[3%]
-            sLaptop:px-[.6296rem]
-            mLaptop:px-[.7840rem]
-            desktop:px-[0.9504rem]
-            largeDesktop:px-[1.188rem]
+            sLaptop:px-[0.570rem]
+            mLaptop:px-[0.712rem]
+            desktop:px-[0.855rem]
+            largeDesktop:px-[1.069rem]
+
             sLaptop:rounded-l-[.265rem]
             mLaptop:rounded-l-[.33rem]
             desktop:rounded-l-[.4rem]
             largeDesktop:rounded-l-[0.5rem]
+
             bg-transparent
             sLaptop:bg-GlassLighterBackground
             text-SidebarGray
@@ -161,10 +174,10 @@ const index = memo(() => {
               <img 
               className="
               max-w-none
-              sLaptop:w-[1.033rem]
-              mLaptop:w-[1.292rem]
-              desktop:w-[1.55rem]
-              largeDesktop:w-[1.938rem]
+              sLaptop:w-[0.930rem]
+              mLaptop:w-[1.162rem]
+              desktop:w-[1.395rem]
+              largeDesktop:w-[1.744rem]
               "
               src={searchIcon} alt="SearchIcon" />
             </button>

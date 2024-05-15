@@ -15,12 +15,15 @@ const index = memo(() => {
     partOneCSS
     ">
         <div className="w-fill relative flex flex-col">
-          <div className="relative 
+          <div className="
+          relative 
+
           mt-[1.465rem]
           mobile:mt-[1.953rem]
           sMobile:mt-[3.125rem]
           mMobile:mt-[3.75rem]
           sLaptop:mt-0
+
           pl-[calc(6.51%-0.488rem)]
           mobile:pl-[calc(6.51%-0.651rem)]
           sMobile:pl-[calc(6.51%-1.041rem)]
@@ -29,10 +32,12 @@ const index = memo(() => {
           mLaptop:pl-[calc(3.6%-1.65rem)] 
           desktop:pl-[calc(3.6%-2rem)] 
           largeDesktop:pl-[calc(3.6%-2.45rem)] 
+
           extra:pl-0  
           extra:w-full 
           extra:max-w-[1920px] 
-          extra:mx-auto">
+          extra:mx-auto
+          ">
             <h1 className="
             flex
             items-center
@@ -92,14 +97,16 @@ const index = memo(() => {
           </div>
           <div className='
           w-full 
+
           pt-[1.207rem]
           mobile:pt-[1.651rem]
           sMobile:pt-[2.604rem]
           mMobile:pt-[3.125rem]
-          sLaptop:pt-[3.379rem]
-          mLaptop:pt-[4.396rem]
-          desktop:pt-[5.25rem]
-          largeDesktop:pt-[6.563rem]
+          sLaptop:pt-[3.199rem]
+          mLaptop:pt-[3.999rem]
+          desktop:pt-[4.8rem]
+          largeDesktop:pt-[6rem]
+
           sLaptop:flex flex-row
           justify-between
           '>
@@ -115,8 +122,11 @@ const index = memo(() => {
             className='
             bg-SiteGreen 
             sLaptop:min-h-32 
+
             w-[76.69%]
+
             sLaptop:w-[39.94%] 
+
             rounded-r-[0.117rem]
             mobile:rounded-r-[0.156rem]
             sMobile:rounded-r-[0.249rem]
@@ -125,19 +135,23 @@ const index = memo(() => {
             mLaptop:rounded-r-[0.333rem]
             desktop:rounded-r-[0.4rem]
             largeDesktop:rounded-r-[0.5rem]
+
             sLaptop:pr-[2.4rem]
             mLaptop:pr-[3rem]
             desktop:pr-[3.6rem]
             largeDesktop:pr-[4.5rem]
+
             py-[0.561rem]
             mobile:py-[0.749rem]
             sMobile:py-[1.198rem]
             mMobile:py-[1.438rem]
-            sLaptop:py-[1.733rem]
-            mLaptop:py-[2.167rem]
-            desktop:py-[2.6rem]
-            largeDesktop:py-[3.25rem]
+            sLaptop:py-[1.559rem]
+            mLaptop:py-[1.949rem]
+            desktop:py-[2.34rem]
+            largeDesktop:py-[2.925rem]
+
             divTinyShadow
+
             mobile:divMobileShadow
             sMobile:divsMobileShadow
             mMobile:divmMobileShadow
@@ -146,19 +160,22 @@ const index = memo(() => {
             desktop:divDesktopShadow
             largeDesktop:divLargeDesktopShadow
             flex 
+
             justify-end 
+
             items-center
             '>
                 <img className='
                 mr-[12.93%]
                 w-[43.60%]
                 sLaptop:mr-0
-                sLaptop:w-[13.333rem]
-                mLaptop:w-[16.667rem]
-                desktop:w-[20rem]
-                largeDesktop:w-[25rem]
+                sLaptop:w-[11.999rem]
+                mLaptop:w-[14.999rem]
+                desktop:w-[18rem]
+                largeDesktop:w-[22.5rem]
                 ' src={profile} alt="My_Profile_Image" /> 
             </div>
+
             <div
             className='
             flex
@@ -207,24 +224,23 @@ const index = memo(() => {
                 </span>
               </p>
             </div>
-            {/*  
-            w-[93.48%]
-            ml-[calc(100%-93.48%)]
-            */}
+           
             <div
             data-aos='slide-left'
             data-aos-duration='1250'
             data-aos-delay='500'
             className='
-            relatives
-            sLaptop:min-h-32 
+            relatives 
+
             w-full
             sLaptop:w-[57.69%]
+
             mt-[0.488rem]
             mobile:mt-[0.651rem]
             sMobile:mt-[1.041rem]
             mMobile:mt-[1.25rem]
             sLaptop:mt-0
+
             '>
                 <h1 className='
                 w-fill
@@ -233,10 +249,10 @@ const index = memo(() => {
                 mobile:text-[1.953rem]
                 sMobile:text-[3.125rem]
                 mMobile:text-[3.75rem]
-                sLaptop:text-[3.167rem]
-                mLaptop:text-[3.958rem]
-                desktop:text-[4.75rem]
-                largeDesktop:text-[5.938rem]
+                sLaptop:text-[2.850rem]
+                mLaptop:text-[3.562rem]
+                desktop:text-[4.275rem]
+                largeDesktop:text-[5.344rem]
                 text-SiteGreen
                 leading-none
                 font-bold
@@ -247,15 +263,16 @@ const index = memo(() => {
                 mobile:text-[2.546rem]
                 sMobile:text-[4.074rem]
                 mMobile:text-[4.889rem]
-                sLaptop:text-[4rem]
-                mLaptop:text-[5rem]
-                desktop:text-[6rem]
-                largeDesktop:text-[7.5rem]
+                sLaptop:text-[3.466rem]
+                mLaptop:text-[4.333rem]
+                desktop:text-[5.2rem]
+                largeDesktop:text-[6.5rem]
                 text-GrayBackground
                 font-medium
                 '
                 >*</span></h1>
                 <div className='
+
                 mt-[0.304rem]
                 mobile:mt-[0.447rem]
                 sMobile:mt-[0.677rem]
@@ -264,8 +281,11 @@ const index = memo(() => {
                 mLaptop:mt-[0.313rem]
                 desktop:mt-[0.35rem]
                 largeDesktop:mt-[0.438rem]
+
                 w-[93.48%]
+
                 ml-[calc(100%-93.48%)]
+
                 sLaptop:ml-0
                 sLaptop:w-full
                 rounded-l-[0.117rem]
@@ -276,6 +296,7 @@ const index = memo(() => {
                 mLaptop:rounded-l-[0.333rem] 
                 desktop:rounded-l-[0.4rem]
                 largeDesktop:rounded-l-[0.5rem]
+
                 flex 
                 items-center 
                 relative
@@ -283,6 +304,7 @@ const index = memo(() => {
                 sLaptop:justify-start
                 bg-SiteYellow
                 divTinyShadow
+
                 mobile:divMobileShadow
                 sMobile:divsMobileShadow
                 mMobile:divmMobileShadow
@@ -293,30 +315,35 @@ const index = memo(() => {
                 '>
                     <p
                     className='
+
                     text-[0.928rem]
                     mobile:text-[1.237rem]
                     sMobile:text-[1.979rem]
                     mMobile:text-[2.375rem]
-                    sLaptop:text-[1.833rem]
-                    mLaptop:text-[2.292rem]
-                    desktop:text-[2.75rem]
-                    largeDesktop:text-[3.438rem]
+                    sLaptop:text-[1.650rem]
+                    mLaptop:text-[2.062rem]
+                    desktop:text-[2.475rem]
+                    largeDesktop:text-[3.094rem]
+
                     pr-[calc(53.48%-7.313rem)]
                     mobile:pr-[calc(53.48%-9.746rem)]
                     sMobile:pr-[calc(53.48%-15.594rem)]
                     mMobile:pr-[calc(53.48%-18.716rem)]
+
                     sLaptop:px-[0.933rem]
                     mLaptop:px-[1.167rem]
                     desktop:px-[1.4rem]
                     largeDesktop:px-[1.75rem]
+
                     py-[0.366rem]
                     mobile:py-[0.488rem]
                     sMobile:py-[0.781rem]
                     mMobile:py-[0.938rem]
-                    sLaptop:py-[1rem]
-                    mLaptop:py-[1.15rem]
-                    desktop:py-[1.5rem]
-                    largeDesktop:py-[1.875rem]
+                    sLaptop:py-[0.799rem]
+                    mLaptop:py-[0.999rem]
+                    desktop:py-[1.2rem]
+                    largeDesktop:py-[1.5rem]
+
                     text-PrimaryWhite
                     font-bold
                     leading-none
@@ -341,10 +368,10 @@ const index = memo(() => {
                 mobile:gap-[0.338rem]
                 sMobile:gap-[0.54rem]
                 mMobile:gap-[0.648rem]
-                sLaptop:gap-[.5rem]
-                mLaptop:gap-[0.625rem]
-                desktop:gap-[0.75rem]
-                largeDesktop:gap-[0.938rem]
+                sLaptop:gap-[0.450rem]
+                mLaptop:gap-[0.562rem]
+                desktop:gap-[0.675rem]
+                largeDesktop:gap-[0.844rem]
 
                 relative
                 w-full
@@ -362,10 +389,10 @@ const index = memo(() => {
                   mobile:h-[0.291rem]
                   sMobile:h-[0.466rem]
                   mMobile:h-[0.56rem]
-                  sLaptop:h-[0.5rem]
-                  mLaptop:h-[0.625rem]
-                  desktop:h-[0.75rem]
-                  largeDesktop:h-[0.938rem]
+                  sLaptop:h-[0.450rem]
+                  mLaptop:h-[0.562rem]
+                  desktop:h-[0.675rem]
+                  largeDesktop:h-[0.844rem]
                   sLaptop:top-[3.156rem]
                   right-[16.68%]
                   sLaptop:right-auto
@@ -388,10 +415,10 @@ const index = memo(() => {
                   mobile:h-[0.291rem]
                   sMobile:h-[0.466rem]
                   mMobile:h-[0.56rem]
-                  sLaptop:h-[0.5rem]
-                  mLaptop:h-[0.625rem]
-                  desktop:h-[0.75rem]
-                  largeDesktop:h-[0.938rem]
+                  sLaptop:h-[0.450rem]
+                  mLaptop:h-[0.562rem]
+                  desktop:h-[0.675rem]
+                  largeDesktop:h-[0.844rem]
                   
                   top-[1.254rem]
                   mobile:top-[1.673rem]
@@ -414,96 +441,109 @@ const index = memo(() => {
                   mobile:gap-[0.225rem]
                   sMobile:gap-[0.36rem]
                   mMobile:gap-[0.433rem]
-                  sLaptop:gap-[0.333rem]
-                  mLaptop:gap-[0.438rem]
-                  desktop:gap-[.5rem]
-                  largeDesktop:gap-[0.625rem]
+                  sLaptop:gap-[0.299rem]
+                  mLaptop:gap-[0.374rem]
+                  desktop:gap-[0.449rem]
+                  largeDesktop:gap-[0.562rem]
                   '>
                       <h3 className='
                       text-[1.013rem]
                       mobile:text-[1.351rem]
                       sMobile:text-[2.161rem]
                       mMobile:text-[2.593rem]
-                      sLaptop:text-[2rem]
-                      mLaptop:text-[2.5rem]
-                      desktop:text-[3rem]
-                      largeDesktop:text-[3.75rem]
+                      sLaptop:text-[1.799rem]
+                      mLaptop:text-[2.249rem]
+                      desktop:text-[2.7rem]
+                      largeDesktop:text-[3.375rem]
+
                       font-semibold
                       text-SidebarGray
                       leading-none
+
                       '>Bachelors:</h3>
                       <p className='
                       text-[0.844rem]
                       mobile:text-[1.126rem]
                       sMobile:text-[1.801rem]
                       mMobile:text-[2.161rem]
-                      sLaptop:text-[1.667rem]
-                      mLaptop:text-[2.083rem]
-                      desktop:text-[2.5rem]
-                      largeDesktop:text-[3.125rem]
+                      sLaptop:text-[1.499rem]
+                      mLaptop:text-[1.874rem]
+                      desktop:text-[2.249rem]
+                      largeDesktop:text-[2.812rem]
+
                       font-semibold
                       text-SiteGreen
                       leading-none
+
                       '>Informatics & MAS</p>
                   </div>
                   <div className='
-                  flex flex-col
-                  gap-[0.169rem]
-                  mobile:gap-[0.225rem]
-                  sMobile:gap-[0.36rem]
-                  mMobile:gap-[0.433rem]
-                  sLaptop:gap-[0.333rem]
-                  mLaptop:gap-[0.438rem]
-                  desktop:gap-[.5rem]
-                  largeDesktop:gap-[0.625rem]
+                   flex flex-col
+                   gap-[0.169rem]
+                   mobile:gap-[0.225rem]
+                   sMobile:gap-[0.36rem]
+                   mMobile:gap-[0.433rem]
+                   sLaptop:gap-[0.299rem]
+                   mLaptop:gap-[0.374rem]
+                   desktop:gap-[0.449rem]
+                   largeDesktop:gap-[0.562rem]
                   '>
                       <h3 className='
                       text-[1.013rem]
                       mobile:text-[1.351rem]
                       sMobile:text-[2.161rem]
                       mMobile:text-[2.593rem]
-                      sLaptop:text-[2rem]
-                      mLaptop:text-[2.5rem]
-                      desktop:text-[3rem]
-                      largeDesktop:text-[3.75rem]
+                      sLaptop:text-[1.799rem]
+                      mLaptop:text-[2.249rem]
+                      desktop:text-[2.7rem]
+                      largeDesktop:text-[3.375rem]
+
                       font-semibold
                       text-SidebarGray
                       leading-none
+
                       '>School:</h3>
                       <p className='
                       text-[0.844rem]
                       mobile:text-[1.126rem]
                       sMobile:text-[1.801rem]
                       mMobile:text-[2.161rem]
-                      sLaptop:text-[1.667rem]
-                      mLaptop:text-[2.083rem]
-                      desktop:text-[2.5rem]
-                      largeDesktop:text-[3.125rem]
+                      sLaptop:text-[1.499rem]
+                      mLaptop:text-[1.874rem]
+                      desktop:text-[2.249rem]
+                      largeDesktop:text-[2.812rem]
+
                       font-semibold
                       text-SiteGreen
                       leading-none
+
                       '>IUPUI 2018-2022</p>
                   </div>
                 </div>
             </div>
           </div>
+
           <div className='
             hidden
             sLaptop:flex 
+
             pl-[7.03%]
             largeDesktop:pl-[8.063rem]
             sLaptop:pt-[1.1rem]
             mLaptop:pt-[1.375rem]
             desktop:pt-[1.65rem]
             largeDesktop:pt-[2.063rem]
+
             sLaptop:pb-[13.579rem]
             mLaptop:pb-[16.958rem]
             desktop:pb-[20.338rem]
             largeDesktop:pb-[25.438rem]
-            sLaptop:text-[1.333rem]
-            mLaptop:text-[1.667rem]
-            desktop:text-[2rem]
-            largeDesktop:text-[2.5rem]
+
+            sLaptop:text-[1.199rem]
+            mLaptop:text-[1.499rem]
+            desktop:text-[1.8rem]
+            largeDesktop:text-[2.25rem]
+
             extra:w-full
             extra:max-w-[1920px]
             extra:mx-auto
@@ -515,18 +555,18 @@ const index = memo(() => {
             data-aos-duration='1250'
             data-aos-delay='500'
             ><span className='
-            sLaptop:text-[2rem]
-            mLaptop:text-[2.5rem]
-            desktop:text-[3rem]
-            largeDesktop:text-[3.75rem]
+            sLaptop:text-[1.799rem]
+            mLaptop:text-[2.249rem]
+            desktop:text-[2.7rem]
+            largeDesktop:text-[3.375rem]
             text-GrayBackground
             ' >"</span>
             My passion is to draw and code!
             <span className='
-            sLaptop:text-[2rem]
-            mLaptop:text-[2.5rem]
-            desktop:text-[3rem]
-            largeDesktop:text-[3.75rem]
+            sLaptop:text-[1.799rem]
+            mLaptop:text-[2.249rem]
+            desktop:text-[2.7rem]
+            largeDesktop:text-[3.375rem]
             text-GrayBackground
             '>"</span></p>
           </div>
@@ -568,10 +608,10 @@ const index = memo(() => {
         right-[23.22%]
         sLaptop:right-[34.37%]
         top-[80%]
-        sLaptop:top-[32.5rem]
-        mLaptop:top-[40.625rem]
-        desktop:top-[48.75rem]
-        largeDesktop:top-[60.938rem]
+        sLaptop:top-[29.250rem]
+        mLaptop:top-[36.562rem]
+        desktop:top-[43.875rem]
+        largeDesktop:top-[54.844rem]
         w-[1.245rem]
         mobile:w-[1.66rem]
         sMobile:w-[2.656rem]

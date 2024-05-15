@@ -33,7 +33,10 @@ const index = memo(() => {
             sLaptop:rounded-l-[0.54rem] mLaptop:rounded-l-[0.675rem] desktop:rounded-l-[0.81rem] largeDesktop:rounded-l-[1.013rem]
 
             h-[13.526rem] mobile:h-[18.034rem] sMobile:h-[28.854rem] mMobile:h-[34.625rem]
-            sLaptop:h-[26.033rem] mLaptop:h-[32.542rem] desktop:h-[39.05rem] largeDesktop:h-[48.813rem] 
+            sLaptop:h-[23.429rem] 
+            mLaptop:h-[29.287rem] 
+            desktop:h-[35.144rem] 
+            largeDesktop:h-[43.931rem] 
 
             bg-SiteYellow">
             <a className='

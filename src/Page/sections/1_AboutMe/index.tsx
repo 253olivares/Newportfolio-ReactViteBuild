@@ -11,7 +11,9 @@ const index = memo(() => {
   return (
     <div  ref={el => {
       if(el) pageRef.current['AboutMe'] = el
-    }} id="AboutMe" className={`relative w-full`}>
+    }} id="AboutMe" className={`
+    relative 
+    w-full`}>
       <Part1Profile />
       {/* 
       // Doing this instead of the css method as hidding it using media

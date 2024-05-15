@@ -42,10 +42,10 @@ const index = memo(() => {
     largeDesktop:gap-[0.313rem]
 
     sLaptop:pt-[0.313rem]
-    sLaptop:pb-[0.5rem]
-    mLaptop:pb-[0.625rem]
-    desktop:pb-[0.75rem]
-    largeDesktop:pb-[0.938rem]
+    sLaptop:pb-[0.450rem]
+    mLaptop:pb-[0.562rem]
+    desktop:pb-[0.675rem]
+    largeDesktop:pb-[0.844rem]
 
     sLaptop:pl-[1.333rem]
     mLaptop:pl-[1.666rem]
@@ -53,8 +53,7 @@ const index = memo(() => {
     largeDesktop:pl-[3.125rem]
     ">
     <div ref={backgroundSelectRef} className="
-    transition-all
-    duration-100
+  
     mockBrowserSelected
     ">
 
@@ -113,19 +112,19 @@ const index = memo(() => {
         mobile:text-[0.928rem]
         sMobile:text-[1.484rem]
         mMobile:text-[1.781rem]
-        sLaptop:text-[1rem]
-        mLaptop:text-[1.25rem]
-        desktop:text-[1.5rem]
-        largeDesktop:text-[1.875rem]
+        sLaptop:text-[0.899rem]
+        mLaptop:text-[1.124rem]
+        desktop:text-[1.349rem]
+        largeDesktop:text-[1.687rem]
 
         py-[0.664rem]
         mobile:py-[0.885rem]
         sMobile:py-[1.416rem]
         mMobile:py-[1.7rem]
-        sLaptop:py-[0.288rem]
-        mLaptop:py-[0.375rem]
-        desktop:py-[0.463rem]
-        largeDesktop:py-[0.625rem]
+        sLaptop:py-[0.299rem]
+        mLaptop:py-[0.374rem]
+        desktop:py-[0.449rem]
+        largeDesktop:py-[0.562rem]
         `}
         onClick={()=>changeSelectTab(x, index)}
         >

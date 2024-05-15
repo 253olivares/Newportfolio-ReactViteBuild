@@ -5,21 +5,19 @@ import {memo} from 'react';
 import ProjectInfo from './component/projectInfo';
 
 const index = memo(({project}:{project:projectStateType}) => {
-    const {id,projectName,projectURL, imgURL, date,tags,live,responsive} = project;
+  
+  const {id,projectName,projectURL, imgURL, date,tags,live,responsive} = project;
 
   return (
     <motion.div 
     key={id} 
     initial={{
-      scale:.98,
       opacity:0
     }}
     animate={{
-      scale:1,
       opacity:1
     }}
     exit={{
-      scale:.98,
       opacity:0
     }}
     transition={{duration:.5}}
@@ -93,7 +91,9 @@ const index = memo(({project}:{project:projectStateType}) => {
         ' 
         src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}.svg`} 
         
-        alt={projectName} />
+        alt={projectName} 
+        loading='lazy'
+        />
         {
           responsive ? 
           <p

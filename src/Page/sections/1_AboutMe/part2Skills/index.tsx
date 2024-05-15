@@ -79,7 +79,8 @@ const index = memo(() => {
   return (
     <div className="
     sLaptop:block
-    partTwoCSS">
+    partTwoCSS
+    ">
         <div className="
         w-full 
         relative z-[5]
@@ -96,21 +97,30 @@ const index = memo(() => {
           px-[6.51%]
           sLaptop:px-0
           extra:max-w-[1920px] extra:mx-auto 
-          gap-[0.195rem] mobile:gap-[0.260rem] sMobile:gap-[0.416rem] mMobile:gap-[0.5rem]
-          sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]">
+          gap-[0.195rem] 
+          mobile:gap-[0.260rem] 
+          sMobile:gap-[0.416rem] 
+          mMobile:gap-[0.5rem]
+          sLaptop:gap-[0.333rem] 
+          mLaptop:gap-[0.417rem] 
+          desktop:gap-[0.5rem] 
+          largeDesktop:gap-[0.625rem]
+          ">
             <h1  className="sectionCSS">MY TECHNICAL SKILLS</h1>
             <p className="
             leading-none
             font-bold
             text-PrimaryWhite
+
             text-[0.781rem]
             mobile:text-[1.042rem]
             sMobile:text-[1.667rem]
             mMobile:text-[2rem]
-            sLaptop:text-[2rem]
-            mLaptop:text-[2.5rem]
-            desktop:text-[3rem]
-            largeDesktop:text-[3.75rem]
+            sLaptop:text-[1.759rem]
+            mLaptop:text-[2.199rem]
+            desktop:text-[2.64rem]
+            largeDesktop:text-[3.3rem]
+
             textShadowTiny
             mobile:textShadowmobile
             sMobile:textShadowsMobile
@@ -139,28 +149,33 @@ const index = memo(() => {
               <div className='
               overflow-x-auto
               no-scrollbar
+
               mt-[0.977rem]
               mobile:mt-[1.283ren]
               sMobile:mt-[2.083rem]
               mMobile:mt-[2.5rem]
-              sLaptop:mt-[3.25rem]
-              mLaptop:mt-[4.25rem]
-              desktop:mt-[5rem]
-              largeDesktop:mt-[6.75rem]
+              sLaptop:mt-[1.333rem]
+              mLaptop:mt-[1.666rem]
+              desktop:mt-[2rem]
+              largeDesktop:mt-[2.5rem]
+
               py-[0.608rem]
               mobile:py-[0.81rem]
               sMobile:py-[1.296rem]
               mMobile:py-[1.555rem]
-              sLaptop:py-[0.99rem]
-              mLaptop:py-[1.238rem]
-              desktop:py-[1.485rem]
-              largeDesktop:py-[1.856rem]
+              sLaptop:py-[0.890rem]
+              mLaptop:py-[1.113rem]
+              desktop:py-[1.336rem]
+              largeDesktop:py-[1.670rem]
+
               px-[9.80%]
               sLaptop:px-[1.82%]
+
               gap-[0.729rem]
               mobile:gap-[0.972rem]
               sMobile:gap-[1.555rem]
               mMobile:gap-[1.866rem]
+
               sLaptop:gap-0
               w-full 
               flex flex-row
@@ -176,7 +191,10 @@ const index = memo(() => {
                 transition-[left]
                 duration-150
                 absolute
-                sLaptop:h-[1.716rem] mLaptop:h-[2.145rem] desktop:h-[2.574rem] largeDesktop:h-[3.218rem]
+                sLaptop:h-[1.716rem] 
+                mLaptop:h-[2.145rem] 
+                desktop:h-[2.574rem] 
+                largeDesktop:h-[3.218rem]
                 left-[03.20%]
                 `} src={pointer} alt="pointerSVG" />
               </div>
@@ -194,6 +212,7 @@ const index = memo(() => {
         ' src={squareMobile} alt="Mobile square" />
         <img className="
         hidden
+        sLaptop:block
         absolute 
         z-[0]
         sLaptop:h-[56.71rem]

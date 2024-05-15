@@ -31,9 +31,9 @@ const index = memo(() => {
         desktop:pl-[5rem]
         largeDesktop:pl-[6.25rem]
         pt-[1.466rem]
-      mobile:pt-[1.952rem]
-      sMobile:pt-[3.126rem]
-      mMobile:pt-[3.75rem]
+        mobile:pt-[1.952rem]
+        sMobile:pt-[3.126rem]
+        mMobile:pt-[3.75rem]
         sLaptop:pt-[1.667rem]
         mLaptop:pt-[2.083rem]
         desktop:pt-[2.5rem]
@@ -42,10 +42,11 @@ const index = memo(() => {
         mobile:pb-[2.93rem]
         sMobile:pb-[4.688rem]
         mMobile:pb-[5.625rem]
-        sLaptop:pb-[7.791rem]
-        mLaptop:pb-[9.754rem]
-        desktop:pb-[11.655rem]
-        largeDesktop:pb-[14.6rem]
+        sLaptop:pb-[7.007rem]
+        mLaptop:pb-[8.759rem]
+        desktop:pb-[10.512rem]
+        largeDesktop:pb-[13.14rem]
+        
         ">
           <div className="
           w-full 
@@ -100,9 +101,11 @@ const index = memo(() => {
       src={stripsMobile} 
       alt="mobile strips" />
       <img className="
-       absolute bottom-0 left-0
+       absolute 
+       bottom-0 left-0
        z-[0]
        hidden
+       sLaptop:block
        sLaptop:w-[57.24rem]
        mLaptop:w-[71.28rem]
        desktop:w-[86.4rem]

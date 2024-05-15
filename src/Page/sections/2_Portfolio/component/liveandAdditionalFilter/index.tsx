@@ -16,10 +16,10 @@ const index = memo(() => {
     sMobile:mt-[1.041rem]
     mMobile:mt-[1.25rem]
     sLaptop:mt-0
-    sLaptop:gap-[1.167rem]
-    mLaptop:gap-[1.458rem]
-    desktop:gap-[1.75rem]
-    largeDesktop:gap-[2.188rem]
+    sLaptop:gap-[1.050rem]
+    mLaptop:gap-[1.312rem]
+    desktop:gap-[1.575rem]
+    largeDesktop:gap-[1.969rem]
     items-center
     `}>
       <LiveDemo />

@@ -39,14 +39,14 @@ const index = memo(() => {
        sMobile:w-[2.282rem]
        mMobile:w-[2.739rem]
        mMobile:h-[2.739rem]
-       sLaptop:w-[1.167rem]
-       sLaptop:h-[1.167rem]
-       mLaptop:w-[1.458rem]
-       mLaptop:h-[1.458rem]
-       desktop:w-[1.75rem]
-       desktop:h-[1.75rem]
-       largeDesktop:w-[2.188rem]
-       largeDesktop:h-[2.188rem]
+       sLaptop:w-[1.050rem]
+       sLaptop:h-[1.050rem]
+       mLaptop:w-[1.312rem]
+       mLaptop:h-[1.312rem]
+       desktop:w-[1.575rem]
+       desktop:h-[1.575rem]
+       largeDesktop:w-[1.969rem]
+       largeDesktop:h-[1.969rem]
        bg-GlassLighterBackground
        checked:bg-SiteDarkGreen
       " type="checkbox" id="LiveDemo" name="LiveDemo" />
@@ -55,10 +55,10 @@ const index = memo(() => {
        mobile:text-[1.223rem]
        sMobile:text-[1.956rem]
        mMobile:text-[2.348rem]
-       sLaptop:text-[1rem]
-       mLaptop:text-[1.25rem]
-       desktop:text-[1.5rem]
-       largeDesktop:text-[1.875rem]
+       sLaptop:text-[0.899rem]
+       mLaptop:text-[1.124rem]
+       desktop:text-[1.349rem]
+       largeDesktop:text-[1.687rem]
        table-cell
        align-middle
        font-medium

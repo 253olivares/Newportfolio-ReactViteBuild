@@ -19,10 +19,10 @@ const index = memo(() => {
      mobile:gap-[0.815rem]
      sMobile:gap-[1.304rem]
      mMobile:gap-[1.565rem]
-     sLaptop:gap-[0.667rem]
-     mLaptop:gap-[0.833rem]
-     desktop:gap-[1rem]
-     largeDesktop:gap-[1.25rem]
+     sLaptop:gap-[0.599rem]
+     mLaptop:gap-[0.749rem]
+     desktop:gap-[0.9rem]
+     largeDesktop:gap-[1.125rem]
      font-medium
      text-SidebarGray
     '>
@@ -31,10 +31,10 @@ const index = memo(() => {
        mobile:text-[1.223rem]
        sMobile:text-[1.956rem]
        mMobile:text-[2.348rem]
-       sLaptop:text-[1rem]
-       mLaptop:text-[1.25rem]
-       desktop:text-[1.5rem]
-       largeDesktop:text-[1.875rem]
+       sLaptop:text-[0.899rem]
+       mLaptop:text-[1.124rem]
+       desktop:text-[1.349rem]
+       largeDesktop:text-[1.687rem]
        leading-none
        table-cell
        align-middle
@@ -45,10 +45,10 @@ const index = memo(() => {
        mobile:w-[1.168rem]
        sMobile:w-[1.868rem]
        mMobile:w-[2.242rem]
-       sLaptop:w-[0.956rem]
-       mLaptop:w-[1.194rem]
-       desktop:w-[1.433rem]
-       largeDesktop:w-[1.791rem]
+       sLaptop:w-[0.859rem]
+       mLaptop:w-[1.073rem]
+       desktop:w-[1.288rem]
+       largeDesktop:w-[1.611rem]
        rotate-90'
       id='Arrow' src={Arrow} alt="Arrow" />
     </div>

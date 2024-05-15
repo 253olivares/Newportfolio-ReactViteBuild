@@ -77,10 +77,11 @@ const index = memo(() => {
       mobile:h-[39.062rem]
       sMobile:h-[62.499rem]
       mMobile:h-[75rem]
-      sLaptop:h-[26.667rem]
-      mLaptop:h-[33.333rem]
-      desktop:h-[40rem]
-      largeDesktop:h-[50rem]
+      sLaptop:h-[25.333rem]
+      mLaptop:h-[31.666rem]
+      desktop:h-[38rem]
+      largeDesktop:h-[47.5rem]
+      4k:h-[60rem]
 
       pb-[0.488rem]
       mobile:pb-[0.651rem]
@@ -97,10 +98,10 @@ const index = memo(() => {
       largeDesktop:px-[3.125rems]
       
       pt-0
-      sLaptop:pt-[0.8rem]
-      mLaptop:pt-[1rem]
-      desktop:pt-[1.2rem]
-      largeDesktop:pt-[1.5rem]
+      sLaptop:pt-[0.719rem]
+      mLaptop:pt-[0.899rem]
+      desktop:pt-[1.08rem]
+      largeDesktop:pt-[1.35rem]
 
       flex
       flex-col

@@ -68,11 +68,6 @@
         desktop:desktopTempCol
         largeDesktop:largeDesktoptempCol
 
-        sLaptop:h-[23.467rem]
-        mLaptop:h-[29.333rem]
-        desktop:h-[35.2rem]
-        largeDesktop:h-[44rem]
-
         pt-[0.732rem]
         mobile:pt-[0.976rem]
         sMobile:pt-[1.562rem]
@@ -256,15 +251,18 @@
         text-SiteYellow
         font-bold
         leading-none
+        
         text-[1.458rem]
         mobile:text-[1.943rem]
         sMobile:text-[3.109rem]
         mMobile:text-[3.731rem]
-        sLaptop:text-[3.333rem]
-        mLaptop:text-[4.167rem]
-        desktop:text-[5rem]
-        largeDesktop:text-[6.25rem]
+        sLaptop:text-[2.933rem]
+        mLaptop:text-[3.666rem]
+        desktop:text-[4.4rem]
+        largeDesktop:text-[5.5rem]
+
         sectionText
+
         mobile:sectionTextMobile
         sMobile:sectionTextsMobile
         mMobile:sectionTextmMobile
@@ -392,10 +390,12 @@
         mLaptop:pl-[4.167rem]
         desktop:pl-[5rem]
         largeDesktop:pl-[6.25rem]
-        sLaptop:pt-[3.9rem]
-        mLaptop:pt-[4.875rem]
-        desktop:pt-[5.85rem]
-        largeDesktop:pt-[7.313rem]
+
+        sLaptop:pt-[2.933rem]
+        mLaptop:pt-[3.666rem]
+        desktop:pt-[4.4rem]
+        largeDesktop:pt-[5.5rem]
+
     }
     .partTwoCSS{
         @apply 
@@ -412,10 +412,10 @@
         mobile:pt-[2.441rem]
         sMobile:pt-[3.906rem]
         mMobile:pt-[4.688rem]
-        sLaptop:pt-[4.25rem]
-        mLaptop:pt-[5.333rem]
-        desktop:pt-[6.4rem]
-        largeDesktop:pt-[8rem]
+        sLaptop:pt-[3.199rem]
+        mLaptop:pt-[3.999rem]
+        desktop:pt-[4.8rem]
+        largeDesktop:pt-[6rem]
     }
     .mockBrowser{
         @apply 
