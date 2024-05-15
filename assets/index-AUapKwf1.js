@@ -276,7 +276,10 @@ Error generating stack: `+i.message+`
       min-h-[100vh]\r
       overflow-x-hidden\r
       overflow-y-hidden\r
-      `,children:[x.jsx(kL,{}),x.jsx("div",{children:x.jsx(nk,{})})]}))),LL="/Newportfolio-ReactViteBuild/assets/hero_Drawing.svg",ML="/Newportfolio-ReactViteBuild/assets/trianglePNG.png",EL="/Newportfolio-ReactViteBuild/assets/HeaderWaveMobile.svg",CL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:r=>{r&&(t.current.Home=r)},id:"Home",className:"relative w-full sLaptop:min-h-[42rem] mLaptop:min-h-[52.5rem] desktop:min-h-[63rem] largeDesktop:min-h-[78.75rem]",children:[x.jsx("img",{className:`\r
+      `,children:[x.jsx(kL,{}),x.jsx("div",{children:x.jsx(nk,{})})]}))),LL="/Newportfolio-ReactViteBuild/assets/hero_Drawing.svg",ML="/Newportfolio-ReactViteBuild/assets/trianglePNG.png",EL="/Newportfolio-ReactViteBuild/assets/HeaderWaveMobile.svg",CL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:r=>{r&&(t.current.Home=r)},id:"Home",className:`
+    relative 
+    w-full 
+    `,children:[x.jsx("img",{className:`\r
       block \r
       sLaptop:hidden  \r
       relative \r
@@ -288,29 +291,34 @@ Error generating stack: `+i.message+`
       w-full\r
       h-auto\r
       extra:h-[77.075rem]\r
-      `,src:ML,alt:"Wavebackground"}),x.jsx("div",{className:"w-full top-0 absolute",children:x.jsxs("div",{className:`\r
+      `,src:ML,alt:"Wavebackground"}),x.jsx("div",{className:`\r
+      w-full top-0 absolute`,children:x.jsxs("div",{className:`\r
         max-w-[1920px]\r
         mx-auto\r
         relative z-[5] \r
         flex flex-col\r
+\r
         gap-[0.264rem]\r
         mobile:gap-[0.351rem]\r
         sMobile:gap-[0.563rem]\r
         mMobile:gap-[0.675rem]\r
         sLaptop:gap-[0.5rem]\r
         largeDesktop:gap-[1rem]\r
+\r
         pl-[3.255%]\r
         mobile:pl-[06.51%]\r
         sLaptop:pl-[8%] \r
         largeDesktop:pl-[10.625rem]\r
+\r
         pt-[1.221rem]\r
         mobile:pt-[1.628rem]\r
         sMobile:pt-[2.604rem]\r
         mMobile:pt-[3.125rem]\r
-        sLaptop:pt-[8rem]\r
-        mLaptop:pt-[10rem]\r
-        desktop:pt-[12rem]\r
-        largeDesktop:pt-[15rem]\r
+        sLaptop:pt-[6.399rem]\r
+        mLaptop:pt-[7.999rem]\r
+        desktop:pt-[9.6rem]\r
+        largeDesktop:pt-[12rem]\r
+\r
         heroTextMobileTiny\r
         mobile:heroTextMobile\r
         sMobile:heroTextSmallMobile\r
@@ -320,55 +328,67 @@ Error generating stack: `+i.message+`
         desktop:heroTextDesktop\r
         largeDesktop:heroTextLarge\r
         `,children:[x.jsx("p",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":"1300",className:`\r
+\r
           text-[2.285rem]\r
           mobile:text-[3.047rem]\r
           sMobile:text-[4.875rem]\r
           mMobile:text-[5.85rem]\r
-          sLaptop:text-[4.333rem]\r
-          mLaptop:text-[5.375rem]\r
-          desktop:text-[6.5rem]\r
-          largeDesktop:text-[8.125rem] \r
+          sLaptop:text-[3.733rem]\r
+          mLaptop:text-[4.666rem]\r
+          desktop:text-[5.6rem]\r
+          largeDesktop:text-[7rem] \r
+\r
           leading-none\r
           text-SiteYellow \r
           font-bold\r
           `,children:"WELCOME !"}),x.jsxs("p",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":"1800",className:`\r
           font-bold \r
+\r
           text-[1.494rem]\r
           mobile:text-[1.992rem]\r
           sMobile:text-[3.188rem]\r
           mMobile:text-[3.825rem]\r
-          sLaptop:text-[2.833rem]\r
-          mLaptop:text-[3.5rem]\r
-          desktop:text-[4.25rem]\r
-          largeDesktop:text-[5.313rem]\r
+          sLaptop:text-[2.346rem]\r
+          mLaptop:text-[2.933rem]\r
+          desktop:text-[3.52rem]\r
+          largeDesktop:text-[4.4rem]\r
+\r
           leading-none \r
           text-PrimaryWhite\r
           `,children:[x.jsx("span",{className:"text-SiteYellow",children:"T"}),"o ",x.jsx("span",{className:"text-SiteYellow",children:"M"}),"y ",x.jsx("span",{className:"text-SiteYellow",children:"P"}),"ortfolio"]}),x.jsx("img",{"data-aos":"fade","data-aos-duration":"1250","data-aos-delay":"800",className:`
+
             right-[3.255%]
             mobile:right-[06.51%]
             sLaptop:right-[2%]
             largeDesktop:right-[2.4rem]
+
             absolute z-[5]
+
             top-[5.5rem]
             mobile:top-[7.5rem]
             sMobile:top-[12.49rem]
             mMobile:top-[15.063rem]
-            sLaptop:top-[2.625rem]
-            mLaptop:top-[3.313rem] 
-            desktop:top-[4rem] 
-            largeDesktop:top-[5rem]
+            sLaptop:top-[2.133rem]
+            mLaptop:top-[2.666rem] 
+            desktop:top-[3.2rem] 
+            largeDesktop:top-[4rem]
          
             w-[70%]
             sMobile:w-[67.40%]
-            sLaptop:w-[55%]
-            largeDesktop:w-[65.25rem]`,src:LL,alt:""}),x.jsx("div",{className:"circle1"}),x.jsx("div",{className:"circle2"}),x.jsx("div",{className:"circle3"}),x.jsx("div",{className:"circle4"})]})})]})}),PL=k.memo(()=>{const e=k.useContext(Ce),{triangle:t,mobileTriangle:r,profile:n,bracketLeft:o,bracketRight:i,moneySign:s}=e,a=W(Y0);return x.jsxs("div",{className:`\r
+            sLaptop:w-[54.37%]
+            largeDesktop:w-[65.25rem]
+            
+            `,src:LL,alt:""}),x.jsx("div",{className:"circle1"}),x.jsx("div",{className:"circle2"}),x.jsx("div",{className:"circle3"}),x.jsx("div",{className:"circle4"})]})})]})}),PL=k.memo(()=>{const e=k.useContext(Ce),{triangle:t,mobileTriangle:r,profile:n,bracketLeft:o,bracketRight:i,moneySign:s}=e,a=W(Y0);return x.jsxs("div",{className:`\r
     partOneCSS\r
-    `,children:[x.jsxs("div",{className:"w-fill relative flex flex-col",children:[x.jsx("div",{className:`relative \r
+    `,children:[x.jsxs("div",{className:"w-fill relative flex flex-col",children:[x.jsx("div",{className:`\r
+          relative \r
+\r
           mt-[1.465rem]\r
           mobile:mt-[1.953rem]\r
           sMobile:mt-[3.125rem]\r
           mMobile:mt-[3.75rem]\r
           sLaptop:mt-0\r
+\r
           pl-[calc(6.51%-0.488rem)]\r
           mobile:pl-[calc(6.51%-0.651rem)]\r
           sMobile:pl-[calc(6.51%-1.041rem)]\r
@@ -377,10 +397,12 @@ Error generating stack: `+i.message+`
           mLaptop:pl-[calc(3.6%-1.65rem)] \r
           desktop:pl-[calc(3.6%-2rem)] \r
           largeDesktop:pl-[calc(3.6%-2.45rem)] \r
+\r
           extra:pl-0  \r
           extra:w-full \r
           extra:max-w-[1920px] \r
-          extra:mx-auto`,children:x.jsxs("h1",{className:`\r
+          extra:mx-auto\r
+          `,children:x.jsxs("h1",{className:`\r
             flex\r
             items-center\r
             sectionCSS\r
@@ -420,21 +442,26 @@ Error generating stack: `+i.message+`
             largeDesktop:ml-[.8rem]\r
             `,src:i,alt:""})]})}),x.jsxs("div",{className:`\r
           w-full \r
+\r
           pt-[1.207rem]\r
           mobile:pt-[1.651rem]\r
           sMobile:pt-[2.604rem]\r
           mMobile:pt-[3.125rem]\r
-          sLaptop:pt-[3.379rem]\r
-          mLaptop:pt-[4.396rem]\r
-          desktop:pt-[5.25rem]\r
-          largeDesktop:pt-[6.563rem]\r
+          sLaptop:pt-[3.199rem]\r
+          mLaptop:pt-[3.999rem]\r
+          desktop:pt-[4.8rem]\r
+          largeDesktop:pt-[6rem]\r
+\r
           sLaptop:flex flex-row\r
           justify-between\r
           `,children:[x.jsx("div",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":a<1024?"1500":"500",className:`\r
             bg-SiteGreen \r
             sLaptop:min-h-32 \r
+\r
             w-[76.69%]\r
+\r
             sLaptop:w-[39.94%] \r
+\r
             rounded-r-[0.117rem]\r
             mobile:rounded-r-[0.156rem]\r
             sMobile:rounded-r-[0.249rem]\r
@@ -443,19 +470,23 @@ Error generating stack: `+i.message+`
             mLaptop:rounded-r-[0.333rem]\r
             desktop:rounded-r-[0.4rem]\r
             largeDesktop:rounded-r-[0.5rem]\r
+\r
             sLaptop:pr-[2.4rem]\r
             mLaptop:pr-[3rem]\r
             desktop:pr-[3.6rem]\r
             largeDesktop:pr-[4.5rem]\r
+\r
             py-[0.561rem]\r
             mobile:py-[0.749rem]\r
             sMobile:py-[1.198rem]\r
             mMobile:py-[1.438rem]\r
-            sLaptop:py-[1.733rem]\r
-            mLaptop:py-[2.167rem]\r
-            desktop:py-[2.6rem]\r
-            largeDesktop:py-[3.25rem]\r
+            sLaptop:py-[1.559rem]\r
+            mLaptop:py-[1.949rem]\r
+            desktop:py-[2.34rem]\r
+            largeDesktop:py-[2.925rem]\r
+\r
             divTinyShadow\r
+\r
             mobile:divMobileShadow\r
             sMobile:divsMobileShadow\r
             mMobile:divmMobileShadow\r
@@ -464,16 +495,18 @@ Error generating stack: `+i.message+`
             desktop:divDesktopShadow\r
             largeDesktop:divLargeDesktopShadow\r
             flex \r
+\r
             justify-end \r
+\r
             items-center\r
             `,children:x.jsx("img",{className:`\r
                 mr-[12.93%]\r
                 w-[43.60%]\r
                 sLaptop:mr-0\r
-                sLaptop:w-[13.333rem]\r
-                mLaptop:w-[16.667rem]\r
-                desktop:w-[20rem]\r
-                largeDesktop:w-[25rem]\r
+                sLaptop:w-[11.999rem]\r
+                mLaptop:w-[14.999rem]\r
+                desktop:w-[18rem]\r
+                largeDesktop:w-[22.5rem]\r
                 `,src:n,alt:"My_Profile_Image"})}),x.jsx("div",{className:`\r
             flex\r
             sLaptop:hidden\r
@@ -501,15 +534,17 @@ Error generating stack: `+i.message+`
                 mMobile:text-[2rem]\r
                 text-GrayBackground\r
                 `,children:'"'})]})}),x.jsxs("div",{"data-aos":"slide-left","data-aos-duration":"1250","data-aos-delay":"500",className:`\r
-            relatives\r
-            sLaptop:min-h-32 \r
+            relatives \r
+\r
             w-full\r
             sLaptop:w-[57.69%]\r
+\r
             mt-[0.488rem]\r
             mobile:mt-[0.651rem]\r
             sMobile:mt-[1.041rem]\r
             mMobile:mt-[1.25rem]\r
             sLaptop:mt-0\r
+\r
             `,children:[x.jsxs("h1",{className:`\r
                 w-fill\r
                 text-center\r
@@ -517,10 +552,10 @@ Error generating stack: `+i.message+`
                 mobile:text-[1.953rem]\r
                 sMobile:text-[3.125rem]\r
                 mMobile:text-[3.75rem]\r
-                sLaptop:text-[3.167rem]\r
-                mLaptop:text-[3.958rem]\r
-                desktop:text-[4.75rem]\r
-                largeDesktop:text-[5.938rem]\r
+                sLaptop:text-[2.850rem]\r
+                mLaptop:text-[3.562rem]\r
+                desktop:text-[4.275rem]\r
+                largeDesktop:text-[5.344rem]\r
                 text-SiteGreen\r
                 leading-none\r
                 font-bold\r
@@ -529,13 +564,14 @@ Error generating stack: `+i.message+`
                 mobile:text-[2.546rem]\r
                 sMobile:text-[4.074rem]\r
                 mMobile:text-[4.889rem]\r
-                sLaptop:text-[4rem]\r
-                mLaptop:text-[5rem]\r
-                desktop:text-[6rem]\r
-                largeDesktop:text-[7.5rem]\r
+                sLaptop:text-[3.466rem]\r
+                mLaptop:text-[4.333rem]\r
+                desktop:text-[5.2rem]\r
+                largeDesktop:text-[6.5rem]\r
                 text-GrayBackground\r
                 font-medium\r
                 `,children:"*"})]}),x.jsx("div",{className:`\r
+\r
                 mt-[0.304rem]\r
                 mobile:mt-[0.447rem]\r
                 sMobile:mt-[0.677rem]\r
@@ -544,8 +580,11 @@ Error generating stack: `+i.message+`
                 mLaptop:mt-[0.313rem]\r
                 desktop:mt-[0.35rem]\r
                 largeDesktop:mt-[0.438rem]\r
+\r
                 w-[93.48%]\r
+\r
                 ml-[calc(100%-93.48%)]\r
+\r
                 sLaptop:ml-0\r
                 sLaptop:w-full\r
                 rounded-l-[0.117rem]\r
@@ -556,6 +595,7 @@ Error generating stack: `+i.message+`
                 mLaptop:rounded-l-[0.333rem] \r
                 desktop:rounded-l-[0.4rem]\r
                 largeDesktop:rounded-l-[0.5rem]\r
+\r
                 flex \r
                 items-center \r
                 relative\r
@@ -563,6 +603,7 @@ Error generating stack: `+i.message+`
                 sLaptop:justify-start\r
                 bg-SiteYellow\r
                 divTinyShadow\r
+\r
                 mobile:divMobileShadow\r
                 sMobile:divsMobileShadow\r
                 mMobile:divmMobileShadow\r
@@ -571,30 +612,35 @@ Error generating stack: `+i.message+`
                 desktop:divDesktopShadow\r
                 largeDesktop:divLargeDesktopShadow\r
                 `,children:x.jsx("p",{className:`\r
+\r
                     text-[0.928rem]\r
                     mobile:text-[1.237rem]\r
                     sMobile:text-[1.979rem]\r
                     mMobile:text-[2.375rem]\r
-                    sLaptop:text-[1.833rem]\r
-                    mLaptop:text-[2.292rem]\r
-                    desktop:text-[2.75rem]\r
-                    largeDesktop:text-[3.438rem]\r
+                    sLaptop:text-[1.650rem]\r
+                    mLaptop:text-[2.062rem]\r
+                    desktop:text-[2.475rem]\r
+                    largeDesktop:text-[3.094rem]\r
+\r
                     pr-[calc(53.48%-7.313rem)]\r
                     mobile:pr-[calc(53.48%-9.746rem)]\r
                     sMobile:pr-[calc(53.48%-15.594rem)]\r
                     mMobile:pr-[calc(53.48%-18.716rem)]\r
+\r
                     sLaptop:px-[0.933rem]\r
                     mLaptop:px-[1.167rem]\r
                     desktop:px-[1.4rem]\r
                     largeDesktop:px-[1.75rem]\r
+\r
                     py-[0.366rem]\r
                     mobile:py-[0.488rem]\r
                     sMobile:py-[0.781rem]\r
                     mMobile:py-[0.938rem]\r
-                    sLaptop:py-[1rem]\r
-                    mLaptop:py-[1.15rem]\r
-                    desktop:py-[1.5rem]\r
-                    largeDesktop:py-[1.875rem]\r
+                    sLaptop:py-[0.799rem]\r
+                    mLaptop:py-[0.999rem]\r
+                    desktop:py-[1.2rem]\r
+                    largeDesktop:py-[1.5rem]\r
+\r
                     text-PrimaryWhite\r
                     font-bold\r
                     leading-none\r
@@ -616,10 +662,10 @@ Error generating stack: `+i.message+`
                 mobile:gap-[0.338rem]\r
                 sMobile:gap-[0.54rem]\r
                 mMobile:gap-[0.648rem]\r
-                sLaptop:gap-[.5rem]\r
-                mLaptop:gap-[0.625rem]\r
-                desktop:gap-[0.75rem]\r
-                largeDesktop:gap-[0.938rem]\r
+                sLaptop:gap-[0.450rem]\r
+                mLaptop:gap-[0.562rem]\r
+                desktop:gap-[0.675rem]\r
+                largeDesktop:gap-[0.844rem]\r
 \r
                 relative\r
                 w-full\r
@@ -636,10 +682,10 @@ Error generating stack: `+i.message+`
                   mobile:h-[0.291rem]\r
                   sMobile:h-[0.466rem]\r
                   mMobile:h-[0.56rem]\r
-                  sLaptop:h-[0.5rem]\r
-                  mLaptop:h-[0.625rem]\r
-                  desktop:h-[0.75rem]\r
-                  largeDesktop:h-[0.938rem]\r
+                  sLaptop:h-[0.450rem]\r
+                  mLaptop:h-[0.562rem]\r
+                  desktop:h-[0.675rem]\r
+                  largeDesktop:h-[0.844rem]\r
                   sLaptop:top-[3.156rem]\r
                   right-[16.68%]\r
                   sLaptop:right-auto\r
@@ -661,10 +707,10 @@ Error generating stack: `+i.message+`
                   mobile:h-[0.291rem]\r
                   sMobile:h-[0.466rem]\r
                   mMobile:h-[0.56rem]\r
-                  sLaptop:h-[0.5rem]\r
-                  mLaptop:h-[0.625rem]\r
-                  desktop:h-[0.75rem]\r
-                  largeDesktop:h-[0.938rem]\r
+                  sLaptop:h-[0.450rem]\r
+                  mLaptop:h-[0.562rem]\r
+                  desktop:h-[0.675rem]\r
+                  largeDesktop:h-[0.844rem]\r
                   \r
                   top-[1.254rem]\r
                   mobile:top-[1.673rem]\r
@@ -686,101 +732,113 @@ Error generating stack: `+i.message+`
                   mobile:gap-[0.225rem]\r
                   sMobile:gap-[0.36rem]\r
                   mMobile:gap-[0.433rem]\r
-                  sLaptop:gap-[0.333rem]\r
-                  mLaptop:gap-[0.438rem]\r
-                  desktop:gap-[.5rem]\r
-                  largeDesktop:gap-[0.625rem]\r
+                  sLaptop:gap-[0.299rem]\r
+                  mLaptop:gap-[0.374rem]\r
+                  desktop:gap-[0.449rem]\r
+                  largeDesktop:gap-[0.562rem]\r
                   `,children:[x.jsx("h3",{className:`\r
                       text-[1.013rem]\r
                       mobile:text-[1.351rem]\r
                       sMobile:text-[2.161rem]\r
                       mMobile:text-[2.593rem]\r
-                      sLaptop:text-[2rem]\r
-                      mLaptop:text-[2.5rem]\r
-                      desktop:text-[3rem]\r
-                      largeDesktop:text-[3.75rem]\r
+                      sLaptop:text-[1.799rem]\r
+                      mLaptop:text-[2.249rem]\r
+                      desktop:text-[2.7rem]\r
+                      largeDesktop:text-[3.375rem]\r
+\r
                       font-semibold\r
                       text-SidebarGray\r
                       leading-none\r
+\r
                       `,children:"Bachelors:"}),x.jsx("p",{className:`\r
                       text-[0.844rem]\r
                       mobile:text-[1.126rem]\r
                       sMobile:text-[1.801rem]\r
                       mMobile:text-[2.161rem]\r
-                      sLaptop:text-[1.667rem]\r
-                      mLaptop:text-[2.083rem]\r
-                      desktop:text-[2.5rem]\r
-                      largeDesktop:text-[3.125rem]\r
+                      sLaptop:text-[1.499rem]\r
+                      mLaptop:text-[1.874rem]\r
+                      desktop:text-[2.249rem]\r
+                      largeDesktop:text-[2.812rem]\r
+\r
                       font-semibold\r
                       text-SiteGreen\r
                       leading-none\r
+\r
                       `,children:"Informatics & MAS"})]}),x.jsxs("div",{className:`\r
-                  flex flex-col\r
-                  gap-[0.169rem]\r
-                  mobile:gap-[0.225rem]\r
-                  sMobile:gap-[0.36rem]\r
-                  mMobile:gap-[0.433rem]\r
-                  sLaptop:gap-[0.333rem]\r
-                  mLaptop:gap-[0.438rem]\r
-                  desktop:gap-[.5rem]\r
-                  largeDesktop:gap-[0.625rem]\r
+                   flex flex-col\r
+                   gap-[0.169rem]\r
+                   mobile:gap-[0.225rem]\r
+                   sMobile:gap-[0.36rem]\r
+                   mMobile:gap-[0.433rem]\r
+                   sLaptop:gap-[0.299rem]\r
+                   mLaptop:gap-[0.374rem]\r
+                   desktop:gap-[0.449rem]\r
+                   largeDesktop:gap-[0.562rem]\r
                   `,children:[x.jsx("h3",{className:`\r
                       text-[1.013rem]\r
                       mobile:text-[1.351rem]\r
                       sMobile:text-[2.161rem]\r
                       mMobile:text-[2.593rem]\r
-                      sLaptop:text-[2rem]\r
-                      mLaptop:text-[2.5rem]\r
-                      desktop:text-[3rem]\r
-                      largeDesktop:text-[3.75rem]\r
+                      sLaptop:text-[1.799rem]\r
+                      mLaptop:text-[2.249rem]\r
+                      desktop:text-[2.7rem]\r
+                      largeDesktop:text-[3.375rem]\r
+\r
                       font-semibold\r
                       text-SidebarGray\r
                       leading-none\r
+\r
                       `,children:"School:"}),x.jsx("p",{className:`\r
                       text-[0.844rem]\r
                       mobile:text-[1.126rem]\r
                       sMobile:text-[1.801rem]\r
                       mMobile:text-[2.161rem]\r
-                      sLaptop:text-[1.667rem]\r
-                      mLaptop:text-[2.083rem]\r
-                      desktop:text-[2.5rem]\r
-                      largeDesktop:text-[3.125rem]\r
+                      sLaptop:text-[1.499rem]\r
+                      mLaptop:text-[1.874rem]\r
+                      desktop:text-[2.249rem]\r
+                      largeDesktop:text-[2.812rem]\r
+\r
                       font-semibold\r
                       text-SiteGreen\r
                       leading-none\r
+\r
                       `,children:"IUPUI 2018-2022"})]})]})]})]}),x.jsx("div",{className:`\r
             hidden\r
             sLaptop:flex \r
+\r
             pl-[7.03%]\r
             largeDesktop:pl-[8.063rem]\r
             sLaptop:pt-[1.1rem]\r
             mLaptop:pt-[1.375rem]\r
             desktop:pt-[1.65rem]\r
             largeDesktop:pt-[2.063rem]\r
+\r
             sLaptop:pb-[13.579rem]\r
             mLaptop:pb-[16.958rem]\r
             desktop:pb-[20.338rem]\r
             largeDesktop:pb-[25.438rem]\r
-            sLaptop:text-[1.333rem]\r
-            mLaptop:text-[1.667rem]\r
-            desktop:text-[2rem]\r
-            largeDesktop:text-[2.5rem]\r
+\r
+            sLaptop:text-[1.199rem]\r
+            mLaptop:text-[1.499rem]\r
+            desktop:text-[1.8rem]\r
+            largeDesktop:text-[2.25rem]\r
+\r
             extra:w-full\r
             extra:max-w-[1920px]\r
             extra:mx-auto\r
             font-medium\r
             leading-none\r
           `,children:x.jsxs("p",{"data-aos":"slide-right","data-aos-duration":"1250","data-aos-delay":"500",children:[x.jsx("span",{className:`\r
-            sLaptop:text-[2rem]\r
-            mLaptop:text-[2.5rem]\r
-            desktop:text-[3rem]\r
-            largeDesktop:text-[3.75rem]\r
+            sLaptop:text-[1.799rem]\r
+            mLaptop:text-[2.249rem]\r
+            desktop:text-[2.7rem]\r
+            largeDesktop:text-[3.375rem]\r
             text-GrayBackground\r
             `,children:'"'}),"My passion is to draw and code!",x.jsx("span",{className:`\r
-            sLaptop:text-[2rem]\r
-            mLaptop:text-[2.5rem]\r
-            desktop:text-[3rem]\r
-            largeDesktop:text-[3.75rem]\r
+            sLaptop:text-[1.799rem]\r
+            mLaptop:text-[2.249rem]\r
+            desktop:text-[2.7rem]\r
+            largeDesktop:text-[3.375rem]\r
             text-GrayBackground\r
             `,children:'"'})]})})]}),x.jsx("span",{className:`\r
         hidden\r
@@ -817,10 +875,10 @@ Error generating stack: `+i.message+`
         right-[23.22%]\r
         sLaptop:right-[34.37%]\r
         top-[80%]\r
-        sLaptop:top-[32.5rem]\r
-        mLaptop:top-[40.625rem]\r
-        desktop:top-[48.75rem]\r
-        largeDesktop:top-[60.938rem]\r
+        sLaptop:top-[29.250rem]\r
+        mLaptop:top-[36.562rem]\r
+        desktop:top-[43.875rem]\r
+        largeDesktop:top-[54.844rem]\r
         w-[1.245rem]\r
         mobile:w-[1.66rem]\r
         sMobile:w-[2.656rem]\r
@@ -877,28 +935,33 @@ Error generating stack: `+i.message+`
      w-[calc(100%-13.02%)]\r
      mx-auto\r
      sLaptop:w-full \r
+\r
      mt-[0.976rem]\r
      mobile:mt-[1.302rem]\r
      sMobile:mt-[2.083rem]\r
      mMobile:mt-[2.5rem]\r
      sLaptop:mt-0\r
+\r
      min-h-[10.62rem]\r
      mobile:min-h-[14.16rem]\r
      sMobile:min-h-[22.656rem]\r
      mMobile:min-h-[27.188rem]\r
-     sLaptop:min-h-[14.157rem]\r
-     mLaptop:min-h-[17.696rem]\r
-     desktop:min-h-[21.236rem]\r
-     largeDesktop:min-h-[26.544rem] \r
+     sLaptop:min-h-[12.740rem]\r
+     mLaptop:min-h-[15.925rem]\r
+     desktop:min-h-[19.111rem]\r
+     largeDesktop:min-h-[23.889rem] \r
+\r
      mb-[1.258rem]\r
      mobile:mb-[1.258rem]\r
      sMobile:mb-[2.822rem]\r
      mMobile:mb-[3.361rem]\r
-     sLaptop:mb-[2.663rem]\r
-     mLaptop:mb-[3.321rem]\r
-     desktop:mb-[3.984rem]\r
-     largeDesktop:mb-[4.979rem]\r
+     sLaptop:mb-[2.389rem]\r
+     mLaptop:mb-[2.987rem]\r
+     desktop:mb-[3.584rem]\r
+     largeDesktop:mb-[4.481rem]\r
+     \r
      bg-PrimaryWhite \r
+\r
      infoTiny\r
      mobile:informobile\r
      sMobile:infosMobile\r
@@ -911,14 +974,16 @@ Error generating stack: `+i.message+`
      text-SidebarGray\r
      `,children:[x.jsxs("div",{className:`w-full \r
       flex justify-between items-center\r
+\r
       mt-[0.889rem]\r
       mobile:mt-[1.153rem]\r
       sMobile:mt-[1.872rem]\r
       mMobile:mt-[2.213rem]\r
-      sLaptop:mt-[1.32rem]\r
-      mLaptop:mt-[1.65rem]\r
-      desktop:mt-[1.98rem]\r
-      largeDesktop:mt-[2.475rem]\r
+      sLaptop:mt-[1.187rem]\r
+      mLaptop:mt-[1.484rem]\r
+      desktop:mt-[1.781rem]\r
+      largeDesktop:mt-[2.227rem]\r
+\r
       pl-[0.854rem]\r
       mobile:pl-[1.139rem]\r
       sMobile:pl-[1.823rem]\r
@@ -927,26 +992,29 @@ Error generating stack: `+i.message+`
       mLaptop:pl-[1.238rem]\r
       desktop:pl-[1.485rem]\r
       largeDesktop:pl-[1.856rem]\r
+\r
       `,children:[x.jsx("h1",{className:`\r
          text-[0.976rem]\r
          mobile:text-[1.302rem]\r
          sMobile:text-[2.083rem]\r
          mMobile:text-[2.5rem]\r
-         sLaptop:text-[1.98rem]\r
-         mLaptop:text-[2.475rem]\r
-         desktop:text-[2.97rem]\r
-         largeDesktop:text-[3.713rem]\r
+         sLaptop:text-[1.781rem]\r
+         mLaptop:text-[2.227rem]\r
+         desktop:text-[2.672rem]\r
+         largeDesktop:text-[3.341rem]\r
          font-bold\r
          leading-none\r
          `,children:e.title}),x.jsx("span",{className:`
+
          text-[0.873rem]
          mobile:text-[1.163rem]
          sMobile:text-[1.861rem]
          mMobile:text-[2.233rem]
-         sLaptop:text-[1.815rem]
-         mLaptop:text-[2.269rem]
-         desktop:text-[2.723rem]
-         largeDesktop:text-[3.403rem]
+         sLaptop:text-[1.633rem]
+         mLaptop:text-[2.041rem]
+         desktop:text-[2.449rem]
+         largeDesktop:text-[3.062rem]
+
          py-[0.234rem]
          mobile:py-[0.312rem]
          sMobile:py-[0.499rem]
@@ -955,6 +1023,7 @@ Error generating stack: `+i.message+`
          mLaptop:py-[.525rem]
          desktop:py-[.650rem]
          largeDesktop:py-[.65rem]
+
          pl-[0.487rem]
          mobile:pl-[0.649rem]
          sMobile:pl-[1.039rem]
@@ -963,6 +1032,7 @@ Error generating stack: `+i.message+`
          mLaptop:pl-[1.238rem]
          desktop:pl-[1.485rem]
          largeDesktop:pl-[1.856rem]
+
          w-[6.344rem]
          mobile:w-[8.459rem]
          sMobile:w-[13.535rem]
@@ -971,12 +1041,14 @@ Error generating stack: `+i.message+`
          mLaptop:w-[16.5rem]
          desktop:w-[19.8rem]
          largeDesktop:w-[24.75rem]
+
          font-semibold
          leading-none
          text-PrimaryWhite
          ${e.skillLevel==="Proficient"?" bg-SiteYellow":"bg-SiteGreen"}
          `,children:e.skillLevel})]}),x.jsx("p",{className:`\r
       font-medium\r
+      \r
       px-[0.854rem]\r
       mobile:px-[1.139rem]\r
       sMobile:px-[1.823rem]\r
@@ -985,6 +1057,7 @@ Error generating stack: `+i.message+`
       mLaptop:px-[1.238rem]\r
       desktop:px-[1.485rem]\r
       largeDesktop:px-[1.856rem]\r
+\r
       mt-[0.763rem]\r
       mobile:mt-[1.016rem]\r
       sMobile:mt-[1.626rem]\r
@@ -993,19 +1066,22 @@ Error generating stack: `+i.message+`
       mLaptop:mt-[0.931rem]\r
       desktop:mt-[1.083rem]\r
       largeDesktop:mt-[1.346rem]\r
+\r
       text-[0.781rem]\r
       mobile:text-[1.042rem]\r
       sMobile:text-[1.667rem]\r
       mMobile:text-[2rem]\r
-      sLaptop:text-[1.584rem]\r
-      mLaptop:text-[1.98rem]\r
-      desktop:text-[2.376rem]\r
-      largeDesktop:text-[2.97rem]\r
+      sLaptop:text-[1.425rem]\r
+      mLaptop:text-[1.781rem]\r
+      desktop:text-[2.138rem]\r
+      largeDesktop:text-[2.673rem]\r
+\r
       sLaptop:mb-[3.634rem]\r
       mLaptop:mb-[4.558rem]\r
       desktop:mb-[5.451rem]\r
       largeDesktop:mb-[6.821rem]\r
-      leading-[1.15]\r
+\r
+      leading-[1.035]\r
       `,children:e.desc}),x.jsxs("span",{className:`\r
       absolute\r
       left-[0.854rem]\r
@@ -1020,18 +1096,20 @@ Error generating stack: `+i.message+`
       mobile:bottom-[1.171rem]\r
       sMobile:bottom-[1.823rem]\r
       mMobile:bottom-[2.224rem]\r
-      sLaptop:bottom-[1.287rem]\r
-      mLaptop:bottom-[1.609rem]\r
-      desktop:bottom-[1.931rem]\r
-      largeDesktop:bottom-[2.288rem]\r
+      sLaptop:bottom-[1.098rem]\r
+      mLaptop:bottom-[1.372rem]\r
+      desktop:bottom-[1.647rem]\r
+      largeDesktop:bottom-[2.059rem]\r
+\r
       text-[0.781rem]\r
       mobile:text-[1.041rem]\r
       sMobile:text-[1.666rem]\r
       mMobile:text-[2rem]\r
-      sLaptop:text-[1.485rem]\r
-      mLaptop:text-[1.856rem]\r
-      desktop:text-[2.228rem]\r
-      largeDesktop:text-[2.784rem]\r
+      sLaptop:text-[1.335rem]\r
+      mLaptop:text-[1.669rem]\r
+      desktop:text-[2.004rem]\r
+      largeDesktop:text-[2.505rem]\r
+\r
       font-medium\r
       `,children:["Years Experience: ",e.years]})]})}),DL=k.memo(({skill:e,loc:t})=>{const r=qe(),n=k.useContext(Ce),{iconsRef:o,arrowRef:i,descRef:s}=n,a=W(H0);return k.useEffect(()=>{const l=()=>{var y;if(r(w2(e.title)),!i.current)return;const u=o.current[t].offsetLeft+o.current[t].offsetWidth/2,c=((y=i.current)==null?void 0:y.offsetWidth)/2,d=u-c,p=s.current.offsetWidth;i.current.style.left=`${(d/p*100).toFixed(2)}%`};return o.current[t].addEventListener("mouseover",l,!0),()=>{o.current[t].removeEventListener("mouseover",l,!0)}},[]),x.jsx("img",{ref:l=>o.current[t]=l,className:`
       cursor-pointer
@@ -1085,7 +1163,8 @@ Error generating stack: `+i.message+`
       largeDesktop:min-h-[50rem]\r
       `,children:x.jsx(iy,{color:"bg-PrimaryWhite"})}):s==="succeeded"&&(u=Object.entries(i).map(([c,d],p)=>x.jsx(DL,{skill:d,loc:p},c))),x.jsxs("div",{className:`\r
     sLaptop:block\r
-    partTwoCSS`,children:[x.jsxs("div",{className:`\r
+    partTwoCSS\r
+    `,children:[x.jsxs("div",{className:`\r
         w-full \r
         relative z-[5]\r
         flex \r
@@ -1096,19 +1175,28 @@ Error generating stack: `+i.message+`
           px-[6.51%]\r
           sLaptop:px-0\r
           extra:max-w-[1920px] extra:mx-auto \r
-          gap-[0.195rem] mobile:gap-[0.260rem] sMobile:gap-[0.416rem] mMobile:gap-[0.5rem]\r
-          sLaptop:gap-[0.333rem] mLaptop:gap-[0.417rem] desktop:gap-[0.5rem] largeDesktop:gap-[0.625rem]`,children:[x.jsx("h1",{className:"sectionCSS",children:"MY TECHNICAL SKILLS"}),x.jsx("p",{className:`\r
+          gap-[0.195rem] \r
+          mobile:gap-[0.260rem] \r
+          sMobile:gap-[0.416rem] \r
+          mMobile:gap-[0.5rem]\r
+          sLaptop:gap-[0.333rem] \r
+          mLaptop:gap-[0.417rem] \r
+          desktop:gap-[0.5rem] \r
+          largeDesktop:gap-[0.625rem]\r
+          `,children:[x.jsx("h1",{className:"sectionCSS",children:"MY TECHNICAL SKILLS"}),x.jsx("p",{className:`\r
             leading-none\r
             font-bold\r
             text-PrimaryWhite\r
+\r
             text-[0.781rem]\r
             mobile:text-[1.042rem]\r
             sMobile:text-[1.667rem]\r
             mMobile:text-[2rem]\r
-            sLaptop:text-[2rem]\r
-            mLaptop:text-[2.5rem]\r
-            desktop:text-[3rem]\r
-            largeDesktop:text-[3.75rem]\r
+            sLaptop:text-[1.759rem]\r
+            mLaptop:text-[2.199rem]\r
+            desktop:text-[2.64rem]\r
+            largeDesktop:text-[3.3rem]\r
+\r
             textShadowTiny\r
             mobile:textShadowmobile\r
             sMobile:textShadowsMobile\r
@@ -1125,28 +1213,33 @@ Error generating stack: `+i.message+`
             extra:mx-auto`,children:[x.jsx("div",{className:`\r
               overflow-x-auto\r
               no-scrollbar\r
+\r
               mt-[0.977rem]\r
               mobile:mt-[1.283ren]\r
               sMobile:mt-[2.083rem]\r
               mMobile:mt-[2.5rem]\r
-              sLaptop:mt-[3.25rem]\r
-              mLaptop:mt-[4.25rem]\r
-              desktop:mt-[5rem]\r
-              largeDesktop:mt-[6.75rem]\r
+              sLaptop:mt-[1.333rem]\r
+              mLaptop:mt-[1.666rem]\r
+              desktop:mt-[2rem]\r
+              largeDesktop:mt-[2.5rem]\r
+\r
               py-[0.608rem]\r
               mobile:py-[0.81rem]\r
               sMobile:py-[1.296rem]\r
               mMobile:py-[1.555rem]\r
-              sLaptop:py-[0.99rem]\r
-              mLaptop:py-[1.238rem]\r
-              desktop:py-[1.485rem]\r
-              largeDesktop:py-[1.856rem]\r
+              sLaptop:py-[0.890rem]\r
+              mLaptop:py-[1.113rem]\r
+              desktop:py-[1.336rem]\r
+              largeDesktop:py-[1.670rem]\r
+\r
               px-[9.80%]\r
               sLaptop:px-[1.82%]\r
+\r
               gap-[0.729rem]\r
               mobile:gap-[0.972rem]\r
               sMobile:gap-[1.555rem]\r
               mMobile:gap-[1.866rem]\r
+\r
               sLaptop:gap-0\r
               w-full \r
               flex flex-row\r
@@ -1156,7 +1249,10 @@ Error generating stack: `+i.message+`
                 transition-[left]
                 duration-150
                 absolute
-                sLaptop:h-[1.716rem] mLaptop:h-[2.145rem] desktop:h-[2.574rem] largeDesktop:h-[3.218rem]
+                sLaptop:h-[1.716rem] 
+                mLaptop:h-[2.145rem] 
+                desktop:h-[2.574rem] 
+                largeDesktop:h-[3.218rem]
                 left-[03.20%]
                 `,src:n,alt:"pointerSVG"})}),x.jsx(TL,{selectSkill:i[l]})]})]}),x.jsx("img",{className:`\r
         absolute \r
@@ -1167,6 +1263,7 @@ Error generating stack: `+i.message+`
         sLaptop:hidden\r
         `,src:o,alt:"Mobile square"}),x.jsx("img",{className:`\r
         hidden\r
+        sLaptop:block\r
         absolute \r
         z-[0]\r
         sLaptop:h-[56.71rem]\r
@@ -1176,7 +1273,9 @@ Error generating stack: `+i.message+`
         sLaptop:right-[-1.06rem] sLaptop:top-[-10.6rem]\r
         mLaptop:right-[-1.32rem] mLaptop:top-[-13.2rem]\r
         desktop:right-[-1.6rem] desktop:top-[-16rem]\r
-        largeDesktop:right-[-2rem] largeDesktop:top-[-20rem]`,src:r,alt:""})]})}),jL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:r=>{r&&(t.current.AboutMe=r)},id:"AboutMe",className:"relative w-full",children:[x.jsx(PL,{}),x.jsx(RL,{})]})}),NL=k.memo(()=>{const e=qe(),t=W(ii),r=k.useContext(Ce),{tabRef:n,backgroundSelectRef:o}=r,i=["Programming","Art","UI / UX"],s=(a,l)=>{e(j2(a));const u=n.current[l].offsetLeft;o.current.style.left=`${u}px`};return x.jsxs("div",{className:`\r
+        largeDesktop:right-[-2rem] largeDesktop:top-[-20rem]`,src:r,alt:""})]})}),jL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:r=>{r&&(t.current.AboutMe=r)},id:"AboutMe",className:`
+    relative 
+    w-full`,children:[x.jsx(PL,{}),x.jsx(RL,{})]})}),NL=k.memo(()=>{const e=qe(),t=W(ii),r=k.useContext(Ce),{tabRef:n,backgroundSelectRef:o}=r,i=["Programming","Art","UI / UX"],s=(a,l)=>{e(j2(a));const u=n.current[l].offsetLeft;o.current.style.left=`${u}px`};return x.jsxs("div",{className:`\r
     flex \r
     flex-row \r
     w-full\r
@@ -1195,18 +1294,17 @@ Error generating stack: `+i.message+`
     largeDesktop:gap-[0.313rem]\r
 \r
     sLaptop:pt-[0.313rem]\r
-    sLaptop:pb-[0.5rem]\r
-    mLaptop:pb-[0.625rem]\r
-    desktop:pb-[0.75rem]\r
-    largeDesktop:pb-[0.938rem]\r
+    sLaptop:pb-[0.450rem]\r
+    mLaptop:pb-[0.562rem]\r
+    desktop:pb-[0.675rem]\r
+    largeDesktop:pb-[0.844rem]\r
 \r
     sLaptop:pl-[1.333rem]\r
     mLaptop:pl-[1.666rem]\r
     desktop:pl-[2rem]\r
     largeDesktop:pl-[3.125rem]\r
     `,children:[x.jsx("div",{ref:o,className:`\r
-    transition-all\r
-    duration-100\r
+  \r
     mockBrowserSelected\r
     `}),i.map((a,l)=>x.jsxs(k.Fragment,{children:[x.jsxs("p",{ref:u=>n.current[l]=u,className:`
         relative
@@ -1257,19 +1355,19 @@ Error generating stack: `+i.message+`
         mobile:text-[0.928rem]
         sMobile:text-[1.484rem]
         mMobile:text-[1.781rem]
-        sLaptop:text-[1rem]
-        mLaptop:text-[1.25rem]
-        desktop:text-[1.5rem]
-        largeDesktop:text-[1.875rem]
+        sLaptop:text-[0.899rem]
+        mLaptop:text-[1.124rem]
+        desktop:text-[1.349rem]
+        largeDesktop:text-[1.687rem]
 
         py-[0.664rem]
         mobile:py-[0.885rem]
         sMobile:py-[1.416rem]
         mMobile:py-[1.7rem]
-        sLaptop:py-[0.288rem]
-        mLaptop:py-[0.375rem]
-        desktop:py-[0.463rem]
-        largeDesktop:py-[0.625rem]
+        sLaptop:py-[0.299rem]
+        mLaptop:py-[0.374rem]
+        desktop:py-[0.449rem]
+        largeDesktop:py-[0.562rem]
         `,onClick:()=>s(a,l),children:[a,x.jsx("img",{className:`
             hidden
             sLaptop:block
@@ -1318,6 +1416,7 @@ Error generating stack: `+i.message+`
     desktop:pb-[0.75rem]\r
     largeDesktop:pb-[0.938rem]\r
     `,children:o.map((i,s)=>x.jsx("img",{className:`\r
+            sLaptop:scale-90\r
             hover:opacity-75\r
             hover:cursor-pointer\r
             py-auto\r
@@ -1511,7 +1610,7 @@ Error generating stack: `+i.message+`
                 largeDesktop:text-[1.031rem]\r
                 leading-none\r
                 opacity-80\r
-                `,children:n})]})]}),eC=k.memo(({project:e})=>{const{id:t,projectName:r,projectURL:n,imgURL:o,date:i,tags:s,live:a,responsive:l}=e;return x.jsxs(Ev.div,{initial:{scale:.98,opacity:0},animate:{scale:1,opacity:1},exit:{scale:.98,opacity:0},transition:{duration:.5},onClick:()=>window.open(n),className:`\r
+                `,children:n})]})]}),eC=k.memo(({project:e})=>{const{id:t,projectName:r,projectURL:n,imgURL:o,date:i,tags:s,live:a,responsive:l}=e;return x.jsxs(Ev.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.5},onClick:()=>window.open(n),className:`\r
         block\r
         relative\r
 \r
@@ -1576,7 +1675,7 @@ Error generating stack: `+i.message+`
        desktop:rounded-[0.6048rem]\r
        largeDesktop:rounded-[.756rem]\r
         \r
-        `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${o}.svg`,alt:r}),l?x.jsx("p",{className:`\r
+        `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${o}.svg`,alt:r,loading:"lazy"}),l?x.jsx("p",{className:`\r
           absolute\r
           text-PrimaryWhite\r
           bg-[#b148d2]\r
@@ -1663,14 +1762,14 @@ Error generating stack: `+i.message+`
        sMobile:w-[2.282rem]\r
        mMobile:w-[2.739rem]\r
        mMobile:h-[2.739rem]\r
-       sLaptop:w-[1.167rem]\r
-       sLaptop:h-[1.167rem]\r
-       mLaptop:w-[1.458rem]\r
-       mLaptop:h-[1.458rem]\r
-       desktop:w-[1.75rem]\r
-       desktop:h-[1.75rem]\r
-       largeDesktop:w-[2.188rem]\r
-       largeDesktop:h-[2.188rem]\r
+       sLaptop:w-[1.050rem]\r
+       sLaptop:h-[1.050rem]\r
+       mLaptop:w-[1.312rem]\r
+       mLaptop:h-[1.312rem]\r
+       desktop:w-[1.575rem]\r
+       desktop:h-[1.575rem]\r
+       largeDesktop:w-[1.969rem]\r
+       largeDesktop:h-[1.969rem]\r
        bg-GlassLighterBackground\r
        checked:bg-SiteDarkGreen\r
       `,type:"checkbox",id:"LiveDemo",name:"LiveDemo"}),x.jsx("label",{className:`text-SidebarGray\r
@@ -1678,10 +1777,10 @@ Error generating stack: `+i.message+`
        mobile:text-[1.223rem]\r
        sMobile:text-[1.956rem]\r
        mMobile:text-[2.348rem]\r
-       sLaptop:text-[1rem]\r
-       mLaptop:text-[1.25rem]\r
-       desktop:text-[1.5rem]\r
-       largeDesktop:text-[1.875rem]\r
+       sLaptop:text-[0.899rem]\r
+       mLaptop:text-[1.124rem]\r
+       desktop:text-[1.349rem]\r
+       largeDesktop:text-[1.687rem]\r
        table-cell\r
        align-middle\r
        font-medium\r
@@ -1693,10 +1792,10 @@ Error generating stack: `+i.message+`
      mobile:gap-[0.815rem]\r
      sMobile:gap-[1.304rem]\r
      mMobile:gap-[1.565rem]\r
-     sLaptop:gap-[0.667rem]\r
-     mLaptop:gap-[0.833rem]\r
-     desktop:gap-[1rem]\r
-     largeDesktop:gap-[1.25rem]\r
+     sLaptop:gap-[0.599rem]\r
+     mLaptop:gap-[0.749rem]\r
+     desktop:gap-[0.9rem]\r
+     largeDesktop:gap-[1.125rem]\r
      font-medium\r
      text-SidebarGray\r
     `,children:[x.jsx("p",{className:`\r
@@ -1704,10 +1803,10 @@ Error generating stack: `+i.message+`
        mobile:text-[1.223rem]\r
        sMobile:text-[1.956rem]\r
        mMobile:text-[2.348rem]\r
-       sLaptop:text-[1rem]\r
-       mLaptop:text-[1.25rem]\r
-       desktop:text-[1.5rem]\r
-       largeDesktop:text-[1.875rem]\r
+       sLaptop:text-[0.899rem]\r
+       mLaptop:text-[1.124rem]\r
+       desktop:text-[1.349rem]\r
+       largeDesktop:text-[1.687rem]\r
        leading-none\r
        table-cell\r
        align-middle\r
@@ -1716,10 +1815,10 @@ Error generating stack: `+i.message+`
        mobile:w-[1.168rem]\r
        sMobile:w-[1.868rem]\r
        mMobile:w-[2.242rem]\r
-       sLaptop:w-[0.956rem]\r
-       mLaptop:w-[1.194rem]\r
-       desktop:w-[1.433rem]\r
-       largeDesktop:w-[1.791rem]\r
+       sLaptop:w-[0.859rem]\r
+       mLaptop:w-[1.073rem]\r
+       desktop:w-[1.288rem]\r
+       largeDesktop:w-[1.611rem]\r
        rotate-90`,id:"Arrow",src:r,alt:"Arrow"})]})}),oC=k.memo(()=>x.jsxs("div",{className:`
     flex
     justify-between
@@ -1731,22 +1830,25 @@ Error generating stack: `+i.message+`
     sMobile:mt-[1.041rem]
     mMobile:mt-[1.25rem]
     sLaptop:mt-0
-    sLaptop:gap-[1.167rem]
-    mLaptop:gap-[1.458rem]
-    desktop:gap-[1.75rem]
-    largeDesktop:gap-[2.188rem]
+    sLaptop:gap-[1.050rem]
+    mLaptop:gap-[1.312rem]
+    desktop:gap-[1.575rem]
+    largeDesktop:gap-[1.969rem]
     items-center
     `,children:[x.jsx(rC,{}),x.jsx(nC,{})]})),iC="/Newportfolio-ReactViteBuild/assets/searchButton.svg",sC="/Newportfolio-ReactViteBuild/assets/searchButtonGreen.svg",aC=k.memo(()=>{const e=qe(),[t,r]=k.useState(""),n=W(ii);return k.useEffect(()=>{r(""),e(ol(""))},[n]),x.jsx("form",{onSubmit:o=>{o.preventDefault(),e(ol(t.trim()))},children:x.jsxs("div",{className:`\r
       flex \r
+      \r
       mt-[0.488rem]\r
       mobile:mt-[0.651rem]\r
       sMobile:mt-[1.042rem]\r
       mMobile:mt-[1.25rem]\r
       sLaptop:mt-0\r
-      sLaptop:gap-[1.333rem]\r
-      mLaptop:gap-[1.667rem]\r
-      desktop:gap-[2rem]\r
-      largeDesktop:gap-[2.5rem]\r
+\r
+      sLaptop:gap-[0.933rem]\r
+      mLaptop:gap-[1.166rem]\r
+      desktop:gap-[1.4rem]\r
+      largeDesktop:gap-[1.75rem]\r
+\r
       items-center\r
       `,children:[x.jsx("label",{className:`\r
         hidden\r
@@ -1754,7 +1856,8 @@ Error generating stack: `+i.message+`
         sLaptop:text-[1rem]\r
         mLaptop:text-[1.25rem]\r
         desktop:text-[1.5rem]\r
-        largeDesktop:text-[1.875rem]\r
+        largeDesktop:text-[1.687rem]\r
+\r
         font-medium\r
         text-SidebarGray\r
         `,htmlFor:"Search",children:"Search:"}),x.jsxs("div",{className:`\r
@@ -1772,15 +1875,17 @@ Error generating stack: `+i.message+`
         mobile:h-[2.278rem]\r
         sMobile:h-[3.645rem]\r
         mMobile:h-[4.375rem]\r
-        sLaptop:h-[1.667rem]\r
-        mLaptop:h-[2.083rem]  \r
-        desktop:h-[2.5rem]\r
-        largeDesktop:h-[3.125rem]\r
+        sLaptop:h-[1.499rem]\r
+        mLaptop:h-[1.874rem]  \r
+        desktop:h-[2.249rem]\r
+        largeDesktop:h-[2.812rem]\r
+\r
         rounded-full\r
         sLaptop:rounded-[.265rem]\r
         mLaptop:rounded-[.33rem]\r
         desktop:rounded-[.4rem]\r
         largeDesktop:rounded-[0.5rem]\r
+\r
         focus-within:ring-[2.734px]\r
         mobile:focus-within:ring-[3.645px]\r
         sMobile:focus-within:ring-[5.833px]\r
@@ -1789,6 +1894,7 @@ Error generating stack: `+i.message+`
         mLaptop:focus-within:ring-[2.64px]\r
         desktop:focus-within:ring-[3.2px]\r
         largeDesktop:focus-within:ring-[4px]\r
+\r
         focus-within:ring-SelectBlue\r
         `,children:[x.jsx("input",{id:"Search",value:t,onChange:o=>{r(o.target.value),o.target.value===""&&e(ol(""))},className:`\r
             text-[0.976rem]\r
@@ -1796,25 +1902,31 @@ Error generating stack: `+i.message+`
             sMobile:text-[2.083rem]\r
             mMobile:text-[2.5rem]\r
             font-medium\r
+\r
             sLaptop:font-normal\r
-            sLaptop:text-[1rem]\r
-            mLaptop:text-[1.25rem]\r
-            desktop:text-[1.5rem]\r
-            largeDesktop:text-[1.875rem]\r
+            sLaptop:text-[0.899rem]\r
+            mLaptop:text-[1.124rem]\r
+            desktop:text-[1.349rem]\r
+            largeDesktop:text-[1.687rem]\r
+\r
             w-full\r
-            sLaptop:w-[9.9375rem]\r
-            mLaptop:w-[12.375rem]\r
-            desktop:w-[15rem]\r
-            largeDesktop:w-[18.75rem]\r
+\r
+            sLaptop:w-[8.999rem]\r
+            mLaptop:w-[11.249rem]\r
+            desktop:w-[13.5rem]\r
+            largeDesktop:w-[16.875rem]\r
+\r
             px-[3%]\r
-            sLaptop:px-[.6296rem]\r
-            mLaptop:px-[.7840rem]\r
-            desktop:px-[0.9504rem]\r
-            largeDesktop:px-[1.188rem]\r
+            sLaptop:px-[0.570rem]\r
+            mLaptop:px-[0.712rem]\r
+            desktop:px-[0.855rem]\r
+            largeDesktop:px-[1.069rem]\r
+\r
             sLaptop:rounded-l-[.265rem]\r
             mLaptop:rounded-l-[.33rem]\r
             desktop:rounded-l-[.4rem]\r
             largeDesktop:rounded-l-[0.5rem]\r
+\r
             bg-transparent\r
             sLaptop:bg-GlassLighterBackground\r
             text-SidebarGray\r
@@ -1846,10 +1958,10 @@ Error generating stack: `+i.message+`
             h-full\r
             `,children:x.jsx("img",{className:`\r
               max-w-none\r
-              sLaptop:w-[1.033rem]\r
-              mLaptop:w-[1.292rem]\r
-              desktop:w-[1.55rem]\r
-              largeDesktop:w-[1.938rem]\r
+              sLaptop:w-[0.930rem]\r
+              mLaptop:w-[1.162rem]\r
+              desktop:w-[1.395rem]\r
+              largeDesktop:w-[1.744rem]\r
               `,src:iC,alt:"SearchIcon"})})]}),x.jsx("p",{onClick:()=>{r(""),e(F2())},className:`\r
         hidden\r
         sLaptop:block\r
@@ -2054,10 +2166,11 @@ Error generating stack: `+i.message+`
       mobile:h-[39.062rem]
       sMobile:h-[62.499rem]
       mMobile:h-[75rem]
-      sLaptop:h-[26.667rem]
-      mLaptop:h-[33.333rem]
-      desktop:h-[40rem]
-      largeDesktop:h-[50rem]
+      sLaptop:h-[25.333rem]
+      mLaptop:h-[31.666rem]
+      desktop:h-[38rem]
+      largeDesktop:h-[47.5rem]
+      4k:h-[60rem]
 
       pb-[0.488rem]
       mobile:pb-[0.651rem]
@@ -2074,10 +2187,10 @@ Error generating stack: `+i.message+`
       largeDesktop:px-[3.125rems]
       
       pt-0
-      sLaptop:pt-[0.8rem]
-      mLaptop:pt-[1rem]
-      desktop:pt-[1.2rem]
-      largeDesktop:pt-[1.5rem]
+      sLaptop:pt-[0.719rem]
+      mLaptop:pt-[0.899rem]
+      desktop:pt-[1.08rem]
+      largeDesktop:pt-[1.35rem]
 
       flex
       flex-col
@@ -2156,7 +2269,10 @@ Error generating stack: `+i.message+`
       sLaptop:flex-row \r
       justify-between\r
       `,children:[x.jsx(NL,{}),x.jsx(_L,{})]}),x.jsx(dC,{})]})),fC=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsx("div",{ref:r=>{r&&(t.current.Portfolio=r)},id:"Portfolio",className:`
-    block bg-SiteGreen w-full`,children:x.jsx("div",{className:`\r
+    block 
+    bg-SiteGreen
+    w-full`,children:x.jsx("div",{className:`\r
+\r
       w-full\r
       flex flex-col\r
       sLaptop:pl-[3.333rem]\r
@@ -2168,28 +2284,31 @@ Error generating stack: `+i.message+`
       mobile:pt-[1.952rem]\r
       sMobile:pt-[3.126rem]\r
       mMobile:pt-[3.75rem]\r
-      sLaptop:pt-[2.667rem]\r
-      mLaptop:pt-[3.334rem]\r
-      desktop:pt-[4em]\r
-      largeDesktop:pt-[5rem]\r
+      sLaptop:pt-[2.399rem]\r
+      mLaptop:pt-[2.999rem]\r
+      desktop:pt-[3.6em]\r
+      largeDesktop:pt-[4.5rem]\r
 \r
       pb-[0.830rem]\r
       mobile:pb-[1.106rem]\r
       sMobile:pb-[1.770rem]\r
       mMobile:pb-[2.125rem]\r
-      min-h-[500px]\r
       `,children:x.jsxs("div",{className:`w-fill \r
         flex flex-col \r
+\r
         sLaptop:gap-[1.667rem]\r
         mLaptop:gap-[2.083rem]\r
         desktop:gap-[2.5rem]\r
         largeDesktop:gap-[3.105rem] \r
+\r
         sLaptop:px-[3.6%] \r
+\r
         extra:px-0 extra:mx-auto extra:max-w-[1920px]\r
-        sLaptop:pb-[3.089rem]\r
-        mLaptop:pb-[3.862rem]\r
-        desktop:pb-[4.625rem]\r
-        largeDesktop:pb-[6.813rem]\r
+        sLaptop:pb-[1.813rem]\r
+        mLaptop:pb-[2.266rem]\r
+        desktop:pb-[2.72rem]\r
+        largeDesktop:pb-[3.4rem]\r
+        \r
         `,children:[x.jsx("h1",{"data-aos":"fade","data-aos-duration":"1250","data-aos-delay":"300",className:`\r
           px-[6.51%]\r
           sLaptop:px-0\r
@@ -2221,7 +2340,10 @@ Error generating stack: `+i.message+`
             sLaptop:rounded-l-[0.54rem] mLaptop:rounded-l-[0.675rem] desktop:rounded-l-[0.81rem] largeDesktop:rounded-l-[1.013rem]\r
 \r
             h-[13.526rem] mobile:h-[18.034rem] sMobile:h-[28.854rem] mMobile:h-[34.625rem]\r
-            sLaptop:h-[26.033rem] mLaptop:h-[32.542rem] desktop:h-[39.05rem] largeDesktop:h-[48.813rem] \r
+            sLaptop:h-[23.429rem] \r
+            mLaptop:h-[29.287rem] \r
+            desktop:h-[35.144rem] \r
+            largeDesktop:h-[43.931rem] \r
 \r
             bg-SiteYellow`,children:x.jsx("a",{className:`\r
             w-full h-full flex items-center\r
@@ -2523,9 +2645,9 @@ Error generating stack: `+i.message+`
         desktop:pl-[5rem]\r
         largeDesktop:pl-[6.25rem]\r
         pt-[1.466rem]\r
-      mobile:pt-[1.952rem]\r
-      sMobile:pt-[3.126rem]\r
-      mMobile:pt-[3.75rem]\r
+        mobile:pt-[1.952rem]\r
+        sMobile:pt-[3.126rem]\r
+        mMobile:pt-[3.75rem]\r
         sLaptop:pt-[1.667rem]\r
         mLaptop:pt-[2.083rem]\r
         desktop:pt-[2.5rem]\r
@@ -2534,10 +2656,11 @@ Error generating stack: `+i.message+`
         mobile:pb-[2.93rem]\r
         sMobile:pb-[4.688rem]\r
         mMobile:pb-[5.625rem]\r
-        sLaptop:pb-[7.791rem]\r
-        mLaptop:pb-[9.754rem]\r
-        desktop:pb-[11.655rem]\r
-        largeDesktop:pb-[14.6rem]\r
+        sLaptop:pb-[7.007rem]\r
+        mLaptop:pb-[8.759rem]\r
+        desktop:pb-[10.512rem]\r
+        largeDesktop:pb-[13.14rem]\r
+        \r
         `,children:[x.jsx("div",{className:`\r
           w-full \r
           px-[6.51%]\r
@@ -2574,9 +2697,11 @@ Error generating stack: `+i.message+`
       sLaptop:hidden\r
       w-full\r
       `,src:n,alt:"mobile strips"}),x.jsx("img",{className:`\r
-       absolute bottom-0 left-0\r
+       absolute \r
+       bottom-0 left-0\r
        z-[0]\r
        hidden\r
+       sLaptop:block\r
        sLaptop:w-[57.24rem]\r
        mLaptop:w-[71.28rem]\r
        desktop:w-[86.4rem]\r
