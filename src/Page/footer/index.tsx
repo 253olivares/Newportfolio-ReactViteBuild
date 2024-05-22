@@ -51,21 +51,21 @@ const index = () => {
           <img className="
           hidden
           sLaptop:block
-          sLaptop:w-[calc(100%-3.333rem)]
-          mLaptop:w-[calc(100%-4.167rem)]
-          desktop:w-[calc(100%-5rem)]
-          largeDesktop:w-[calc(100%-6.25rem)]
-          4k:w-[calc(100%-8.333rem)]
+          sLaptop:w-[calc(100dvw-3.333rem)]
+          mLaptop:w-[calc(100dvw-4.167rem)]
+          desktop:w-[calc(100dvw-5rem)]
+          largeDesktop:w-[calc(100dvw-6.25rem)]
+          4k:w-[calc(100dvw-8.333rem)]
           float-right" src={FooterBack} alt="Footer" />
           <div onClick={()=>scrollToTop()} className="
           hidden
           absolute 
           right-0 top-0 
-          sLaptop:w-[calc(100%-3.333rem)]
-          mLaptop:w-[calc(100%-4.167rem)]
-          desktop:w-[calc(100%-5rem)]
-          largeDesktop:w-[calc(100%-6.25rem)] 
-          4k:w-[calc(100%-8.333rem)]
+          sLaptop:w-[calc(100dvw-3.333rem)]
+          mLaptop:w-[calc(100dvw-4.167rem)]
+          desktop:w-[calc(100dvw-5rem)]
+          largeDesktop:w-[calc(100dvw-6.25rem)]
+          4k:w-[calc(100dvw-8.333rem)]
           sLaptop:flex justify-center">
             <p className="
             w-[30rem] 

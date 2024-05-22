@@ -25,11 +25,10 @@ const index = memo(() => {
   largeDesktop:py-[1.25rem]
   4k:py-[1.666rem]
   w-dvw
-  sLaptop:w-auto
-  sLaptop:min-w-[3.333rem] 
-  mLaptop:min-w-[4.167rem] 
-  desktop:min-w-[5rem] 
-  largeDesktop:min-w-[6.25rem] 
+  sLaptop:w-[3.333rem] 
+  mLaptop:w-[4.167rem] 
+  desktop:w-[5rem] 
+  largeDesktop:w-[6.25rem] 
   4k:min-w-[8.333rem]
   h-[3.223rem]
   mobile:h-[4.297rem]
