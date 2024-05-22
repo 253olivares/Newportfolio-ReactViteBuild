@@ -222,7 +222,7 @@ Error generating stack: `+i.message+`
   desktop:py-[1rem]\r
   largeDesktop:py-[1.25rem]\r
   4k:py-[1.666rem]\r
-  w-[100vw]\r
+  w-dvw\r
   sLaptop:w-auto\r
   sLaptop:min-w-[3.333rem] \r
   mLaptop:min-w-[4.167rem] \r
@@ -233,7 +233,7 @@ Error generating stack: `+i.message+`
   mobile:h-[4.297rem]\r
   sMobile:h-[6.8755rem]\r
   mMobile:h-[8.25rem]\r
-  sLaptop:h-[100vh] \r
+  sLaptop:h-dvh\r
   flex\r
   flex-row\r
   sLaptop:flex-col\r
@@ -273,7 +273,7 @@ Error generating stack: `+i.message+`
       4k:min-h-[4.141rem]`})]})}),bL=()=>{const e=qe(),t=k.useContext(Ce),{tabRef:r,backgroundSelectRef:n}=t,o=W(ii),i=W(Y0);if(r.current.length!==0){const a=r.current.filter(l=>l.innerText===o)[0].offsetLeft;n.current.style.left=`${a}px`}k.useEffect(()=>{function s(){i!==window.innerWidth&&e($2())}return window.addEventListener("resize",s),s(),()=>window.removeEventListener("resize",s)},[])},SL=k.memo(()=>(bL(),x.jsxs("main",{className:`\r
       block\r
       relative w-full \r
-      min-h-[100vh]\r
+      min-h-dvh\r
       overflow-x-hidden\r
       overflow-y-hidden\r
       `,children:[x.jsx(kL,{}),x.jsx("div",{children:x.jsx(nk,{})})]}))),LL="/Newportfolio-ReactViteBuild/assets/hero_Drawing.svg",ML="/Newportfolio-ReactViteBuild/assets/trianglePNG.png",EL="/Newportfolio-ReactViteBuild/assets/HeaderWaveMobile.svg",CL=k.memo(()=>{const e=k.useContext(Ce),{pageRef:t}=e;return x.jsxs("div",{ref:r=>{r&&(t.current.Home=r)},id:"Home",className:`
@@ -2575,6 +2575,7 @@ Error generating stack: `+i.message+`
           mLaptop:w-[calc(100%-4.167rem)]\r
           desktop:w-[calc(100%-5rem)]\r
           largeDesktop:w-[calc(100%-6.25rem)]\r
+          4k:w-[calc(100%-8.333rem)]\r
           float-right`,src:_C,alt:"Footer"}),x.jsx("div",{onClick:()=>r(),className:`\r
           hidden\r
           absolute \r
@@ -2583,6 +2584,7 @@ Error generating stack: `+i.message+`
           mLaptop:w-[calc(100%-4.167rem)]\r
           desktop:w-[calc(100%-5rem)]\r
           largeDesktop:w-[calc(100%-6.25rem)] \r
+          4k:w-[calc(100%-8.333rem)]\r
           sLaptop:flex justify-center`,children:x.jsx("p",{className:`\r
             w-[30rem] \r
             sLaptop:py-[0.65rem]\r
