@@ -55,6 +55,7 @@ const index = () => {
           mLaptop:w-[calc(100%-4.167rem)]
           desktop:w-[calc(100%-5rem)]
           largeDesktop:w-[calc(100%-6.25rem)]
+          4k:w-[calc(100%-8.333rem)]
           float-right" src={FooterBack} alt="Footer" />
           <div onClick={()=>scrollToTop()} className="
           hidden
@@ -64,6 +65,7 @@ const index = () => {
           mLaptop:w-[calc(100%-4.167rem)]
           desktop:w-[calc(100%-5rem)]
           largeDesktop:w-[calc(100%-6.25rem)] 
+          4k:w-[calc(100%-8.333rem)]
           sLaptop:flex justify-center">
             <p className="
             w-[30rem] 

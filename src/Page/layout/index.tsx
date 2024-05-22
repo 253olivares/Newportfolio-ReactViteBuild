@@ -13,7 +13,7 @@ const index = memo(() => {
       <main className='
       block
       relative w-full 
-      min-h-[100vh]
+      min-h-dvh
       overflow-x-hidden
       overflow-y-hidden
       '>

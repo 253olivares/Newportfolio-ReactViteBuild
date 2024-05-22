@@ -24,7 +24,7 @@ const index = memo(() => {
   desktop:py-[1rem]
   largeDesktop:py-[1.25rem]
   4k:py-[1.666rem]
-  w-[100vw]
+  w-dvw
   sLaptop:w-auto
   sLaptop:min-w-[3.333rem] 
   mLaptop:min-w-[4.167rem] 
@@ -35,7 +35,7 @@ const index = memo(() => {
   mobile:h-[4.297rem]
   sMobile:h-[6.8755rem]
   mMobile:h-[8.25rem]
-  sLaptop:h-[100vh] 
+  sLaptop:h-dvh
   flex
   flex-row
   sLaptop:flex-col
