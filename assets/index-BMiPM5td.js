@@ -223,11 +223,10 @@ Error generating stack: `+i.message+`
   largeDesktop:py-[1.25rem]\r
   4k:py-[1.666rem]\r
   w-dvw\r
-  sLaptop:w-auto\r
-  sLaptop:min-w-[3.333rem] \r
-  mLaptop:min-w-[4.167rem] \r
-  desktop:min-w-[5rem] \r
-  largeDesktop:min-w-[6.25rem] \r
+  sLaptop:w-[3.333rem] \r
+  mLaptop:w-[4.167rem] \r
+  desktop:w-[5rem] \r
+  largeDesktop:w-[6.25rem] \r
   4k:min-w-[8.333rem]\r
   h-[3.223rem]\r
   mobile:h-[4.297rem]\r
@@ -2571,20 +2570,20 @@ Error generating stack: `+i.message+`
             `,onClick:()=>r(),src:NC,alt:"MobileFooter"}),x.jsx("img",{className:`\r
           hidden\r
           sLaptop:block\r
-          sLaptop:w-[calc(100%-3.333rem)]\r
-          mLaptop:w-[calc(100%-4.167rem)]\r
-          desktop:w-[calc(100%-5rem)]\r
-          largeDesktop:w-[calc(100%-6.25rem)]\r
-          4k:w-[calc(100%-8.333rem)]\r
+          sLaptop:w-[calc(100dvw-3.333rem)]\r
+          mLaptop:w-[calc(100dvw-4.167rem)]\r
+          desktop:w-[calc(100dvw-5rem)]\r
+          largeDesktop:w-[calc(100dvw-6.25rem)]\r
+          4k:w-[calc(100dvw-8.333rem)]\r
           float-right`,src:_C,alt:"Footer"}),x.jsx("div",{onClick:()=>r(),className:`\r
           hidden\r
           absolute \r
           right-0 top-0 \r
-          sLaptop:w-[calc(100%-3.333rem)]\r
-          mLaptop:w-[calc(100%-4.167rem)]\r
-          desktop:w-[calc(100%-5rem)]\r
-          largeDesktop:w-[calc(100%-6.25rem)] \r
-          4k:w-[calc(100%-8.333rem)]\r
+          sLaptop:w-[calc(100dvw-3.333rem)]\r
+          mLaptop:w-[calc(100dvw-4.167rem)]\r
+          desktop:w-[calc(100dvw-5rem)]\r
+          largeDesktop:w-[calc(100dvw-6.25rem)]\r
+          4k:w-[calc(100dvw-8.333rem)]\r
           sLaptop:flex justify-center`,children:x.jsx("p",{className:`\r
             w-[30rem] \r
             sLaptop:py-[0.65rem]\r
