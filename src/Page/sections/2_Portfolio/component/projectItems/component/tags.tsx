@@ -7,50 +7,53 @@ const tags = ({tag}:{tag:string}) => {
 
     switch(tag){
         case 'XD':
-        color = '#2E001D'
+        color = '#2E001D';
             break;
         case 'PS':
-        color = '#18152E'
+        color = '#18152E';
             break;
         case'Mobile Responsive':
-        color = '#b148d2'
+        color = '#b148d2';
         break;
         case'Live':
-        color='#333533'
+        color='#333533';
             break;
         case'HTML':
-        color='#CF5E1C' 
+        color='#CF5E1C';
             break;
         case 'CSS':
-        color='#0277BD'
+        color='#0277BD';
             break;
         case 'SASS':
-        color='#CD6799'
+        color='#CD6799';
             break;
         case 'Tailwind':
-        color='linear-gradient(45deg,#F5F5F5, #CD6799 37%,#3886EC 50%, #F5F5F5 )'
+        color='linear-gradient(45deg,#F5F5F5, #CD6799 37%,#3886EC 50%, #F5F5F5 )';
             break;
         case 'JavaScript':
-        color='#CAB108'
+        color='#CAB108';
             break;
         case 'TypeScript':
-        color='#32A3EE'
+        color='#32A3EE';
             break;
         case 'React':
-        color='#242938'
+        color='#242938';
             break;
         case 'Firebase':
         color='#CF5E1C'
             break;
         case 'PHP':
-        color='#7229D1'
+        color='#7229D1';
             break;
         case 'MySQL':
-        color='#F57C00'
+        color='#F57C00';
             break;
         case 'Figma':
-        color='#0ACF83'
+        color='#0ACF83';
             break;
+        case 'Java':
+        color = '#f4474c';
+        break;
 
     }
 

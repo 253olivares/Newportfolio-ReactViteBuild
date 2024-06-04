@@ -110,7 +110,8 @@ export const PageProvider = ({children}:{children:ReactElement}) => {
       'React': '#242938',
       'Firebase': '#CF5E1C',
       'PHP': '#7229D1',
-      'MySQL': '#F57C00'
+      'MySQL': '#F57C00',
+      'Java' : '#f4474c'
   }
     
     const contextValues = {
