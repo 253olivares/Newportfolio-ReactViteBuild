@@ -245,7 +245,7 @@
     {
       "id": 1,
       "projectName": "PHP Bread Blog",
-      "projectURL": "",
+      "projectURL": "https://github.com/253olivares/PHP-SQL--Bread-Blog-Site",
       "imgURL": "PHPBreadBlog",
       "section": "Programming",
       "tags": ["PHP", "MySQL"],
@@ -256,7 +256,7 @@
     {
       "id": 0,
       "projectName": "PHP Art Market",
-      "projectURL": "",
+      "projectURL": "https://github.com/253olivares/PHP-SQL-Art-Market-Site",
       "imgURL": "PHPArtMarket",
       "section": "Programming",
       "tags": ["PHP", "MySQL"],
