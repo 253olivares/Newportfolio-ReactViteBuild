@@ -4,7 +4,7 @@ import FilterSection from '../filterSection';
 import FilterList from '../filterList';
 import Loading from '../../../loading';
 import { useAppSelector } from "../../../../../store/hook";
-import { getOpenFilter, getProjectError, getProjectStatus, getTabSelect } from "../../../../../store/projectSlice";
+import { getOpenFilter, getProjectStatus, getTabSelect } from "../../../../../store/projectSlice";
 import { AnimatePresence } from "framer-motion";
 
 const index = memo(() => {
@@ -14,7 +14,6 @@ const index = memo(() => {
 
   const selected = useAppSelector(getTabSelect);
   const status = useAppSelector(getProjectStatus);
-  const error = useAppSelector(getProjectError);
 
   let content
 
