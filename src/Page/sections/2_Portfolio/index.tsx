@@ -9,9 +9,12 @@ const index = memo(() => {
   const {pageRef} = appContext!;
 
   return (
-    <div ref={el => {
+    <div 
+    ref={el => {
       if(el) pageRef.current['Portfolio'] = el
-    }} id="Portfolio" className={`
+    }} 
+    id="Portfolio" 
+    className={`
     block 
     bg-SiteGreen
     w-full`}>

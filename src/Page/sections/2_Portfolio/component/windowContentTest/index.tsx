@@ -8,6 +8,7 @@ import { getOpenFilter, getProjectError, getProjectStatus, getTabSelect } from "
 import { AnimatePresence } from "framer-motion";
 
 const index = memo(() => {
+  // this is
 
   const openFilter = useAppSelector(getOpenFilter);
 
@@ -18,7 +19,7 @@ const index = memo(() => {
   let content
 
   if (status === 'failed') {
-    console.log(error);
+
     content = <div
     className="
     flex 

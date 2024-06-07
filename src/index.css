@@ -420,6 +420,7 @@
     .mockBrowser{
         @apply 
         relative z-[10] 
+        /* this causes lag on device that do not have hardware acceleration enabled */
         backdrop-blur-[.75rem]
         bg-GlassBackground
         overflow-hidden 
@@ -470,15 +471,14 @@
         mLaptop:rounded-[0.833rem]
         desktop:rounded-[1rem]
         largeDesktop:rounded-[1.25rem]
+        shadow-[0.261rem_0.326rem_0_0_rgba(0,0,0,.5)]
+        mobile:shadow-[0.348rem_0.434rem_0_0_rgba(0,0,0,.5)]
+        sMobile:shadow-[0.556rem_0.694rem_0_0_rgba(0,0,0,.5)]
+        mMobile:shadow-[0.667rem_0.833rem_0_0_rgba(0,0,0,.5)]
+        mLaptop:shadow-[0.833rem_1.042rem_0_0_rgba(0,0,0,.5)]
+        desktop:shadow-[1rem_1.25rem_0_0_rgba(0,0,0,.5)]
+        largeDesktop:shadow-[1.25rem_1.563rem_0_0_rgba(0,0,0,.5)]
         
-        mockBrowserTiny
-        mobile:mockBrowsermobile
-        sMobile:mockBrowsersMobile
-        mMobile:mockBrowsermMobile
-        sLaptop:mockBrowserSmallLaptop
-        mLaptop:mockBrowserMediumLaptop
-        desktop:mockBrowserDesktop
-        largeDesktop:mockBrowserlargeDekstop
     }
     .contactLabelText{
         @apply 
@@ -827,35 +827,5 @@
 
     .textShadowLarge{
         text-shadow: -0.313rem 0.313rem 0 rgba(0,0,0,.5);
-    }
-
-    /* browser shadow from the portfolio section  */
-    .mockBrowserTiny{
-        box-shadow: 0.261rem 0.326rem 0 0 rgba(0,0,0,.5);
-    }
-    .mockBrowsermobile{
-        box-shadow: 0.348rem 0.434rem 0 0 rgba(0,0,0,.5);
-    }
-    .mockBrowsersMobile{
-        box-shadow: 0.556rem 0.694rem 0 0 rgba(0,0,0,.5);
-    }
-    .mockBrowsermMobile{
-        box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);
-    }
-
-    .mockBrowserSmallLaptop{
-        box-shadow: 0.667rem 0.833rem 0 0 rgba(0,0,0,.5);
-    }
-
-    .mockBrowserMediumLaptop{
-        box-shadow: 0.833rem 1.042rem 0 0 rgba(0,0,0,.5);
-    }
-
-    .mockBrowserDesktop{
-        box-shadow: 1rem 1.25rem 0 0 rgba(0,0,0,.5);
-    }
-
-    .mockBrowserlargeDekstop{
-        box-shadow: 1.25rem 1.563rem 0 0 rgba(0,0,0,.5);
     }
 }
