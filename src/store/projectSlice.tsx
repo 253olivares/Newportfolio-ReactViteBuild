@@ -153,87 +153,63 @@ export const getResponsive = (state:RootState) => state.project.filters.responsi
 export const getFilters = (state:RootState) => state.project.filters;
 export const getOpenFilter= (state:RootState) => state.project.openFilter;
 
+// (_,params)=> params
 // here we will get our custom selectors that take in our filters and searches.
 export const filterProjects = createSelector(
     [selectAll , getFilters],
     (projects,params)=>{
-        const {searchTerm,tabSelect,liveDemos,selectedFilter, responsive} = params;
-        let filteredArray
-        let query = searchTerm.trim().toLowerCase();
         
-        let filterThrowAway:projectStateType[] = []
-        // first we filter based on search term and tags
-        filteredArray = projects.filter((item)=> {
-            if (searchTerm === ''){
+        const {searchTerm,tabSelect,liveDemos,selectedFilter, responsive} = params;
+        let query = searchTerm.trim().toLowerCase();
+
+        // filter by tab
+        let filteredArray = projects.filter((item)=> item.section===tabSelect);
+
+        console.log(tabSelect === "Programming");
+        // if programming filter live demos and responsive if either is true 
+        if(tabSelect === "Programming"){
+            // filter by demo
+            if(liveDemos ===true) filteredArray = filteredArray.filter((item)=>item.live===true);
+            // filter by responsive
+            if(responsive ===true) filteredArray = filteredArray.filter((item)=>item.responsive===true);
+            // filterBy selected
+            if(selectedFilter.length>=1) {
+                filteredArray = filteredArray.filter((item)=> {
+                    // filter through our tags
+                    // if our selected filter array includes an item from our tags return true
+                    if(item.tags.some(x=> { if(selectedFilter.includes(x)) return true})) return true;
+                    // if nothing is found after filtering through our array return false
+                    return false;
+                })
+            }
+        }
+
+        // our search filter
+        filteredArray = filteredArray.filter((item)=> {
+            // if blank stop
+            // or if it is filled check if our project name fits the query
+            // else take our tag loop through each tag and see if it matches our query
+            // if not 
+            //  take our date check if our query matches any of our date
+            // if not just return false
+            if(searchTerm === '' || item.projectName.trim().toLowerCase().includes(query)){
                 return true;
-            }
-            let projectName = item.projectName.trim().toLowerCase();
-            if(projectName.includes(query)){
-              return  true
             } else {
-                filterThrowAway.push(item);
-                return false
-            };
-        });
 
-        let filterThrowAway2:projectStateType[] = []
-        for (let i = 0; i < filterThrowAway.length; i++){
-            let searchDiameter = filterThrowAway[i].tags
-            for (let x = 0; x < searchDiameter.length; x++){
-                if (searchDiameter[x].trim().toLowerCase().includes(query)){
-                    filteredArray.push(filterThrowAway[i]);
-                    break; 
-                } else {
-                    filterThrowAway2.push(filterThrowAway[i])
-                }
+                // if anything in our array
+                if(item.tags.some((x)=> x.trim().toLowerCase().includes(query))) return true;
+
+                if(item.date.trim().toLowerCase().includes(query)) return true;
+                // if not found in tags or date return false
+                return false;
             }
-        }
-        // filter based on date
-        for(let i =0; i<filterThrowAway2.length; i++) {
-            let searchDiameter = filterThrowAway2[i].date;
-            if(searchDiameter.trim().toLowerCase().includes(query)){
-                filteredArray.push(filterThrowAway2[i]);
-            }
-        }
+        })
 
-        filteredArray = filteredArray.filter((item)=> item.section === tabSelect);
+        filteredArray = filteredArray.sort((a,b)=> b.id - a.id);
 
-        if(liveDemos === true && tabSelect === 'Programming'){
-            filteredArray = filteredArray.filter((item)=> item.live===true);
-        }
-
-        if (responsive === true && tabSelect === 'Programming'){
-            filteredArray = filteredArray.filter((item)=> item.responsive===true);
-        }
-
-        let finalFilter = [];
-        if (selectedFilter.length >= 1 && tabSelect === 'Programming') {
-            console.log("running code for tag filter");
-            for(let i =0; i< filteredArray.length; i++){
-                for(let x=0; x<filteredArray[i].tags.length; x++){
-                    let match = false;
-                    for(let y=0; y< selectedFilter.length; y++) {
-                        if(filteredArray[i].tags[x]=== selectedFilter[y]){
-                            match = true;
-                            finalFilter.push(filteredArray[i]);
-                            break;
-                        }
-                    }
-                    if(match){
-                        break;
-                    }
-                }
-            }
-        } else {
-            finalFilter = filteredArray;
-        }
-
-        // last min sort to make sure our projects are sorted by ids
-        finalFilter = finalFilter.sort((a,b)=> b.id - a.id);
-
-        return finalFilter;
+        return filteredArray;
     }
-)
+);
 
 export const {setSearchTerm, 
             setTabSelect, 

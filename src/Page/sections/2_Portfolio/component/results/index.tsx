@@ -1,4 +1,4 @@
-import { filterProjects } from "../../../../../store/projectSlice";
+import { filterProjects} from "../../../../../store/projectSlice";
 import { useAppSelector } from "../../../../../store/hook";
 import { AnimatePresence } from "framer-motion";
 import { Fragment, memo} from "react"
@@ -7,11 +7,45 @@ import ProjectListing from '../projectItems';
 
 const index = memo(() => {
 
+  // const live = useAppSelector(getLiveDemo);
+  // const tab = useAppSelector(getTabSelect);
+  // const search = useAppSelector(getSearchTerm);
+  // const filters = useAppSelector(getSelectFiler);
+  // const res  = useAppSelector(getResponsive);
+  // console.log(live,tab,search,filters,res);
+
+  // const content = useMemo(()=> useAppSelector((state)=>filterProjects(state,{
+    // searchTerm:search,
+    // tabSelect:tab,
+    // liveDemos:live,
+    // selectedFilter:filters,
+    // responsive:res
+  // })),[live,tab,search,filters,res])
+
+  // const content = useAppSelector((state)=> filterProjects(state,{
+  //   searchTerm:search,
+  //   tabSelect:tab,
+  //   liveDemos:live,
+  //   selectedFilter:filters,
+  //   responsive:res
+  // }));
+
+  // const content2 = useCallback(()=> useAppSelector((state)=>filterProjects(state,{
+  //   searchTerm:search,
+  //   tabSelect:tab,
+  //   liveDemos:live,
+  //   selectedFilter:filters,
+  //   responsive:res
+  // })),[live,tab,search,filters,res])
+
+  // const content = content2();
+  
   const content = useAppSelector(filterProjects);
 
   const emptySpaceTemplate:JSX.Element =  <div className="
   emptySpaceTemplate 
   " />;
+
   let space;
   let array
 

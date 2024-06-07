@@ -89,7 +89,7 @@ const index = memo(({project}:{project:projectStateType}) => {
        largeDesktop:rounded-[.756rem]
         
         ' 
-        src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}.svg`} 
+        src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/screenshots/${imgURL}.png`} 
         
         alt={projectName} 
         loading='lazy'
