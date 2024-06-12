@@ -222,8 +222,8 @@
     },
     {
       "id": 3,
-      "projectName": "Grady Brothers Site",
-      "projectURL": "https://www.gradybros.com/",
+      "projectName": "[Old] Grady Brothers Site",
+      "projectURL": "https://github.com/253olivares",
       "imgURL": "Grady",
       "section": "Programming",
       "tags": ["HTML", "CSS", "SASS", "JavaScript"],
