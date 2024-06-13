@@ -1,6 +1,17 @@
 {
   "Projects": [
     {
+      "id": 17.5,
+      "projectName": "[Old] Grady Brother Wireframe",
+      "projectURL": "https://github.com/253olivares/workSite/blob/main/WebsiteDraft.xd",
+      "imgURL": "GradyXdFile",
+      "section": "UI / UX",
+      "tags": ["XD"],
+      "live": false,
+      "responsive": false,
+      "date": "2022 October"
+    },
+    {
       "id": 19,
       "projectName": "Climate Change Infographic",
       "projectURL": "https://www.linkedin.com/in/253olivares/details/projects/523196407/multiple-media-viewer/?profileId=ACoAAC2gS5IB3haEZR2UfRtRrCzo18HLCpZAxw4&treasuryMediaId=1705625213470",
