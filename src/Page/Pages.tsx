@@ -1,13 +1,13 @@
 import { useContext, useEffect, memo } from "react"
 import { AppContext } from "./contextRefs";
-import Section1 from './sections/0_Introduction';
+import Section1 from './sections/0_Introduction/Introduction';
 import Section2 from './sections/1_AboutMe';
 import Section3 from './sections/2_Portfolio';
 import Section4 from './sections/3_ContactMe';
 import { useAppDispatch, useAppSelector } from "../store/hook";
 import { getScrollState, setCurrentSelection, setScrollState } from "../store/sidebarSlice";
 
-const index = memo(() => {
+const Pages = memo(() => {
 
   const dispatch = useAppDispatch();
 
@@ -75,4 +75,4 @@ const index = memo(() => {
   )
 })
 
-export default index
+export default Pages;

@@ -46,6 +46,666 @@
 
 @layer components{
 
+    .informationCardHolder {
+        @apply
+        flex flex-col
+        gap-[0.169rem]
+        mobile:gap-[0.225rem]
+        sMobile:gap-[0.36rem]
+        mMobile:gap-[0.433rem]
+        sLaptop:gap-[0.299rem]
+        mLaptop:gap-[0.374rem]
+        desktop:gap-[0.449rem]
+        largeDesktop:gap-[0.562rem]
+    }
+
+    .informationCardHolderKey{
+        @apply
+        text-[1.013rem]
+        mobile:text-[1.351rem]
+        sMobile:text-[2.161rem]
+        mMobile:text-[2.593rem]
+        sLaptop:text-[1.799rem]
+        mLaptop:text-[2.249rem]
+        desktop:text-[2.7rem]
+        largeDesktop:text-[3.375rem]
+
+        font-semibold
+        text-SidebarGray
+        leading-none
+    }
+
+    .informationCardHolderValue{
+        @apply
+        text-[0.844rem]
+        mobile:text-[1.126rem]
+        sMobile:text-[1.801rem]
+        mMobile:text-[2.161rem]
+        sLaptop:text-[1.499rem]
+        mLaptop:text-[1.874rem]
+        desktop:text-[2.249rem]
+        largeDesktop:text-[2.812rem]
+
+        font-semibold
+        text-SiteGreen
+        leading-none
+    }
+
+    .educationHolder {
+        @apply
+        flex flex-col
+        pt-[0.733rem]
+        mobile:pt-[0.976rem]
+        sMobile:pt-[1.563rem]
+        mMobile:pt-[1.875rem]
+        sLaptop:pt-[0.877rem]
+        mLaptop:pt-[1.167rem]
+        desktop:pt-[1.4rem]
+        largeDesktop:pt-[1.75rem]
+
+        pl-[8.98%]
+        sLaptop:ml-auto
+
+        gap-[0.253rem]
+        mobile:gap-[0.338rem]
+        sMobile:gap-[0.54rem]
+        mMobile:gap-[0.648rem]
+        sLaptop:gap-[0.450rem]
+        mLaptop:gap-[0.562rem]
+        desktop:gap-[0.675rem]
+        largeDesktop:gap-[0.844rem]
+
+        relative
+        w-full
+        sLaptop:w-auto
+    }
+
+    .titleCardHolderText {
+        @apply
+        text-[0.928rem]
+        mobile:text-[1.237rem]
+        sMobile:text-[1.979rem]
+        mMobile:text-[2.375rem]
+        sLaptop:text-[1.650rem]
+        mLaptop:text-[2.062rem]
+        desktop:text-[2.475rem]
+        largeDesktop:text-[3.094rem]
+
+        pr-[calc(53.48%-7.313rem)]
+        mobile:pr-[calc(53.48%-9.746rem)]
+        sMobile:pr-[calc(53.48%-15.594rem)]
+        mMobile:pr-[calc(53.48%-18.716rem)]
+
+        sLaptop:px-[0.933rem]
+        mLaptop:px-[1.167rem]
+        desktop:px-[1.4rem]
+        largeDesktop:px-[1.75rem]
+
+        py-[0.366rem]
+        mobile:py-[0.488rem]
+        sMobile:py-[0.781rem]
+        mMobile:py-[0.938rem]
+        sLaptop:py-[0.799rem]
+        mLaptop:py-[0.999rem]
+        desktop:py-[1.2rem]
+        largeDesktop:py-[1.5rem]
+
+        text-PrimaryWhite
+        font-bold
+        leading-none
+    }
+
+    .titleCardHolder {
+        @apply
+        mt-[0.304rem]
+        mobile:mt-[0.447rem]
+        sMobile:mt-[0.677rem]
+        mMobile:mt-[0.813rem]
+        sLaptop:mt-[0.233rem]
+        mLaptop:mt-[0.313rem]
+        desktop:mt-[0.35rem]
+        largeDesktop:mt-[0.438rem]
+
+        w-[93.48%]
+
+        ml-[calc(100%-93.48%)]
+
+        sLaptop:ml-0
+        sLaptop:w-full
+        rounded-l-[0.117rem]
+        mobile:rounded-l-[0.156rem]
+        sMobile:rounded-l-[0.249rem]
+        mMobile:rounded-l-[0.299rem]
+        sLaptop:rounded-l-[0.267rem]
+        mLaptop:rounded-l-[0.333rem] 
+        desktop:rounded-l-[0.4rem]
+        largeDesktop:rounded-l-[0.5rem]
+
+        flex 
+        items-center 
+        relative
+        justify-end
+        sLaptop:justify-start
+        bg-SiteYellow
+        divTinyShadow
+
+        mobile:divMobileShadow
+        sMobile:divsMobileShadow
+        mMobile:divmMobileShadow
+        sLaptop:divSmallShadow
+        mLaptop:divMediumShadow
+        desktop:divDesktopShadow
+        largeDesktop:divLargeDesktopShadow
+    }
+
+    .customStyling2 {
+        @apply 
+        absolute
+                  bg-SiteYellow
+                  w-[19.90%]
+                  sLaptop:w-[8.533rem]
+                  mLaptop:w-[10.667rem]
+                  desktop:w-[12.8rem]
+                  largeDesktop:w-[16rem]
+
+                  h-[0.219rem]
+                  mobile:h-[0.291rem]
+                  sMobile:h-[0.466rem]
+                  mMobile:h-[0.56rem]
+                  sLaptop:h-[0.450rem]
+                  mLaptop:h-[0.562rem]
+                  desktop:h-[0.675rem]
+                  largeDesktop:h-[0.844rem]
+                  
+                  top-[1.254rem]
+                  mobile:top-[1.673rem]
+                  sMobile:top-[2.676rem]
+                  mMobile:top-[3.211rem]
+
+                  sLaptop:top-[5.406rem]
+
+                  right-[4.63%]
+                  sLaptop:right-auto
+                  sLaptop:left-[24.135rem]
+                  mLaptop:left-[30.167rem]
+                  desktop:left-[36.2rem]
+                  largeDesktop:left-[45.25rem]
+                  rounded-full
+    }
+
+    .customStyling1 {
+        @apply
+        absolute
+                  bg-SiteYellow
+                  w-[22.23%]
+                  sLaptop:w-[9.533rem]
+                  mLaptop:w-[11.917rem]
+                  desktop:w-[14.3rem]
+                  largeDesktop:w-[17.875rem]
+                  h-[0.219rem]
+                  mobile:h-[0.291rem]
+                  sMobile:h-[0.466rem]
+                  mMobile:h-[0.56rem]
+                  sLaptop:h-[0.450rem]
+                  mLaptop:h-[0.562rem]
+                  desktop:h-[0.675rem]
+                  largeDesktop:h-[0.844rem]
+                  sLaptop:top-[3.156rem]
+                  right-[16.68%]
+                  sLaptop:right-auto
+                  sLaptop:left-[16.717rem]
+                  mLaptop:left-[22.458rem]
+                  desktop:left-[26.95rem]
+                  largeDesktop:left-[33.688rem]
+                  rounded-full
+    }
+    
+    .personalInfoPart1Holder {
+        @apply
+        relative
+            w-full
+            sLaptop:w-[57.69%]
+
+            mt-[0.488rem]
+            mobile:mt-[0.651rem]
+            sMobile:mt-[1.041rem]
+            mMobile:mt-[1.25rem]
+            sLaptop:mt-0
+    }
+
+    .mobilePersonalMessage {
+        @apply
+        flex
+        sLaptop:hidden
+        w-full justify-center
+        pt-[0.610rem]
+        mobile:pt-[0.814rem]
+        sMobile:pt-[1.302rem]
+        mMobile:pt-[1.563rem]
+        text-[0.628rem]
+        mobile:text-[0.837rem]
+        sMobile:text-[1.339rem]
+        mMobile:text-[1.608rem]
+        font-medium
+        leading-none
+    }
+
+    .profilePart1Image {
+        @apply
+        mr-[12.93%]
+        w-[43.60%]
+        sLaptop:mr-0
+        sLaptop:w-[11.999rem]
+        mLaptop:w-[14.999rem]
+        desktop:w-[18rem]
+        largeDesktop:w-[22.5rem]
+    }
+    
+    .profilePart1ImageHolder {
+        @apply
+        bg-SiteGreen 
+            sLaptop:min-h-32 
+
+            w-[76.69%]
+
+            sLaptop:w-[39.94%] 
+
+            rounded-r-[0.117rem]
+            mobile:rounded-r-[0.156rem]
+            sMobile:rounded-r-[0.249rem]
+            mMobile:rounded-r-[0.299rem]
+            sLaptop:rounded-r-[0.267rem]
+            mLaptop:rounded-r-[0.333rem]
+            desktop:rounded-r-[0.4rem]
+            largeDesktop:rounded-r-[0.5rem]
+
+            sLaptop:pr-[2.4rem]
+            mLaptop:pr-[3rem]
+            desktop:pr-[3.6rem]
+            largeDesktop:pr-[4.5rem]
+
+            py-[0.561rem]
+            mobile:py-[0.749rem]
+            sMobile:py-[1.198rem]
+            mMobile:py-[1.438rem]
+            sLaptop:py-[1.559rem]
+            mLaptop:py-[1.949rem]
+            desktop:py-[2.34rem]
+            largeDesktop:py-[2.925rem]
+
+            divTinyShadow
+
+            mobile:divMobileShadow
+            sMobile:divsMobileShadow
+            mMobile:divmMobileShadow
+            sLaptop:divSmallShadow
+            mLaptop:divMediumShadow
+            desktop:divDesktopShadow
+            largeDesktop:divLargeDesktopShadow
+            flex 
+
+            justify-end 
+
+            items-center
+
+    }
+
+    .profilePart1ContentHolder {
+        @apply
+        w-full 
+
+          pt-[1.207rem]
+          mobile:pt-[1.651rem]
+          sMobile:pt-[2.604rem]
+          mMobile:pt-[3.125rem]
+          sLaptop:pt-[3.199rem]
+          mLaptop:pt-[3.999rem]
+          desktop:pt-[4.8rem]
+          largeDesktop:pt-[6rem]
+
+          sLaptop:flex flex-row
+          justify-between
+    }
+
+    .personalMessageHolder {
+        @apply
+        hidden
+            sLaptop:flex 
+
+            pl-[7.03%]
+            largeDesktop:pl-[8.063rem]
+            sLaptop:pt-[1.1rem]
+            mLaptop:pt-[1.375rem]
+            desktop:pt-[1.65rem]
+            largeDesktop:pt-[2.063rem]
+
+            sLaptop:pb-[13.579rem]
+            mLaptop:pb-[16.958rem]
+            desktop:pb-[20.338rem]
+            largeDesktop:pb-[25.438rem]
+
+            sLaptop:text-[1.199rem]
+            mLaptop:text-[1.499rem]
+            desktop:text-[1.8rem]
+            largeDesktop:text-[2.25rem]
+
+            extra:w-full
+            extra:max-w-[1920px]
+            extra:mx-auto
+            font-medium
+            leading-none
+    }
+
+    .moneySign1 {
+        @apply
+        absolute 
+        right-[7.94%]
+        sLaptop:right-[15.26%]
+        w-[1.587rem]
+        mobile:w-[2.116rem]
+        sMobile:w-[3.375rem]
+        mMobile:w-[4.063rem]
+        sLaptop:w-[2.633rem]
+        mLaptop:w-[3.292rem]
+        desktop:w-[3.95rem]
+        largeDesktop:w-[4.938rem]
+        top-[0.368rem]
+        mobile:top-[0.491rem]
+        sMobile:top-[0.786rem]
+        mMobile:top-[0.943rem]
+        sLaptop:top-0 
+    }
+
+    .moneySign2 {
+        @apply
+        absolute
+        right-[23.22%]
+        sLaptop:right-[34.37%]
+        top-[80%]
+        sLaptop:top-[29.250rem]
+        mLaptop:top-[36.562rem]
+        desktop:top-[43.875rem]
+        largeDesktop:top-[54.844rem]
+        w-[1.245rem]
+        mobile:w-[1.66rem]
+        sMobile:w-[2.656rem]
+        mMobile:w-[3.188rem]
+        sLaptop:w-[3.233rem]
+        mLaptop:w-[4.042rem]
+        desktop:w-[4.85rem]
+        largeDesktop:w-[6.063rem]
+    }
+    .bracketBack1 {
+        @apply
+        absolute 
+        w-[0.585rem]
+        mobile:w-[0.700rem]
+        sMobile:w-[1.249rem]
+        mMobile:w-[1.5rem]
+        sLaptop:w-[1.313rem]
+        mLaptop:w-[1.688rem]
+        desktop:w-[2rem] 
+        largeDesktop:w-[2.5rem] 
+        left-[6.51%]
+        sLaptop:left-[44.53%] 
+        bottom-[40%]
+        sLaptop:bottom-0
+        sLaptop:top-[3.54rem]
+        mLaptop:top-[4.417rem]
+        desktop:top-[5.313rem]
+        largeDesktop:top-[6.625rem]
+    }
+    .bracketBack2 {
+        @apply
+        absolute 
+        w-[0.585rem]
+        mobile:w-[0.700rem]
+        sMobile:w-[1.249rem]
+        mMobile:w-[1.5rem]
+        sLaptop:w-[1.313rem]
+        mLaptop:w-[1.688rem]
+        desktop:w-[2rem] 
+        largeDesktop:w-[2.5rem] 
+        left-[6.51%]
+        sLaptop:left-auto
+        sLaptop:right-[07.13%] 
+        top-[87.5%]
+        sLaptop:top-[26.3rem]
+        mLaptop:top-[32.875rem]
+        desktop:top-[39.438rem]
+        largeDesktop:top-[49.313rem]
+    }
+
+    .aboutmeAstrik {
+        @apply
+        hidden
+        absolute
+        sLaptop:top-[31.633rem]
+        mLaptop:top-[39.542rem]
+        desktop:top-[47.45rem]
+        largeDesktop:top-[59.313rem]
+        left-[23%]
+        font-medium
+        sLaptop:text-[11.92rem]
+        mLaptop:text-[14.9rem]
+        desktop:text-[17.88rem]
+        largeDesktop:text-[22.35rem]
+        text-GrayBackground
+    }
+
+    .aboutmeHeadHolder {
+        @apply
+        relative 
+
+          mt-[1.465rem]
+          mobile:mt-[1.953rem]
+          sMobile:mt-[3.125rem]
+          mMobile:mt-[3.75rem]
+          sLaptop:mt-0
+
+          pl-[calc(6.51%-0.488rem)]
+          mobile:pl-[calc(6.51%-0.651rem)]
+          sMobile:pl-[calc(6.51%-1.041rem)]
+          mMobile:pl-[calc(6.51%-1.25rem)]
+          sLaptop:pl-[calc(3.6%-1.4rem)] 
+          mLaptop:pl-[calc(3.6%-1.65rem)] 
+          desktop:pl-[calc(3.6%-2rem)] 
+          largeDesktop:pl-[calc(3.6%-2.45rem)] 
+
+          extra:pl-0  
+          extra:w-full 
+          extra:max-w-[1920px] 
+          extra:mx-auto
+    }
+    
+    .aboutmeHeadLeft {
+        @apply
+        w-[0.488rem]
+            mr-[0.244rem]
+            mobile:w-[0.651rem]
+            mobile:mr-[0.325rem]
+            sMobile:w-[1.041rem]
+            sMobile:mr-[0.520rem]
+            mMobile:w-[1.25rem]
+            mMobile:mr-[0.625rem]
+            sLaptop:w-[1rem]
+            sLaptop:mr-[.4rem]
+            mLaptop:w-[1.25rem]
+            mLaptop:mr-[.4rem]
+            desktop:w-[1.4rem]
+            desktop:mr-[.6rem]
+            largeDesktop:w-[1.65rem]
+            largeDesktop:mr-[.8rem]
+    }
+
+    .aboutmeHeadRight {
+        @apply
+        w-[0.488rem]
+            ml-[0.244rem]
+            mobile:w-[0.651rem]
+            mobile:ml-[0.325rem]
+            sMobile:w-[1.041rem]
+            sMobile:ml-[0.520rem]
+            mMobile:w-[1.25rem]
+            mMobile:ml-[0.625rem]
+            sLaptop:w-[1rem]
+            sLaptop:ml-[.4rem]
+            mLaptop:w-[1.25rem]
+            mLaptop:ml-[.4rem]
+            desktop:w-[1.4rem]
+            desktop:ml-[.6rem]
+            largeDesktop:w-[1.65rem]
+            largeDesktop:ml-[.8rem]
+    }
+
+    .sidebarCss {
+        @apply
+        fixed z-30 
+        left-0 
+        bottom-0
+        px-[0.488rem]
+        mobile:px-[0.651rem]
+        sMobile:px-[1.042rem]
+        mMobile:px-[1.25rem]
+        sLaptop:px-0
+        sLaptop:py-[0.667rem]
+        mLaptop:py-[0.833rem]
+        desktop:py-[1rem]
+        largeDesktop:py-[1.25rem]
+        4k:py-[1.666rem]
+        w-dvw
+        sLaptop:w-[3.333rem] 
+        mLaptop:w-[4.167rem] 
+        desktop:w-[5rem] 
+        largeDesktop:w-[6.25rem] 
+        4k:min-w-[8.333rem]
+        h-[3.223rem]
+        mobile:h-[4.297rem]
+        sMobile:h-[6.8755rem]
+        mMobile:h-[8.25rem]
+        sLaptop:h-dvh
+        flex
+        flex-row
+        sLaptop:flex-col
+        justify-between 
+        items-center
+        bg-SidebarGray 
+        customShadow
+    }
+
+    .introductionHolder {
+        @apply 
+        max-w-[1920px]
+        mx-auto
+        relative z-[5] 
+        flex flex-col
+
+        gap-[0.264rem]
+        mobile:gap-[0.351rem]
+        sMobile:gap-[0.563rem]
+        mMobile:gap-[0.675rem]
+        sLaptop:gap-[0.5rem]
+        largeDesktop:gap-[1rem]
+
+        pl-[3.255%]
+        mobile:pl-[06.51%]
+        sLaptop:pl-[8%] 
+        largeDesktop:pl-[10.625rem]
+
+        pt-[1.221rem]
+        mobile:pt-[1.628rem]
+        sMobile:pt-[2.604rem]
+        mMobile:pt-[3.125rem]
+        sLaptop:pt-[6.399rem]
+        mLaptop:pt-[7.999rem]
+        desktop:pt-[9.6rem]
+        largeDesktop:pt-[12rem]
+
+        heroTextMobileTiny
+        mobile:heroTextMobile
+        sMobile:heroTextSmallMobile
+        mMobile:heroTextMediumMobile
+        sLaptop:heroTextSmall
+        mLaptop:heroTextMedium
+        desktop:heroTextDesktop
+        largeDesktop:heroTextLarge
+    }
+
+    .heroCharacter {
+        @apply
+        right-[3.255%]
+            mobile:right-[06.51%]
+            sLaptop:right-[2%]
+            largeDesktop:right-[2.4rem]
+
+            absolute z-[5]
+
+            top-[5.5rem]
+            mobile:top-[7.5rem]
+            sMobile:top-[12.49rem]
+            mMobile:top-[15.063rem]
+            sLaptop:top-[2.133rem]
+            mLaptop:top-[2.666rem] 
+            desktop:top-[3.2rem] 
+            largeDesktop:top-[4rem]
+         
+            w-[70%]
+            sMobile:w-[67.40%]
+            sLaptop:w-[54.37%]
+            largeDesktop:w-[65.25rem]
+    }
+
+    .footerItemsHolder {
+        @apply
+        w-full
+           sLaptop:w-[calc(100%-3.333rem)]
+           mLaptop:w-[calc(100%-4.167rem)]
+           desktop:w-[calc(100%-5rem)]
+           largeDesktop:w-[calc(100%-6.25rem)]
+           px-[0.802rem] py-[0.308rem]
+           mobile:px-[1.069rem] mobile:py-[0.411rem]
+           sMobile:px-[1.71rem] sMobile:py-[0.658rem]
+           mMobile:px-[2.053rem] mMobile:py-[0.789rem]
+           sLaptop:px-[1.55rem] sLaptop:py-[0.234rem]
+           mLaptop:px-[1.875rem] mLaptop:py-[0.291rem]
+           desktop:px-[2.313rem] desktop:py-[0.35rem]
+           largeDesktop:px-[2.906rem] largeDesktop:py-[0.438rem]
+
+           sLaptop:float-right 
+           flex 
+           items-center
+           justify-between
+    }
+
+    .backtoTopBar {
+        @apply
+        hidden
+        absolute 
+        right-0 top-0 
+        sLaptop:w-[calc(100dvw-3.333rem)]
+        mLaptop:w-[calc(100dvw-4.167rem)]
+        desktop:w-[calc(100dvw-5rem)]
+        largeDesktop:w-[calc(100dvw-6.25rem)]
+        4k:w-[calc(100dvw-8.333rem)]
+        sLaptop:flex justify-center
+    }
+    .backToTopBarParagraph {
+        @apply
+        w-[30rem] 
+        sLaptop:py-[0.65rem]
+        mLaptop:py-[.75rem]
+        desktop:py-[.875rem]
+        largeDesktop:py-[1rem] 
+        font-semibold 
+        text-center 
+        sLaptop:text-[1.5rem]
+        mLaptop:text-[2.05rem]
+        desktop:text-[2.5rem]
+        largeDesktop:text-[3.125rem] 
+        cursor-pointer 
+        text-PrimaryWhite
+    }
+
     .projectFlexDiv{
         @apply 
         flex-grow

@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../sidebar';
+import Sidebar from '../sidebar/Sidebar';
 import { windowResize } from '../hook';
 import { memo } from 'react';
 
-const index = memo(() => {
+const Layout = memo(() => {
 
   // hook that runs code when window resizes
   // intented to make sure that our select tab is keep track in the correct space
@@ -25,4 +25,4 @@ const index = memo(() => {
   )
 })
 
-export default index
+export default Layout

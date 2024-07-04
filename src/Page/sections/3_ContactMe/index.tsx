@@ -3,7 +3,7 @@ import { useContext, memo } from "react";
 
 import DownloadPDF from './component/downloadResume';
 import Form from './component/contactForm';
-import Footer from '../../footer';
+import Footer from '../../footer/Footer';
 
 const index = memo(() => {
 

@@ -6,8 +6,8 @@ import { fetchProjects } from './store/projectSlice';
 import { store } from './store/store';
 
 import ErrorPage from './Page/404';
-import Layout from './Page/layout';
-import Page from './Page/index';
+import Layout from './Page/layout/Layout';
+import Page from './Page/Pages';
 
 import AOS from "aos";
 import "aos/dist/aos.css";

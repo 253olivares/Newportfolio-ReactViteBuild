@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../../store/hook";
 import { getCurrentSection,setScrollState, setCurrentSelection } from "../../../../store/sidebarSlice";
 
-const index = memo((
+const NavItems = memo((
   {
     item,
     imgURLBase,
@@ -120,6 +120,7 @@ const index = memo((
         `}
         >
           <img className={imgcss} src={currentSection === section ? imgAlternate : imgURLBase} alt={section} />
+
           <p className={`
           font-medium 
           text-center 
@@ -142,53 +143,67 @@ const index = memo((
           4k:text-[1.5rem]
           `}
           >{item}</p>
-        <div className={`
-        block sLaptop:hidden
-        transition-all
-        absolute
-        bg-SiteYellow
-        top-0
-        h-[0.1171rem]
-        mobile:h-[0.1562rem]
-        sMobile:h-[0.2499rem]
-        mMobile:h-[.3rem]
-        ${currentSection === section ? 
-          `
-          w-[100%]
-          left-0` 
-          : 
-          `
-          w-[0rem] 
-          left-[50%] `
-        } 
-        `} />
 
-        <div className={`
-        hidden sLaptop:block
-        transition-all
-        absolute 
-        ${currentSection === section ? 
-          `
-          sLaptop:h-[100%] 
-          sLaptop:top-0` 
-          : 
-          `
-          sLaptop:h-[0rem] 
-          sLaptop:top-[50%] 
-          group-hover:sLaptop:h-[50%] 
-          group-hover:sLaptop:top-[25%]`
-        } 
-        sLaptop:w-[.225rem] 
-        mLaptop:w-[.25rem]
-        desktop:w-[.275rem]
-        largeDesktop:w-[.3rem]
-        4k:w-[0.399rem]
-        sLaptop:right-0 
-        bg-SiteYellow
-        `} />
+        <YellowBarMobile bool = {currentSection === section}/>
+
+        <YellowBarDesktop bool ={currentSection === section} />
+
         </div>
     </Link>
   )
 })
 
-export default index;
+const YellowBarMobile = memo(({
+  bool
+}: {bool:boolean})=> {
+  return <div className={`
+  block sLaptop:hidden
+  transition-all
+  absolute
+  bg-SiteYellow
+  top-0
+  h-[0.1171rem]
+  mobile:h-[0.1562rem]
+  sMobile:h-[0.2499rem]
+  mMobile:h-[.3rem]
+  ${bool ? 
+    `
+    w-[100%]
+    left-0` 
+    : 
+    `
+    w-[0rem] 
+    left-[50%] `
+  } 
+  `} />
+})
+
+const YellowBarDesktop = memo(({
+  bool
+}: {bool:boolean}) => {
+  return <div className={`
+  hidden sLaptop:block
+  transition-all
+  absolute 
+  ${bool ? 
+    `
+    sLaptop:h-[100%] 
+    sLaptop:top-0` 
+    : 
+    `
+    sLaptop:h-[0rem] 
+    sLaptop:top-[50%] 
+    group-hover:sLaptop:h-[50%] 
+    group-hover:sLaptop:top-[25%]`
+  } 
+  sLaptop:w-[.225rem] 
+  mLaptop:w-[.25rem]
+  desktop:w-[.275rem]
+  largeDesktop:w-[.3rem]
+  4k:w-[0.399rem]
+  sLaptop:right-0 
+  bg-SiteYellow
+  `} />
+})
+
+export default NavItems;

@@ -1,7 +1,7 @@
 import { AppContext } from "../../contextRefs";
 import { useContext, memo } from "react";
 
-import Part1Profile from './part1Profile';
+import Part1Profile from './part1Profile/Part1Profile';
 import Part2Skills from './part2Skills';
 const index = memo(() => {
 

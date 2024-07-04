@@ -1,6 +1,6 @@
 import { memo, useEffect, useRef } from "react"
 
-const index = memo(({character}: {character:string}) => {
+const Doll = memo(({character}: {character:string}) => {
 
     const dollref = useRef<HTMLImageElement|null>(null);
 
@@ -34,4 +34,4 @@ const index = memo(({character}: {character:string}) => {
   )
 })
 
-export default index
+export default Doll;
