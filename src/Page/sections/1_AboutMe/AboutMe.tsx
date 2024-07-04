@@ -2,14 +2,14 @@ import { AppContext } from "../../contextRefs";
 import { useContext, memo } from "react";
 
 import Part1Profile from './part1Profile/Part1Profile';
-import Part2Skills from './part2Skills';
-const index = memo(() => {
+import Part2Skills from './part2Skills/Part2Skills';
+const AboutMe = memo(() => {
 
   const appContext = useContext(AppContext);
   const {pageRef} = appContext!;
 
   return (
-    <div  ref={el => {
+  <div  ref={el => {
       if(el) pageRef.current['AboutMe'] = el
     }} id="AboutMe" className={`
     relative 
@@ -23,8 +23,8 @@ const index = memo(() => {
       depending on what our width is
       */}
     <Part2Skills />
-    </div>
+  </div>
   )
 })
 
-export default index
+export default AboutMe;

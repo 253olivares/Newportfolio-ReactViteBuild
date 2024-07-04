@@ -2,12 +2,12 @@ import { memo } from "react"
 import Result from '../results';
 import FilterSection from '../filterSection';
 import FilterList from '../filterList';
-import Loading from '../../../loading';
+import Loading from '../../../loading/Loading';
 import { useAppSelector } from "../../../../../store/hook";
 import { getOpenFilter, getProjectStatus, getTabSelect } from "../../../../../store/projectSlice";
 import { AnimatePresence } from "framer-motion";
 
-const index = memo(() => {
+const WindowContent = memo(() => {
   // this is
 
   const openFilter = useAppSelector(getOpenFilter);
@@ -196,4 +196,4 @@ const index = memo(() => {
   )
 })
 
-export default index
+export default WindowContent;

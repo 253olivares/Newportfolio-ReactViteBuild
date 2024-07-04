@@ -1,19 +1,18 @@
 import { memo, useContext, useEffect} from "react";
 import { AppContext } from "../../../../../contextRefs";
-import { changeSkill, getSelectSkill, skillsStateType } from "../../../../../../store/skillsSlice";
-import { useAppDispatch, useAppSelector } from "../../../../../../store/hook";
+import { changeSkill, skillsStateType } from "../../../../../../store/skillsSlice";
+import { useAppDispatch } from "../../../../../../store/hook";
 
-const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
+const Icons = memo(({select:selectSkill,skill, loc}:{select:string,skill: skillsStateType, loc:number}) => {
   const dispatch = useAppDispatch();
 
   const appContext = useContext(AppContext);
   const {iconsRef,arrowRef,descRef} = appContext!;
 
-  const selectSkill = useAppSelector(getSelectSkill);
-
   useEffect(()=> {
     // function that will reposition our arrow every time our mouse
     // hovers a skill
+    
     const setSelect = () => {
       // sets our skill and triggers a rerender our description
       dispatch(changeSkill(skill.title));
@@ -40,19 +39,9 @@ const index = memo(({skill, loc}:{skill: skillsStateType, loc:number}) => {
   return (
       <img
       ref={el => iconsRef.current[loc] = el!}
-      className={`
-      cursor-pointer
-      w-[2.591rem]
-      mobile:w-[3.455rem]
-      sMobile:w-[5.528rem]
-      mMobile:w-[6.634rem]
-      sLaptop:w-[4.224rem] 
-      mLaptop:w-[5.28rem]
-      desktop:w-[6.336rem]
-      largeDesktop:w-[7.92rem]
-      `} 
+      className={` iconsCss `} 
       src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/SkillIcons/${selectSkill === skill.title ? 'Select': ''}${skill.imgSRC}`} alt={skill.title} /> 
   )
 })
 
-export default index
+export default Icons;

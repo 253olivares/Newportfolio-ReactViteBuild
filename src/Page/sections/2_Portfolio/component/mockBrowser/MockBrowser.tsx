@@ -1,9 +1,9 @@
 import { memo} from "react";
 import BrowserTabs from '../tabs';
 import BrowserControls from '../browserControls';
-import WindowContent from '../windowContentTest';
+import WindowContent from '../windowContentTest/WindowContent';
 
-const index = memo(() => {
+const MockBrowser = memo(() => {
 
   return (
     <div 
@@ -26,4 +26,4 @@ const index = memo(() => {
   )
 })
 
-export default index
+export default MockBrowser;

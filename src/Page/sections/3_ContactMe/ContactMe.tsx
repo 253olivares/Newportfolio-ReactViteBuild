@@ -4,11 +4,12 @@ import { useContext, memo } from "react";
 import DownloadPDF from './component/downloadResume';
 import Form from './component/contactForm';
 import Footer from '../../footer/Footer';
+import ContextMeHeader from "./component/ContextMeHeader";
 
-const index = memo(() => {
+const ContactMe = memo(() => {
 
   const appContext = useContext(AppContext);
-  const {pageRef, strips, stripsMobile} = appContext!;
+  const {pageRef} = appContext!;
 
   return (
    <div ref={el => {
@@ -48,18 +49,7 @@ const index = memo(() => {
         largeDesktop:pb-[13.14rem]
         
         ">
-          <div className="
-          w-full 
-          px-[6.51%]
-          sLaptop:pl-[3.6%] 
-          sLaptop:pr-0
-          extra:pl-0 extra:max-w-[1920px] extra:mx-auto
-          ">
-            <h1 data-aos='fade'
-            data-aos-duration='1250'
-            data-aos-delay='0'
-            className="sectionCSS">CONTACT ME</h1>
-          </div>
+          <ContextMeHeader />
           <div className="
           w-full 
           sLaptop:flex 
@@ -91,26 +81,10 @@ const index = memo(() => {
             <DownloadPDF />
           </div>
       </div>
-      <img 
-      className="
-      absolute bottom-0 left-0
-      z-[0]
-      sLaptop:hidden
-      w-full
-      "
-      src={stripsMobile} 
-      alt="mobile strips" />
-      <img className="
-       absolute 
-       bottom-0 left-0
-       z-[0]
-       hidden
-       sLaptop:block
-       sLaptop:w-[57.24rem]
-       mLaptop:w-[71.28rem]
-       desktop:w-[86.4rem]
-       largeDesktop:w-[108rem]
-      " src={strips} alt="Stripes_2" />
+      
+      <Strip />
+
+      <MobileStrip />
 
       <Footer />
 
@@ -118,4 +92,35 @@ const index = memo(() => {
   )
 })
 
-export default index
+const Strip = memo(() => {
+
+  const appContext = useContext(AppContext);
+  const {strips} = appContext!;
+  return <img className="
+  absolute 
+  bottom-0 left-0
+  z-[0]
+  hidden
+  sLaptop:block
+  sLaptop:w-[57.24rem]
+  mLaptop:w-[71.28rem]
+  desktop:w-[86.4rem]
+  largeDesktop:w-[108rem]
+ " src={strips} alt="Stripes_2" />
+})
+
+const MobileStrip = memo(() => {
+  const appContext = useContext(AppContext);
+  const {stripsMobile} = appContext!;
+  return <img 
+  className="
+  absolute bottom-0 left-0
+  z-[0]
+  sLaptop:hidden
+  w-full
+  "
+  src={stripsMobile} 
+  alt="mobile strips" />
+})
+
+export default ContactMe;

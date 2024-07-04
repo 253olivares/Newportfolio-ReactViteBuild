@@ -2,7 +2,7 @@ import { skillsStateType } from "../../../../../../store/skillsSlice"
 import { memo, useContext } from "react"
 import { AppContext } from "../../../../../contextRefs"
 
-const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
+const Description = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
 
    const appContext = useContext(AppContext);
    const {descRef} = appContext!;
@@ -207,4 +207,4 @@ const index = memo(({selectSkill}: {selectSkill:skillsStateType}) => {
   )
 })
 
-export default index
+export default Description;

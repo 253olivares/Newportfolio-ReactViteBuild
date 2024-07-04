@@ -2,7 +2,7 @@ import { memo } from "react"
 import Result from '../results';
 import FilterSection from '../filterSection';
 import FilterList from '../filterList';
-import Loading from '../../../loading';
+import Loading from '../../../loading/Loading';
 import { useAppSelector } from "../../../../../store/hook";
 import { getOpenFilter, getProjectError, getProjectStatus, getTabSelect } from "../../../../../store/projectSlice";
 import { AnimatePresence } from "framer-motion";

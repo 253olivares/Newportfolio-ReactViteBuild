@@ -1,11 +1,11 @@
 import { memo, useContext } from "react";
 import { AppContext } from "../../contextRefs";
-import Welcome from "./Welcome";
-import Message from "./Message";
-import HeroCharacter from "./HeroCharacter";
-import Circles from "./Circles";
-import WaveBackDesk from "./WaveBackDesk";
-import WaveBackMobile from "./WaveBackMobile";
+import Welcome from "./components/Welcome";
+import Message from "./components/Message";
+import HeroCharacter from "./components/HeroCharacter";
+import Circles from "./components/Circles";
+import WaveBackDesk from "./components/WaveBackDesk";
+import WaveBackMobile from "./components/WaveBackMobile";
 
 const Introduction = memo(() => {
   
