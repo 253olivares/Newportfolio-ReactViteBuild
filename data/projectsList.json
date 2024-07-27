@@ -2,6 +2,17 @@
   "Projects": [
     {
       "id": 17.5,
+      "projectName": "Java (Spring) API",
+      "projectURL": "https://github.com/253olivares/FullstackProject",
+      "imgURL": "Spring_API",
+      "section": "Programming",
+      "tags": ["Java"],
+      "live": true,
+      "responsive": false,
+      "date": "2024 June"
+    },
+    {
+      "id": 17.5,
       "projectName": "[Old] Grady Brother Wireframe",
       "projectURL": "https://github.com/253olivares/workSite/blob/main/WebsiteDraft.xd",
       "imgURL": "GradyXdFile",
