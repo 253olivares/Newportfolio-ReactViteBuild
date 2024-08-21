@@ -12,7 +12,7 @@ const index = memo(() => {
   const appContext = useContext(AppContext);
   const { tabRef, backgroundSelectRef} = appContext!;
 
-  const tabs:["Programming", "Art", "UI / UX"] = ["Programming", "Art", "UI / UX"]
+  const tabs:["Programming",  "UI / UX"] = ["Programming",  "UI / UX"]
 
   const changeSelectTab = (x:"Programming"| "Art" |"UI / UX", index:number) => {
     

@@ -1,4 +1,4 @@
-import heroDrawing from '/assets/hero_Drawing.svg'
+import heroDrawing from '/assets/hero_Drawing.png'
 
 
 const HeroCharacter = () => {
