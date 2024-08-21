@@ -145,7 +145,7 @@ const index = memo(() => {
             `}
             src={`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/browser_closeButton${x === tabSelect ? 'Select': ''}.svg`} alt="tab_Close" />
         </p>
-        {
+        {/* {
             index < 2 
             && 
             <div 
@@ -168,7 +168,7 @@ const index = memo(() => {
             largeDesktop:w-[0.25rem] 
             rounded-full
             `} />
-        }
+        } */}
       </Fragment>
       )
     }
