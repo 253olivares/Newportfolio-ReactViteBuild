@@ -151,9 +151,9 @@ export const getSelectFiler = (state:RootState) => state.project.filters.selecte
 export const getResponsive = (state:RootState) => state.project.filters.responsive;
 export const getFilters = (state:RootState) => state.project.filters;
 export const getOpenFilter= (state:RootState) => state.project.openFilter;
-
 // (_,params)=> params
 // here we will get our custom selectors that take in our filters and searches.
+
 export const filterProjects = createSelector(
     [selectAll , getFilters],
     (projects,params)=>{
