@@ -644,7 +644,7 @@ Error generating stack: `+i.message+`
   sLaptop:hidden\r
   `,src:t,alt:"Mobile square"})}),aL=w.memo(()=>{const e=w.useContext(J),{square:t}=e;return x.jsx("img",{className:"square",src:t,alt:"Square"})}),lL=w.memo(()=>{const e=w.useContext(J),{pageRef:t}=e;return x.jsxs("div",{ref:n=>{n&&(t.current.AboutMe=n)},id:"AboutMe",className:`
     relative 
-    w-full`,children:[x.jsx(XC,{}),x.jsx(iL,{})]})}),uL=w.memo(()=>{const e=qe(),t=H(ii),n=w.useContext(J),{tabRef:r,backgroundSelectRef:o}=n,i=["Programming","UI / UX"],s=(a,l)=>{e(D2(a));const u=r.current[l].offsetLeft;o.current.style.left=`${u}px`};return x.jsxs("div",{className:`\r
+    w-full`,children:[x.jsx(XC,{}),x.jsx(iL,{})]})}),uL=w.memo(()=>{const e=qe(),t=H(ii),n=w.useContext(J),{tabRef:r,backgroundSelectRef:o}=n,i=["Programming","UI / UX","Art"],s=(a,l)=>{e(D2(a));const u=r.current[l].offsetLeft;o.current.style.left=`${u}px`};return x.jsxs("div",{className:`\r
     flex \r
     flex-row \r
     w-full\r
@@ -675,7 +675,7 @@ Error generating stack: `+i.message+`
     `,children:[x.jsx("div",{ref:o,className:`\r
   \r
     mockBrowserSelected\r
-    `}),i.map((a,l)=>x.jsx(w.Fragment,{children:x.jsxs("p",{ref:u=>r.current[l]=u,className:`
+    `}),i.map((a,l)=>x.jsxs(w.Fragment,{children:[x.jsxs("p",{ref:u=>r.current[l]=u,className:`
         relative
         z-[5]
         leading-none 
@@ -749,7 +749,25 @@ Error generating stack: `+i.message+`
             desktop:w-[1rem]
             largeDesktop:w-[1.5rem]
             hover:opacity-75
-            `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/browser_closeButton${a===t?"Select":""}.svg`,alt:"tab_Close"})]})},l))]})}),cL=w.memo(()=>{const e=w.useContext(J),{minimize:t,fullscreen:n,close:r}=e,o=[t,n,r];return x.jsx("div",{className:`\r
+            `,src:`https://253olivares.github.io/Newportfolio-ReactViteBuild/assets/browser_closeButton${a===t?"Select":""}.svg`,alt:"tab_Close"})]}),l<2&&x.jsx("div",{className:`
+            ${t==="Art"?"bg-transparent":"bg-PrimaryWhite"}
+            ${t==="Programming"&&l===0?"bg-transparent":"bg-PrimaryWhite"}
+            ${t==="UI / UX"&&l===1?"bg-transparent":"bg-PrimaryWhite"}
+            h-[1.269rem]
+            mobile:h-[1.692rem]
+            sMobile:h-[2.708rem]
+            mMobile:h-[3.25rem]
+            sLaptop:h-full
+            w-[0.126rem]
+            mobile:w-[0.169rem]
+            sMobile:w-[0.270rem]
+            mMobile:w-[.325rem]
+            sLaptop:w-[.125rem]
+            mLaptop:w-[.165rem]
+            desktop:w-[.20rem]
+            largeDesktop:w-[0.25rem] 
+            rounded-full
+            `})]},l))]})}),cL=w.memo(()=>{const e=w.useContext(J),{minimize:t,fullscreen:n,close:r}=e,o=[t,n,r];return x.jsx("div",{className:`\r
     hidden\r
     sLaptop:flex flex-row \r
     items-center relative\r
