@@ -1,6 +1,17 @@
 {
   "Projects": [
     {
+      "id": 25,
+      "projectName": "Java (Spring) API",
+      "projectURL": "https://github.com/253olivares/springBootDeepDive/tree/main/database_sql_jdbc_template_jpa",
+      "imgURL": "SpringBootJson",
+      "section": "Programming",
+      "tags": ["Java", "SpringBoot", "SQL"],
+      "live": false,
+      "responsive": false,
+      "date": "2024 September"
+    },
+    {
       "id": 24,
       "projectName": "Java (Spring) API",
       "projectURL": "https://github.com/253olivares/FullstackProject",
@@ -270,7 +281,7 @@
       "projectURL": "https://github.com/253olivares/PHP-SQL--Bread-Blog-Site",
       "imgURL": "PHPBreadBlog",
       "section": "Programming",
-      "tags": ["PHP", "MySQL"],
+      "tags": ["PHP", "SQL"],
       "responsive": false,
       "live": false,
       "date": "2020 September"
@@ -281,7 +292,7 @@
       "projectURL": "https://github.com/253olivares/PHP-SQL-Art-Market-Site",
       "imgURL": "PHPArtMarket",
       "section": "Programming",
-      "tags": ["PHP", "MySQL"],
+      "tags": ["PHP", "SQL"],
       "responsive": false,
       "live": false,
       "date": "2020 April"
