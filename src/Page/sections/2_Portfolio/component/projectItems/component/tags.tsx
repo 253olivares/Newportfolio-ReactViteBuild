@@ -45,7 +45,7 @@ const tags = ({tag}:{tag:string}) => {
         case 'PHP':
         color='#7229D1';
             break;
-        case 'MySQL':
+        case 'SQL':
         color='#F57C00';
             break;
         case 'Figma':
@@ -54,6 +54,12 @@ const tags = ({tag}:{tag:string}) => {
         case 'Java':
         color = '#f4474c';
         break;
+        case 'SpringBoot':
+            color = '#00ED64'
+            break;
+            case 'MongoDB':
+            color='#00684A'
+            break;
 
     }
 
