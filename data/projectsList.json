@@ -6,7 +6,7 @@
       "projectURL": "https://github.com/253olivares/FullstackProject",
       "imgURL": "Spring_API",
       "section": "Programming",
-      "tags": ["Java"],
+      "tags": ["Java", "SpringBoot", "MongoDB"],
       "live": true,
       "responsive": false,
       "date": "2024 June"
